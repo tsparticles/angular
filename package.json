@@ -1,0 +1,18 @@
+{
+  "name": "@tsparticles/angular-workspace",
+  "version": "2.7.1",
+  "private": true,
+  "scripts": {
+    "build": "lerna run build"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "husky": "^8.0.2",
+    "lerna": "^6.3.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
