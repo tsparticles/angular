@@ -29,21 +29,21 @@ $ yarn add ng-particles tsparticles-engine
 _template.html_
 
 ```html
-<angular-particles
+<ng-particles
     [id]="id"
     [options]="particlesOptions"
     [particlesInit]="particlesInit"
     (particlesLoaded)="particlesLoaded($event)"
-></angular-particles>
+></ng-particles>
 
 <!-- or -->
 
-<angular-particles
+<ng-particles
     [id]="id"
     [url]="particlesUrl"
     [particlesInit]="particlesInit"
     (particlesLoaded)="particlesLoaded($event)"
-></angular-particles>
+></ng-particles>
 ```
 
 _app.ts_

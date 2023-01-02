@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Tab1Page } from './tab1.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
-import { ParticlesModule } from 'ng-particles';
+import { NgParticlesModule } from 'ng-particles';
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
 
@@ -15,7 +15,7 @@ import { Tab1PageRoutingModule } from './tab1-routing.module';
     FormsModule,
     ExploreContainerComponentModule,
     Tab1PageRoutingModule,
-    ParticlesModule
+    NgParticlesModule
   ],
   declarations: [Tab1Page]
 })
