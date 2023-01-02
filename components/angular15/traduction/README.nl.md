@@ -1,8 +1,8 @@
 [![banner](https://particles.js.org/images/banner3.png)](https://particles.js.org)
 
-# @tsparticles/angular
+# @tsparticles/angular15
 
-[![npm](https://img.shields.io/npm/v/@tsparticles/angular)](https://www.npmjs.com/package/@tsparticles/angular) [![npm](https://img.shields.io/npm/dm/@tsparticles/angular)](https://www.npmjs.com/package/@tsparticles/angular)
+[![npm](https://img.shields.io/npm/v/@tsparticles/angular15)](https://www.npmjs.com/package/@tsparticles/angular15) [![npm](https://img.shields.io/npm/dm/@tsparticles/angular15)](https://www.npmjs.com/package/@tsparticles/angular15)
 
 Officiële [tsParticles](https://github.com/matteobruni/tsparticles) Angular component
 
@@ -15,13 +15,13 @@ Officiële [tsParticles](https://github.com/matteobruni/tsparticles) Angular com
 ### Installeer
 
 ```shell script
-npm install @tsparticles/angular
+npm install @tsparticles/angular15
 ```
 
 of
 
 ```shell script
-yarn add @tsparticles/angular
+yarn add @tsparticles/angular15
 ```
 
 ### Gebruik
@@ -125,7 +125,7 @@ export class AppComponent {
 _app.module.ts_
 
 ```typescript
-import { ParticlesModule } from "@tsparticles/angular";
+import { ParticlesModule } from "@tsparticles/angular15";
 import { NgModule } from "@angular/core";
 
 @NgModule({

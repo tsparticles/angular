@@ -1,7 +1,7 @@
 const fs = require("fs");
 const mainPackage = require("../package.json");
-const libPackage = "./projects/@tsparticles/angular/package.json";
-const libReadme = "./projects/@tsparticles/angular/README.md";
+const libPackage = "./projects/@tsparticles/angular15/package.json";
+const libReadme = "./projects/@tsparticles/angular15/README.md";
 const sourceReadme = "./README.md";
 
 fs.readFile(libPackage, function (error, data) {

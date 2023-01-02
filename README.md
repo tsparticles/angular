@@ -1,8 +1,8 @@
 [![banner](https://particles.js.org/images/banner3.png)](https://particles.js.org)
 
-# @tsparticles/angular
+# @tsparticles/angular15
 
-[![npm](https://img.shields.io/npm/v/@tsparticles/angular)](https://www.npmjs.com/package/@tsparticles/angular) [![npm](https://img.shields.io/npm/dm/@tsparticles/angular)](https://www.npmjs.com/package/@tsparticles/angular) [![GitHub Sponsors](https://img.shields.io/github/sponsors/matteobruni)](https://github.com/sponsors/matteobruni)
+[![npm](https://img.shields.io/npm/v/@tsparticles/angular15)](https://www.npmjs.com/package/@tsparticles/angular15) [![npm](https://img.shields.io/npm/dm/@tsparticles/angular15)](https://www.npmjs.com/package/@tsparticles/angular15) [![GitHub Sponsors](https://img.shields.io/github/sponsors/matteobruni)](https://github.com/sponsors/matteobruni)
 
 Official [tsParticles](https://github.com/matteobruni/tsparticles) Angular component
 
@@ -15,13 +15,13 @@ Official [tsParticles](https://github.com/matteobruni/tsparticles) Angular compo
 ### Install
 
 ```shell
-$ npm install @tsparticles/angular tsparticles-engine
+$ npm install @tsparticles/angular15 tsparticles-engine
 ```
 
 or
 
 ```shell
-$ yarn add @tsparticles/angular tsparticles-engine
+$ yarn add @tsparticles/angular15 tsparticles-engine
 ```
 
 ### Usage
@@ -150,7 +150,7 @@ export class AppComponent {
 _app.module.ts_
 
 ```typescript
-import { ParticlesModule } from "@tsparticles/angular";
+import { ParticlesModule } from "@tsparticles/angular15";
 import { NgModule } from "@angular/core";
 
 @NgModule({

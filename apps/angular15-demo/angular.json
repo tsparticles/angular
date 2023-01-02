@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "@tsparticles/angular-demo": {
+    "@tsparticles/angular15-demo": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "@tsparticles/angular-demo:build:production"
+              "browserTarget": "@tsparticles/angular15-demo:build:production"
             },
             "development": {
-              "browserTarget": "@tsparticles/angular-demo:build:development"
+              "browserTarget": "@tsparticles/angular15-demo:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "@tsparticles/angular-demo:build"
+            "browserTarget": "@tsparticles/angular15-demo:build"
           }
         },
         "test": {
@@ -106,5 +106,5 @@
       }
     }
   },
-  "defaultProject": "@tsparticles/angular-demo"
+  "defaultProject": "@tsparticles/angular15-demo"
 }

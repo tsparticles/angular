@@ -1,5 +1,5 @@
 /*
- * Public API Surface of @tsparticles/angular
+ * Public API Surface of @tsparticles/angular15
  */
 
 export * from './lib/angular-particles.component';
