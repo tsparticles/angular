@@ -1,5 +1,5 @@
 {
-    "name": "@tsparticles/angular-demo",
+    "name": "ng-particles-demo",
     "version": "2.7.1",
     "scripts": {
         "ng": "ng",

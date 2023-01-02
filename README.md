@@ -1,8 +1,8 @@
 [![banner](https://particles.js.org/images/banner3.png)](https://particles.js.org)
 
-# @tsparticles/angular
+# ng-particles
 
-[![npm](https://img.shields.io/npm/v/@tsparticles/angular)](https://www.npmjs.com/package/@tsparticles/angular) [![npm](https://img.shields.io/npm/dm/@tsparticles/angular)](https://www.npmjs.com/package/@tsparticles/angular) [![GitHub Sponsors](https://img.shields.io/github/sponsors/matteobruni)](https://github.com/sponsors/matteobruni)
+[![npm](https://img.shields.io/npm/v/ng-particles)](https://www.npmjs.com/package/ng-particles) [![npm](https://img.shields.io/npm/dm/ng-particles)](https://www.npmjs.com/package/ng-particles) [![GitHub Sponsors](https://img.shields.io/github/sponsors/matteobruni)](https://github.com/sponsors/matteobruni)
 
 Official [tsParticles](https://github.com/matteobruni/tsparticles) Angular component
 
@@ -15,13 +15,13 @@ Official [tsParticles](https://github.com/matteobruni/tsparticles) Angular compo
 ### Install
 
 ```shell
-$ npm install @tsparticles/angular tsparticles-engine
+$ npm install ng-particles tsparticles-engine
 ```
 
 or
 
 ```shell
-$ yarn add @tsparticles/angular tsparticles-engine
+$ yarn add ng-particles tsparticles-engine
 ```
 
 ### Usage
@@ -150,7 +150,7 @@ export class AppComponent {
 _app.module.ts_
 
 ```typescript
-import { ParticlesModule } from "@tsparticles/angular";
+import { ParticlesModule } from "ng-particles";
 import { NgModule } from "@angular/core";
 
 @NgModule({
