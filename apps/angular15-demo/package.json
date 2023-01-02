@@ -19,7 +19,7 @@
         "@angular/platform-browser": "~15.0.4",
         "@angular/platform-browser-dynamic": "~15.0.4",
         "@angular/router": "~15.0.4",
-        "@tsparticles/angular": "^2.7.1",
+        "ng-particles": "^3.7.1",
         "rxjs": "~7.8.0",
         "tslib": "^2.4.1",
         "tsparticles": "^2.7.1",

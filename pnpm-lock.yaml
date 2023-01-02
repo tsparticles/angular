@@ -14,7 +14,7 @@ importers:
       husky: 8.0.2
       lerna: 6.3.0
 
-  apps/angular-demo:
+  apps/angular15-demo:
     specifiers:
       '@angular-devkit/build-angular': ~15.0.4
       '@angular/animations': ~15.0.4
@@ -27,7 +27,6 @@ importers:
       '@angular/platform-browser': ~15.0.4
       '@angular/platform-browser-dynamic': ~15.0.4
       '@angular/router': ~15.0.4
-      '@tsparticles/angular': ^2.7.1
       '@types/jasmine': ~4.3.1
       '@types/node': ^18.11.17
       jasmine-core: ~4.5.0
@@ -36,6 +35,7 @@ importers:
       karma-coverage: ~2.2.0
       karma-jasmine: ~5.1.0
       karma-jasmine-html-reporter: ~2.0.0
+      ng-particles: ^3.7.1
       rxjs: ~7.8.0
       tslib: ^2.4.1
       tsparticles: ^2.7.1
@@ -92,7 +92,7 @@ importers:
       '@angular/platform-browser': 15.0.4_bwwplqn6fknm3semymfqlvw5bm
       '@angular/platform-browser-dynamic': 15.0.4_hnn6v3m7xpfwy5wugozvutqsyi
       '@angular/router': 15.0.4_xkplghntscucsztvq3p7ejhl3e
-      '@tsparticles/angular': link:../../components/angular15/dist/@tsparticles/angular
+      ng-particles: link:../../components/angular/dist/ng-particles
       rxjs: 7.8.0
       tslib: 2.4.1
       tsparticles: 2.7.1
@@ -179,7 +179,6 @@ importers:
       '@ionic/angular': ^6.4.1
       '@ionic/angular-toolkit': ^7.0.0
       '@ionic/core': ^6.4.1
-      '@tsparticles/angular': ^2.7.1
       '@types/jasmine': ~4.3.1
       '@types/jasminewd2': ~2.0.10
       '@types/node': ^18.11.17
@@ -198,6 +197,7 @@ importers:
       karma-coverage-istanbul-reporter: ~3.0.3
       karma-jasmine: ~5.1.0
       karma-jasmine-html-reporter: ^2.0.0
+      ng-particles: ^3.7.1
       protractor: ~7.0.0
       rxjs: ~7.8.0
       ts-node: ~10.9.1
@@ -261,8 +261,8 @@ importers:
       '@capacitor/status-bar': 4.1.1_@capacitor+core@4.6.1
       '@ionic/angular': 6.4.1_isydyuip4wcdcl7dfidx5obruy
       '@ionic/core': 6.4.1
-      '@tsparticles/angular': link:../../components/angular15/dist/@tsparticles/angular
       ionicons: 6.0.4
+      ng-particles: link:../../components/angular/dist/ng-particles
       rxjs: 7.8.0
       tslib: 2.4.1
       tsparticles: 2.7.1
@@ -342,7 +342,7 @@ importers:
       ts-node: 10.9.1_vqcafhj4xvr2nzknlrdklk55zm
       typescript: 4.8.4
 
-  components-legacy/angular:
+  components/angular:
     specifiers:
       '@angular-devkit/build-angular': ~15.0.4
       '@angular/animations': ~15.0.4
@@ -401,66 +401,6 @@ importers:
       prettier: 2.8.1
       typescript: 4.8.4
     publishDirectory: dist/ng-particles
-
-  components/angular15:
-    specifiers:
-      '@angular-devkit/build-angular': ~15.0.4
-      '@angular/animations': ~15.0.4
-      '@angular/cli': ~15.0.4
-      '@angular/common': ~15.0.4
-      '@angular/compiler': ~15.0.4
-      '@angular/compiler-cli': ~15.0.4
-      '@angular/core': ~15.0.4
-      '@angular/forms': ~15.0.4
-      '@angular/platform-browser': ~15.0.4
-      '@angular/platform-browser-dynamic': ~15.0.4
-      '@angular/router': ~15.0.4
-      '@tsparticles/prettier-config': ^1.5.0
-      '@types/jasmine': ~4.3.1
-      '@types/node': ^18.11.17
-      jasmine-core: ~4.5.0
-      karma: ~6.4.1
-      karma-chrome-launcher: ~3.1.1
-      karma-coverage: ~2.2.0
-      karma-jasmine: ~5.1.0
-      karma-jasmine-html-reporter: ~2.0.0
-      ng-packagr: ~15.0.3
-      prettier: ^2.8.1
-      rxjs: ~7.8.0
-      tslib: ^2.4.1
-      tsparticles-engine: ^2.7.1
-      typescript: ~4.8.4
-      zone.js: ~0.12.0
-    dependencies:
-      '@angular/animations': 15.0.4_@angular+core@15.0.4
-      '@angular/common': 15.0.4_2kx3gifw2v5d4j22ydwztvu5ey
-      '@angular/compiler': 15.0.4_@angular+core@15.0.4
-      '@angular/core': 15.0.4_rxjs@7.8.0+zone.js@0.12.0
-      '@angular/forms': 15.0.4_xkplghntscucsztvq3p7ejhl3e
-      '@angular/platform-browser': 15.0.4_bwwplqn6fknm3semymfqlvw5bm
-      '@angular/platform-browser-dynamic': 15.0.4_hnn6v3m7xpfwy5wugozvutqsyi
-      '@angular/router': 15.0.4_xkplghntscucsztvq3p7ejhl3e
-      rxjs: 7.8.0
-      tslib: 2.4.1
-      tsparticles-engine: 2.7.1
-      zone.js: 0.12.0
-    devDependencies:
-      '@angular-devkit/build-angular': 15.0.4_cwfpjkpclwwhe5svnwtaijmth4
-      '@angular/cli': 15.0.4
-      '@angular/compiler-cli': 15.0.4_ewn2ril7hiljdjavj4fhvjxokq
-      '@tsparticles/prettier-config': 1.5.0_prettier@2.8.1
-      '@types/jasmine': 4.3.1
-      '@types/node': 18.11.18
-      jasmine-core: 4.5.0
-      karma: 6.4.1
-      karma-chrome-launcher: 3.1.1
-      karma-coverage: 2.2.0
-      karma-jasmine: 5.1.0_karma@6.4.1
-      karma-jasmine-html-reporter: 2.0.0_uk6l45dlsjldsnfgnal4othgyq
-      ng-packagr: 15.0.3_p32fiq4w6geq2sxp3yhgiz5jgi
-      prettier: 2.8.1
-      typescript: 4.8.4
-    publishDirectory: dist/@tsparticles/angular
 
 packages:
 
