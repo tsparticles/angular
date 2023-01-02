@@ -2,8 +2,7 @@
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
   "packages": [
     "apps/*",
-    "components/*",
-    "components-legacy/*"
+    "components/*"
   ],
   "useWorkspaces": true,
   "version": "2.7.1",
