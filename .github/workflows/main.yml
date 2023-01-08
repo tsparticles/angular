@@ -53,10 +53,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
       - run: pnpm install --no-frozen-lockfile
-      #- run: npx nx-cloud start-ci-run
-      - run: pnpm run prettify:ci:readme
-      - run: npx lerna run build:ci #--concurrency 3
-      #- run: npx nx-cloud stop-all-agents
+      #- run: pnpx nx-cloud start-ci-run
+      #- run: pnpm run prettify:ci:readme
+      - run: pnpx lerna run build:ci #--concurrency 3
+      #- run: pnpx nx-cloud stop-all-agents
   pr:
     runs-on: ubuntu-latest
     if: ${{ github.event_name == 'pull_request' }}
@@ -95,10 +95,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
       - run: pnpm install --no-frozen-lockfile
-      #- run: npx nx-cloud start-ci-run
-      - run: pnpm run prettify:ci:readme
-      - run: npx lerna run build:ci #--concurrency 3
-      #- run: npx nx-cloud stop-all-agents
+      #- run: pnpx nx-cloud start-ci-run
+      #- run: pnpm run prettify:ci:readme
+      - run: pnpx lerna run build:ci #--concurrency 3
+      #- run: pnpx nx-cloud stop-all-agents
       - run: echo ${{ github.repository_owner }}
       - run: echo ${{ github.actor }}
 
@@ -139,4 +139,4 @@ jobs:
 #            ${{ runner.os }}-pnpm-store-
 #      - run: pnpm install --no-frozen-lockfile
 #      - name: Start Nx Agent ${{ matrix.agent }}
-#        run: npx nx-cloud start-agent
+#        run: pnpx nx-cloud start-agent
