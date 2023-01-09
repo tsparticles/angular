@@ -1,5 +1,7 @@
 [![banner](https://particles.js.org/images/banner3.png)](https://particles.js.org)
 
+** This branch refers to the upcoming v3, for v2 documentation please refer to the [legacy branch](https://github.com/tsparticles/angular/tree/legacy) **
+
 # @tsparticles/angular15
 
 [![npm](https://img.shields.io/npm/v/@tsparticles/angular15)](https://www.npmjs.com/package/@tsparticles/angular15) [![npm](https://img.shields.io/npm/dm/@tsparticles/angular15)](https://www.npmjs.com/package/@tsparticles/angular15) [![GitHub Sponsors](https://img.shields.io/github/sponsors/matteobruni)](https://github.com/sponsors/matteobruni)
