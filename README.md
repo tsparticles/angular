@@ -1,6 +1,6 @@
 [![banner](https://particles.js.org/images/banner3.png)](https://particles.js.org)
 
-** This branch refers to the upcoming v3, for v2 documentation please refer to the [legacy branch](https://github.com/tsparticles/angular/tree/legacy) **
+**This branch refers to the upcoming v3, for v2 documentation please refer to the [legacy branch](https://github.com/tsparticles/angular/tree/legacy)**
 
 # @tsparticles/angular15
 
