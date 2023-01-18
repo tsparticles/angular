@@ -22,7 +22,7 @@
         "@tsparticles/angular15": "^2.8.0",
         "rxjs": "~7.8.0",
         "tslib": "^2.4.1",
-        "tsparticles": "^2.8.0",
+        "tsparticles": "^2.7.1",
         "tsparticles-demo-configs": "^2.8.0",
         "tsparticles-engine": "^2.8.0",
         "tsparticles-interaction-external-attract": "^2.8.0",
