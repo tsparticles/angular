@@ -16,20 +16,62 @@ importers:
 
   apps/angular15-demo:
     specifiers:
-      '@angular-devkit/build-angular': ~15.1.0
-      '@angular/animations': ~15.1.0
-      '@angular/cli': ~15.1.0
-      '@angular/common': ~15.1.0
-      '@angular/compiler': ~15.1.0
-      '@angular/compiler-cli': ~15.1.0
-      '@angular/core': ~15.1.0
-      '@angular/forms': ~15.1.0
-      '@angular/platform-browser': ~15.1.0
-      '@angular/platform-browser-dynamic': ~15.1.0
-      '@angular/router': ~15.1.0
+      '@angular-devkit/build-angular': ~15.1.2
+      '@angular/animations': ~15.1.1
+      '@angular/cli': ~15.1.2
+      '@angular/common': ~15.1.1
+      '@angular/compiler': ~15.1.1
+      '@angular/compiler-cli': ~15.1.1
+      '@angular/core': ~15.1.1
+      '@angular/forms': ~15.1.1
+      '@angular/platform-browser': ~15.1.1
+      '@angular/platform-browser-dynamic': ~15.1.1
+      '@angular/router': ~15.1.1
       '@tsparticles/angular15': ^2.8.0
+      '@tsparticles/demo-configs': ^3.0.0-alpha.0
+      '@tsparticles/engine': ^3.0.0-alpha.0
+      '@tsparticles/interaction-external-attract': ^3.0.0-alpha.0
+      '@tsparticles/interaction-external-bounce': ^3.0.0-alpha.0
+      '@tsparticles/interaction-external-bubble': ^3.0.0-alpha.0
+      '@tsparticles/interaction-external-connect': ^3.0.0-alpha.0
+      '@tsparticles/interaction-external-grab': ^3.0.0-alpha.0
+      '@tsparticles/interaction-external-pause': ^3.0.0-alpha.0
+      '@tsparticles/interaction-external-push': ^3.0.0-alpha.0
+      '@tsparticles/interaction-external-remove': ^3.0.0-alpha.0
+      '@tsparticles/interaction-external-repulse': ^3.0.0-alpha.0
+      '@tsparticles/interaction-external-slow': ^3.0.0-alpha.0
+      '@tsparticles/interaction-external-trail': ^3.0.0-alpha.0
+      '@tsparticles/interaction-particles-attract': ^3.0.0-alpha.0
+      '@tsparticles/interaction-particles-collisions': ^3.0.0-alpha.0
+      '@tsparticles/interaction-particles-links': ^3.0.0-alpha.0
+      '@tsparticles/move-base': ^3.0.0-alpha.0
+      '@tsparticles/move-parallax': ^3.0.0-alpha.0
+      '@tsparticles/pjs': ^3.0.0-alpha.0
+      '@tsparticles/plugin-absorbers': ^3.0.0-alpha.0
+      '@tsparticles/plugin-emitters': ^3.0.0-alpha.0
+      '@tsparticles/plugin-polygon-mask': ^3.0.0-alpha.0
+      '@tsparticles/shape-circle': ^3.0.0-alpha.0
+      '@tsparticles/shape-image': ^3.0.0-alpha.0
+      '@tsparticles/shape-line': ^3.0.0-alpha.0
+      '@tsparticles/shape-polygon': ^3.0.0-alpha.0
+      '@tsparticles/shape-square': ^3.0.0-alpha.0
+      '@tsparticles/shape-star': ^3.0.0-alpha.0
+      '@tsparticles/shape-text': ^3.0.0-alpha.0
+      '@tsparticles/slim': ^3.0.0-alpha.0
+      '@tsparticles/updater-angle': ^3.0.0-alpha.0
+      '@tsparticles/updater-color': ^3.0.0-alpha.0
+      '@tsparticles/updater-destroy': ^3.0.0-alpha.0
+      '@tsparticles/updater-life': ^3.0.0-alpha.0
+      '@tsparticles/updater-opacity': ^3.0.0-alpha.0
+      '@tsparticles/updater-out-modes': ^3.0.0-alpha.0
+      '@tsparticles/updater-roll': ^3.0.0-alpha.0
+      '@tsparticles/updater-size': ^3.0.0-alpha.0
+      '@tsparticles/updater-stroke-color': ^3.0.0-alpha.0
+      '@tsparticles/updater-tilt': ^3.0.0-alpha.0
+      '@tsparticles/updater-twinkle': ^3.0.0-alpha.0
+      '@tsparticles/updater-wobble': ^3.0.0-alpha.0
       '@types/jasmine': ~4.3.1
-      '@types/node': ^18.11.17
+      '@types/node': ^18.11.18
       jasmine-core: ~4.5.0
       karma: ~6.4.1
       karma-chrome-launcher: ~3.1.1
@@ -38,111 +80,69 @@ importers:
       karma-jasmine-html-reporter: ~2.0.0
       rxjs: ~7.8.0
       tslib: ^2.4.1
-      tsparticles: ^2.8.0
-      tsparticles-demo-configs: ^2.8.0
-      tsparticles-engine: ^2.8.0
-      tsparticles-interaction-external-attract: ^2.8.0
-      tsparticles-interaction-external-bounce: ^2.8.0
-      tsparticles-interaction-external-bubble: ^2.8.0
-      tsparticles-interaction-external-connect: ^2.8.0
-      tsparticles-interaction-external-grab: ^2.8.0
-      tsparticles-interaction-external-pause: ^2.8.0
-      tsparticles-interaction-external-push: ^2.8.0
-      tsparticles-interaction-external-remove: ^2.8.0
-      tsparticles-interaction-external-repulse: ^2.8.0
-      tsparticles-interaction-external-slow: ^2.8.0
-      tsparticles-interaction-external-trail: ^2.8.0
-      tsparticles-interaction-particles-attract: ^2.8.0
-      tsparticles-interaction-particles-collisions: ^2.8.0
-      tsparticles-interaction-particles-links: ^2.8.0
-      tsparticles-move-base: ^2.8.0
-      tsparticles-move-parallax: ^2.8.0
-      tsparticles-particles.js: ^2.8.0
-      tsparticles-plugin-absorbers: ^2.8.0
-      tsparticles-plugin-emitters: ^2.8.0
-      tsparticles-plugin-polygon-mask: ^2.8.0
-      tsparticles-shape-circle: ^2.8.0
-      tsparticles-shape-image: ^2.8.0
-      tsparticles-shape-line: ^2.8.0
-      tsparticles-shape-polygon: ^2.8.0
-      tsparticles-shape-square: ^2.8.0
-      tsparticles-shape-star: ^2.8.0
-      tsparticles-shape-text: ^2.8.0
-      tsparticles-slim: ^2.8.0
-      tsparticles-updater-angle: ^2.8.0
-      tsparticles-updater-color: ^2.8.0
-      tsparticles-updater-destroy: ^2.8.0
-      tsparticles-updater-life: ^2.8.0
-      tsparticles-updater-opacity: ^2.8.0
-      tsparticles-updater-out-modes: ^2.8.0
-      tsparticles-updater-roll: ^2.8.0
-      tsparticles-updater-size: ^2.8.0
-      tsparticles-updater-stroke-color: ^2.8.0
-      tsparticles-updater-tilt: ^2.8.0
-      tsparticles-updater-twinkle: ^2.8.0
-      tsparticles-updater-wobble: ^2.8.0
-      typescript: ~4.9.0
+      tsparticles: ^3.0.0-alpha.0
+      typescript: ~4.9.4
       zone.js: ~0.12.0
     dependencies:
-      '@angular/animations': 15.1.0_@angular+core@15.1.0
-      '@angular/common': 15.1.0_da7kisvgd6fwe32k5n7hd5z3wa
-      '@angular/compiler': 15.1.0_@angular+core@15.1.0
-      '@angular/core': 15.1.0_rxjs@7.8.0+zone.js@0.12.0
-      '@angular/forms': 15.1.0_shtnd5whtbyicxnxmafd6uxkza
-      '@angular/platform-browser': 15.1.0_eifxzngnnnjsj3jgsq7frmjnk4
-      '@angular/platform-browser-dynamic': 15.1.0_bjmxt24dowfhcklhftsg4zga3a
-      '@angular/router': 15.1.0_shtnd5whtbyicxnxmafd6uxkza
+      '@angular/animations': 15.1.1_@angular+core@15.1.1
+      '@angular/common': 15.1.1_atos3ivlarwg33grkhrhxpyfke
+      '@angular/compiler': 15.1.1_@angular+core@15.1.1
+      '@angular/core': 15.1.1_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/forms': 15.1.1_iaxnlggfwmbt7aywxhi6wdgvje
+      '@angular/platform-browser': 15.1.1_rxpvwy5ptuio6t6exix22goh4e
+      '@angular/platform-browser-dynamic': 15.1.1_hbzc5xw3mja47ogky4se7iwkze
+      '@angular/router': 15.1.1_iaxnlggfwmbt7aywxhi6wdgvje
       '@tsparticles/angular15': link:../../components/angular15/dist/@tsparticles/angular15
+      '@tsparticles/demo-configs': 3.0.0-alpha.0
+      '@tsparticles/engine': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-attract': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-bounce': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-bubble': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-connect': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-grab': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-pause': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-push': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-remove': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-repulse': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-slow': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-trail': 3.0.0-alpha.0
+      '@tsparticles/interaction-particles-attract': 3.0.0-alpha.0
+      '@tsparticles/interaction-particles-collisions': 3.0.0-alpha.0
+      '@tsparticles/interaction-particles-links': 3.0.0-alpha.0
+      '@tsparticles/move-base': 3.0.0-alpha.0
+      '@tsparticles/move-parallax': 3.0.0-alpha.0
+      '@tsparticles/pjs': 3.0.0-alpha.0
+      '@tsparticles/plugin-absorbers': 3.0.0-alpha.0
+      '@tsparticles/plugin-emitters': 3.0.0-alpha.0
+      '@tsparticles/plugin-polygon-mask': 3.0.0-alpha.0
+      '@tsparticles/shape-circle': 3.0.0-alpha.0
+      '@tsparticles/shape-image': 3.0.0-alpha.0
+      '@tsparticles/shape-line': 3.0.0-alpha.0
+      '@tsparticles/shape-polygon': 3.0.0-alpha.0
+      '@tsparticles/shape-square': 3.0.0-alpha.0
+      '@tsparticles/shape-star': 3.0.0-alpha.0
+      '@tsparticles/shape-text': 3.0.0-alpha.0
+      '@tsparticles/slim': 3.0.0-alpha.0
+      '@tsparticles/updater-angle': 3.0.0-alpha.0
+      '@tsparticles/updater-color': 3.0.0-alpha.0
+      '@tsparticles/updater-destroy': 3.0.0-alpha.0
+      '@tsparticles/updater-life': 3.0.0-alpha.0
+      '@tsparticles/updater-opacity': 3.0.0-alpha.0
+      '@tsparticles/updater-out-modes': 3.0.0-alpha.0
+      '@tsparticles/updater-roll': 3.0.0-alpha.0
+      '@tsparticles/updater-size': 3.0.0-alpha.0
+      '@tsparticles/updater-stroke-color': 3.0.0-alpha.0
+      '@tsparticles/updater-tilt': 3.0.0-alpha.0
+      '@tsparticles/updater-twinkle': 3.0.0-alpha.0
+      '@tsparticles/updater-wobble': 3.0.0-alpha.0
       rxjs: 7.8.0
       tslib: 2.4.1
-      tsparticles: 2.8.0
-      tsparticles-demo-configs: 2.8.0
-      tsparticles-engine: 2.8.0
-      tsparticles-interaction-external-attract: 2.8.0
-      tsparticles-interaction-external-bounce: 2.8.0
-      tsparticles-interaction-external-bubble: 2.8.0
-      tsparticles-interaction-external-connect: 2.8.0
-      tsparticles-interaction-external-grab: 2.8.0
-      tsparticles-interaction-external-pause: 2.8.0
-      tsparticles-interaction-external-push: 2.8.0
-      tsparticles-interaction-external-remove: 2.8.0
-      tsparticles-interaction-external-repulse: 2.8.0
-      tsparticles-interaction-external-slow: 2.8.0
-      tsparticles-interaction-external-trail: 2.8.0
-      tsparticles-interaction-particles-attract: 2.8.0
-      tsparticles-interaction-particles-collisions: 2.8.0
-      tsparticles-interaction-particles-links: 2.8.0
-      tsparticles-move-base: 2.8.0
-      tsparticles-move-parallax: 2.8.0
-      tsparticles-particles.js: 2.8.0
-      tsparticles-plugin-absorbers: 2.8.0
-      tsparticles-plugin-emitters: 2.8.0
-      tsparticles-plugin-polygon-mask: 2.8.0
-      tsparticles-shape-circle: 2.8.0
-      tsparticles-shape-image: 2.8.0
-      tsparticles-shape-line: 2.8.0
-      tsparticles-shape-polygon: 2.8.0
-      tsparticles-shape-square: 2.8.0
-      tsparticles-shape-star: 2.8.0
-      tsparticles-shape-text: 2.8.0
-      tsparticles-slim: 2.8.0
-      tsparticles-updater-angle: 2.8.0
-      tsparticles-updater-color: 2.8.0
-      tsparticles-updater-destroy: 2.8.0
-      tsparticles-updater-life: 2.8.0
-      tsparticles-updater-opacity: 2.8.0
-      tsparticles-updater-out-modes: 2.8.0
-      tsparticles-updater-roll: 2.8.0
-      tsparticles-updater-size: 2.8.0
-      tsparticles-updater-stroke-color: 2.8.0
-      tsparticles-updater-tilt: 2.8.0
-      tsparticles-updater-twinkle: 2.8.0
-      tsparticles-updater-wobble: 2.8.0
+      tsparticles: 3.0.0-alpha.0
       zone.js: 0.12.0
     devDependencies:
-      '@angular-devkit/build-angular': 15.1.1_7kplh36wy54vo3yupbajtw5pby
-      '@angular/cli': 15.1.1
-      '@angular/compiler-cli': 15.1.0_cw5pxmpaualxc53b5r24ke3psi
+      '@angular-devkit/build-angular': 15.1.2_sv7y4tz6xevf2fmgbnj5oigpei
+      '@angular/cli': 15.1.2
+      '@angular/compiler-cli': 15.1.1_6cdwpve3qxqoyywhwxcsrh7cpq
       '@types/jasmine': 4.3.1
       '@types/node': 18.11.18
       jasmine-core: 4.5.0
@@ -155,41 +155,83 @@ importers:
 
   apps/ionic-demo:
     specifiers:
-      '@angular-devkit/build-angular': ~15.1.0
+      '@angular-devkit/build-angular': ~15.1.2
       '@angular-eslint/builder': ~15.2.0
       '@angular-eslint/eslint-plugin': ~15.2.0
       '@angular-eslint/eslint-plugin-template': ~15.2.0
       '@angular-eslint/template-parser': ~15.2.0
-      '@angular/cli': ~15.1.0
-      '@angular/common': ~15.1.0
-      '@angular/compiler': ~15.1.0
-      '@angular/compiler-cli': ~15.1.0
-      '@angular/core': ~15.1.0
-      '@angular/forms': ~15.1.0
-      '@angular/language-service': ~15.1.0
-      '@angular/platform-browser': ~15.1.0
-      '@angular/platform-browser-dynamic': ~15.1.0
-      '@angular/router': ~15.1.0
+      '@angular/cli': ~15.1.2
+      '@angular/common': ~15.1.1
+      '@angular/compiler': ~15.1.1
+      '@angular/compiler-cli': ~15.1.1
+      '@angular/core': ~15.1.1
+      '@angular/forms': ~15.1.1
+      '@angular/language-service': ~15.1.1
+      '@angular/platform-browser': ~15.1.1
+      '@angular/platform-browser-dynamic': ~15.1.1
+      '@angular/router': ~15.1.1
       '@capacitor/app': ^4.1.1
-      '@capacitor/cli': ^4.6.1
-      '@capacitor/core': ^4.6.1
+      '@capacitor/cli': ^4.6.2
+      '@capacitor/core': ^4.6.2
       '@capacitor/haptics': ^4.1.0
-      '@capacitor/keyboard': ^4.1.0
+      '@capacitor/keyboard': ^4.1.1
       '@capacitor/status-bar': ^4.1.1
-      '@ionic/angular': ^6.4.1
+      '@ionic/angular': ^6.5.0
       '@ionic/angular-toolkit': ^7.0.0
-      '@ionic/core': ^6.4.1
+      '@ionic/core': ^6.5.0
       '@tsparticles/angular15': ^2.8.0
+      '@tsparticles/demo-configs': ^3.0.0-alpha.0
+      '@tsparticles/engine': ^3.0.0-alpha.0
+      '@tsparticles/interaction-external-attract': ^3.0.0-alpha.0
+      '@tsparticles/interaction-external-bounce': ^3.0.0-alpha.0
+      '@tsparticles/interaction-external-bubble': ^3.0.0-alpha.0
+      '@tsparticles/interaction-external-connect': ^3.0.0-alpha.0
+      '@tsparticles/interaction-external-grab': ^3.0.0-alpha.0
+      '@tsparticles/interaction-external-pause': ^3.0.0-alpha.0
+      '@tsparticles/interaction-external-push': ^3.0.0-alpha.0
+      '@tsparticles/interaction-external-remove': ^3.0.0-alpha.0
+      '@tsparticles/interaction-external-repulse': ^3.0.0-alpha.0
+      '@tsparticles/interaction-external-slow': ^3.0.0-alpha.0
+      '@tsparticles/interaction-external-trail': ^3.0.0-alpha.0
+      '@tsparticles/interaction-particles-attract': ^3.0.0-alpha.0
+      '@tsparticles/interaction-particles-collisions': ^3.0.0-alpha.0
+      '@tsparticles/interaction-particles-links': ^3.0.0-alpha.0
+      '@tsparticles/move-base': ^3.0.0-alpha.0
+      '@tsparticles/move-parallax': ^3.0.0-alpha.0
+      '@tsparticles/pjs': ^3.0.0-alpha.0
+      '@tsparticles/plugin-absorbers': ^3.0.0-alpha.0
+      '@tsparticles/plugin-emitters': ^3.0.0-alpha.0
+      '@tsparticles/plugin-polygon-mask': ^3.0.0-alpha.0
+      '@tsparticles/shape-circle': ^3.0.0-alpha.0
+      '@tsparticles/shape-image': ^3.0.0-alpha.0
+      '@tsparticles/shape-line': ^3.0.0-alpha.0
+      '@tsparticles/shape-polygon': ^3.0.0-alpha.0
+      '@tsparticles/shape-square': ^3.0.0-alpha.0
+      '@tsparticles/shape-star': ^3.0.0-alpha.0
+      '@tsparticles/shape-text': ^3.0.0-alpha.0
+      '@tsparticles/slim': ^3.0.0-alpha.0
+      '@tsparticles/updater-angle': ^3.0.0-alpha.0
+      '@tsparticles/updater-color': ^3.0.0-alpha.0
+      '@tsparticles/updater-destroy': ^3.0.0-alpha.0
+      '@tsparticles/updater-life': ^3.0.0-alpha.0
+      '@tsparticles/updater-opacity': ^3.0.0-alpha.0
+      '@tsparticles/updater-out-modes': ^3.0.0-alpha.0
+      '@tsparticles/updater-roll': ^3.0.0-alpha.0
+      '@tsparticles/updater-size': ^3.0.0-alpha.0
+      '@tsparticles/updater-stroke-color': ^3.0.0-alpha.0
+      '@tsparticles/updater-tilt': ^3.0.0-alpha.0
+      '@tsparticles/updater-twinkle': ^3.0.0-alpha.0
+      '@tsparticles/updater-wobble': ^3.0.0-alpha.0
       '@types/jasmine': ~4.3.1
       '@types/jasminewd2': ~2.0.10
-      '@types/node': ^18.11.17
-      '@typescript-eslint/eslint-plugin': ^5.47.0
-      '@typescript-eslint/parser': ^5.47.0
-      eslint: ^8.30.0
-      eslint-plugin-import: ^2.26.0
-      eslint-plugin-jsdoc: ^39.6.4
+      '@types/node': ^18.11.18
+      '@typescript-eslint/eslint-plugin': ^5.48.2
+      '@typescript-eslint/parser': ^5.48.2
+      eslint: ^8.32.0
+      eslint-plugin-import: ^2.27.5
+      eslint-plugin-jsdoc: ^39.6.7
       eslint-plugin-prefer-arrow: ^1.2.3
-      ionicons: ^6.0.4
+      ionicons: ^6.1.1
       jasmine-core: ~4.5.0
       jasmine-spec-reporter: ~7.0.0
       karma: ~6.4.1
@@ -202,123 +244,81 @@ importers:
       rxjs: ~7.8.0
       ts-node: ~10.9.1
       tslib: ^2.4.1
-      tsparticles: ^2.8.0
-      tsparticles-demo-configs: ^2.8.0
-      tsparticles-engine: ^2.8.0
-      tsparticles-interaction-external-attract: ^2.8.0
-      tsparticles-interaction-external-bounce: ^2.8.0
-      tsparticles-interaction-external-bubble: ^2.8.0
-      tsparticles-interaction-external-connect: ^2.8.0
-      tsparticles-interaction-external-grab: ^2.8.0
-      tsparticles-interaction-external-pause: ^2.8.0
-      tsparticles-interaction-external-push: ^2.8.0
-      tsparticles-interaction-external-remove: ^2.8.0
-      tsparticles-interaction-external-repulse: ^2.8.0
-      tsparticles-interaction-external-slow: ^2.8.0
-      tsparticles-interaction-external-trail: ^2.8.0
-      tsparticles-interaction-particles-attract: ^2.8.0
-      tsparticles-interaction-particles-collisions: ^2.8.0
-      tsparticles-interaction-particles-links: ^2.8.0
-      tsparticles-move-base: ^2.8.0
-      tsparticles-move-parallax: ^2.8.0
-      tsparticles-particles.js: ^2.8.0
-      tsparticles-plugin-absorbers: ^2.8.0
-      tsparticles-plugin-emitters: ^2.8.0
-      tsparticles-plugin-polygon-mask: ^2.8.0
-      tsparticles-shape-circle: ^2.8.0
-      tsparticles-shape-image: ^2.8.0
-      tsparticles-shape-line: ^2.8.0
-      tsparticles-shape-polygon: ^2.8.0
-      tsparticles-shape-square: ^2.8.0
-      tsparticles-shape-star: ^2.8.0
-      tsparticles-shape-text: ^2.8.0
-      tsparticles-slim: ^2.8.0
-      tsparticles-updater-angle: ^2.8.0
-      tsparticles-updater-color: ^2.8.0
-      tsparticles-updater-destroy: ^2.8.0
-      tsparticles-updater-life: ^2.8.0
-      tsparticles-updater-opacity: ^2.8.0
-      tsparticles-updater-out-modes: ^2.8.0
-      tsparticles-updater-roll: ^2.8.0
-      tsparticles-updater-size: ^2.8.0
-      tsparticles-updater-stroke-color: ^2.8.0
-      tsparticles-updater-tilt: ^2.8.0
-      tsparticles-updater-twinkle: ^2.8.0
-      tsparticles-updater-wobble: ^2.8.0
-      typescript: ~4.9.0
+      tsparticles: ^3.0.0-alpha.0
+      typescript: ~4.9.4
       zone.js: ~0.12.0
     dependencies:
-      '@angular/common': 15.1.0_da7kisvgd6fwe32k5n7hd5z3wa
-      '@angular/core': 15.1.0_rxjs@7.8.0+zone.js@0.12.0
-      '@angular/forms': 15.1.0_shtnd5whtbyicxnxmafd6uxkza
-      '@angular/platform-browser': 15.1.0_uqqi3gwqbwkizcyszoilo5fotm
-      '@angular/platform-browser-dynamic': 15.1.0_bjmxt24dowfhcklhftsg4zga3a
-      '@angular/router': 15.1.0_shtnd5whtbyicxnxmafd6uxkza
+      '@angular/common': 15.1.1_atos3ivlarwg33grkhrhxpyfke
+      '@angular/core': 15.1.1_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/forms': 15.1.1_iaxnlggfwmbt7aywxhi6wdgvje
+      '@angular/platform-browser': 15.1.1_cf2znwwzbqrks45m73dwryrkym
+      '@angular/platform-browser-dynamic': 15.1.1_hbzc5xw3mja47ogky4se7iwkze
+      '@angular/router': 15.1.1_iaxnlggfwmbt7aywxhi6wdgvje
       '@capacitor/app': 4.1.1_@capacitor+core@4.6.2
       '@capacitor/core': 4.6.2
       '@capacitor/haptics': 4.1.0_@capacitor+core@4.6.2
       '@capacitor/keyboard': 4.1.1_@capacitor+core@4.6.2
       '@capacitor/status-bar': 4.1.1_@capacitor+core@4.6.2
-      '@ionic/angular': 6.4.2_ft6ylzj2pp7out7rgzxsdjxltu
-      '@ionic/core': 6.4.2
+      '@ionic/angular': 6.5.0_2dfifpz2rk2h4y6nc2hl2lgc6m
+      '@ionic/core': 6.5.0
       '@tsparticles/angular15': link:../../components/angular15/dist/@tsparticles/angular15
-      ionicons: 6.1.0
+      '@tsparticles/demo-configs': 3.0.0-alpha.0
+      '@tsparticles/engine': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-attract': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-bounce': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-bubble': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-connect': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-grab': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-pause': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-push': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-remove': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-repulse': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-slow': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-trail': 3.0.0-alpha.0
+      '@tsparticles/interaction-particles-attract': 3.0.0-alpha.0
+      '@tsparticles/interaction-particles-collisions': 3.0.0-alpha.0
+      '@tsparticles/interaction-particles-links': 3.0.0-alpha.0
+      '@tsparticles/move-base': 3.0.0-alpha.0
+      '@tsparticles/move-parallax': 3.0.0-alpha.0
+      '@tsparticles/pjs': 3.0.0-alpha.0
+      '@tsparticles/plugin-absorbers': 3.0.0-alpha.0
+      '@tsparticles/plugin-emitters': 3.0.0-alpha.0
+      '@tsparticles/plugin-polygon-mask': 3.0.0-alpha.0
+      '@tsparticles/shape-circle': 3.0.0-alpha.0
+      '@tsparticles/shape-image': 3.0.0-alpha.0
+      '@tsparticles/shape-line': 3.0.0-alpha.0
+      '@tsparticles/shape-polygon': 3.0.0-alpha.0
+      '@tsparticles/shape-square': 3.0.0-alpha.0
+      '@tsparticles/shape-star': 3.0.0-alpha.0
+      '@tsparticles/shape-text': 3.0.0-alpha.0
+      '@tsparticles/slim': 3.0.0-alpha.0
+      '@tsparticles/updater-angle': 3.0.0-alpha.0
+      '@tsparticles/updater-color': 3.0.0-alpha.0
+      '@tsparticles/updater-destroy': 3.0.0-alpha.0
+      '@tsparticles/updater-life': 3.0.0-alpha.0
+      '@tsparticles/updater-opacity': 3.0.0-alpha.0
+      '@tsparticles/updater-out-modes': 3.0.0-alpha.0
+      '@tsparticles/updater-roll': 3.0.0-alpha.0
+      '@tsparticles/updater-size': 3.0.0-alpha.0
+      '@tsparticles/updater-stroke-color': 3.0.0-alpha.0
+      '@tsparticles/updater-tilt': 3.0.0-alpha.0
+      '@tsparticles/updater-twinkle': 3.0.0-alpha.0
+      '@tsparticles/updater-wobble': 3.0.0-alpha.0
+      ionicons: 6.1.1
       rxjs: 7.8.0
       tslib: 2.4.1
-      tsparticles: 2.8.0
-      tsparticles-demo-configs: 2.8.0
-      tsparticles-engine: 2.8.0
-      tsparticles-interaction-external-attract: 2.8.0
-      tsparticles-interaction-external-bounce: 2.8.0
-      tsparticles-interaction-external-bubble: 2.8.0
-      tsparticles-interaction-external-connect: 2.8.0
-      tsparticles-interaction-external-grab: 2.8.0
-      tsparticles-interaction-external-pause: 2.8.0
-      tsparticles-interaction-external-push: 2.8.0
-      tsparticles-interaction-external-remove: 2.8.0
-      tsparticles-interaction-external-repulse: 2.8.0
-      tsparticles-interaction-external-slow: 2.8.0
-      tsparticles-interaction-external-trail: 2.8.0
-      tsparticles-interaction-particles-attract: 2.8.0
-      tsparticles-interaction-particles-collisions: 2.8.0
-      tsparticles-interaction-particles-links: 2.8.0
-      tsparticles-move-base: 2.8.0
-      tsparticles-move-parallax: 2.8.0
-      tsparticles-particles.js: 2.8.0
-      tsparticles-plugin-absorbers: 2.8.0
-      tsparticles-plugin-emitters: 2.8.0
-      tsparticles-plugin-polygon-mask: 2.8.0
-      tsparticles-shape-circle: 2.8.0
-      tsparticles-shape-image: 2.8.0
-      tsparticles-shape-line: 2.8.0
-      tsparticles-shape-polygon: 2.8.0
-      tsparticles-shape-square: 2.8.0
-      tsparticles-shape-star: 2.8.0
-      tsparticles-shape-text: 2.8.0
-      tsparticles-slim: 2.8.0
-      tsparticles-updater-angle: 2.8.0
-      tsparticles-updater-color: 2.8.0
-      tsparticles-updater-destroy: 2.8.0
-      tsparticles-updater-life: 2.8.0
-      tsparticles-updater-opacity: 2.8.0
-      tsparticles-updater-out-modes: 2.8.0
-      tsparticles-updater-roll: 2.8.0
-      tsparticles-updater-size: 2.8.0
-      tsparticles-updater-stroke-color: 2.8.0
-      tsparticles-updater-tilt: 2.8.0
-      tsparticles-updater-twinkle: 2.8.0
-      tsparticles-updater-wobble: 2.8.0
+      tsparticles: 3.0.0-alpha.0
       zone.js: 0.12.0
     devDependencies:
-      '@angular-devkit/build-angular': 15.1.1_47bu7ddhigc3uimx5syafgcale
+      '@angular-devkit/build-angular': 15.1.2_vkzkdz5k555eml43heyagbjaiq
       '@angular-eslint/builder': 15.2.0_7uibuqfxkfaozanbtbziikiqje
       '@angular-eslint/eslint-plugin': 15.2.0_7uibuqfxkfaozanbtbziikiqje
       '@angular-eslint/eslint-plugin-template': 15.2.0_7uibuqfxkfaozanbtbziikiqje
       '@angular-eslint/template-parser': 15.2.0_7uibuqfxkfaozanbtbziikiqje
-      '@angular/cli': 15.1.1
-      '@angular/compiler': 15.1.0_@angular+core@15.1.0
-      '@angular/compiler-cli': 15.1.0_cw5pxmpaualxc53b5r24ke3psi
-      '@angular/language-service': 15.1.0
+      '@angular/cli': 15.1.2
+      '@angular/compiler': 15.1.1_@angular+core@15.1.1
+      '@angular/compiler-cli': 15.1.1_6cdwpve3qxqoyywhwxcsrh7cpq
+      '@angular/language-service': 15.1.1
       '@capacitor/cli': 4.6.2
       '@ionic/angular-toolkit': 7.0.0
       '@types/jasmine': 4.3.1
@@ -328,7 +328,7 @@ importers:
       '@typescript-eslint/parser': 5.48.2_7uibuqfxkfaozanbtbziikiqje
       eslint: 8.32.0
       eslint-plugin-import: 2.27.5_2l6piu6guil2f63lj3qmhzbnn4
-      eslint-plugin-jsdoc: 39.6.4_eslint@8.32.0
+      eslint-plugin-jsdoc: 39.6.7_eslint@8.32.0
       eslint-plugin-prefer-arrow: 1.2.3_eslint@8.32.0
       jasmine-core: 4.5.0
       jasmine-spec-reporter: 7.0.0
@@ -344,20 +344,21 @@ importers:
 
   components/angular15:
     specifiers:
-      '@angular-devkit/build-angular': ~15.1.1
-      '@angular/animations': ~15.1.0
-      '@angular/cli': ~15.1.1
-      '@angular/common': ~15.1.0
-      '@angular/compiler': ~15.1.0
-      '@angular/compiler-cli': ~15.1.0
-      '@angular/core': ~15.1.0
-      '@angular/forms': ~15.1.0
-      '@angular/platform-browser': ~15.1.0
-      '@angular/platform-browser-dynamic': ~15.1.0
-      '@angular/router': ~15.1.0
-      '@tsparticles/prettier-config': ^1.5.0
+      '@angular-devkit/build-angular': ~15.1.2
+      '@angular/animations': ~15.1.1
+      '@angular/cli': ~15.1.2
+      '@angular/common': ~15.1.1
+      '@angular/compiler': ~15.1.1
+      '@angular/compiler-cli': ~15.1.1
+      '@angular/core': ~15.1.1
+      '@angular/forms': ~15.1.1
+      '@angular/platform-browser': ~15.1.1
+      '@angular/platform-browser-dynamic': ~15.1.1
+      '@angular/router': ~15.1.1
+      '@tsparticles/engine': ^3.0.0-alpha.0
+      '@tsparticles/prettier-config': ^1.6.0
       '@types/jasmine': ~4.3.1
-      '@types/node': ^18.11.17
+      '@types/node': ^18.11.18
       jasmine-core: ~4.5.0
       karma: ~6.4.1
       karma-chrome-launcher: ~3.1.1
@@ -365,30 +366,29 @@ importers:
       karma-jasmine: ~5.1.0
       karma-jasmine-html-reporter: ~2.0.0
       ng-packagr: ~15.1.1
-      prettier: ^2.8.1
+      prettier: ^2.8.3
       rxjs: ~7.8.0
       tslib: ^2.4.1
-      tsparticles-engine: ^2.8.0
       typescript: ~4.9.4
       zone.js: ~0.12.0
     dependencies:
-      '@angular/animations': 15.1.0_@angular+core@15.1.0
-      '@angular/common': 15.1.0_da7kisvgd6fwe32k5n7hd5z3wa
-      '@angular/compiler': 15.1.0_@angular+core@15.1.0
-      '@angular/core': 15.1.0_rxjs@7.8.0+zone.js@0.12.0
-      '@angular/forms': 15.1.0_shtnd5whtbyicxnxmafd6uxkza
-      '@angular/platform-browser': 15.1.0_eifxzngnnnjsj3jgsq7frmjnk4
-      '@angular/platform-browser-dynamic': 15.1.0_bjmxt24dowfhcklhftsg4zga3a
-      '@angular/router': 15.1.0_shtnd5whtbyicxnxmafd6uxkza
+      '@angular/animations': 15.1.1_@angular+core@15.1.1
+      '@angular/common': 15.1.1_atos3ivlarwg33grkhrhxpyfke
+      '@angular/compiler': 15.1.1_@angular+core@15.1.1
+      '@angular/core': 15.1.1_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/forms': 15.1.1_iaxnlggfwmbt7aywxhi6wdgvje
+      '@angular/platform-browser': 15.1.1_rxpvwy5ptuio6t6exix22goh4e
+      '@angular/platform-browser-dynamic': 15.1.1_hbzc5xw3mja47ogky4se7iwkze
+      '@angular/router': 15.1.1_iaxnlggfwmbt7aywxhi6wdgvje
+      '@tsparticles/engine': 3.0.0-alpha.0
       rxjs: 7.8.0
       tslib: 2.4.1
-      tsparticles-engine: 2.8.0
       zone.js: 0.12.0
     devDependencies:
-      '@angular-devkit/build-angular': 15.1.1_krzx3zbwjz4hkga2rxxn2t7sxa
-      '@angular/cli': 15.1.1
-      '@angular/compiler-cli': 15.1.0_cw5pxmpaualxc53b5r24ke3psi
-      '@tsparticles/prettier-config': 1.5.0_prettier@2.8.3
+      '@angular-devkit/build-angular': 15.1.2_6kqdbyaiexdxadxabvgkhlau2e
+      '@angular/cli': 15.1.2
+      '@angular/compiler-cli': 15.1.1_6cdwpve3qxqoyywhwxcsrh7cpq
+      '@tsparticles/prettier-config': 1.6.0_prettier@2.8.3
       '@types/jasmine': 4.3.1
       '@types/node': 18.11.18
       jasmine-core: 4.5.0
@@ -397,7 +397,7 @@ importers:
       karma-coverage: 2.2.0
       karma-jasmine: 5.1.0_karma@6.4.1
       karma-jasmine-html-reporter: 2.0.0_uk6l45dlsjldsnfgnal4othgyq
-      ng-packagr: 15.1.1_ljapdfcip6aa7obnbw3yj23cci
+      ng-packagr: 15.1.1_mtuj3pfvptlk3xvqxf5p5xjcjq
       prettier: 2.8.3
       typescript: 4.9.4
     publishDirectory: dist/@tsparticles/angular15
@@ -412,28 +412,28 @@ packages:
       '@jridgewell/trace-mapping': 0.3.17
     dev: true
 
-  /@angular-devkit/architect/0.1501.1:
-    resolution: {integrity: sha512-2uDa/+nVGwQ5X6UJtB14V37SbD/64WSg0hKyX5z1yp6wYrSuk7PWV8hddIsiYM3aIT5wTGqfLil6NkV4G/BzQw==}
+  /@angular-devkit/architect/0.1501.2:
+    resolution: {integrity: sha512-AfORVGLN0FBIUXO3FkfGOKu+Gz6oJjF8Bu8cPn27duiI0wszxGNY3fATKwbSg7JcKx1oQS/G7RjyC5OiTA6a0Q==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     dependencies:
-      '@angular-devkit/core': 15.1.1
+      '@angular-devkit/core': 15.1.2
       rxjs: 6.6.7
     transitivePeerDependencies:
       - chokidar
     dev: true
 
-  /@angular-devkit/architect/0.1501.1_chokidar@3.5.3:
-    resolution: {integrity: sha512-2uDa/+nVGwQ5X6UJtB14V37SbD/64WSg0hKyX5z1yp6wYrSuk7PWV8hddIsiYM3aIT5wTGqfLil6NkV4G/BzQw==}
+  /@angular-devkit/architect/0.1501.2_chokidar@3.5.3:
+    resolution: {integrity: sha512-AfORVGLN0FBIUXO3FkfGOKu+Gz6oJjF8Bu8cPn27duiI0wszxGNY3fATKwbSg7JcKx1oQS/G7RjyC5OiTA6a0Q==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     dependencies:
-      '@angular-devkit/core': 15.1.1_chokidar@3.5.3
+      '@angular-devkit/core': 15.1.2_chokidar@3.5.3
       rxjs: 6.6.7
     transitivePeerDependencies:
       - chokidar
     dev: true
 
-  /@angular-devkit/build-angular/15.1.1_47bu7ddhigc3uimx5syafgcale:
-    resolution: {integrity: sha512-9eziOA4uZwIg8OYjebkKz/yqQ1WIqajGrXr/goaAKcKhr8BprWXs5NhkIzMrELekA/dZOkR6Gpwz8d/XwplCww==}
+  /@angular-devkit/build-angular/15.1.2_6kqdbyaiexdxadxabvgkhlau2e:
+    resolution: {integrity: sha512-8udBKfHo3c/hOuh6VB11UKQZcqbolcNW2smtM9HJMm3fcykvyFEIitoCyl/tgraST+14/kA4aiINdl4EQ4BanQ==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     peerDependencies:
       '@angular/compiler-cli': ^15.0.0
@@ -462,10 +462,10 @@ packages:
         optional: true
     dependencies:
       '@ampproject/remapping': 2.2.0
-      '@angular-devkit/architect': 0.1501.1_chokidar@3.5.3
-      '@angular-devkit/build-webpack': 0.1501.1_oc46zsvsns3nh7f43oasdmifbu
-      '@angular-devkit/core': 15.1.1_chokidar@3.5.3
-      '@angular/compiler-cli': 15.1.0_cw5pxmpaualxc53b5r24ke3psi
+      '@angular-devkit/architect': 0.1501.2_chokidar@3.5.3
+      '@angular-devkit/build-webpack': 0.1501.2_oc46zsvsns3nh7f43oasdmifbu
+      '@angular-devkit/core': 15.1.2_chokidar@3.5.3
+      '@angular/compiler-cli': 15.1.1_6cdwpve3qxqoyywhwxcsrh7cpq
       '@babel/core': 7.20.12
       '@babel/generator': 7.20.7
       '@babel/helper-annotate-as-pure': 7.18.6
@@ -476,7 +476,224 @@ packages:
       '@babel/runtime': 7.20.7
       '@babel/template': 7.20.7
       '@discoveryjs/json-ext': 0.5.7
-      '@ngtools/webpack': 15.1.1_ul7pjaoznl5r6e6627nril5qgq
+      '@ngtools/webpack': 15.1.2_ch4wfhytuw6jfbgajf7gcnun6m
+      ansi-colors: 4.1.3
+      autoprefixer: 10.4.13_postcss@8.4.21
+      babel-loader: 9.1.2_la66t7xldg4uecmyawueag5wkm
+      babel-plugin-istanbul: 6.1.1
+      browserslist: 4.21.4
+      cacache: 17.0.4
+      chokidar: 3.5.3
+      copy-webpack-plugin: 11.0.0_webpack@5.75.0
+      critters: 0.0.16
+      css-loader: 6.7.3_webpack@5.75.0
+      esbuild-wasm: 0.16.17
+      glob: 8.0.3
+      https-proxy-agent: 5.0.1
+      inquirer: 8.2.4
+      jsonc-parser: 3.2.0
+      karma: 6.4.1
+      karma-source-map-support: 1.4.0
+      less: 4.1.3
+      less-loader: 11.1.0_less@4.1.3+webpack@5.75.0
+      license-webpack-plugin: 4.0.2_webpack@5.75.0
+      loader-utils: 3.2.1
+      magic-string: 0.27.0
+      mini-css-extract-plugin: 2.7.2_webpack@5.75.0
+      ng-packagr: 15.1.1_mtuj3pfvptlk3xvqxf5p5xjcjq
+      open: 8.4.0
+      ora: 5.4.1
+      parse5-html-rewriting-stream: 6.0.1
+      piscina: 3.2.0
+      postcss: 8.4.21
+      postcss-loader: 7.0.2_6jdsrmfenkuhhw3gx4zvjlznce
+      resolve-url-loader: 5.0.0
+      rxjs: 6.6.7
+      sass: 1.57.1
+      sass-loader: 13.2.0_sass@1.57.1+webpack@5.75.0
+      semver: 7.3.8
+      source-map-loader: 4.0.1_webpack@5.75.0
+      source-map-support: 0.5.21
+      terser: 5.16.1
+      text-table: 0.2.0
+      tree-kill: 1.2.2
+      tslib: 2.4.1
+      typescript: 4.9.4
+      webpack: 5.75.0_esbuild@0.16.17
+      webpack-dev-middleware: 6.0.1_webpack@5.75.0
+      webpack-dev-server: 4.11.1_webpack@5.75.0
+      webpack-merge: 5.8.0
+      webpack-subresource-integrity: 5.1.0_webpack@5.75.0
+    optionalDependencies:
+      esbuild: 0.16.17
+    transitivePeerDependencies:
+      - '@swc/core'
+      - bluebird
+      - bufferutil
+      - debug
+      - fibers
+      - html-webpack-plugin
+      - node-sass
+      - sass-embedded
+      - supports-color
+      - uglify-js
+      - utf-8-validate
+      - webpack-cli
+    dev: true
+
+  /@angular-devkit/build-angular/15.1.2_sv7y4tz6xevf2fmgbnj5oigpei:
+    resolution: {integrity: sha512-8udBKfHo3c/hOuh6VB11UKQZcqbolcNW2smtM9HJMm3fcykvyFEIitoCyl/tgraST+14/kA4aiINdl4EQ4BanQ==}
+    engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
+    peerDependencies:
+      '@angular/compiler-cli': ^15.0.0
+      '@angular/localize': ^15.0.0
+      '@angular/platform-server': ^15.0.0
+      '@angular/service-worker': ^15.0.0
+      karma: ^6.3.0
+      ng-packagr: ^15.0.0
+      protractor: ^7.0.0
+      tailwindcss: ^2.0.0 || ^3.0.0
+      typescript: '>=4.8.2 <5.0'
+    peerDependenciesMeta:
+      '@angular/localize':
+        optional: true
+      '@angular/platform-server':
+        optional: true
+      '@angular/service-worker':
+        optional: true
+      karma:
+        optional: true
+      ng-packagr:
+        optional: true
+      protractor:
+        optional: true
+      tailwindcss:
+        optional: true
+    dependencies:
+      '@ampproject/remapping': 2.2.0
+      '@angular-devkit/architect': 0.1501.2_chokidar@3.5.3
+      '@angular-devkit/build-webpack': 0.1501.2_oc46zsvsns3nh7f43oasdmifbu
+      '@angular-devkit/core': 15.1.2_chokidar@3.5.3
+      '@angular/compiler-cli': 15.1.1_6cdwpve3qxqoyywhwxcsrh7cpq
+      '@babel/core': 7.20.12
+      '@babel/generator': 7.20.7
+      '@babel/helper-annotate-as-pure': 7.18.6
+      '@babel/plugin-proposal-async-generator-functions': 7.20.7_@babel+core@7.20.12
+      '@babel/plugin-transform-async-to-generator': 7.20.7_@babel+core@7.20.12
+      '@babel/plugin-transform-runtime': 7.19.6_@babel+core@7.20.12
+      '@babel/preset-env': 7.20.2_@babel+core@7.20.12
+      '@babel/runtime': 7.20.7
+      '@babel/template': 7.20.7
+      '@discoveryjs/json-ext': 0.5.7
+      '@ngtools/webpack': 15.1.2_ch4wfhytuw6jfbgajf7gcnun6m
+      ansi-colors: 4.1.3
+      autoprefixer: 10.4.13_postcss@8.4.21
+      babel-loader: 9.1.2_la66t7xldg4uecmyawueag5wkm
+      babel-plugin-istanbul: 6.1.1
+      browserslist: 4.21.4
+      cacache: 17.0.4
+      chokidar: 3.5.3
+      copy-webpack-plugin: 11.0.0_webpack@5.75.0
+      critters: 0.0.16
+      css-loader: 6.7.3_webpack@5.75.0
+      esbuild-wasm: 0.16.17
+      glob: 8.0.3
+      https-proxy-agent: 5.0.1
+      inquirer: 8.2.4
+      jsonc-parser: 3.2.0
+      karma: 6.4.1
+      karma-source-map-support: 1.4.0
+      less: 4.1.3
+      less-loader: 11.1.0_less@4.1.3+webpack@5.75.0
+      license-webpack-plugin: 4.0.2_webpack@5.75.0
+      loader-utils: 3.2.1
+      magic-string: 0.27.0
+      mini-css-extract-plugin: 2.7.2_webpack@5.75.0
+      open: 8.4.0
+      ora: 5.4.1
+      parse5-html-rewriting-stream: 6.0.1
+      piscina: 3.2.0
+      postcss: 8.4.21
+      postcss-loader: 7.0.2_6jdsrmfenkuhhw3gx4zvjlznce
+      resolve-url-loader: 5.0.0
+      rxjs: 6.6.7
+      sass: 1.57.1
+      sass-loader: 13.2.0_sass@1.57.1+webpack@5.75.0
+      semver: 7.3.8
+      source-map-loader: 4.0.1_webpack@5.75.0
+      source-map-support: 0.5.21
+      terser: 5.16.1
+      text-table: 0.2.0
+      tree-kill: 1.2.2
+      tslib: 2.4.1
+      typescript: 4.9.4
+      webpack: 5.75.0_esbuild@0.16.17
+      webpack-dev-middleware: 6.0.1_webpack@5.75.0
+      webpack-dev-server: 4.11.1_webpack@5.75.0
+      webpack-merge: 5.8.0
+      webpack-subresource-integrity: 5.1.0_webpack@5.75.0
+    optionalDependencies:
+      esbuild: 0.16.17
+    transitivePeerDependencies:
+      - '@swc/core'
+      - bluebird
+      - bufferutil
+      - debug
+      - fibers
+      - html-webpack-plugin
+      - node-sass
+      - sass-embedded
+      - supports-color
+      - uglify-js
+      - utf-8-validate
+      - webpack-cli
+    dev: true
+
+  /@angular-devkit/build-angular/15.1.2_vkzkdz5k555eml43heyagbjaiq:
+    resolution: {integrity: sha512-8udBKfHo3c/hOuh6VB11UKQZcqbolcNW2smtM9HJMm3fcykvyFEIitoCyl/tgraST+14/kA4aiINdl4EQ4BanQ==}
+    engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
+    peerDependencies:
+      '@angular/compiler-cli': ^15.0.0
+      '@angular/localize': ^15.0.0
+      '@angular/platform-server': ^15.0.0
+      '@angular/service-worker': ^15.0.0
+      karma: ^6.3.0
+      ng-packagr: ^15.0.0
+      protractor: ^7.0.0
+      tailwindcss: ^2.0.0 || ^3.0.0
+      typescript: '>=4.8.2 <5.0'
+    peerDependenciesMeta:
+      '@angular/localize':
+        optional: true
+      '@angular/platform-server':
+        optional: true
+      '@angular/service-worker':
+        optional: true
+      karma:
+        optional: true
+      ng-packagr:
+        optional: true
+      protractor:
+        optional: true
+      tailwindcss:
+        optional: true
+    dependencies:
+      '@ampproject/remapping': 2.2.0
+      '@angular-devkit/architect': 0.1501.2_chokidar@3.5.3
+      '@angular-devkit/build-webpack': 0.1501.2_oc46zsvsns3nh7f43oasdmifbu
+      '@angular-devkit/core': 15.1.2_chokidar@3.5.3
+      '@angular/compiler-cli': 15.1.1_6cdwpve3qxqoyywhwxcsrh7cpq
+      '@babel/core': 7.20.12
+      '@babel/generator': 7.20.7
+      '@babel/helper-annotate-as-pure': 7.18.6
+      '@babel/plugin-proposal-async-generator-functions': 7.20.7_@babel+core@7.20.12
+      '@babel/plugin-transform-async-to-generator': 7.20.7_@babel+core@7.20.12
+      '@babel/plugin-transform-runtime': 7.19.6_@babel+core@7.20.12
+      '@babel/preset-env': 7.20.2_@babel+core@7.20.12
+      '@babel/runtime': 7.20.7
+      '@babel/template': 7.20.7
+      '@discoveryjs/json-ext': 0.5.7
+      '@ngtools/webpack': 15.1.2_ch4wfhytuw6jfbgajf7gcnun6m
       ansi-colors: 4.1.3
       autoprefixer: 10.4.13_postcss@8.4.21
       babel-loader: 9.1.2_la66t7xldg4uecmyawueag5wkm
@@ -541,231 +758,14 @@ packages:
       - webpack-cli
     dev: true
 
-  /@angular-devkit/build-angular/15.1.1_7kplh36wy54vo3yupbajtw5pby:
-    resolution: {integrity: sha512-9eziOA4uZwIg8OYjebkKz/yqQ1WIqajGrXr/goaAKcKhr8BprWXs5NhkIzMrELekA/dZOkR6Gpwz8d/XwplCww==}
-    engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
-    peerDependencies:
-      '@angular/compiler-cli': ^15.0.0
-      '@angular/localize': ^15.0.0
-      '@angular/platform-server': ^15.0.0
-      '@angular/service-worker': ^15.0.0
-      karma: ^6.3.0
-      ng-packagr: ^15.0.0
-      protractor: ^7.0.0
-      tailwindcss: ^2.0.0 || ^3.0.0
-      typescript: '>=4.8.2 <5.0'
-    peerDependenciesMeta:
-      '@angular/localize':
-        optional: true
-      '@angular/platform-server':
-        optional: true
-      '@angular/service-worker':
-        optional: true
-      karma:
-        optional: true
-      ng-packagr:
-        optional: true
-      protractor:
-        optional: true
-      tailwindcss:
-        optional: true
-    dependencies:
-      '@ampproject/remapping': 2.2.0
-      '@angular-devkit/architect': 0.1501.1_chokidar@3.5.3
-      '@angular-devkit/build-webpack': 0.1501.1_oc46zsvsns3nh7f43oasdmifbu
-      '@angular-devkit/core': 15.1.1_chokidar@3.5.3
-      '@angular/compiler-cli': 15.1.0_cw5pxmpaualxc53b5r24ke3psi
-      '@babel/core': 7.20.12
-      '@babel/generator': 7.20.7
-      '@babel/helper-annotate-as-pure': 7.18.6
-      '@babel/plugin-proposal-async-generator-functions': 7.20.7_@babel+core@7.20.12
-      '@babel/plugin-transform-async-to-generator': 7.20.7_@babel+core@7.20.12
-      '@babel/plugin-transform-runtime': 7.19.6_@babel+core@7.20.12
-      '@babel/preset-env': 7.20.2_@babel+core@7.20.12
-      '@babel/runtime': 7.20.7
-      '@babel/template': 7.20.7
-      '@discoveryjs/json-ext': 0.5.7
-      '@ngtools/webpack': 15.1.1_ul7pjaoznl5r6e6627nril5qgq
-      ansi-colors: 4.1.3
-      autoprefixer: 10.4.13_postcss@8.4.21
-      babel-loader: 9.1.2_la66t7xldg4uecmyawueag5wkm
-      babel-plugin-istanbul: 6.1.1
-      browserslist: 4.21.4
-      cacache: 17.0.4
-      chokidar: 3.5.3
-      copy-webpack-plugin: 11.0.0_webpack@5.75.0
-      critters: 0.0.16
-      css-loader: 6.7.3_webpack@5.75.0
-      esbuild-wasm: 0.16.17
-      glob: 8.0.3
-      https-proxy-agent: 5.0.1
-      inquirer: 8.2.4
-      jsonc-parser: 3.2.0
-      karma: 6.4.1
-      karma-source-map-support: 1.4.0
-      less: 4.1.3
-      less-loader: 11.1.0_less@4.1.3+webpack@5.75.0
-      license-webpack-plugin: 4.0.2_webpack@5.75.0
-      loader-utils: 3.2.1
-      magic-string: 0.27.0
-      mini-css-extract-plugin: 2.7.2_webpack@5.75.0
-      open: 8.4.0
-      ora: 5.4.1
-      parse5-html-rewriting-stream: 6.0.1
-      piscina: 3.2.0
-      postcss: 8.4.21
-      postcss-loader: 7.0.2_6jdsrmfenkuhhw3gx4zvjlznce
-      resolve-url-loader: 5.0.0
-      rxjs: 6.6.7
-      sass: 1.57.1
-      sass-loader: 13.2.0_sass@1.57.1+webpack@5.75.0
-      semver: 7.3.8
-      source-map-loader: 4.0.1_webpack@5.75.0
-      source-map-support: 0.5.21
-      terser: 5.16.1
-      text-table: 0.2.0
-      tree-kill: 1.2.2
-      tslib: 2.4.1
-      typescript: 4.9.4
-      webpack: 5.75.0_esbuild@0.16.17
-      webpack-dev-middleware: 6.0.1_webpack@5.75.0
-      webpack-dev-server: 4.11.1_webpack@5.75.0
-      webpack-merge: 5.8.0
-      webpack-subresource-integrity: 5.1.0_webpack@5.75.0
-    optionalDependencies:
-      esbuild: 0.16.17
-    transitivePeerDependencies:
-      - '@swc/core'
-      - bluebird
-      - bufferutil
-      - debug
-      - fibers
-      - html-webpack-plugin
-      - node-sass
-      - sass-embedded
-      - supports-color
-      - uglify-js
-      - utf-8-validate
-      - webpack-cli
-    dev: true
-
-  /@angular-devkit/build-angular/15.1.1_krzx3zbwjz4hkga2rxxn2t7sxa:
-    resolution: {integrity: sha512-9eziOA4uZwIg8OYjebkKz/yqQ1WIqajGrXr/goaAKcKhr8BprWXs5NhkIzMrELekA/dZOkR6Gpwz8d/XwplCww==}
-    engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
-    peerDependencies:
-      '@angular/compiler-cli': ^15.0.0
-      '@angular/localize': ^15.0.0
-      '@angular/platform-server': ^15.0.0
-      '@angular/service-worker': ^15.0.0
-      karma: ^6.3.0
-      ng-packagr: ^15.0.0
-      protractor: ^7.0.0
-      tailwindcss: ^2.0.0 || ^3.0.0
-      typescript: '>=4.8.2 <5.0'
-    peerDependenciesMeta:
-      '@angular/localize':
-        optional: true
-      '@angular/platform-server':
-        optional: true
-      '@angular/service-worker':
-        optional: true
-      karma:
-        optional: true
-      ng-packagr:
-        optional: true
-      protractor:
-        optional: true
-      tailwindcss:
-        optional: true
-    dependencies:
-      '@ampproject/remapping': 2.2.0
-      '@angular-devkit/architect': 0.1501.1_chokidar@3.5.3
-      '@angular-devkit/build-webpack': 0.1501.1_oc46zsvsns3nh7f43oasdmifbu
-      '@angular-devkit/core': 15.1.1_chokidar@3.5.3
-      '@angular/compiler-cli': 15.1.0_cw5pxmpaualxc53b5r24ke3psi
-      '@babel/core': 7.20.12
-      '@babel/generator': 7.20.7
-      '@babel/helper-annotate-as-pure': 7.18.6
-      '@babel/plugin-proposal-async-generator-functions': 7.20.7_@babel+core@7.20.12
-      '@babel/plugin-transform-async-to-generator': 7.20.7_@babel+core@7.20.12
-      '@babel/plugin-transform-runtime': 7.19.6_@babel+core@7.20.12
-      '@babel/preset-env': 7.20.2_@babel+core@7.20.12
-      '@babel/runtime': 7.20.7
-      '@babel/template': 7.20.7
-      '@discoveryjs/json-ext': 0.5.7
-      '@ngtools/webpack': 15.1.1_ul7pjaoznl5r6e6627nril5qgq
-      ansi-colors: 4.1.3
-      autoprefixer: 10.4.13_postcss@8.4.21
-      babel-loader: 9.1.2_la66t7xldg4uecmyawueag5wkm
-      babel-plugin-istanbul: 6.1.1
-      browserslist: 4.21.4
-      cacache: 17.0.4
-      chokidar: 3.5.3
-      copy-webpack-plugin: 11.0.0_webpack@5.75.0
-      critters: 0.0.16
-      css-loader: 6.7.3_webpack@5.75.0
-      esbuild-wasm: 0.16.17
-      glob: 8.0.3
-      https-proxy-agent: 5.0.1
-      inquirer: 8.2.4
-      jsonc-parser: 3.2.0
-      karma: 6.4.1
-      karma-source-map-support: 1.4.0
-      less: 4.1.3
-      less-loader: 11.1.0_less@4.1.3+webpack@5.75.0
-      license-webpack-plugin: 4.0.2_webpack@5.75.0
-      loader-utils: 3.2.1
-      magic-string: 0.27.0
-      mini-css-extract-plugin: 2.7.2_webpack@5.75.0
-      ng-packagr: 15.1.1_ljapdfcip6aa7obnbw3yj23cci
-      open: 8.4.0
-      ora: 5.4.1
-      parse5-html-rewriting-stream: 6.0.1
-      piscina: 3.2.0
-      postcss: 8.4.21
-      postcss-loader: 7.0.2_6jdsrmfenkuhhw3gx4zvjlznce
-      resolve-url-loader: 5.0.0
-      rxjs: 6.6.7
-      sass: 1.57.1
-      sass-loader: 13.2.0_sass@1.57.1+webpack@5.75.0
-      semver: 7.3.8
-      source-map-loader: 4.0.1_webpack@5.75.0
-      source-map-support: 0.5.21
-      terser: 5.16.1
-      text-table: 0.2.0
-      tree-kill: 1.2.2
-      tslib: 2.4.1
-      typescript: 4.9.4
-      webpack: 5.75.0_esbuild@0.16.17
-      webpack-dev-middleware: 6.0.1_webpack@5.75.0
-      webpack-dev-server: 4.11.1_webpack@5.75.0
-      webpack-merge: 5.8.0
-      webpack-subresource-integrity: 5.1.0_webpack@5.75.0
-    optionalDependencies:
-      esbuild: 0.16.17
-    transitivePeerDependencies:
-      - '@swc/core'
-      - bluebird
-      - bufferutil
-      - debug
-      - fibers
-      - html-webpack-plugin
-      - node-sass
-      - sass-embedded
-      - supports-color
-      - uglify-js
-      - utf-8-validate
-      - webpack-cli
-    dev: true
-
-  /@angular-devkit/build-webpack/0.1501.1_oc46zsvsns3nh7f43oasdmifbu:
-    resolution: {integrity: sha512-b2Vyhx3JRHi179kSB/zc7G+/uuWq7S/7pZAau0Ry17N6Ihg2BwpLxBe0mvKcDecLmw+1ozBv2WLRCnxKXLZ4mw==}
+  /@angular-devkit/build-webpack/0.1501.2_oc46zsvsns3nh7f43oasdmifbu:
+    resolution: {integrity: sha512-FzslFvjuAabwtz2wMTCeemYCJA4NqRECz+WEsEZbtwESBMmKdaqmpbdW9ypsepB2iC7eIbHK43R95XAM75utTw==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     peerDependencies:
       webpack: ^5.30.0
       webpack-dev-server: ^4.0.0
     dependencies:
-      '@angular-devkit/architect': 0.1501.1_chokidar@3.5.3
+      '@angular-devkit/architect': 0.1501.2_chokidar@3.5.3
       rxjs: 6.6.7
       webpack: 5.75.0_esbuild@0.16.17
       webpack-dev-server: 4.11.1_webpack@5.75.0
@@ -789,8 +789,8 @@ packages:
       source-map: 0.7.4
     dev: true
 
-  /@angular-devkit/core/15.1.1:
-    resolution: {integrity: sha512-wss76zfw4oPHs+Dd0OIbLv8os/BXDkDErj9hCjBbycQN768EqF8z7EBNGy6SKHYhmfXJy9REUkEgt9qPMJb4CQ==}
+  /@angular-devkit/core/15.1.2:
+    resolution: {integrity: sha512-wkLZYvTZt30Ge6Z83Gxsr6mO1TIHCu3SImdE0zwW63EdU9o1NYkU74z1D9VUZ9Up7uHi1cHs/dssbxUuZ4eWOA==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     peerDependencies:
       chokidar: ^3.5.2
@@ -805,8 +805,8 @@ packages:
       source-map: 0.7.4
     dev: true
 
-  /@angular-devkit/core/15.1.1_chokidar@3.5.3:
-    resolution: {integrity: sha512-wss76zfw4oPHs+Dd0OIbLv8os/BXDkDErj9hCjBbycQN768EqF8z7EBNGy6SKHYhmfXJy9REUkEgt9qPMJb4CQ==}
+  /@angular-devkit/core/15.1.2_chokidar@3.5.3:
+    resolution: {integrity: sha512-wkLZYvTZt30Ge6Z83Gxsr6mO1TIHCu3SImdE0zwW63EdU9o1NYkU74z1D9VUZ9Up7uHi1cHs/dssbxUuZ4eWOA==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     peerDependencies:
       chokidar: ^3.5.2
@@ -835,11 +835,11 @@ packages:
       - chokidar
     dev: true
 
-  /@angular-devkit/schematics/15.1.1:
-    resolution: {integrity: sha512-ullwoxFT9aMhQR2aNwb/66A6l4HTgp4I6thbBywt86nn+ZGbJCzLKRdv2vmYh9JaxZYh1pydxWjKLEUdlycKXg==}
+  /@angular-devkit/schematics/15.1.2:
+    resolution: {integrity: sha512-HjJPm+4SS5TdAHHvdpXLv25wsvwVOn5RYs0A9MazTndlm80ct3PKeYUgakNDRFjRj8uORNlJMKmQIIhUSDjFsw==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     dependencies:
-      '@angular-devkit/core': 15.1.1
+      '@angular-devkit/core': 15.1.2
       jsonc-parser: 3.2.0
       magic-string: 0.27.0
       ora: 5.4.1
@@ -920,25 +920,25 @@ packages:
       - supports-color
     dev: true
 
-  /@angular/animations/15.1.0_@angular+core@15.1.0:
-    resolution: {integrity: sha512-uBw1iQVJ3QS5e/gypsD7M50O//9GvpphgGqt9ZClknyD8dxO/YryEB+Kt4GNvNQxRKhRTksD8r4KaodukdQ15w==}
+  /@angular/animations/15.1.1_@angular+core@15.1.1:
+    resolution: {integrity: sha512-oQrbO7uDsw1VcqhuSqvwQQPxEUjmssMM3nDbFUrs6A0MX7XIuhGnkB7mN35M6ZSd0Chj9DMzgbrYToPg1LoLHQ==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0}
     peerDependencies:
-      '@angular/core': 15.1.0
+      '@angular/core': 15.1.1
     dependencies:
-      '@angular/core': 15.1.0_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/core': 15.1.1_rxjs@7.8.0+zone.js@0.12.0
       tslib: 2.4.1
     dev: false
 
-  /@angular/cli/15.1.1:
-    resolution: {integrity: sha512-539I3B5yTasaX/EQrXZyXOc9eZUyVBxMWiGj3/bmlCsft7/Y8J+A92uftjxIO4P8lYWzSdSxFT3Bu1zI1b6yzw==}
+  /@angular/cli/15.1.2:
+    resolution: {integrity: sha512-h42k410W6PPnz9KjX8dCtruMqf1mHgIf7UWrLa8icKpk03U2SIgoJzaXgY/spSHiMGIdDnY1dAYKWV0GQS4zEg==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     hasBin: true
     dependencies:
-      '@angular-devkit/architect': 0.1501.1
-      '@angular-devkit/core': 15.1.1
-      '@angular-devkit/schematics': 15.1.1
-      '@schematics/angular': 15.1.1
+      '@angular-devkit/architect': 0.1501.2
+      '@angular-devkit/core': 15.1.2
+      '@angular-devkit/schematics': 15.1.2
+      '@schematics/angular': 15.1.2
       '@yarnpkg/lockfile': 1.1.0
       ansi-colors: 4.1.3
       ini: 3.0.1
@@ -959,27 +959,27 @@ packages:
       - supports-color
     dev: true
 
-  /@angular/common/15.1.0_da7kisvgd6fwe32k5n7hd5z3wa:
-    resolution: {integrity: sha512-O0JKOeJ7dFcd/mnnfm4xQOYTAc+yL+OrRpGte7z84lKPU2fupLpGW/30tHUy1TXixsANyTLC3cTVXTY5szPdqg==}
+  /@angular/common/15.1.1_atos3ivlarwg33grkhrhxpyfke:
+    resolution: {integrity: sha512-P4f2rK/YBQQT4clQrcQ9goLf53RS63Q1x2d1dvz7Syr3gcOUyxO7NZQ7Au5afzvbIKZ5Okd+X0+TCGV4q9wQjw==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0}
     peerDependencies:
-      '@angular/core': 15.1.0
+      '@angular/core': 15.1.1
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
-      '@angular/core': 15.1.0_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/core': 15.1.1_rxjs@7.8.0+zone.js@0.12.0
       rxjs: 7.8.0
       tslib: 2.4.1
     dev: false
 
-  /@angular/compiler-cli/15.1.0_cw5pxmpaualxc53b5r24ke3psi:
-    resolution: {integrity: sha512-mKeXolM/plP9ebkHy3YGxHx0Yg63d09S0QCpdIcmvrbJpaPeM2D1SAkbDpO46T4BsfgfWHtSYByb5JcesrYrpQ==}
+  /@angular/compiler-cli/15.1.1_6cdwpve3qxqoyywhwxcsrh7cpq:
+    resolution: {integrity: sha512-sBYvh6Y08aKuZPAVwzT1YGVfG63xeXElEfAfq6No9FLUHDo83QB9fU7ovXnu1RJFJiVIy16DHjmTpAmgvlomGA==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0}
     hasBin: true
     peerDependencies:
-      '@angular/compiler': 15.1.0
+      '@angular/compiler': 15.1.1
       typescript: '>=4.8.2 <5.0'
     dependencies:
-      '@angular/compiler': 15.1.0_@angular+core@15.1.0
+      '@angular/compiler': 15.1.1_@angular+core@15.1.1
       '@babel/core': 7.19.3
       '@jridgewell/sourcemap-codec': 1.4.14
       chokidar: 3.5.3
@@ -995,20 +995,20 @@ packages:
       - supports-color
     dev: true
 
-  /@angular/compiler/15.1.0_@angular+core@15.1.0:
-    resolution: {integrity: sha512-+ky5Cvgps725Q/KdgsYzi/fe9LbT5ujhZoT9N5k+tYTJsepMUrpExFwMFkWrdMUYTK7DaxC9ufjZ4WZmHVhFoA==}
+  /@angular/compiler/15.1.1_@angular+core@15.1.1:
+    resolution: {integrity: sha512-A35iXLTTDEej4F2tm5t1flA+5Tv+jYAkQx+d0xvH6LDiWvsiDsOe5OjP8L2LD8dejwWl/JYUz2TH0JZcvw0uqA==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0}
     peerDependencies:
-      '@angular/core': 15.1.0
+      '@angular/core': 15.1.1
     peerDependenciesMeta:
       '@angular/core':
         optional: true
     dependencies:
-      '@angular/core': 15.1.0_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/core': 15.1.1_rxjs@7.8.0+zone.js@0.12.0
       tslib: 2.4.1
 
-  /@angular/core/15.1.0_rxjs@7.8.0+zone.js@0.12.0:
-    resolution: {integrity: sha512-HiwctuR73MuLoLeP35j9xF8/SIg7ELx+iHZtp/TBfoH+LOmjWbdrAdVAPTbqnxvK0aJG+527dhgC6tBOXgBTcg==}
+  /@angular/core/15.1.1_rxjs@7.8.0+zone.js@0.12.0:
+    resolution: {integrity: sha512-nsz+IXdkQanAGhqA2vcwTrGGyw5zIm3TgtYQ/JqK185qkmlhsQfSRvdSPsFPhmIFYp9ngZVUbkhY3D4P3gDzIg==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0}
     peerDependencies:
       rxjs: ^6.5.3 || ^7.4.0
@@ -1018,88 +1018,88 @@ packages:
       tslib: 2.4.1
       zone.js: 0.12.0
 
-  /@angular/forms/15.1.0_shtnd5whtbyicxnxmafd6uxkza:
-    resolution: {integrity: sha512-MUAbruJng0iG/cHhCkDNrh31Y54upgBUjjkE4DnoHv138Wa7vba+GMYv2tTrs4rPWnB9vPziZgI0xIi/oSGxzg==}
+  /@angular/forms/15.1.1_iaxnlggfwmbt7aywxhi6wdgvje:
+    resolution: {integrity: sha512-1c/oZD+eSbGzDCcmC+hOqkPH+AzLOiGHxII5QiOOj8so8M958UBrsFBwrnLz06d9OK5Z4IrR4UL2JJspZNbpjw==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0}
     peerDependencies:
-      '@angular/common': 15.1.0
-      '@angular/core': 15.1.0
-      '@angular/platform-browser': 15.1.0
+      '@angular/common': 15.1.1
+      '@angular/core': 15.1.1
+      '@angular/platform-browser': 15.1.1
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
-      '@angular/common': 15.1.0_da7kisvgd6fwe32k5n7hd5z3wa
-      '@angular/core': 15.1.0_rxjs@7.8.0+zone.js@0.12.0
-      '@angular/platform-browser': 15.1.0_eifxzngnnnjsj3jgsq7frmjnk4
+      '@angular/common': 15.1.1_atos3ivlarwg33grkhrhxpyfke
+      '@angular/core': 15.1.1_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/platform-browser': 15.1.1_rxpvwy5ptuio6t6exix22goh4e
       rxjs: 7.8.0
       tslib: 2.4.1
     dev: false
 
-  /@angular/language-service/15.1.0:
-    resolution: {integrity: sha512-+Hup4pCxHQ/QQzS5AIhztMUwVplT//zv5AlG2jtS60CdxhaT2DwYyFiJkF+amIh4cryVh7Hd/eQs/TH055vUhA==}
+  /@angular/language-service/15.1.1:
+    resolution: {integrity: sha512-Wjn1t5ZjEuEJ3i2xdBArFadq4Aq7h95owiI1AcrjJ8/jjSHzszbTcQ1qs+FMKuq37A3pcpgXx6myekftRuNBkw==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0}
     dev: true
 
-  /@angular/platform-browser-dynamic/15.1.0_bjmxt24dowfhcklhftsg4zga3a:
-    resolution: {integrity: sha512-ukyycXkuu4Ah/35cbN4pEB91D2PK5eZVbJ+liCD6uRb4UI3X+QVg6Qz6MoIctVAlTV6tWK20T81zoux9SzWKsg==}
+  /@angular/platform-browser-dynamic/15.1.1_hbzc5xw3mja47ogky4se7iwkze:
+    resolution: {integrity: sha512-iCbvYduSGtyBWuQfTzm/MDZy7Rd5MNsjpknEtJ45nbjZzv9EL1tGo6qufaTgPXHP8Nbfcco/4UO9w84Gp5irLA==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0}
     peerDependencies:
-      '@angular/common': 15.1.0
-      '@angular/compiler': 15.1.0
-      '@angular/core': 15.1.0
-      '@angular/platform-browser': 15.1.0
+      '@angular/common': 15.1.1
+      '@angular/compiler': 15.1.1
+      '@angular/core': 15.1.1
+      '@angular/platform-browser': 15.1.1
     dependencies:
-      '@angular/common': 15.1.0_da7kisvgd6fwe32k5n7hd5z3wa
-      '@angular/compiler': 15.1.0_@angular+core@15.1.0
-      '@angular/core': 15.1.0_rxjs@7.8.0+zone.js@0.12.0
-      '@angular/platform-browser': 15.1.0_eifxzngnnnjsj3jgsq7frmjnk4
+      '@angular/common': 15.1.1_atos3ivlarwg33grkhrhxpyfke
+      '@angular/compiler': 15.1.1_@angular+core@15.1.1
+      '@angular/core': 15.1.1_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/platform-browser': 15.1.1_rxpvwy5ptuio6t6exix22goh4e
       tslib: 2.4.1
     dev: false
 
-  /@angular/platform-browser/15.1.0_eifxzngnnnjsj3jgsq7frmjnk4:
-    resolution: {integrity: sha512-yuJweAR+rJhWWHM4Im3Iy6S4+W3OtcVHijcqrxfVxiA9ZHbDw/jpYDi06ZZIgfnNyGWi5/BzJbHvxH3b0lAo5Q==}
+  /@angular/platform-browser/15.1.1_cf2znwwzbqrks45m73dwryrkym:
+    resolution: {integrity: sha512-U1MXowvyigmMpffsnMQI6e9gX7tA6Su7unY0pjN5u9wRYJIkEbKuFyVijguQ83bt+JK3ZBHXD0dvskYnscGUzg==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0}
     peerDependencies:
-      '@angular/animations': 15.1.0
-      '@angular/common': 15.1.0
-      '@angular/core': 15.1.0
+      '@angular/animations': 15.1.1
+      '@angular/common': 15.1.1
+      '@angular/core': 15.1.1
     peerDependenciesMeta:
       '@angular/animations':
         optional: true
     dependencies:
-      '@angular/animations': 15.1.0_@angular+core@15.1.0
-      '@angular/common': 15.1.0_da7kisvgd6fwe32k5n7hd5z3wa
-      '@angular/core': 15.1.0_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/common': 15.1.1_atos3ivlarwg33grkhrhxpyfke
+      '@angular/core': 15.1.1_rxjs@7.8.0+zone.js@0.12.0
       tslib: 2.4.1
     dev: false
 
-  /@angular/platform-browser/15.1.0_uqqi3gwqbwkizcyszoilo5fotm:
-    resolution: {integrity: sha512-yuJweAR+rJhWWHM4Im3Iy6S4+W3OtcVHijcqrxfVxiA9ZHbDw/jpYDi06ZZIgfnNyGWi5/BzJbHvxH3b0lAo5Q==}
+  /@angular/platform-browser/15.1.1_rxpvwy5ptuio6t6exix22goh4e:
+    resolution: {integrity: sha512-U1MXowvyigmMpffsnMQI6e9gX7tA6Su7unY0pjN5u9wRYJIkEbKuFyVijguQ83bt+JK3ZBHXD0dvskYnscGUzg==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0}
     peerDependencies:
-      '@angular/animations': 15.1.0
-      '@angular/common': 15.1.0
-      '@angular/core': 15.1.0
+      '@angular/animations': 15.1.1
+      '@angular/common': 15.1.1
+      '@angular/core': 15.1.1
     peerDependenciesMeta:
       '@angular/animations':
         optional: true
     dependencies:
-      '@angular/common': 15.1.0_da7kisvgd6fwe32k5n7hd5z3wa
-      '@angular/core': 15.1.0_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/animations': 15.1.1_@angular+core@15.1.1
+      '@angular/common': 15.1.1_atos3ivlarwg33grkhrhxpyfke
+      '@angular/core': 15.1.1_rxjs@7.8.0+zone.js@0.12.0
       tslib: 2.4.1
     dev: false
 
-  /@angular/router/15.1.0_shtnd5whtbyicxnxmafd6uxkza:
-    resolution: {integrity: sha512-78ItVVXOYdu/RRxruHwSmtNxEP2clx+afHKrkwc4e7/6uxVr4rl0VQhO6qHYme/bBtbLIcBZGJoSyoUg/xUSvQ==}
+  /@angular/router/15.1.1_iaxnlggfwmbt7aywxhi6wdgvje:
+    resolution: {integrity: sha512-5l1+6MzeJW01BeO8ZNfYe/TEVzxIHDKHWUrsmGE6oQW01LezG5LUjwR1T23YeR8G5zzRs/p+AU72wTn/aPGQHg==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0}
     peerDependencies:
-      '@angular/common': 15.1.0
-      '@angular/core': 15.1.0
-      '@angular/platform-browser': 15.1.0
+      '@angular/common': 15.1.1
+      '@angular/core': 15.1.1
+      '@angular/platform-browser': 15.1.1
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
-      '@angular/common': 15.1.0_da7kisvgd6fwe32k5n7hd5z3wa
-      '@angular/core': 15.1.0_rxjs@7.8.0+zone.js@0.12.0
-      '@angular/platform-browser': 15.1.0_eifxzngnnnjsj3jgsq7frmjnk4
+      '@angular/common': 15.1.1_atos3ivlarwg33grkhrhxpyfke
+      '@angular/core': 15.1.1_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/platform-browser': 15.1.1_rxpvwy5ptuio6t6exix22goh4e
       rxjs: 7.8.0
       tslib: 2.4.1
     dev: false
@@ -2810,8 +2810,8 @@ packages:
       - chokidar
     dev: true
 
-  /@ionic/angular/6.4.2_ft6ylzj2pp7out7rgzxsdjxltu:
-    resolution: {integrity: sha512-+t8dkxlnPLzbS0Xdxe+p6eLvRLVCWYPIJhfriNhb67OfdMBemWWizNlacf6UxWyZpH7j67kgOZnezAso2fNdgA==}
+  /@ionic/angular/6.5.0_2dfifpz2rk2h4y6nc2hl2lgc6m:
+    resolution: {integrity: sha512-zO9f3SKVFUlswxeEBu7bIfNbFJzQ6QoLrKTRpgzdbhKmDQp3+opKNYVXeGASaoycmxeJn2/ahmSzXJAPudoGmQ==}
     peerDependencies:
       '@angular/core': '>=12.0.0'
       '@angular/forms': '>=12.0.0'
@@ -2819,11 +2819,11 @@ packages:
       rxjs: '>=6.6.0'
       zone.js: '>=0.11.0'
     dependencies:
-      '@angular/core': 15.1.0_rxjs@7.8.0+zone.js@0.12.0
-      '@angular/forms': 15.1.0_shtnd5whtbyicxnxmafd6uxkza
-      '@angular/router': 15.1.0_shtnd5whtbyicxnxmafd6uxkza
-      '@ionic/core': 6.4.2
-      ionicons: 6.1.0
+      '@angular/core': 15.1.1_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/forms': 15.1.1_iaxnlggfwmbt7aywxhi6wdgvje
+      '@angular/router': 15.1.1_iaxnlggfwmbt7aywxhi6wdgvje
+      '@ionic/core': 6.5.0
+      ionicons: 6.1.1
       jsonc-parser: 3.2.0
       rxjs: 7.8.0
       tslib: 2.4.1
@@ -2841,11 +2841,11 @@ packages:
       - supports-color
     dev: true
 
-  /@ionic/core/6.4.2:
-    resolution: {integrity: sha512-X6lKIrVL68UC3HenkUpOMw2Wu6D+XN42EbBPJdKFxGiW8ozhpzYj8QMUcX6ESC7jk44CrpUN3GpHhb+Lrw78OA==}
+  /@ionic/core/6.5.0:
+    resolution: {integrity: sha512-vefrnd1WYZJnjSXwsY1sn3HJpBDKPGnwtO2US55Qrjz0d9HyUwocHgVvkvLAAKZG+LGErJbVeV8aTmdYEydRgg==}
     dependencies:
       '@stencil/core': 2.22.1
-      ionicons: 6.1.0
+      ionicons: 6.1.1
       tslib: 2.4.1
     dev: false
 
@@ -3736,15 +3736,15 @@ packages:
       write-file-atomic: 4.0.2
     dev: false
 
-  /@ngtools/webpack/15.1.1_ul7pjaoznl5r6e6627nril5qgq:
-    resolution: {integrity: sha512-pHkVE4IfIGcrIqxxrBQJV62GBqXF+LU4sPY5MLNWIfKSctW6AdTVoO9ilx8pclaFJkMLkPMbrmfGosYw47L+lg==}
+  /@ngtools/webpack/15.1.2_ch4wfhytuw6jfbgajf7gcnun6m:
+    resolution: {integrity: sha512-IxKPqyA5hiwUioAAptFaETF2TifH6cTGOc7qKYFxFgzK+llZtEBcNj3w9zrL5uCFnPHWDZqdIDhH3/WM4zBmkw==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     peerDependencies:
       '@angular/compiler-cli': ^15.0.0
       typescript: '>=4.8.2 <5.0'
       webpack: ^5.54.0
     dependencies:
-      '@angular/compiler-cli': 15.1.0_cw5pxmpaualxc53b5r24ke3psi
+      '@angular/compiler-cli': 15.1.1_6cdwpve3qxqoyywhwxcsrh7cpq
       typescript: 4.9.4
       webpack: 5.75.0_esbuild@0.16.17
     dev: true
@@ -4202,12 +4202,12 @@ packages:
       - chokidar
     dev: true
 
-  /@schematics/angular/15.1.1:
-    resolution: {integrity: sha512-Ujo4vt/r3WzIhGn2I2Lt3eOTWSsVxoXfcXxFRuxl3cil/9mH1X66hDTQ2DVYiXPFGcQMjcNaDwlQxyor4yGbqA==}
+  /@schematics/angular/15.1.2:
+    resolution: {integrity: sha512-PcAbjbWvaW3yKvcGCqHrlHm4BTwGuqr58czCASc49Hy6tJba+dRblYatzB0D1tzdJOTsa684Ghg7knCN86fHeg==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     dependencies:
-      '@angular-devkit/core': 15.1.1
-      '@angular-devkit/schematics': 15.1.1
+      '@angular-devkit/core': 15.1.2
+      '@angular-devkit/schematics': 15.1.2
       jsonc-parser: 3.2.0
     transitivePeerDependencies:
       - chokidar
@@ -4239,13 +4239,301 @@ packages:
   /@tsconfig/node16/1.0.3:
     resolution: {integrity: sha512-yOlFc+7UtL/89t2ZhjPvvB/DeAr3r+Dq58IgzsFkOAvVC6NMJXmCGjbptdXdR9qsX7pKcTL+s87FtYREi2dEEQ==}
 
-  /@tsparticles/prettier-config/1.5.0_prettier@2.8.3:
-    resolution: {integrity: sha512-72QyBjWldlX5VffbzqejeLNCqT7ELQdvuw/8qAf16Dgf9rL0TPhpRqYYXzpPCIBQ5kpY7NG3Xaz7uWk8V64r2Q==}
+  /@tsparticles/demo-configs/3.0.0-alpha.0:
+    resolution: {integrity: sha512-10U2y/+TSuguRVjIIGkzZYS4nnqKdGRPi8PAdqz/cGjnx4JTBFKqat2WgCzvslv7iTP196Kl6TZGpDbKp3hA+w==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/engine/3.0.0-alpha.0:
+    resolution: {integrity: sha512-+/YPFtb6p47Dbvwi5RWn4QPP2t4f6TTscatjWNvM2X6mR+gtzRF6S24u595fj/OqObfEA6Lpf1Z4E3+6FimADw==}
+    requiresBuild: true
+    dev: false
+
+  /@tsparticles/interaction-external-attract/3.0.0-alpha.0:
+    resolution: {integrity: sha512-KnYtZqCBO9ip7P0TeXAMmWQ0wTYlrpsCmfFf3aEDfTrwzTVaoelLqqgPHrXkD8v2uGkUxm+liT92eoRiGZvBZg==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/interaction-external-bounce/3.0.0-alpha.0:
+    resolution: {integrity: sha512-sqFOLkuzcx1SEu76ywyfftU9p6Cbbv+AZ7P3OvqfG1DYlkB18wRK0rR1t3Eg2pZbqzCAXnMmIUceALGkq5Mb3Q==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/interaction-external-bubble/3.0.0-alpha.0:
+    resolution: {integrity: sha512-8+CDsrSmg0Zeb4s8vN1jqIhs1FBRVoHHvm3Y2HGqyPu6smO11jZhsyNry5VSn3kXM6J/E07iUOd2Q4HqCyno7A==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/interaction-external-connect/3.0.0-alpha.0:
+    resolution: {integrity: sha512-XlNR0A1IPF0nO4IIcY/StRbbeRVZ5rf9UVlkm7kPSEH+S6XwoiTWzRRYy5D0Ni0Y3+kknjavHvg/ykjJzKRx8g==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/interaction-external-grab/3.0.0-alpha.0:
+    resolution: {integrity: sha512-hda4quTs4ceUETjDGSgsSx9RWC+8HpZv501xY5FBUCIFsbdTDYa/OEOSe218S7a/5bdHVxD+sglksQb2ecsHRw==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/interaction-external-pause/3.0.0-alpha.0:
+    resolution: {integrity: sha512-WZMVP00XfXmHkhnhnX+9xk8JhmF3JJ8ML1GHL8yLJOaGKienm0aEpC+keBtsEfxsRPOYZDPfXWRtoccTnd4VnA==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/interaction-external-push/3.0.0-alpha.0:
+    resolution: {integrity: sha512-0u/AtyWrGmj4F3yZczrLl+S9ZN+ydLnE9yn5Fv6/pEpo9/PN7yqU0BsOJXbzbX64Oh+jjg61XxPzzwGigbi/7w==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/interaction-external-remove/3.0.0-alpha.0:
+    resolution: {integrity: sha512-02voLHj/o8yiJlkeC5e4AcbW0IwruthSZ71xffzaPo/u7HEoTx1C3tI2anf93QzMzSz84A3sMqkTHxppYpBH3g==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/interaction-external-repulse/3.0.0-alpha.0:
+    resolution: {integrity: sha512-qAhASNsPjHZ24faC69yqgHgE1e6mjwgqBxqv7ywUBalkZagYqe5C8ZMxqlVqF3l0SvbP1mavpwTzNGcIKc4sEg==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/interaction-external-slow/3.0.0-alpha.0:
+    resolution: {integrity: sha512-16vJeXxYXZucRLj3dEdOQnKQMN4pkYZNKqGu3A8EFHqSqPEHWtsyuKqRjg03rUUSc9dKIqag56fZlvn0Ct5xuA==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/interaction-external-trail/3.0.0-alpha.0:
+    resolution: {integrity: sha512-AWNBrQJ5Zky32FRVI0T6V4sdiLlmRiGv2rauPAW39TdQAM9FQX9+8p58h6kp1am0smqrG9Oxw8ReF15oJTrohg==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/interaction-particles-attract/3.0.0-alpha.0:
+    resolution: {integrity: sha512-/hw9+EZZpc+wr4/Q3FYM4z+tmgC56x1eMjZESvIZ3zwDrDCStJdK02AqKngCwoekTtDgfQ3VZRfnXfm3PVCgGw==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/interaction-particles-collisions/3.0.0-alpha.0:
+    resolution: {integrity: sha512-FMZP/EixDaihMsYbGGrd1+WdyYgPoMI4Kw+SP6WlBJzLF0O5cKjTxcPnuMn/e3qyHWWIrz2bfa0YBfwf+dnG2g==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/interaction-particles-links/3.0.0-alpha.0:
+    resolution: {integrity: sha512-b319EW0FxmBb2NKap+VL2gPENv0KInFwugtXPNh+3dqoHLT7NQEIrBHGxXwkK2/FEktbb3Af8d+AM67UOCwkzg==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/move-base/3.0.0-alpha.0:
+    resolution: {integrity: sha512-aB23kr4q/n9a7cXOU/6wK7Wcf55cL5JKJth+4SRPiOJVoLIMicZbaNi2zCtoizOwr3RZrVaWSNKN7REu9mGPzQ==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/move-parallax/3.0.0-alpha.0:
+    resolution: {integrity: sha512-Q02a40A0iq6T9SaOSXceWbKrA6vARWwm1eJAwYKqWvC3HGWhLVpowIrWEPJ8p/ESbe6akEAO0kexmlhKhmBU/w==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/pjs/3.0.0-alpha.0:
+    resolution: {integrity: sha512-cdNcjaPoThlNopt0wYjwAFq2FvYpXqesCO7+GF+52uz9OHwulnkWOiOrYveG7C/P8fijV83fUwrsp8AgJw3DCg==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/plugin-absorbers/3.0.0-alpha.0:
+    resolution: {integrity: sha512-nTQcPFhCMeuFhfT+0cXS3MGkMlM8czRYssJNrlSuwNQQ2qAzg07E3pvZDZWqv27oLpQlcrmB12SVwgVr7h/+ZQ==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/plugin-easing-quad/3.0.0-alpha.0:
+    resolution: {integrity: sha512-1CMg3u+8PqBvVef+sr8fdq4l+sHpjlY3fZpywlSMLVF0BT7XxrDdANE4g6+ZpNGSUnhcNtJy2xWVFmrK088dgw==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/plugin-emitters/3.0.0-alpha.0:
+    resolution: {integrity: sha512-5Hg4u5O74/eHusgFWHBvXL5fa6CPqb40+prWrw8HwlHwkcesbvGEfY3OKjRJZdwwtc6gqGaGChp5d4x54z3TTg==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/plugin-polygon-mask/3.0.0-alpha.0:
+    resolution: {integrity: sha512-DQaN9qygwyeTBGT+WYqvOWbTyesbbNKWEN31Lv9AMYL7UmikwSe6I3C8eQLl4GEcp+EWYR9ksrxgaXMZL4DKBw==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/prettier-config/1.6.0_prettier@2.8.3:
+    resolution: {integrity: sha512-Aiyf98JUAFXUH7ndqHc4hF5AReTl1uj+Yiily+JV8Pvc5uFf7UC4jgmMdBSMc6Njqkhm2QE7BnbVwIytbeqnJA==}
     peerDependencies:
-      prettier: ^2.8.0
+      prettier: ^2.8.3
     dependencies:
       prettier: 2.8.3
     dev: true
+
+  /@tsparticles/shape-circle/3.0.0-alpha.0:
+    resolution: {integrity: sha512-aZ4e5xYy/Tqx7rUJq99wsZ7JMzIKkrUCTV7yKhXJUrYCDzvyUqMVltHtzECWY7semnfIB3JpqRUuFudXlodzuA==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/shape-image/3.0.0-alpha.0:
+    resolution: {integrity: sha512-++6WFNphsuqc8g8Ghv6xV+TUxv6Mq+rzV/NQwaIqt2vcjancHnCFK3XFpSdwaajXHYsRBLzQ/U9K6BzR8tu8xQ==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/shape-line/3.0.0-alpha.0:
+    resolution: {integrity: sha512-I921065zHX3uTTu3/MheK9hO9npL8Fzp6L5yTbgqGoh4ona0MGHj8P9/MKm7/VpCu3OXm6HFRBDVQN0vCcpKwg==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/shape-polygon/3.0.0-alpha.0:
+    resolution: {integrity: sha512-76Zoq+YyswcJ6whP1ApabRoCqN8OyU0RXaHuwI8o9HMfah7iyvPj5Kcnx8/lvREqKyo7iVa6Ix89wrFYSJu0lg==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/shape-square/3.0.0-alpha.0:
+    resolution: {integrity: sha512-1cXguRQcN6A8skAWA8zolX+QsMaUB8hciLlLrKqYrKXl5cH6ktPR3hR+tNVxGZu6W9KMLPQVZ/y4Is/7JOx/tA==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/shape-star/3.0.0-alpha.0:
+    resolution: {integrity: sha512-aziMNLCRmfZcOHknSlVqzrfAMPWXRf9Ve5s0rVJhkSqYPS1JUsWOAk7UCqXXt1GtXVB6jhRBnM+7CI5AdnBKng==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/shape-text/3.0.0-alpha.0:
+    resolution: {integrity: sha512-skaGi24aiT0jv0Aq2DyPTiILSCMjSKPcZ2aiU+04xAhZZjfL7IjbNhDX3t3FYkEPpJqXjA1zJoeLdFlzOMFB0g==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/slim/3.0.0-alpha.0:
+    resolution: {integrity: sha512-RqQFi+L9TyeejhO22yXqNny2o+n1TsNAq+yWlOrtF6VKxwTl229iFh/9VvBynTFyYJWNdx2BB7N+W5fxWlw7XQ==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-attract': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-bounce': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-bubble': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-connect': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-grab': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-pause': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-push': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-remove': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-repulse': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-slow': 3.0.0-alpha.0
+      '@tsparticles/interaction-particles-attract': 3.0.0-alpha.0
+      '@tsparticles/interaction-particles-collisions': 3.0.0-alpha.0
+      '@tsparticles/interaction-particles-links': 3.0.0-alpha.0
+      '@tsparticles/move-base': 3.0.0-alpha.0
+      '@tsparticles/move-parallax': 3.0.0-alpha.0
+      '@tsparticles/pjs': 3.0.0-alpha.0
+      '@tsparticles/plugin-easing-quad': 3.0.0-alpha.0
+      '@tsparticles/shape-circle': 3.0.0-alpha.0
+      '@tsparticles/shape-image': 3.0.0-alpha.0
+      '@tsparticles/shape-line': 3.0.0-alpha.0
+      '@tsparticles/shape-polygon': 3.0.0-alpha.0
+      '@tsparticles/shape-square': 3.0.0-alpha.0
+      '@tsparticles/shape-star': 3.0.0-alpha.0
+      '@tsparticles/shape-text': 3.0.0-alpha.0
+      '@tsparticles/updater-angle': 3.0.0-alpha.0
+      '@tsparticles/updater-color': 3.0.0-alpha.0
+      '@tsparticles/updater-life': 3.0.0-alpha.0
+      '@tsparticles/updater-opacity': 3.0.0-alpha.0
+      '@tsparticles/updater-out-modes': 3.0.0-alpha.0
+      '@tsparticles/updater-size': 3.0.0-alpha.0
+      '@tsparticles/updater-stroke-color': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/updater-angle/3.0.0-alpha.0:
+    resolution: {integrity: sha512-2LZ+jdq/STgDzbzMnDngbuz0wvue7uRtsOtsxrhUxgXoA+O9MjRPM++/TJxUgDE5yoiV4lSDYcUtmADaNuG8BQ==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/updater-color/3.0.0-alpha.0:
+    resolution: {integrity: sha512-9WI/SF0s69L+xVKAbGZbMchaiv3FtHWlNXF+ESAr3q+rkq954Ocsbx/R2OYggVpSfj05uGVC29W7sMQJkx4WOw==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/updater-destroy/3.0.0-alpha.0:
+    resolution: {integrity: sha512-v3a+NDNRd9U6HQ8MmepR19PK3J+np/FF6SLwqmUlinicKKoRMOve48rhcZWFKhWKq9wB9y92+fpI3W6quWLalQ==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/updater-life/3.0.0-alpha.0:
+    resolution: {integrity: sha512-GOk7ME+D70dCmci9Ey3rq9XJmYsgQKK17vqX3n++nfrCMeiUNyrDIltk6w5YEjCda6JbUTdAr6aZkvFAroyZKQ==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/updater-opacity/3.0.0-alpha.0:
+    resolution: {integrity: sha512-YnOlMYsCQ1cPuBvMW0iBxdHrvcwHw5wJh7+bGzXMGlaTu9tV4kBxOt7z+aTGgwPVXhO62LjgzdHMT566Zbwicw==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/updater-out-modes/3.0.0-alpha.0:
+    resolution: {integrity: sha512-ptc697qw6Gzb1ccEFj+zHD99Eo6WNJVCYCTWPmpgB8o7iPYwvycoHaugdsISa6o4O4O/fFhFqkRcWiADBJg5vw==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/updater-roll/3.0.0-alpha.0:
+    resolution: {integrity: sha512-NByy7/KZ8mBHcPcGEoix8CHWAwlUSNcRtjloJu1PttN9FNRPr4YmSwXIz4D6TQd6udG2ui+ZxB3fffZl/FJ5rA==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/updater-size/3.0.0-alpha.0:
+    resolution: {integrity: sha512-kLl2puJWZteDpijcp8QKE5SQn8T7fYcpYftSvrBp/vIAtaHlgFUt/T9FylqDkveipR5Een1HW3BRZZ9/obxFEQ==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/updater-stroke-color/3.0.0-alpha.0:
+    resolution: {integrity: sha512-O3DujEwXBdsTTEoHz7VsgrtjP732g97CJuJIzV75Jr8XA7izPJHdqSRg7XaW9fuBsPqEOPI7YhyXQ+aObkbRQw==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/updater-tilt/3.0.0-alpha.0:
+    resolution: {integrity: sha512-nJViwlF5VsNHL8tDEnmmB1x3d7CqBTTGDpZhtAUtDfY37k3e4ZWjN5nRPKkUuZMOIJ//CkY3pr2aeOgJVV7NrQ==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/updater-twinkle/3.0.0-alpha.0:
+    resolution: {integrity: sha512-Mi0/l75aJ61avxBaB986JjJhuL+6TWwau0Btd3ZTCsf0zwDxGjz3i48P92R975q6J56nABcoTXBQg6Nfui+/AQ==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
+
+  /@tsparticles/updater-wobble/3.0.0-alpha.0:
+    resolution: {integrity: sha512-3Vzh0CWwbvSYuDCf4JS7Gamtulc8HmxlHirJJO0EbuD5cJKeiICEIPoEhIB/nCjR8o1D8SXcC6oky0eb9y51uw==}
+    dependencies:
+      '@tsparticles/engine': 3.0.0-alpha.0
+    dev: false
 
   /@types/body-parser/1.19.2:
     resolution: {integrity: sha512-ALYone6pm6QmwZoAgeyNksccT9Q4AWZQ6PvfwR37GT6r6FWUPguq6sUmNGSMV2Wr761oQoBxwGGa6DR5o1DC9g==}
@@ -4287,13 +4575,13 @@ packages:
     resolution: {integrity: sha512-9K4zoImiZc3HlIp6AVUDE4CWYx22a+lhSZMYNpbjW04+YF0KWj4pJXnEMjdnFTiQibFFmElcsasJXDbdI/EPhA==}
     dependencies:
       '@types/eslint': 8.4.10
-      '@types/estree': 0.0.51
+      '@types/estree': 1.0.0
     dev: true
 
   /@types/eslint/8.4.10:
     resolution: {integrity: sha512-Sl/HOqN8NKPmhWo2VBEPm0nvHnu2LL3v9vKo8MEq0EtbJ4eVzGPl41VNPvn5E1i5poMk4/XD8UriLHpJvEP/Nw==}
     dependencies:
-      '@types/estree': 0.0.51
+      '@types/estree': 1.0.0
       '@types/json-schema': 7.0.11
     dev: true
 
@@ -5426,7 +5714,7 @@ packages:
     dependencies:
       '@npmcli/fs': 3.1.0
       fs-minipass: 3.0.0
-      glob: 8.0.3
+      glob: 8.1.0
       lru-cache: 7.14.1
       minipass: 4.0.0
       minipass-collect: 1.0.2
@@ -6641,8 +6929,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-jsdoc/39.6.4_eslint@8.32.0:
-    resolution: {integrity: sha512-fskvdLCfwmPjHb6e+xNGDtGgbF8X7cDwMtVLAP2WwSf9Htrx68OAx31BESBM1FAwsN2HTQyYQq7m4aW4Q4Nlag==}
+  /eslint-plugin-jsdoc/39.6.7_eslint@8.32.0:
+    resolution: {integrity: sha512-0mrzXrHvL2ZLe3QK9X0OEDy7Fs2cFQ/f1d1G5KHEGD+13D1qg56Iovq0uOkYf5bJlHiKPytWVgOOO9y7kLW3VA==}
     engines: {node: ^14 || ^16 || ^17 || ^18 || ^19}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0
@@ -7855,8 +8143,8 @@ packages:
       side-channel: 1.0.4
     dev: true
 
-  /ionicons/6.1.0:
-    resolution: {integrity: sha512-M9oOtCoVrKs181ULp0AhLFt//4+HRv6Q0SgTUTUW3+sV4ouj+vtPJjEukhchaSLv3vPfArGyajPcYcI5/xey2A==}
+  /ionicons/6.1.1:
+    resolution: {integrity: sha512-Qe6mx25DFNwA9UL1rhewI5StI3uD4+BqB2KdvLjyWhtvoUXwyAsmfHLZuDANAHQowIKtTt6BZCt5/g5NIQ635Q==}
     dependencies:
       '@stencil/core': 2.22.1
     dev: false
@@ -9220,7 +9508,7 @@ packages:
   /neo-async/2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
 
-  /ng-packagr/15.1.1_ljapdfcip6aa7obnbw3yj23cci:
+  /ng-packagr/15.1.1_mtuj3pfvptlk3xvqxf5p5xjcjq:
     resolution: {integrity: sha512-TT5JtYJkKuYnUaCIQH/ArE+D1xjpjWnQjvbfRxd6/wypi0nDfSYvq96CLd1zphgMOp+Ofd8Xyet0K73znygxCA==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0}
     hasBin: true
@@ -9233,7 +9521,7 @@ packages:
       tailwindcss:
         optional: true
     dependencies:
-      '@angular/compiler-cli': 15.1.0_cw5pxmpaualxc53b5r24ke3psi
+      '@angular/compiler-cli': 15.1.1_6cdwpve3qxqoyywhwxcsrh7cpq
       '@rollup/plugin-json': 6.0.0_rollup@3.10.0
       '@rollup/plugin-node-resolve': 15.0.1_rollup@3.10.0
       ajv: 8.12.0
@@ -11518,307 +11806,19 @@ packages:
   /tslib/2.4.1:
     resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==}
 
-  /tsparticles-demo-configs/2.8.0:
-    resolution: {integrity: sha512-nVF2+/V/jpsXTNIUxYPy3B/aVL8RkrNui6dDw0IGOyVY3kxlZvwRfYF0GJ2ryg/1j2E4e6WTNu73h6qOkI8ZfQ==}
+  /tsparticles/3.0.0-alpha.0:
+    resolution: {integrity: sha512-qTTbg0F98VvF8JILAgTRUe/8Svzy4bxF7dlFtI3Quh6Xub1dBg3z1CBEZF+dmcfxOdcaD3jt81V0GjSODFsocg==}
     dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-engine/2.8.0:
-    resolution: {integrity: sha512-r0cWKxefQkQCzU+RRG/82VQnl/fAkws27EuYIOKcnHiYsWnZYcX8iPiQs/qgDajP0haBSn4Vui8UbTCAwSFniw==}
-    requiresBuild: true
-    dev: false
-
-  /tsparticles-interaction-external-attract/2.8.0:
-    resolution: {integrity: sha512-9M0aiVcv6KmjlYFJO7YiNHMehLGsABY0fJjI8qW0zsNVDDWw7Cc7TVdjJUyoIPimmwQtX5WFkzBxO4+bEIVyVQ==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-interaction-external-bounce/2.8.0:
-    resolution: {integrity: sha512-6cMXiLxd7rb64kuOrlIzROnVWZwtfyl5imnH+9WpBeH5MAZF98XQnVZ09jfEByEmIg76yimQz2M4v10WCGG+dg==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-interaction-external-bubble/2.8.0:
-    resolution: {integrity: sha512-raz+PMzxhXO3j/DBIP69jwfIrJpCP0CR1wdczzDd2lpMFpAgI9VuGkIMmH/9/sbDbjRtYWzRsHWIikdkud8W1Q==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-interaction-external-connect/2.8.0:
-    resolution: {integrity: sha512-h21JkfP2VWPntkB0Cpu05JC5xRVDEyKmGIxHbBkTTRdI4AyUN9an9LXK6rlOsNB/FDK8hN4qaLuu/szUnf14ng==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-interaction-external-grab/2.8.0:
-    resolution: {integrity: sha512-V5LzHDCRx5KEYXUe6UKmc2sv+zPsg0ruzBaH4mjWW/KXZGofuCewF7v00GopPEMZJiq3kf24ERIu2XAnUxo9+g==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-interaction-external-pause/2.8.0:
-    resolution: {integrity: sha512-Y67sb2TRa0UGp9e5eJhEpwE9pXj+Fxc6D4bUHzmaubOM01HYBE/GsOLF0wH3JUUpkkSOCc4elXYpU8sN0N8zqQ==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-interaction-external-push/2.8.0:
-    resolution: {integrity: sha512-2IdfoQ/vIbK5XtwVq/s8MZKOckJJHx6ndGCrbvcJcrqecnIdJmbu+jIos7pilyHTDZQ/euN5O8zPpNU1xrow4g==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-interaction-external-remove/2.8.0:
-    resolution: {integrity: sha512-KkAdvevH5VHU0xJhyhsZ3Jq4I2qYA0U1EpDpuuHjnuRfs2nc7eVx/SFQ6RfEEuST0sOR1B8RNlvB6g1XKqcXXw==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-interaction-external-repulse/2.8.0:
-    resolution: {integrity: sha512-N2MnXhKZMDV3oIHuLs6yWxsNf018E2tk7+N+8wAd4cMGfB5kr3ygulCFrzQFxmRvAcl+pb+jwCOzLzE0Hq/fNw==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-interaction-external-slow/2.8.0:
-    resolution: {integrity: sha512-jzhShoTTtlxuhtGzEmjChP1kfnh4H7NNYkq3d61sI3culNIBVxjD67cMl9PMEe/0kqXoQb6E28O6Ncxk+lSrRw==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-interaction-external-trail/2.8.0:
-    resolution: {integrity: sha512-fmRdju4Wk8r2Xkye47vqHCl220cEHVvsM/ao99+XV+22XilETnnjRcE+s0bTspHTmmWCjtfejYW0qMNgPnYIdA==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-interaction-particles-attract/2.8.0:
-    resolution: {integrity: sha512-iF+jLdfReruIehkJfvopjAwOKESjb6OrNhoXhLoFR0a75/9LLu9/jhTEYWGUfagfcsHHT/jdbm0upn4kYRgYVQ==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-interaction-particles-collisions/2.8.0:
-    resolution: {integrity: sha512-jOpuYtXuwbpWhtiwQ2XqcW40gMeznsJnBaU9SpjiB/MVOgY+YNHO+1iu+Oi4teZx5lxkiI1n5gxSj6m4ngK+5Q==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-interaction-particles-links/2.8.0:
-    resolution: {integrity: sha512-f1kFbghNryC0avW8yUJyfkLOaulcJu2o4zfGuvqVt4U6iSyg3CAMyTIUR1BYrDFM2ij1gBEerdWo/QkpEZYS3w==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-move-base/2.8.0:
-    resolution: {integrity: sha512-+LA6sJ429gvPsto6iX8Xf2WK13FDcdAgjU5jKmSXqFouAdFfiClj+QM0jjnAS4LT5UYjter6twrjwFawXctj0w==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-move-parallax/2.8.0:
-    resolution: {integrity: sha512-1NZAQmTIMILvNDXF8l8wRcn3U5pM1Y9rk/zARzIVuIQ/EwSlSf21jqY/Koye11fjMwNB6AchEwEK2b1+76tsKQ==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-particles.js/2.8.0:
-    resolution: {integrity: sha512-jYAhWIlKkN6oBRROmeYCUTDF1roomVT1HtPpDFMzIXyVQo1t4Y90b0/Z/tw+FZpDd5KsVx95VWmogDCmyBGJww==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-plugin-absorbers/2.8.0:
-    resolution: {integrity: sha512-9P7yth/UDwYM8N93qBL6eLfM3u3YlJr0SDuYGfWvJmRwdLpZAImYFPBjPUgo8y95lRw43WoBj1JHD0nJLfvaZw==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-plugin-easing-quad/2.8.0:
-    resolution: {integrity: sha512-c0DoFzaYUrCcrybzTUJjhuBKaiyvpeIr3BzDBrLsOBJowXx7GShsIfQxlsSQGHQu4UaIqIkPhXrWAoLr1jE8XQ==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-plugin-emitters/2.8.0:
-    resolution: {integrity: sha512-3my+DcdQvf47j2XsUy2QRabb5vR/UIcqtzGNazNI9W0WdVUDCUF8vlhBkNji/D2jiUpCuKozzy3lb5uAFFCeYw==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-plugin-polygon-mask/2.8.0:
-    resolution: {integrity: sha512-MfhXDGe6Ap+dI8HFrHMOlMGZt4z7USkFxm6JiRoJIfqDyY1L0RrDqWSyNYzoOIkudygkVSvjkh9T1kszQiVeCw==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-shape-circle/2.8.0:
-    resolution: {integrity: sha512-mjBPnTakFZliBh9BZXtvHMjDR5CVst172XtypoMEwhqncal4Mp9rVAmGd43ctekQ/O45WB/2NykaGGLBkq4h7A==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-shape-image/2.8.0:
-    resolution: {integrity: sha512-59uB2jjq5KizzdB2PeL/TYsnezSgTM3dEtklgZoNPj3PsZnd8s/H3U5h3t7KrD2WurO1qktllbjf08FeQA6dJg==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-shape-line/2.8.0:
-    resolution: {integrity: sha512-jDLtFNk9LL/Zqh5NM2ttMVoT3dmrAev91g8cVCgyFEFqq59zbOblWpF9sdr7A8c6H9w+Exm+aToB5TI/led/uA==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-shape-polygon/2.8.0:
-    resolution: {integrity: sha512-ZnWks0m1Cp1594s4NcD5oxRavLxVqBy21UoTzYEg/Ee9o0hm9GbRPNmYbh0/WeAs5xqlfHPADKP7qnt8ReiTpw==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-shape-square/2.8.0:
-    resolution: {integrity: sha512-CRb3f19mybOQt2NvHytvAYfNOfQ3yQOTWQp/4xv+w/oRcVybYRHdhhcziDQ7VXtwHob0m8PbhDo4RnMZQb4/Eg==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-shape-star/2.8.0:
-    resolution: {integrity: sha512-Or8GIozZPx0J83cfHX3923/bHsQr6wqif6jMAm1922Dp00Ycx3RgRMo2Jcj25j17VGEfBtLyT6l0/H5WJarYvQ==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-shape-text/2.8.0:
-    resolution: {integrity: sha512-02h0fjGQ0LIzjiBG6hbcUqkntyIXzuFzPbi2d0EwXFLYdoMSR/EGr58vW7Mbq31ferDGN+mG2che2sqEsV8ZUw==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-slim/2.8.0:
-    resolution: {integrity: sha512-Ev9AIxxBvjzHgGLYaZNBtZsIRGEGef5CRD5KKVTUzDFCCuxwSw9UMdRFXSYpykdQw7+8Zp0yroTHJ/yW9+9Apw==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-      tsparticles-interaction-external-attract: 2.8.0
-      tsparticles-interaction-external-bounce: 2.8.0
-      tsparticles-interaction-external-bubble: 2.8.0
-      tsparticles-interaction-external-connect: 2.8.0
-      tsparticles-interaction-external-grab: 2.8.0
-      tsparticles-interaction-external-pause: 2.8.0
-      tsparticles-interaction-external-push: 2.8.0
-      tsparticles-interaction-external-remove: 2.8.0
-      tsparticles-interaction-external-repulse: 2.8.0
-      tsparticles-interaction-external-slow: 2.8.0
-      tsparticles-interaction-particles-attract: 2.8.0
-      tsparticles-interaction-particles-collisions: 2.8.0
-      tsparticles-interaction-particles-links: 2.8.0
-      tsparticles-move-base: 2.8.0
-      tsparticles-move-parallax: 2.8.0
-      tsparticles-particles.js: 2.8.0
-      tsparticles-plugin-easing-quad: 2.8.0
-      tsparticles-shape-circle: 2.8.0
-      tsparticles-shape-image: 2.8.0
-      tsparticles-shape-line: 2.8.0
-      tsparticles-shape-polygon: 2.8.0
-      tsparticles-shape-square: 2.8.0
-      tsparticles-shape-star: 2.8.0
-      tsparticles-shape-text: 2.8.0
-      tsparticles-updater-angle: 2.8.0
-      tsparticles-updater-color: 2.8.0
-      tsparticles-updater-life: 2.8.0
-      tsparticles-updater-opacity: 2.8.0
-      tsparticles-updater-out-modes: 2.8.0
-      tsparticles-updater-size: 2.8.0
-      tsparticles-updater-stroke-color: 2.8.0
-    dev: false
-
-  /tsparticles-updater-angle/2.8.0:
-    resolution: {integrity: sha512-MjBoTiUcdn2or9E5+zvrZmiRGlt1AtWenNCCLF1CKEAwLGPFZukJEFcXiH8iMyb4rNKAz8rHM/Em48DjkQGFwg==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-updater-color/2.8.0:
-    resolution: {integrity: sha512-L++4ZYabHzqEQlElSZ6dGAxGJKYeAjRB1YoQVKMJVDots0b9EMpT14s0ihpte/tsYE+cmHeoE5UTPm6FmeAZ4Q==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-updater-destroy/2.8.0:
-    resolution: {integrity: sha512-dFaPww0wBNEW4DzRIG883eFVrvV3FD7HsUF2M4UCtLpspRAwpVWuypTFoPhZXg9At8Tjh5ynWHZMx8tUzWHFYQ==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-updater-life/2.8.0:
-    resolution: {integrity: sha512-6v/RUmp7UkxqfAgAs4Iz0O9dUVjRjUpFkIvYa8n1sFRgj58k/7jlGPraIhzFRJ/OVC1pT1ev7c4oBDM0KK0QbA==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-updater-opacity/2.8.0:
-    resolution: {integrity: sha512-L5SQ9k/sH7hzOWqAzxckfSc096kaQeYe3aFKm8WJ8RhCV71rQle381roRhq9qtWfFS//2X+tzcjRDLhhR0jOmg==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-updater-out-modes/2.8.0:
-    resolution: {integrity: sha512-BWJKfCXYMmNbtaq3i2iYFppVeKAb2sAWa5r88uius9nwL4gx1XDFW72m6Sy2f6s9n2r5uhTkMyXNHUeUskJnag==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-updater-roll/2.8.0:
-    resolution: {integrity: sha512-+I51iWIrcIC1hl5mZL815QDy3VPymlIcK5Dj5SkizVYHSDYiW6aSeSXwdhyJg27Vh+QRbkSGUL0/5+QV8NUsWQ==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-updater-size/2.8.0:
-    resolution: {integrity: sha512-QnbRObqu3jh2TsblKqfgWlvh9Zt65yoBnGBKdE0ZM3fYF2UCUud8NEqXMd+SoYSHOi78nwRPndrssHCQNh8tqg==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-updater-stroke-color/2.8.0:
-    resolution: {integrity: sha512-wihEW5nPfMkqY0H2lxdTxjp7PcdLiJbVVIS43cvUz6bx239BvFv0ZsxNEfh/MNxtzj1Y7fRXhzoc5De02liOJA==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-updater-tilt/2.8.0:
-    resolution: {integrity: sha512-398ANj2ms9EPHyCqDmP8LNDBvw92vNP07nTt33hQvaFpAgi9u2gH70LgxTdCJil0+mPzW4602fPTD3WyfPCwPA==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-updater-twinkle/2.8.0:
-    resolution: {integrity: sha512-FL55hmZZ/bC4Ou8l8He3bK1rm3PXtjOCdEMpkktzKDcu/WAZ0tZGPNllFKOi1FZ5KovqVLDg42dJzPmGOpoXzg==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles-updater-wobble/2.8.0:
-    resolution: {integrity: sha512-aDQKFKypW+jz8pH0KK5C03/bvkCGStCxBn7Dc9qkVPmtnzyA7+0lRjvYQrTEliq2d1pm67oixmwvskX0jbzdSw==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-    dev: false
-
-  /tsparticles/2.8.0:
-    resolution: {integrity: sha512-TgIdmPU/leNK68n2dgu+lRsC3At0pbP0xP3SU9gLkMyJxXHlsvtTsFafR2q9PlD1FoAPxkBMBTwspysagCeFdA==}
-    dependencies:
-      tsparticles-engine: 2.8.0
-      tsparticles-interaction-external-trail: 2.8.0
-      tsparticles-plugin-absorbers: 2.8.0
-      tsparticles-plugin-emitters: 2.8.0
-      tsparticles-slim: 2.8.0
-      tsparticles-updater-destroy: 2.8.0
-      tsparticles-updater-roll: 2.8.0
-      tsparticles-updater-tilt: 2.8.0
-      tsparticles-updater-twinkle: 2.8.0
-      tsparticles-updater-wobble: 2.8.0
+      '@tsparticles/engine': 3.0.0-alpha.0
+      '@tsparticles/interaction-external-trail': 3.0.0-alpha.0
+      '@tsparticles/plugin-absorbers': 3.0.0-alpha.0
+      '@tsparticles/plugin-emitters': 3.0.0-alpha.0
+      '@tsparticles/slim': 3.0.0-alpha.0
+      '@tsparticles/updater-destroy': 3.0.0-alpha.0
+      '@tsparticles/updater-roll': 3.0.0-alpha.0
+      '@tsparticles/updater-tilt': 3.0.0-alpha.0
+      '@tsparticles/updater-twinkle': 3.0.0-alpha.0
+      '@tsparticles/updater-wobble': 3.0.0-alpha.0
     dev: false
 
   /tsutils/3.21.0_typescript@4.9.4:
