@@ -62,9 +62,9 @@
     "build:ci": "node scripts/prebuild.js && pnpm run prettify:ci:src && pnpm run prettify:ci:readme && ng build @tsparticles/angular15 --configuration production",
     "version": "pnpm run build && git add ./projects/@tsparticles/angular15/package.json",
     "prettify:ci:src": "prettier --check ./projects/@tsparticles/angular15/src/*",
-    "prettify:ci:readme": "prettier --check ./README.md && prettier --check ./traduction/*",
+    "prettify:ci:readme": "prettier --check ./README.md",
     "prettify:src": "prettier --write ./projects/@tsparticles/angular15/src/*",
-    "prettify:readme": "prettier --write ./README.md && prettier --write ./traduction/*",
+    "prettify:readme": "prettier --write ./README.md",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "prepack": "pnpm run build"
