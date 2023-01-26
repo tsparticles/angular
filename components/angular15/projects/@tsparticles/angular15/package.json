@@ -80,7 +80,7 @@
   "peerDependencies": {
     "@angular/common": ">=15.0.0",
     "@angular/core": ">=15.0.0",
-    "@tsparticles/engine": "^3.0.0-alpha.0",
+    "@tsparticles/engine": "^3.0.0-alpha.1",
     "rxjs": ">=7.0.0"
   },
   "dependencies": {
