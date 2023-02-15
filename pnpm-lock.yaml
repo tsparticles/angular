@@ -92,7 +92,7 @@ importers:
       '@angular/platform-browser': 15.0.4_bwwplqn6fknm3semymfqlvw5bm
       '@angular/platform-browser-dynamic': 15.0.4_hnn6v3m7xpfwy5wugozvutqsyi
       '@angular/router': 15.0.4_xkplghntscucsztvq3p7ejhl3e
-      ng-particles: link:../../components/angular/dist/ng-particles
+      ng-particles: link:../../components/angular15/dist/ng-particles
       rxjs: 7.8.0
       tslib: 2.4.1
       tsparticles: 2.9.3
@@ -262,7 +262,7 @@ importers:
       '@ionic/angular': 6.4.1_isydyuip4wcdcl7dfidx5obruy
       '@ionic/core': 6.4.1
       ionicons: 6.0.4
-      ng-particles: link:../../components/angular/dist/ng-particles
+      ng-particles: link:../../components/angular15/dist/ng-particles
       rxjs: 7.8.0
       tslib: 2.4.1
       tsparticles: 2.9.3
@@ -342,7 +342,7 @@ importers:
       ts-node: 10.9.1_vqcafhj4xvr2nzknlrdklk55zm
       typescript: 4.8.4
 
-  components/angular:
+  components/angular15:
     specifiers:
       '@angular-devkit/build-angular': ~15.0.4
       '@angular/animations': ~15.0.4
@@ -409,7 +409,7 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       '@jridgewell/gen-mapping': 0.1.1
-      '@jridgewell/trace-mapping': 0.3.9
+      '@jridgewell/trace-mapping': 0.3.17
     dev: true
 
   /@angular-devkit/architect/0.1500.4:
