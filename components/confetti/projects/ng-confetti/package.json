@@ -1,0 +1,13 @@
+{
+  "name": "ng-confetti",
+  "version": "2.9.3",
+  "peerDependencies": {
+    "@angular/common": "^15.1.0",
+    "@angular/core": "^15.1.0",
+    "tsparticles-confetti": "^2.9.3"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}
