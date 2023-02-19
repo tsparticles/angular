@@ -35,6 +35,8 @@ importers:
       karma-coverage: ~2.2.0
       karma-jasmine: ~5.1.0
       karma-jasmine-html-reporter: ~2.0.0
+      ng-confetti: ^2.9.3
+      ng-fireworks: ^2.9.3
       ng-particles: ^3.9.3
       rxjs: ~7.8.0
       tslib: ^2.4.1
@@ -92,6 +94,8 @@ importers:
       '@angular/platform-browser': 15.0.4_bwwplqn6fknm3semymfqlvw5bm
       '@angular/platform-browser-dynamic': 15.0.4_hnn6v3m7xpfwy5wugozvutqsyi
       '@angular/router': 15.0.4_xkplghntscucsztvq3p7ejhl3e
+      ng-confetti: link:../../components/confetti
+      ng-fireworks: link:../../components/fireworks
       ng-particles: link:../../components/particles/dist/ng-particles
       rxjs: 7.8.0
       tslib: 2.4.1
@@ -177,7 +181,7 @@ importers:
       '@capacitor/keyboard': ^4.1.0
       '@capacitor/status-bar': ^4.1.1
       '@ionic/angular': ^6.4.1
-      '@ionic/angular-toolkit': ^7.0.0
+      '@ionic/angular-toolkit': ^8.0.0
       '@ionic/core': ^6.4.1
       '@types/jasmine': ~4.3.1
       '@types/jasminewd2': ~2.0.10
@@ -320,7 +324,7 @@ importers:
       '@angular/compiler-cli': 15.0.4_ewn2ril7hiljdjavj4fhvjxokq
       '@angular/language-service': 15.0.4
       '@capacitor/cli': 4.6.1
-      '@ionic/angular-toolkit': 7.0.0
+      '@ionic/angular-toolkit': 8.0.0
       '@types/jasmine': 4.3.1
       '@types/jasminewd2': 2.0.10
       '@types/node': 18.11.18
@@ -379,6 +383,7 @@ importers:
       '@angular/router': 15.1.4_g7mjdvsmeszabti4mywkhjexwi
       rxjs: 7.8.0
       tslib: 2.4.1
+      tsparticles-confetti: 2.9.3
       zone.js: 0.12.0
     devDependencies:
       '@angular-devkit/build-angular': 15.1.5_qwgb7qyogajlv3tytiun75koii
@@ -392,7 +397,6 @@ importers:
       karma-jasmine: 5.1.0_karma@6.4.1
       karma-jasmine-html-reporter: 2.0.0_uk6l45dlsjldsnfgnal4othgyq
       ng-packagr: 15.1.2_s4pyx3b74owwujjek7au7smc7i
-      tsparticles-confetti: 2.9.3
       typescript: 4.9.5
 
   components/fireworks:
@@ -1023,22 +1027,6 @@ packages:
       - chokidar
     dev: true
 
-  /@angular-devkit/core/14.2.10:
-    resolution: {integrity: sha512-K4AO7mROTdbhQ7chtyQd6oPwmuL+BPUh+wn6Aq1qrmYJK4UZYFOPp8fi/Ehs8meCEeywtrssOPfrOE4Gsre9dg==}
-    engines: {node: ^14.15.0 || >=16.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
-    peerDependencies:
-      chokidar: ^3.5.2
-    peerDependenciesMeta:
-      chokidar:
-        optional: true
-    dependencies:
-      ajv: 8.11.0
-      ajv-formats: 2.1.1
-      jsonc-parser: 3.1.0
-      rxjs: 6.6.7
-      source-map: 0.7.4
-    dev: true
-
   /@angular-devkit/core/15.0.4:
     resolution: {integrity: sha512-4ITpRAevd652SxB+qNesIQ9qfbm7wT5UBU5kJOPPwGL77I21g8CQpkmV1n5VSacPvC9Zbz90feOWexf7w7JzcA==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
@@ -1103,19 +1091,6 @@ packages:
       jsonc-parser: 3.2.0
       rxjs: 6.6.7
       source-map: 0.7.4
-    dev: true
-
-  /@angular-devkit/schematics/14.2.10:
-    resolution: {integrity: sha512-MMp31KpJTwKHisXOq+6VOXYApq97hZxFaFmZk396X5aIFTCELUwjcezQDk+u2nEs5iK/COUfnN3plGcfJxYhQA==}
-    engines: {node: ^14.15.0 || >=16.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
-    dependencies:
-      '@angular-devkit/core': 14.2.10
-      jsonc-parser: 3.1.0
-      magic-string: 0.26.2
-      ora: 5.4.1
-      rxjs: 6.6.7
-    transitivePeerDependencies:
-      - chokidar
     dev: true
 
   /@angular-devkit/schematics/15.0.4:
@@ -4484,12 +4459,12 @@ packages:
     engines: {node: '>=6.9.0'}
     dev: false
 
-  /@ionic/angular-toolkit/7.0.0:
-    resolution: {integrity: sha512-9nVeGuGRO3sUYSVzcHmddPd9+C+XDW2BpRSxCqMK1MKLlfnnpVMP1TTf/IDQhBj+koHwBAQBj6voBSsFUzTKBg==}
+  /@ionic/angular-toolkit/8.0.0:
+    resolution: {integrity: sha512-IAAmU/0cHQkzxOaLdBUZ6NViroye4x5qRrelqRPSdoCSq4BIctw70j7VyH1F0RDFSQACry4h9ZDM3PAvqQ+PIg==}
     dependencies:
-      '@angular-devkit/core': 14.2.10
-      '@angular-devkit/schematics': 14.2.10
-      '@schematics/angular': 14.2.10
+      '@angular-devkit/core': 15.1.5
+      '@angular-devkit/schematics': 15.1.5
+      '@schematics/angular': 15.1.5
     transitivePeerDependencies:
       - chokidar
     dev: true
@@ -5310,17 +5285,6 @@ packages:
       estree-walker: 2.0.2
       picomatch: 2.3.1
       rollup: 3.8.1
-    dev: true
-
-  /@schematics/angular/14.2.10:
-    resolution: {integrity: sha512-YFTc/9QJdx422XcApizEcVLKoyknu8b9zHIlAepZCu7WkV8GPT0hvVEHQ7KBWys5aQ7pPZMT0JpZLeAz0F2xYQ==}
-    engines: {node: ^14.15.0 || >=16.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
-    dependencies:
-      '@angular-devkit/core': 14.2.10
-      '@angular-devkit/schematics': 14.2.10
-      jsonc-parser: 3.1.0
-    transitivePeerDependencies:
-      - chokidar
     dev: true
 
   /@schematics/angular/15.0.4:
@@ -9852,10 +9816,6 @@ packages:
     engines: {node: '>=6'}
     hasBin: true
 
-  /jsonc-parser/3.1.0:
-    resolution: {integrity: sha512-DRf0QjnNeCUds3xTjKlQQ3DpJD51GvDjJfnxUVWg6PZTo2otSm+slzNAxU/35hF8/oJIKoG9slq30JYOsF2azg==}
-    dev: true
-
   /jsonc-parser/3.2.0:
     resolution: {integrity: sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==}
 
@@ -10347,13 +10307,6 @@ packages:
   /lru-cache/7.14.1:
     resolution: {integrity: sha512-ysxwsnTKdAx96aTRdhDOCQfDgbHnt8SK0KY8SEjO0wHinhWOFTESbjVCMPbU1uGXg/ch4lifqx0wfjOawU2+WA==}
     engines: {node: '>=12'}
-
-  /magic-string/0.26.2:
-    resolution: {integrity: sha512-NzzlXpclt5zAbmo6h6jNc8zl2gNRGHvmsZW4IvZhTC4W7k4OlLP+S5YLussa/r3ixNT66KOQfNORlXHSOy/X4A==}
-    engines: {node: '>=12'}
-    dependencies:
-      sourcemap-codec: 1.4.8
-    dev: true
 
   /magic-string/0.26.7:
     resolution: {integrity: sha512-hX9XH3ziStPoPhJxLq1syWuZMxbDvGNbVchfrdCtanC7D13888bMFow61x8axrx+GfHLtVeAx2kxL7tTGRl+Ow==}
@@ -13389,7 +13342,7 @@ packages:
       tsparticles-updater-size: 2.9.3
       tsparticles-updater-tilt: 2.9.3
       tsparticles-updater-wobble: 2.9.3
-    dev: true
+    dev: false
 
   /tsparticles-demo-configs/2.9.3:
     resolution: {integrity: sha512-EHNJlS9DQWotZalZ1JmrcGpWBLcQdeuguFTlN40/WY1unkil1X7JcCSJxVh8Zv0cF4rvz6DTXeeOmNzNqhl2FQ==}
@@ -13400,6 +13353,7 @@ packages:
   /tsparticles-engine/2.9.3:
     resolution: {integrity: sha512-iAD8LyRH//kx10fDMm6AfQV6dRHs1ZacUUHqVwfutcqM4x1IV2ygpjk0X87LKCnBxYeIMG78+tlxXpnpwUccOg==}
     requiresBuild: true
+    dev: false
 
   /tsparticles-fireworks/2.9.3:
     resolution: {integrity: sha512-NcHL1mcLNgrRAfypQnQoTOTcvqp45vNex8+cDqDjB3tBUXI8yYy8Fm9W9KtJfnegTYFPjkjrOhYwDxz57kc0fA==}
@@ -13508,6 +13462,7 @@ packages:
     resolution: {integrity: sha512-6/uO7N9HbVJokG8sjPF8YjJzkcnwELoZEkaiABX0mGxdICYCyjpjOdOfwF7UCf8Ctqh2/kxQjv4fk0Aj2Z3nag==}
     dependencies:
       tsparticles-engine: 2.9.3
+    dev: false
 
   /tsparticles-move-parallax/2.9.3:
     resolution: {integrity: sha512-uFqtEtCWabC7XZLZ7icIYYF9XB2XfedT8rjcLtyuBymQX8pfMJ5HUtd3ONI6Cik7I+BtqOfAkuZqTDcBTs7zlA==}
@@ -13537,12 +13492,13 @@ packages:
     resolution: {integrity: sha512-G0rs7lL9xjbFGkWr+XDsDpyghTjiHq7oPAZyUe0c/3p0JETwQgZ63/egluYU1p3uWJj34KjgjHD3GZqjyfI95Q==}
     dependencies:
       tsparticles-engine: 2.9.3
+    dev: false
 
   /tsparticles-plugin-motion/2.9.3:
     resolution: {integrity: sha512-VUDhNO5PTCkub392FPFDEri1hTpUFJDFMUuLF537gUlpft57lgEtTetoNCyR/6q9gLl2M/jcMZgiQkFqLa1Qgg==}
     dependencies:
       tsparticles-engine: 2.9.3
-    dev: true
+    dev: false
 
   /tsparticles-plugin-polygon-mask/2.9.3:
     resolution: {integrity: sha512-3KB6ox6rCMb2nGLBBJ0hS6HKUCDS3NUeqlZqHo9VrSYOYWCWwoCFcQocD1vFxjEIPM6nLLyeRI5gVX9gfKprgw==}
@@ -13560,23 +13516,25 @@ packages:
     resolution: {integrity: sha512-1agei5hqZ6xsn8UAEnCvlGZcoTTgy9Dle2sDpFBR17KxRmtJkD/XgtQrDv9xWiB6JIG5FiLpGXDGR65KgeEKyA==}
     dependencies:
       tsparticles-engine: 2.9.3
-    dev: true
+    dev: false
 
   /tsparticles-shape-circle/2.9.3:
     resolution: {integrity: sha512-d+PjFELhoCzPf2G+XKIew3Ho/Ql2fHzY0TrrIKVHzHufqWdQCWrhxNri2v0POLJFkcIYqvFThxM23I/cyKPgQw==}
     dependencies:
       tsparticles-engine: 2.9.3
+    dev: false
 
   /tsparticles-shape-heart/2.9.3:
     resolution: {integrity: sha512-AsRbzKYIB5rLyXU3vBS4uDthCSCwb9KMdRI2OV3sawPxtWAprYnjtTDDAhnz8ETxbw0E0lNMoDf6qYioTlRwJQ==}
     dependencies:
       tsparticles-engine: 2.9.3
-    dev: true
+    dev: false
 
   /tsparticles-shape-image/2.9.3:
     resolution: {integrity: sha512-yV3FAcqJ91EYG59OJ1SmShbogVs/uyk12u6LFTJnD2pmfdNwTeGpKMr3Cus5xJHQwJnFWufwkpOlBUxw55J/5g==}
     dependencies:
       tsparticles-engine: 2.9.3
+    dev: false
 
   /tsparticles-shape-line/2.9.3:
     resolution: {integrity: sha512-uREd1nJYTUzHrXh1FcdhCx5jA0hYtuJXyUiG3es9p3VyFM/f8ookGj8Ke/C48p90IOQMWuT9DyaEDnGs+hbcVQ==}
@@ -13588,21 +13546,25 @@ packages:
     resolution: {integrity: sha512-qw580qr2VQveN1Q3kllhieW4GzB3t8fjlIRKZ0QG05npCG+ewBdXbD5G/9yfjGa1fTwCbHCfLoAFojjV15MBmg==}
     dependencies:
       tsparticles-engine: 2.9.3
+    dev: false
 
   /tsparticles-shape-square/2.9.3:
     resolution: {integrity: sha512-VjRNALTt34arsN2UAxaWa43gvdaQQbk7OluLB912u1UzLFbdCccE/sr7pjyLqYaf6F+ndnjnzVygNb/kRxX1uQ==}
     dependencies:
       tsparticles-engine: 2.9.3
+    dev: false
 
   /tsparticles-shape-star/2.9.3:
     resolution: {integrity: sha512-/nJdrHEq05dcVwLK+8i+QD3do+RNWrSvU1efVsOMzgLajH5s2mlSfyFcUSCQrmnmP7d6MpYZpbxa2KnpDSfW8g==}
     dependencies:
       tsparticles-engine: 2.9.3
+    dev: false
 
   /tsparticles-shape-text/2.9.3:
     resolution: {integrity: sha512-V9U8VE2am1JWabiHAhTzAg0uG8j92BnfwmgRfWjg/w4eMFF2uyyBHQDHIFzhZFDbDbqIxttXngkfivAqRdUzhw==}
     dependencies:
       tsparticles-engine: 2.9.3
+    dev: false
 
   /tsparticles-slim/2.9.3:
     resolution: {integrity: sha512-lq8qePcf/lQ5HezR/gpIDn4UJUp8G+33MB7GkhpwmpQpJyoteT5nlXkLxgaedGZFkZAoTKINuU9NUW1Ci6MX4w==}
@@ -13645,11 +13607,13 @@ packages:
     resolution: {integrity: sha512-Z8VLOw2UUxrvV3YH44My5kmeBUcJUHTSCMRUIqFvgvxDs0Q/g2eVWkr1L+Crpw6PE5FJMdDGWRjWwxMwNdVfuQ==}
     dependencies:
       tsparticles-engine: 2.9.3
+    dev: false
 
   /tsparticles-updater-color/2.9.3:
     resolution: {integrity: sha512-eBJ7ZNsG3uCQlpfEf2FocsHLlMnd/vgWPZtOr2Iu7KA2OR3zy7u62D/oiRZkZEWtjhh5GlPrsy7njo6oToRBNQ==}
     dependencies:
       tsparticles-engine: 2.9.3
+    dev: false
 
   /tsparticles-updater-destroy/2.9.3:
     resolution: {integrity: sha512-SRgFISarsLpNz/gnMvkCFV2uITpwkUX5Fva34DVWHK6glY0053x2uvtUQluwHfp6DIJAueRMRhZ0dmzVltdOLw==}
@@ -13661,26 +13625,31 @@ packages:
     resolution: {integrity: sha512-VUeWBCLKoLd69+C9CFHjVG0SaqCbMgQqag6NIGMqTmaaZNFcn1H8rheIG9NU70UOTsYRMPfwmZK1SKnqAK6jQQ==}
     dependencies:
       tsparticles-engine: 2.9.3
+    dev: false
 
   /tsparticles-updater-opacity/2.9.3:
     resolution: {integrity: sha512-ON5t2qeegnm+MsmaF6ZvhUmKLzk/zXozsw9Dsgw8iJYX8WmQmp2VC72COTzADW495ovwGjBiR1KFelM/GVfHgg==}
     dependencies:
       tsparticles-engine: 2.9.3
+    dev: false
 
   /tsparticles-updater-out-modes/2.9.3:
     resolution: {integrity: sha512-LEcAIeK8b3ovLGuuTob1L3o57XodqRuvDjtUT2TiNIC6cf3QMAnqujwAyvBLJrYAuwr7rG1fXEEt9tovFYg+tw==}
     dependencies:
       tsparticles-engine: 2.9.3
+    dev: false
 
   /tsparticles-updater-roll/2.9.3:
     resolution: {integrity: sha512-I/9vB1wA3RKwfeRPlw7nrxUW8uxcajwba+gxFEcIDx2C+OA2UVIuGzOQE59O2sppqLqwrcLOm3ayTt5se1qbpw==}
     dependencies:
       tsparticles-engine: 2.9.3
+    dev: false
 
   /tsparticles-updater-size/2.9.3:
     resolution: {integrity: sha512-6qQ8T+7wt/B4BD5K1LWEXrfan+h2utSY1zNhE1cTcAQUDrrU06g/tfMkbrpMdduu6RWwGtoC4OsciCnBuiLEYQ==}
     dependencies:
       tsparticles-engine: 2.9.3
+    dev: false
 
   /tsparticles-updater-stroke-color/2.9.3:
     resolution: {integrity: sha512-zEjn8vLeoGsP0kPEg0L65wwhm7c5s7QD5cWeSz0mJVibwpV+C16K20kcSjkI57QUMAFQXwgGJ9M0grgCQsiawA==}
@@ -13692,6 +13661,7 @@ packages:
     resolution: {integrity: sha512-x1EDyvBfqgBh1021lohf2shn+V6U9WhMasGD+fKugwRxNZ0nAe5DK0wop/26L2MUIb+AbIg2sXPdxuv1zE7G7w==}
     dependencies:
       tsparticles-engine: 2.9.3
+    dev: false
 
   /tsparticles-updater-twinkle/2.9.3:
     resolution: {integrity: sha512-IHxKAYBRpBiOBtU/8Wh1wv8wCQa2dC5K+LPjDw3JTyzPmPnskjGiHXiPyZTbHPdAqrSQ29jJCfJwn0HAIqEjwQ==}
@@ -13703,6 +13673,7 @@ packages:
     resolution: {integrity: sha512-/Doid0P/OjaO9cUzD/Z3j0GNA+8X3DUvVsOo/5mPt914PJBbcWYGpweE8u75ZPcHe9OM5u6CHFMf3PMurCEBCw==}
     dependencies:
       tsparticles-engine: 2.9.3
+    dev: false
 
   /tsparticles/2.9.3:
     resolution: {integrity: sha512-9NB+zrmR3uaj/k0RZ8Awa4lhpq2PqYFR/jUhia/Z4tKwvNdIR4xkpd4NkkGn/xmqRFeN658xHxOE+yVU+y+XFA==}
