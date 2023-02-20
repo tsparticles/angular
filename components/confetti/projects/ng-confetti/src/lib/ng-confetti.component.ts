@@ -1,30 +1,38 @@
 import { isPlatformServer } from '@angular/common';
-import {
-  AfterViewInit,
-  Component,
-  Inject,
-  Input,
-  PLATFORM_ID,
-} from '@angular/core';
+import { AfterViewInit, Component, Inject, Input, PLATFORM_ID } from '@angular/core';
+import { Subject } from 'rxjs';
 import { confetti, ConfettiOptions } from 'tsparticles-confetti';
+import type { Container } from 'tsparticles-engine';
 
 @Component({
-  selector: 'ng-confetti',
-  template: '<div [id]="id"></div>',
+    selector: 'ng-confetti',
+    template: '<div [id]="id"></div>',
 })
 export class NgConfettiComponent implements AfterViewInit {
-  @Input() options?: ConfettiOptions;
-  @Input() id: string;
+    @Input() options?: ConfettiOptions;
+    @Input() id: string;
 
-  constructor(@Inject(PLATFORM_ID) protected platformId: string) {
-    this.id = 'tsparticles';
-  }
+    private container?: Container;
+    private destroy$ = new Subject<void>();
 
-  public ngAfterViewInit(): void {
-    if (isPlatformServer(this.platformId)) {
-      return;
+    constructor(@Inject(PLATFORM_ID) protected platformId: string) {
+        this.id = 'tsparticles';
     }
 
-    confetti(this.id, this.options);
-  }
+    public ngAfterViewInit(): void {
+        if (isPlatformServer(this.platformId)) {
+            return;
+        }
+
+        console.log('ciao');
+
+        (async () => {
+            this.container = await confetti(this.id, this.options);
+        })();
+    }
+
+    public ngOnDestroy(): void {
+        this.container?.destroy();
+        this.destroy$.next();
+    }
 }
