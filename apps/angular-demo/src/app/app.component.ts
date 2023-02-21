@@ -11,9 +11,10 @@ import { basic } from 'tsparticles-demo-configs';
 export class AppComponent {
   title = 'angular13';
   id = 'tsparticles';
+  fire = 0;
   particlesVisible = true;
   fireworksVisible = false;
-  confettiVisible = false;
+  confettiVisible = true;
   particlesOptions: ISourceOptions = basic;
   confettiOptions = {
     particleCount: 100,
@@ -37,7 +38,8 @@ export class AppComponent {
   toggleConfettiClick(): void {
     console.log('confetti clicked');
 
-    this.confettiVisible = !this.confettiVisible;
+    this.fire = Math.random() + 1;
+    //this.confettiVisible = !this.confettiVisible;
   }
 
   constructor() {}
