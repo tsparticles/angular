@@ -90,12 +90,12 @@ importers:
       tsparticles-updater-twinkle: ^2.9.3
       tsparticles-updater-wobble: ^2.9.3
       typescript: ~4.8.4
-      zone.js: ~0.12.0
+      zone.js: ~0.13.0
     dependencies:
       '@angular/animations': 15.2.1_@angular+core@15.2.1
       '@angular/common': 15.2.1_mjfsjw2dyoldrpoplv2e6zm3e4
       '@angular/compiler': 15.2.1_@angular+core@15.2.1
-      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.13.0
       '@angular/forms': 15.2.1_m5wmoc4v2teqays2xvbdq4lica
       '@angular/platform-browser': 15.2.1_7j4w6zoz33pkplfc3lxyl3lv3e
       '@angular/platform-browser-dynamic': 15.2.1_62tleqnoqwdrbcas5ykx7xf63m
@@ -154,7 +154,7 @@ importers:
       tsparticles-updater-tilt: 2.9.3
       tsparticles-updater-twinkle: 2.9.3
       tsparticles-updater-wobble: 2.9.3
-      zone.js: 0.12.0
+      zone.js: 0.13.0
     devDependencies:
       '@angular-devkit/build-angular': 15.2.0_hemjz66kqlnrmvwrbdyc3f6inq
       '@angular/cli': 15.2.0
@@ -262,10 +262,10 @@ importers:
       tsparticles-updater-twinkle: ^2.9.3
       tsparticles-updater-wobble: ^2.9.3
       typescript: ~4.8.4
-      zone.js: ~0.12.0
+      zone.js: ~0.13.0
     dependencies:
       '@angular/common': 15.2.1_mjfsjw2dyoldrpoplv2e6zm3e4
-      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.13.0
       '@angular/forms': 15.2.1_m5wmoc4v2teqays2xvbdq4lica
       '@angular/platform-browser': 15.2.1_yo4dq5pon533m3wsnblneimhhi
       '@angular/platform-browser-dynamic': 15.2.1_62tleqnoqwdrbcas5ykx7xf63m
@@ -275,7 +275,7 @@ importers:
       '@capacitor/haptics': 4.1.0_@capacitor+core@4.6.1
       '@capacitor/keyboard': 4.1.0_@capacitor+core@4.6.1
       '@capacitor/status-bar': 4.1.1_@capacitor+core@4.6.1
-      '@ionic/angular': 6.4.1_fkwz3cw7obumiwhpgx7ugqkloe
+      '@ionic/angular': 6.4.1_yqibud4vblvo2ouisin52w6npq
       '@ionic/core': 6.4.1
       ionicons: 6.0.4
       ng-particles: link:../../components/particles/dist/ng-particles
@@ -324,7 +324,7 @@ importers:
       tsparticles-updater-tilt: 2.9.3
       tsparticles-updater-twinkle: 2.9.3
       tsparticles-updater-wobble: 2.9.3
-      zone.js: 0.12.0
+      zone.js: 0.13.0
     devDependencies:
       '@angular-devkit/build-angular': 15.2.0_enqr7u2bdoylwexszdhlf227de
       '@angular-eslint/builder': 15.1.0_vvbfoh7ci2jjuy6alapehrh2ri
@@ -387,12 +387,12 @@ importers:
       tsparticles-confetti: ^2.9.3
       tsparticles-engine: ^2.9.3
       typescript: ~4.8.4
-      zone.js: ~0.12.0
+      zone.js: ~0.13.0
     dependencies:
       '@angular/animations': 15.2.1_@angular+core@15.2.1
       '@angular/common': 15.2.1_mjfsjw2dyoldrpoplv2e6zm3e4
       '@angular/compiler': 15.2.1_@angular+core@15.2.1
-      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.13.0
       '@angular/forms': 15.2.1_m5wmoc4v2teqays2xvbdq4lica
       '@angular/platform-browser': 15.2.1_7j4w6zoz33pkplfc3lxyl3lv3e
       '@angular/platform-browser-dynamic': 15.2.1_62tleqnoqwdrbcas5ykx7xf63m
@@ -401,7 +401,7 @@ importers:
       tslib: 2.4.1
       tsparticles-confetti: 2.9.3
       tsparticles-engine: 2.9.3
-      zone.js: 0.12.0
+      zone.js: 0.13.0
     devDependencies:
       '@angular-devkit/build-angular': 15.2.0_k7qxgnvurqpbz3pyselpajirmi
       '@angular/cli': 15.2.0
@@ -448,12 +448,12 @@ importers:
       tslib: ^2.4.1
       tsparticles-fireworks: ^2.9.3
       typescript: ~4.8.4
-      zone.js: ~0.12.0
+      zone.js: ~0.13.0
     dependencies:
       '@angular/animations': 15.2.1_@angular+core@15.2.1
       '@angular/common': 15.2.1_mjfsjw2dyoldrpoplv2e6zm3e4
       '@angular/compiler': 15.2.1_@angular+core@15.2.1
-      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.13.0
       '@angular/forms': 15.2.1_m5wmoc4v2teqays2xvbdq4lica
       '@angular/platform-browser': 15.2.1_7j4w6zoz33pkplfc3lxyl3lv3e
       '@angular/platform-browser-dynamic': 15.2.1_62tleqnoqwdrbcas5ykx7xf63m
@@ -461,7 +461,7 @@ importers:
       rxjs: 7.8.0
       tslib: 2.4.1
       tsparticles-fireworks: 2.9.3
-      zone.js: 0.12.0
+      zone.js: 0.13.0
     devDependencies:
       '@angular-devkit/build-angular': 15.2.0_k7qxgnvurqpbz3pyselpajirmi
       '@angular/cli': 15.2.0
@@ -508,12 +508,12 @@ importers:
       tslib: ^2.4.1
       tsparticles-engine: ^2.9.3
       typescript: ~4.8.4
-      zone.js: ~0.12.0
+      zone.js: ~0.13.0
     dependencies:
       '@angular/animations': 15.2.1_@angular+core@15.2.1
       '@angular/common': 15.2.1_mjfsjw2dyoldrpoplv2e6zm3e4
       '@angular/compiler': 15.2.1_@angular+core@15.2.1
-      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.13.0
       '@angular/forms': 15.2.1_m5wmoc4v2teqays2xvbdq4lica
       '@angular/platform-browser': 15.2.1_7j4w6zoz33pkplfc3lxyl3lv3e
       '@angular/platform-browser-dynamic': 15.2.1_62tleqnoqwdrbcas5ykx7xf63m
@@ -521,7 +521,7 @@ importers:
       rxjs: 7.8.0
       tslib: 2.4.1
       tsparticles-engine: 2.9.3
-      zone.js: 0.12.0
+      zone.js: 0.13.0
     devDependencies:
       '@angular-devkit/build-angular': 15.2.0_k7qxgnvurqpbz3pyselpajirmi
       '@angular/cli': 15.2.0
@@ -1067,7 +1067,7 @@ packages:
     peerDependencies:
       '@angular/core': 15.2.1
     dependencies:
-      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.13.0
       tslib: 2.5.0
     dev: false
 
@@ -1107,7 +1107,7 @@ packages:
       '@angular/core': 15.2.1
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
-      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.13.0
       rxjs: 7.8.0
       tslib: 2.5.0
     dev: false
@@ -1145,10 +1145,10 @@ packages:
       '@angular/core':
         optional: true
     dependencies:
-      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.13.0
       tslib: 2.5.0
 
-  /@angular/core/15.2.1_rxjs@7.8.0+zone.js@0.12.0:
+  /@angular/core/15.2.1_rxjs@7.8.0+zone.js@0.13.0:
     resolution: {integrity: sha512-CtN/cYDTGlELRcKBHxqnxmUhI9Euz2R+25dvjNtxB2tLzCehI6Fbmsb3NsC++jcAjL3QAmodpzzgULPtNJqs6A==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0}
     peerDependencies:
@@ -1157,7 +1157,7 @@ packages:
     dependencies:
       rxjs: 7.8.0
       tslib: 2.5.0
-      zone.js: 0.12.0
+      zone.js: 0.13.0
 
   /@angular/forms/15.2.1_m5wmoc4v2teqays2xvbdq4lica:
     resolution: {integrity: sha512-C3gWbjwcult/RPFJ4RtzwOoIrO2ZYPXF86gQuA1MFpASRsroWl/9HTdvkmLa+UeW8ZoSZt4QNl00dymO+ROUGg==}
@@ -1169,7 +1169,7 @@ packages:
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
       '@angular/common': 15.2.1_mjfsjw2dyoldrpoplv2e6zm3e4
-      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.13.0
       '@angular/platform-browser': 15.2.1_7j4w6zoz33pkplfc3lxyl3lv3e
       rxjs: 7.8.0
       tslib: 2.5.0
@@ -1191,7 +1191,7 @@ packages:
     dependencies:
       '@angular/common': 15.2.1_mjfsjw2dyoldrpoplv2e6zm3e4
       '@angular/compiler': 15.2.1_@angular+core@15.2.1
-      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.13.0
       '@angular/platform-browser': 15.2.1_7j4w6zoz33pkplfc3lxyl3lv3e
       tslib: 2.5.0
     dev: false
@@ -1209,7 +1209,7 @@ packages:
     dependencies:
       '@angular/animations': 15.2.1_@angular+core@15.2.1
       '@angular/common': 15.2.1_mjfsjw2dyoldrpoplv2e6zm3e4
-      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.13.0
       tslib: 2.5.0
     dev: false
 
@@ -1225,7 +1225,7 @@ packages:
         optional: true
     dependencies:
       '@angular/common': 15.2.1_mjfsjw2dyoldrpoplv2e6zm3e4
-      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.13.0
       tslib: 2.5.0
     dev: false
 
@@ -1239,7 +1239,7 @@ packages:
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
       '@angular/common': 15.2.1_mjfsjw2dyoldrpoplv2e6zm3e4
-      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.13.0
       '@angular/platform-browser': 15.2.1_7j4w6zoz33pkplfc3lxyl3lv3e
       rxjs: 7.8.0
       tslib: 2.5.0
@@ -2950,7 +2950,7 @@ packages:
       - chokidar
     dev: true
 
-  /@ionic/angular/6.4.1_fkwz3cw7obumiwhpgx7ugqkloe:
+  /@ionic/angular/6.4.1_yqibud4vblvo2ouisin52w6npq:
     resolution: {integrity: sha512-7WAkydpbEIzUTJac+sOZ3JQE8OATAMHRdSmDpBdEsErP0mT32hPZKhBB0NguU0MFLXKc1C3HOks1aoEryMm2ig==}
     peerDependencies:
       '@angular/core': '>=12.0.0'
@@ -2959,7 +2959,7 @@ packages:
       rxjs: '>=6.6.0'
       zone.js: '>=0.11.0'
     dependencies:
-      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/core': 15.2.1_rxjs@7.8.0+zone.js@0.13.0
       '@angular/forms': 15.2.1_m5wmoc4v2teqays2xvbdq4lica
       '@angular/router': 15.2.1_m5wmoc4v2teqays2xvbdq4lica
       '@ionic/core': 6.4.1
@@ -2967,7 +2967,7 @@ packages:
       jsonc-parser: 3.2.0
       rxjs: 7.8.0
       tslib: 2.4.1
-      zone.js: 0.12.0
+      zone.js: 0.13.0
     dev: false
 
   /@ionic/cli-framework-output/2.2.5:
@@ -12357,7 +12357,7 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  /zone.js/0.12.0:
-    resolution: {integrity: sha512-XtC+I5dXU14HrzidAKBNMqneIVUykLEAA1x+v4KVrd6AUPWlwYORF8KgsVqvgdHiKZ4BkxxjvYi/ksEixTPR0Q==}
+  /zone.js/0.13.0:
+    resolution: {integrity: sha512-7m3hNNyswsdoDobCkYNAy5WiUulkMd3+fWaGT9ij6iq3Zr/IwJo4RMCYPSDjT+r7tnPErmY9sZpKhWQ8S5k6XQ==}
     dependencies:
-      tslib: 2.4.1
+      tslib: 2.5.0
