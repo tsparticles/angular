@@ -282,8 +282,8 @@ importers:
         specifier: ^4.1.1
         version: 4.1.1(@capacitor/core@4.6.1)
       '@ionic/angular':
-        specifier: ^6.4.1
-        version: 6.4.1(@angular/core@15.2.1)(@angular/forms@15.2.1)(@angular/router@15.2.1)(rxjs@7.8.0)(zone.js@0.13.0)
+        specifier: ^7.0.0
+        version: 7.0.0(@angular/core@15.2.1)(@angular/forms@15.2.1)(@angular/router@15.2.1)(rxjs@7.8.0)(zone.js@0.13.0)
       '@ionic/core':
         specifier: ^7.0.0
         version: 7.0.0
@@ -3046,23 +3046,23 @@ packages:
       - chokidar
     dev: true
 
-  /@ionic/angular@6.4.1(@angular/core@15.2.1)(@angular/forms@15.2.1)(@angular/router@15.2.1)(rxjs@7.8.0)(zone.js@0.13.0):
-    resolution: {integrity: sha512-7WAkydpbEIzUTJac+sOZ3JQE8OATAMHRdSmDpBdEsErP0mT32hPZKhBB0NguU0MFLXKc1C3HOks1aoEryMm2ig==}
+  /@ionic/angular@7.0.0(@angular/core@15.2.1)(@angular/forms@15.2.1)(@angular/router@15.2.1)(rxjs@7.8.0)(zone.js@0.13.0):
+    resolution: {integrity: sha512-vsSOPoWyO8Wl2EcUG9VJN50HsLG5B08q2mz/D6WAWeG0VlFGS2OdjtBOsFT3UKWuznuACxnTPNdUCk9JtFCgRw==}
     peerDependencies:
-      '@angular/core': '>=12.0.0'
-      '@angular/forms': '>=12.0.0'
-      '@angular/router': '>=12.0.0'
-      rxjs: '>=6.6.0'
+      '@angular/core': '>=14.0.0'
+      '@angular/forms': '>=14.0.0'
+      '@angular/router': '>=14.0.0'
+      rxjs: '>=7.5.0'
       zone.js: '>=0.11.0'
     dependencies:
       '@angular/core': 15.2.1(rxjs@7.8.0)(zone.js@0.13.0)
       '@angular/forms': 15.2.1(@angular/common@15.2.1)(@angular/core@15.2.1)(@angular/platform-browser@15.2.1)(rxjs@7.8.0)
       '@angular/router': 15.2.1(@angular/common@15.2.1)(@angular/core@15.2.1)(@angular/platform-browser@15.2.1)(rxjs@7.8.0)
-      '@ionic/core': 6.4.1
-      ionicons: 6.0.4
+      '@ionic/core': 7.0.0
+      ionicons: 7.1.0
       jsonc-parser: 3.2.0
       rxjs: 7.8.0
-      tslib: 2.4.1
+      tslib: 2.5.0
       zone.js: 0.13.0
     dev: false
 
@@ -3076,14 +3076,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
-
-  /@ionic/core@6.4.1:
-    resolution: {integrity: sha512-l1Z2sA9VjkO5rFhQMlNkqWQaSRyV1mcb6nYvLgi1cyDegcSDqLLJjZeyKVKYxTuc2qCaZhRlBe+c2155W8hmsw==}
-    dependencies:
-      '@stencil/core': 2.20.0
-      ionicons: 6.0.4
-      tslib: 2.5.0
-    dev: false
 
   /@ionic/core@7.0.0:
     resolution: {integrity: sha512-pM8qOaea9ZbqZbGnoIswaeeTiHJKNQ9ziSNHSILDpdd4FjpxZjOeMgNUdvYzh5rX9fA6hEM2wodg7McIWHgvZQ==}
