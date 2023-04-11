@@ -288,8 +288,8 @@ importers:
         specifier: ^7.0.0
         version: 7.0.0
       ionicons:
-        specifier: ^6.0.4
-        version: 6.0.4
+        specifier: ^7.0.0
+        version: 7.1.0
       ng-particles:
         specifier: ^3.9.3
         version: link:../../components/particles/dist/ng-particles
