@@ -231,8 +231,8 @@ importers:
         specifier: ~6.4.1
         version: 6.4.1
       karma-chrome-launcher:
-        specifier: ~3.1.1
-        version: 3.1.1
+        specifier: ~3.2.0
+        version: 3.2.0
       karma-coverage:
         specifier: ~2.2.0
         version: 2.2.0
@@ -502,8 +502,8 @@ importers:
         specifier: ~6.4.1
         version: 6.4.1
       karma-chrome-launcher:
-        specifier: ~3.1.1
-        version: 3.1.1
+        specifier: ~3.2.0
+        version: 3.2.0
       karma-coverage:
         specifier: ~2.2.0
         version: 2.2.0
@@ -593,8 +593,8 @@ importers:
         specifier: ~6.4.1
         version: 6.4.1
       karma-chrome-launcher:
-        specifier: ~3.1.1
-        version: 3.1.1
+        specifier: ~3.2.0
+        version: 3.2.0
       karma-coverage:
         specifier: ~2.2.0
         version: 2.2.0
@@ -679,8 +679,8 @@ importers:
         specifier: ~6.4.1
         version: 6.4.1
       karma-chrome-launcher:
-        specifier: ~3.1.1
-        version: 3.1.1
+        specifier: ~3.2.0
+        version: 3.2.0
       karma-coverage:
         specifier: ~2.2.0
         version: 2.2.0
@@ -765,8 +765,8 @@ importers:
         specifier: ~6.4.1
         version: 6.4.1
       karma-chrome-launcher:
-        specifier: ~3.1.1
-        version: 3.1.1
+        specifier: ~3.2.0
+        version: 3.2.0
       karma-coverage:
         specifier: ~2.2.0
         version: 2.2.0
@@ -8022,8 +8022,8 @@ packages:
     resolution: {integrity: sha512-6ufhP9SHjb7jibNFrNxyFZ6od3g+An6Ai9mhGRvcYe8UJlH0prseN64M+6ZBBUoKYHZsitDP42gAJ8+eVWr3lw==}
     dev: false
 
-  /karma-chrome-launcher@3.1.1:
-    resolution: {integrity: sha512-hsIglcq1vtboGPAN+DGCISCFOxW+ZVnIqhDQcCMqqCp+4dmJ0Qpq5QAjkbA0X2L9Mi6OBkHi2Srrbmm7pUKkzQ==}
+  /karma-chrome-launcher@3.2.0:
+    resolution: {integrity: sha512-rE9RkUPI7I9mAxByQWkGJFXfFD6lE4gC5nPuZdobf/QdTEJI6EU4yIay/cfU/xV4ZxlM5JiTv7zWYgA64NpS5Q==}
     dependencies:
       which: 1.3.1
     dev: true
