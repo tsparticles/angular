@@ -276,8 +276,8 @@ importers:
         specifier: ^5.0.0
         version: 5.0.0(@capacitor/core@5.0.0)
       '@capacitor/keyboard':
-        specifier: ^4.1.0
-        version: 4.1.0(@capacitor/core@5.0.0)
+        specifier: ^5.0.0
+        version: 5.0.0(@capacitor/core@5.0.0)
       '@capacitor/status-bar':
         specifier: ^4.1.1
         version: 4.1.1(@capacitor/core@5.0.0)
@@ -2671,10 +2671,10 @@ packages:
       '@capacitor/core': 5.0.0
     dev: false
 
-  /@capacitor/keyboard@4.1.0(@capacitor/core@5.0.0):
-    resolution: {integrity: sha512-5fanmJLdkXLEaro0oezkmpC15tBGlsLW4cp1jQTMPwyX6NLlPUFHdWUhMERzxL2QXHmHvtoFMJ4m15Eymgefuw==}
+  /@capacitor/keyboard@5.0.0(@capacitor/core@5.0.0):
+    resolution: {integrity: sha512-EB69qPYZYm185199Lc4rKc7C6+cOpZuRXCGtsuPKW1OTnoso33frjgEoLZqfkVfrPMRJEAxT5H9vfSlZgCNMTg==}
     peerDependencies:
-      '@capacitor/core': ^4.0.0
+      '@capacitor/core': next
     dependencies:
       '@capacitor/core': 5.0.0
     dev: false
