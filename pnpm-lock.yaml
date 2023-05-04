@@ -279,8 +279,8 @@ importers:
         specifier: ^5.0.0
         version: 5.0.0(@capacitor/core@5.0.0)
       '@capacitor/status-bar':
-        specifier: ^4.1.1
-        version: 4.1.1(@capacitor/core@5.0.0)
+        specifier: ^5.0.0
+        version: 5.0.0(@capacitor/core@5.0.0)
       '@ionic/angular':
         specifier: ^7.0.0
         version: 7.0.0(@angular/core@16.0.0)(@angular/forms@16.0.0)(@angular/router@16.0.0)(rxjs@7.8.0)(zone.js@0.13.0)
@@ -2679,10 +2679,10 @@ packages:
       '@capacitor/core': 5.0.0
     dev: false
 
-  /@capacitor/status-bar@4.1.1(@capacitor/core@5.0.0):
-    resolution: {integrity: sha512-3wosxMD1XuIFz88+c2GdVEHSJV6u7suOeKQjyWf3zf9eFr622Sg+udZqDbC0dtTWXw97BWyCjv3r1EYJw7XnIA==}
+  /@capacitor/status-bar@5.0.0(@capacitor/core@5.0.0):
+    resolution: {integrity: sha512-Nc3r/hWNwd401COEWslDHqN95xE4bnx6lffEWvFKWRZGH+KuVmxn7ovYlVFF20zLlJfSKOEYItF0jpL4rEDg+g==}
     peerDependencies:
-      '@capacitor/core': ^4.0.0
+      '@capacitor/core': next
     dependencies:
       '@capacitor/core': 5.0.0
     dev: false
