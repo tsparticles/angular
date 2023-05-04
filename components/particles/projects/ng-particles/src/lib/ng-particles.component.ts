@@ -61,15 +61,7 @@ export class NgParticlesComponent implements AfterViewInit, OnDestroy {
     template: '<div [id]="id"></div>',
 })
 export class ParticlesComponent extends NgParticlesComponent {
-    @Input() override options?: IParticlesProps;
-    @Input() override url?: string;
-    @Input() override id: string;
-    @Input() override particlesInit?: (engine: Engine) => Promise<void>;
-    @Output() override particlesLoaded: EventEmitter<Container> = new EventEmitter<Container>();
-
     constructor(@Inject(PLATFORM_ID) protected override platformId: string) {
         super(platformId);
-
-        this.id = 'tsparticles';
     }
 }
