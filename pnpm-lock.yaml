@@ -267,8 +267,8 @@ importers:
         specifier: ~16.0.0
         version: 16.0.0(@angular/common@16.0.0)(@angular/core@16.0.0)(@angular/platform-browser@16.0.0)(rxjs@7.8.0)
       '@capacitor/app':
-        specifier: ^4.1.1
-        version: 4.1.1(@capacitor/core@5.0.0)
+        specifier: ^5.0.0
+        version: 5.0.0(@capacitor/core@5.0.0)
       '@capacitor/core':
         specifier: ^5.0.0
         version: 5.0.0
@@ -2623,10 +2623,10 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@capacitor/app@4.1.1(@capacitor/core@5.0.0):
-    resolution: {integrity: sha512-SJcJA1rhFQyeH6eLfUEbdKkHzAwzahJNVPNXmU88fdmXpMgM2dJGzZj1vrm6e21aQq+Z4aBVLJ2RCdj92zD7wg==}
+  /@capacitor/app@5.0.0(@capacitor/core@5.0.0):
+    resolution: {integrity: sha512-ORbR6PtKmoi57oUcuyoOxCfsakLiMM8KaIeG8iZUKZu1ETsbVnyMzA3kDa+MVUlbsBTQiBwe0mWBlve9lUBYkQ==}
     peerDependencies:
-      '@capacitor/core': ^4.0.0
+      '@capacitor/core': next
     dependencies:
       '@capacitor/core': 5.0.0
     dev: false
