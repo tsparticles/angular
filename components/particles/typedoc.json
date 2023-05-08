@@ -1,7 +1,7 @@
 {
   "includes": "./markdown",
   "entryPoints": [
-    "./src/"
+    "./projects/ng-particles/src"
   ],
   "entryPointStrategy": "expand",
   "name": "tsParticles Angular Component",
