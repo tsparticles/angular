@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.10.1](https://github.com/tsparticles/angular/compare/ng-fireworks@2.10.0...ng-fireworks@2.10.1) (2023-06-04)
+
+**Note:** Version bump only for package ng-fireworks
+
+
+
+
+
 # 2.10.0 (2023-06-04)
 
 
