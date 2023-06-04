@@ -1,16 +1,16 @@
-import { Component } from '@angular/core';
-import type { Container, Engine } from 'tsparticles-engine';
-import { loadFull } from 'tsparticles';
-import { basic } from 'tsparticles-demo-configs';
+import { Component } from "@angular/core";
+import type { Container, Engine } from "tsparticles-engine";
+import { loadFull } from "tsparticles";
+import configs from "tsparticles-demo-configs";
 
 @Component({
-  selector: 'app-tab1',
-  templateUrl: 'tab1.page.html',
-  styleUrls: [ 'tab1.page.scss' ]
+  selector: "app-tab1",
+  templateUrl: "tab1.page.html",
+  styleUrls: ["tab1.page.scss"]
 })
 export class Tab1Page {
-  particlesId = 'tsparticles';
-  particlesOptions = basic;
+  particlesId = "tsparticles";
+  particlesOptions = configs.basic;
 
   constructor() {
   }

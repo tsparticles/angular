@@ -1,14 +1,14 @@
 import { isPlatformServer } from '@angular/common';
 import { Component, Inject, Input, PLATFORM_ID } from '@angular/core';
-import { ConfettiOptions, fireworks } from 'tsparticles-fireworks';
+import { FireworkOptions, fireworks } from 'tsparticles-fireworks';
 
 @Component({
     selector: 'ng-fireworks',
-    template: `<div [id]="id"></div>`,
+    template: ` <div [id]="id"></div>`,
     styles: [],
 })
 export class NgFireworksComponent {
-    @Input() options?: ConfettiOptions;
+    @Input() options?: FireworkOptions;
     @Input() id: string;
 
     constructor(@Inject(PLATFORM_ID) protected platformId: string) {

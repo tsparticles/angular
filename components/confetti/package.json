@@ -85,8 +85,8 @@
         "@angular/router": "~16.0.0",
         "rxjs": "~7.8.0",
         "tslib": "^2.4.1",
-        "tsparticles-confetti": "^2.9.3",
-        "tsparticles-engine": "^2.9.3",
+        "tsparticles-confetti": "^2.10.1",
+        "tsparticles-engine": "^2.10.1",
         "zone.js": "~0.13.0"
     },
     "devDependencies": {
