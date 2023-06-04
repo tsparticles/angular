@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.10.0 (2023-06-04)
+
+
+### Bug Fixes
+
+* **deps:** update angular monorepo to ~15.2.0 ([d9cc057](https://github.com/tsparticles/angular/commit/d9cc0579949f025c7be095b92abb121f2f450036))
+* **deps:** update angular monorepo to v16 ([ca8f4e4](https://github.com/tsparticles/angular/commit/ca8f4e47c4476a5f4548ad25f365f56caa7ce912))
+* **deps:** update dependency @capacitor/app to v5 ([ad5a080](https://github.com/tsparticles/angular/commit/ad5a0801b2ed8b46b460b8917cc3e288a00ad479))
+* **deps:** update dependency @capacitor/haptics to v5 ([0754bb7](https://github.com/tsparticles/angular/commit/0754bb766882db012719624947ce1e9c011db649))
+* **deps:** update dependency @capacitor/keyboard to v5 ([9cb00ac](https://github.com/tsparticles/angular/commit/9cb00ac7a584a24c5693ce3fbbe8257e6eed78a6))
+* **deps:** update dependency @capacitor/status-bar to v5 ([303717a](https://github.com/tsparticles/angular/commit/303717adbd7bdf51620cb4d6bee6204803b532e2))
+* **deps:** update dependency @ionic/angular to v7 ([7650cd0](https://github.com/tsparticles/angular/commit/7650cd010916947db786d20e5c9b7cac186f3523))
+* **deps:** update dependency @ionic/core to v7 ([be06511](https://github.com/tsparticles/angular/commit/be0651198bff6b15cd990abb532ab85cc98f0885))
+* **deps:** update dependency ionicons to v7 ([b551ad4](https://github.com/tsparticles/angular/commit/b551ad4e37685000063e0258190d9d1c5ef6dcc4))
+* **deps:** update dependency zone.js to ~0.13.0 ([9eaf8c1](https://github.com/tsparticles/angular/commit/9eaf8c1e184fbe813e0f2ec4ed14d35c677bc8a3))
+
+
+
+
+
 ## [1.9.3](https://github.com/matteobruni/tsparticles/compare/ionic-demo@1.9.2...ionic-demo@1.9.3) (2023-02-12)
 
 **Note:** Version bump only for package ionic-demo
