@@ -5,7 +5,7 @@
     "components/*"
   ],
   "useWorkspaces": true,
-  "version": "indipendent",
+  "version": "independent",
   "npmClient": "pnpm",
   "conventionalCommits": true,
   "command": {
