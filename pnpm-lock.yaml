@@ -48,13 +48,13 @@ importers:
         specifier: ~16.1.5
         version: 16.1.5(@angular/common@16.1.5)(@angular/core@16.1.5)(@angular/platform-browser@16.1.5)(rxjs@7.8.1)
       ng-confetti:
-        specifier: ^2.10.1
+        specifier: ^2.11.0
         version: link:../../components/confetti/dist/ng-confetti
       ng-fireworks:
-        specifier: ^2.10.1
+        specifier: ^2.11.0
         version: link:../../components/fireworks/dist/ng-fireworks
       ng-particles:
-        specifier: ^3.10.1
+        specifier: ^3.11.0
         version: link:../../components/particles/dist/ng-particles
       rxjs:
         specifier: ~7.8.1
@@ -295,7 +295,7 @@ importers:
         specifier: ^7.1.2
         version: 7.1.2
       ng-particles:
-        specifier: ^3.10.1
+        specifier: ^3.11.0
         version: link:../../components/particles/dist/ng-particles
       rxjs:
         specifier: ~7.8.1

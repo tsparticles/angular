@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/tsparticles/angular/compare/ionic-demo@1.10.1...ionic-demo@1.11.0) (2023-07-15)
+
+
+### Bug Fixes
+
+* **deps:** update angular monorepo ([7734c62](https://github.com/tsparticles/angular/commit/7734c62fa1f0dba72675296a58b5f9e99f45c790))
+
+
+
+
+
 ## [1.10.1](https://github.com/tsparticles/angular/compare/ionic-demo@1.10.0...ionic-demo@1.10.1) (2023-06-04)
 
 **Note:** Version bump only for package ionic-demo
