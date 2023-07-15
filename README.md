@@ -55,7 +55,8 @@ import {
   HoverMode,
   OutMode,
 } from "tsparticles-engine";
-import { loadFull } from "tsparticles";
+//import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
+import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
 
 export class AppComponent {
   id = "tsparticles";
@@ -104,9 +105,6 @@ export class AppComponent {
         opacity: 0.5,
         width: 1,
       },
-      collisions: {
-        enable: true,
-      },
       move: {
         direction: MoveDirection.none,
         enable: true,
@@ -147,7 +145,8 @@ export class AppComponent {
     // Starting from 1.19.0 you can add custom presets or shape here, using the current tsParticles instance (main)
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
-    await loadFull(engine);
+    //await loadFull(engine);
+    await loadSlim(engine);
   }
 }
 ```

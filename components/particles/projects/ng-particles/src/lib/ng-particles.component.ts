@@ -45,7 +45,7 @@ export class NgParticlesComponent implements AfterViewInit, OnDestroy {
                         return EMPTY;
                     }
                 }),
-                takeUntil(this.destroy$)
+                takeUntil(this.destroy$),
             )
             .subscribe(cb);
     }
