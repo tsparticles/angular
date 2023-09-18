@@ -80,7 +80,7 @@
     "tsparticles-updater-tilt": "^2.12.0",
     "tsparticles-updater-twinkle": "^2.12.0",
     "tsparticles-updater-wobble": "^2.12.0",
-    "zone.js": "~0.13.1"
+    "zone.js": "~0.14.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~16.2.0",
