@@ -75,7 +75,7 @@
     "tsparticles-updater-tilt": "^2.12.0",
     "tsparticles-updater-twinkle": "^2.12.0",
     "tsparticles-updater-wobble": "^2.12.0",
-    "zone.js": "~0.14.0"
+    "zone.js": "~0.13.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~16.2.0",
@@ -89,6 +89,6 @@
     "karma-coverage": "~2.2.1",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.2.0"
+    "typescript": "~5.1.6"
   }
 }

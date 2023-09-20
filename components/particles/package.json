@@ -86,7 +86,7 @@
     "rxjs": "~7.8.1",
     "tslib": "^2.6.1",
     "tsparticles-engine": "^2.12.0",
-    "zone.js": "~0.14.0"
+    "zone.js": "~0.13.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~16.2.0",
@@ -103,7 +103,7 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "ng-packagr": "~16.2.0",
     "prettier": "^3.0.1",
-    "typescript": "~5.2.0"
+    "typescript": "~5.1.6"
   },
   "module": "dist/ng-particles/fesm2015/ng-particles.mjs",
   "es2020": "dist/ng-particles/fesm2020/ng-particles.mjs",
