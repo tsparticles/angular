@@ -181,3 +181,86 @@ The demo website is [here](https://particles.js.org)
 There's also a CodePen collection actively maintained and updated [here](https://codepen.io/collection/DPOage)
 
 <https://codepen.io/collection/DPOage>
+
+### Angular 7
+
+To use ng-particles with Angular 7, install the `@tsparticles/angular-7` package:
+
+```shell
+$ npm install @tsparticles/angular-7
+```
+
+or
+
+```shell
+$ yarn add @tsparticles/angular-7
+```
+
+### Angular 8
+
+To use ng-particles with Angular 8, install the `@tsparticles/angular-8` package:
+
+```shell
+$ npm install @tsparticles/angular-8
+```
+
+or
+
+```shell
+$ yarn add @tsparticles/angular-8
+```
+
+### Angular 9
+
+To use ng-particles with Angular 9, install the `@tsparticles/angular-9` package:
+
+```shell
+$ npm install @tsparticles/angular-9
+```
+
+or
+
+```shell
+$ yarn add @tsparticles/angular-9
+```
+
+### Angular 10
+
+To use ng-particles with Angular 10, install the `@tsparticles/angular-10` package:
+
+```shell
+$ npm install @tsparticles/angular-10
+```
+
+or
+
+```shell
+$ yarn add @tsparticles/angular-10
+```
+
+### Angular 11
+
+To use ng-particles with Angular 11, install the `@tsparticles/angular-11` package:
+
+```shell
+$ npm install @tsparticles/angular-11
+```
+
+or
+
+```shell
+$ yarn add @tsparticles/angular-11
+```
+
+### Angular 12
+
+To use ng-particles with Angular 12, install the `@tsparticles/angular-12` package:
+
+```shell
+$ npm install @tsparticles/angular-12
+```
+
+or
+
+```shell
+$ yarn add @tsparticles/angular-12
