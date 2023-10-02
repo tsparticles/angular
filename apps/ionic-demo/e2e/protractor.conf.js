@@ -17,7 +17,7 @@ exports.config = {
   },
   directConnect: true,
   SELENIUM_PROMISE_MANAGER: false,
-  baseUrl: 'http://localhost:4200/',
+  baseUrl: 'http://localhost:8100/',
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,
@@ -26,7 +26,7 @@ exports.config = {
   },
   onPrepare() {
     require('ts-node').register({
-      project: require('path').join(__dirname, './tsconfig.json')
+      project: require('path').join(__dirname, '../tsconfig.json')
     });
     jasmine.getEnv().addReporter(new SpecReporter({
       spec: {
