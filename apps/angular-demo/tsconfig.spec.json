@@ -9,10 +9,46 @@
   },
   "files": [
     "src/test.ts",
-    "src/polyfills.ts"
+    "src/polyfills.ts",
+    // Add the appropriate package to the files array based on the desired Angular version
+    // For Angular 7
+    "src/app/app.module.ts",
+    // or
+    // For Angular 8
+    "src/app/app.module.ts",
+    // or
+    // For Angular 9
+    "src/app/app.module.ts",
+    // or
+    // For Angular 10
+    "src/app/app.module.ts",
+    // or
+    // For Angular 11
+    "src/app/app.module.ts",
+    // or
+    // For Angular 12
+    "src/app/app.module.ts"
   ],
   "include": [
     "src/**/*.spec.ts",
-    "src/**/*.d.ts"
+    "src/**/*.d.ts",
+    // Add the appropriate package to the include array based on the desired Angular version
+    // For Angular 7
+    "src/app/**/*.ts",
+    // or
+    // For Angular 8
+    "src/app/**/*.ts",
+    // or
+    // For Angular 9
+    "src/app/**/*.ts",
+    // or
+    // For Angular 10
+    "src/app/**/*.ts",
+    // or
+    // For Angular 11
+    "src/app/**/*.ts",
+    // or
+    // For Angular 12
+    "src/app/**/*.ts"
   ]
 }
