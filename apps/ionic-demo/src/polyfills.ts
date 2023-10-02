@@ -63,3 +63,14 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+<Angular 7 imports>
+// or
+<Angular 8 imports>
+// or
+<Angular 9 imports>
+// or
+<Angular 10 imports>
+// or
+<Angular 11 imports>
+// or
+<Angular 12 imports>
