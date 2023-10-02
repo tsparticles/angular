@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [2.12.0](https://github.com/tsparticles/angular/compare/ng-particles-demo@2.11.0...ng-particles-demo@2.12.0) (2023-08-04)
+# [3.0.0-beta.3](https://github.com/tsparticles/angular/compare/ng-particles-demo@2.11.0...ng-particles-demo@3.0.0-beta.3) (2023-08-04)
 
 **Note:** Version bump only for package ng-particles-demo
 

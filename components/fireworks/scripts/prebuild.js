@@ -14,7 +14,7 @@ fs.readFile(libPackage, function (error, data) {
   const libObj = JSON.parse(text);
 
   libObj.version = mainPackage.version;
-  libObj.peerDependencies["tsparticles-fireworks"] = mainPackage.dependencies["tsparticles-fireworks"].replace("workspace:", "");
+  libObj.peerDependencies["@tsparticles/fireworks"] = mainPackage.dependencies["@tsparticles/fireworks"].replace("workspace:", "");
 
   fs.writeFile(libPackage, JSON.stringify(libObj, undefined, 2), 'utf-8', function () {
     console.log(`lib package.json updated successfully to version ${mainPackage.version}`);

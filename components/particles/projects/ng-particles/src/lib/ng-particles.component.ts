@@ -1,8 +1,8 @@
 import { AfterViewInit, Component, EventEmitter, Inject, Input, OnDestroy, Output, PLATFORM_ID } from '@angular/core';
 import { isPlatformServer } from '@angular/common';
-import { EMPTY, from, mergeMap, Subject, takeUntil } from 'rxjs';
-import { tsParticles } from 'tsparticles-engine';
-import type { Container, Engine } from 'tsparticles-engine';
+import { from, mergeMap, Subject, takeUntil } from 'rxjs';
+import { tsParticles } from '@tsparticles/engine';
+import type { Container, Engine } from '@tsparticles/engine';
 import { IParticlesProps } from './ng-particles.module';
 
 @Component({
@@ -36,14 +36,7 @@ export class NgParticlesComponent implements AfterViewInit, OnDestroy {
         from(this.particlesInit ? this.particlesInit(tsParticles) : Promise.resolve())
             .pipe(
                 mergeMap(() => {
-                    if (this.url) {
-                        return tsParticles.loadJSON(this.id, this.url);
-                    } else if (this.options) {
-                        return tsParticles.load(this.id, this.options);
-                    } else {
-                        console.error('You must specify options or url to load tsParticles');
-                        return EMPTY;
-                    }
+                    return tsParticles.load({ id: this.id, url: this.url, options: this.options });
                 }),
                 takeUntil(this.destroy$),
             )

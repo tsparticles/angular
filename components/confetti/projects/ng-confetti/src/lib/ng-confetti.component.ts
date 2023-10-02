@@ -1,8 +1,8 @@
 import { isPlatformServer } from '@angular/common';
 import { AfterViewInit, Component, Inject, Input, OnChanges, PLATFORM_ID, SimpleChanges } from '@angular/core';
 import { Subject } from 'rxjs';
-import { confetti, ConfettiOptions } from 'tsparticles-confetti';
-import type { Container } from 'tsparticles-engine';
+import { confetti, ConfettiOptions } from '@tsparticles/confetti';
+import type { Container } from '@tsparticles/engine';
 
 @Component({
     selector: 'ng-confetti',

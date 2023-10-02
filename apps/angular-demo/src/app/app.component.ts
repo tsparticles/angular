@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
-import type { Container, Engine, ISourceOptions } from "tsparticles-engine";
+import type { Container, Engine, ISourceOptions } from "@tsparticles/engine";
 import { loadFull } from "tsparticles";
-import configs from "tsparticles-demo-configs";
+import configs from "@tsparticles/configs";
 
 @Component({
   selector: "app-root",

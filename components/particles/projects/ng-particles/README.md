@@ -15,13 +15,13 @@ Official [tsParticles](https://github.com/matteobruni/tsparticles) Angular compo
 ### Install
 
 ```shell
-$ npm install ng-particles tsparticles-engine
+$ npm install ng-particles @tsparticles/engine
 ```
 
 or
 
 ```shell
-$ yarn add ng-particles tsparticles-engine
+$ yarn add ng-particles @tsparticles/engine
 ```
 
 ### Usage
@@ -49,9 +49,9 @@ _template.html_
 _app.ts_
 
 ```typescript
-import { MoveDirection, ClickMode, HoverMode, OutMode } from "tsparticles-engine";
+import { MoveDirection, ClickMode, HoverMode, OutMode } from "@tsparticles/engine";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 
 export class AppComponent {
     id = "tsparticles";

@@ -1,6 +1,6 @@
 import { isPlatformServer } from '@angular/common';
 import { Component, Inject, Input, PLATFORM_ID } from '@angular/core';
-import { FireworkOptions, fireworks } from 'tsparticles-fireworks';
+import { FireworkOptions, fireworks } from '@tsparticles/fireworks';
 
 @Component({
     selector: 'ng-fireworks',

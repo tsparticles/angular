@@ -426,7 +426,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 -   fixed angular readme, closes [#2297](https://github.com/matteobruni/tsparticles/issues/2297) ([5f51b87](https://github.com/matteobruni/tsparticles/commit/5f51b87a6fca58ee88ae51a17dbd5e0d1911b3c6))
 -   fixed some readmes ([93f371a](https://github.com/matteobruni/tsparticles/commit/93f371ab82a5074d34ec7632ade41edc3dbf0ec7))
 
-# [3.0.0-beta.2](https://github.com/matteobruni/tsparticles/compare/ng-particles@2.18.4...ng-particles@3.0.0-beta.2) (2021-10-06)
+# [3.0.0-beta.3](https://github.com/matteobruni/tsparticles/compare/ng-particles@2.18.4...ng-particles@3.0.0-beta.3) (2021-10-06)
 
 ## [2.20.5](https://github.com/matteobruni/tsparticles/compare/ng-particles@2.20.4...ng-particles@2.20.5) (2021-11-28)
 
