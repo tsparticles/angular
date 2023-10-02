@@ -1,0 +1,25 @@
+{
+  "name": "@tsparticles/angular-11",
+  "version": "1.0.0",
+  "description": "Angular 11 compatibility package for tsParticles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tsParticles",
+    "Angular",
+    "Angular 11"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "^11.0.0",
+    "@angular/compiler": "^11.0.0",
+    "@angular/core": "^11.0.0",
+    "@angular/forms": "^11.0.0",
+    "@angular/platform-browser": "^11.0.0",
+    "@angular/platform-browser-dynamic": "^11.0.0",
+    "tsParticles": "^1.0.0"
+  }
+}
