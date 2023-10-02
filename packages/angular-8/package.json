@@ -1,0 +1,25 @@
+{
+  "name": "@tsparticles/angular-8",
+  "version": "1.0.0",
+  "description": "Angular 8 compatibility package for tsParticles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tsParticles",
+    "Angular",
+    "Angular 8"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "^7.0.0",
+    "@angular/compiler": "^7.0.0",
+    "@angular/core": "^7.0.0",
+    "@angular/forms": "^7.0.0",
+    "@angular/platform-browser": "^7.0.0",
+    "@angular/platform-browser-dynamic": "^7.0.0",
+    "tsParticles": "^1.0.0"
+  }
+}
