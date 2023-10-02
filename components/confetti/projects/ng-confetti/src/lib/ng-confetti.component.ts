@@ -5,10 +5,10 @@ import { confetti, ConfettiOptions } from '@tsparticles/confetti';
 import type { Container } from '@tsparticles/engine';
 
 @Component({
-    selector: 'ng-confetti',
+    selector: 'ngx-confetti',
     template: '<div [id]="id"></div>',
 })
-export class NgConfettiComponent implements AfterViewInit, OnChanges {
+export class NgxConfettiComponent implements AfterViewInit, OnChanges {
     @Input() options?: ConfettiOptions;
     @Input() id: string;
     @Input() fire: boolean | number;

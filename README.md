@@ -29,21 +29,21 @@ $ yarn add ng-particles @tsparticles/engine
 _template.html_
 
 ```html
-<ng-particles
+<ngx-particles
   [id]="id"
   [options]="particlesOptions"
   [particlesInit]="particlesInit"
   (particlesLoaded)="particlesLoaded($event)"
-></ng-particles>
+></ngx-particles>
 
 <!-- or -->
 
-<ng-particles
+<ngx-particles
   [id]="id"
   [url]="particlesUrl"
   [particlesInit]="particlesInit"
   (particlesLoaded)="particlesLoaded($event)"
-></ng-particles>
+></ngx-particles>
 ```
 
 _app.ts_
@@ -154,7 +154,7 @@ export class AppComponent {
 _app.module.ts_
 
 ```typescript
-import { ParticlesModule } from "ng-particles";
+import { NgxParticlesModule } from "@tsparticles/angular";
 import { NgModule } from "@angular/core";
 
 @NgModule({
@@ -162,7 +162,7 @@ import { NgModule } from "@angular/core";
     /* AppComponent */
   ],
   imports: [
-    /* other imports */ ParticlesModule /* ParticlesModule is required*/,
+    /* other imports */ NgxParticlesModule /* NgxParticlesModule is required*/,
   ],
   providers: [],
   bootstrap: [

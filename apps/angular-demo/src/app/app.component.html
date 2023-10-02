@@ -833,15 +833,15 @@
     </a>
   </div>
 
-  <ng-particles
+  <ngx-particles
     id="tsparticles"
     [options]="particlesOptions"
     [particlesInit]="particlesInit"
     (particlesLoaded)="particlesLoaded($event)"
     *ngIf="particlesVisible"
-  ></ng-particles>
-  <ng-confetti id="confetti" [options]="confettiOptions" [fire]="fire" *ngIf="confettiVisible"></ng-confetti>
-  <ng-fireworks id="fireworks" [options]="fireworksOptions" *ngIf="fireworksVisible"></ng-fireworks>
+  ></ngx-particles>
+  <ngx-confetti id="confetti" [options]="confettiOptions" [fire]="fire" *ngIf="confettiVisible"></ngx-confetti>
+  <ngx-fireworks id="fireworks" [options]="fireworksOptions" *ngIf="fireworksVisible"></ngx-fireworks>
   <div style="position: fixed; top: 10px; left: 10px; width: 500px">
     <button (click)="toggleParticlesClick()">Toggle Particles</button>
     <button (click)="toggleConfettiClick()">Shoot Confetti</button>

@@ -47,6 +47,15 @@ importers:
       '@angular/router':
         specifier: ~16.2.0
         version: 16.2.0(@angular/common@16.2.0)(@angular/core@16.2.0)(@angular/platform-browser@16.2.0)(rxjs@7.8.1)
+      '@tsparticles/angular':
+        specifier: ^3.0.0-beta.0
+        version: link:../../components/particles/dist/ng-particles
+      '@tsparticles/angular-confetti':
+        specifier: ^3.0.0-beta.0
+        version: link:../../components/confetti/dist/ng-confetti
+      '@tsparticles/angular-fireworks':
+        specifier: ^3.0.0-beta.0
+        version: link:../../components/fireworks/dist/ng-fireworks
       '@tsparticles/basic':
         specifier: ^3.0.0-beta.3
         version: 3.0.0-beta.3
@@ -197,15 +206,6 @@ importers:
       '@tsparticles/updater-wobble':
         specifier: ^3.0.0-beta.3
         version: 3.0.0-beta.3
-      ng-confetti:
-        specifier: ^3.0.0-beta.3
-        version: link:../../components/confetti/dist/ng-confetti
-      ng-fireworks:
-        specifier: ^3.0.0-beta.3
-        version: link:../../components/fireworks/dist/ng-fireworks
-      ng-particles:
-        specifier: ^3.12.0
-        version: link:../../components/particles/dist/ng-particles
       rxjs:
         specifier: ~7.8.1
         version: 7.8.1
@@ -297,6 +297,9 @@ importers:
       '@ionic/core':
         specifier: ^7.2.2
         version: 7.2.2
+      '@tsparticles/angular':
+        specifier: ^3.0.0-beta.0
+        version: link:../../components/particles/dist/ng-particles
       '@tsparticles/basic':
         specifier: ^3.0.0-beta.3
         version: 3.0.0-beta.3
@@ -444,9 +447,6 @@ importers:
       ionicons:
         specifier: ^7.1.2
         version: 7.1.2
-      ng-particles:
-        specifier: ^3.12.0
-        version: link:../../components/particles/dist/ng-particles
       rxjs:
         specifier: ~7.8.1
         version: 7.8.1

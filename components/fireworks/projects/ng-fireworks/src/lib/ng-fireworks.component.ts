@@ -3,11 +3,11 @@ import { Component, Inject, Input, PLATFORM_ID } from '@angular/core';
 import { FireworkOptions, fireworks } from '@tsparticles/fireworks';
 
 @Component({
-    selector: 'ng-fireworks',
+    selector: 'ngx-fireworks',
     template: ` <div [id]="id"></div>`,
     styles: [],
 })
-export class NgFireworksComponent {
+export class NgxFireworksComponent {
     @Input() options?: FireworkOptions;
     @Input() id: string;
 

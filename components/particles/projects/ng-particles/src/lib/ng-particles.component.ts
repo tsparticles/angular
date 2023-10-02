@@ -6,10 +6,10 @@ import type { Container, Engine } from '@tsparticles/engine';
 import { IParticlesProps } from './ng-particles.module';
 
 @Component({
-    selector: 'ng-particles',
+    selector: 'ngx-particles',
     template: '<div [id]="id"></div>',
 })
-export class NgParticlesComponent implements AfterViewInit, OnDestroy {
+export class NgxParticlesComponent implements AfterViewInit, OnDestroy {
     @Input() options?: IParticlesProps;
     @Input() url?: string;
     @Input() id: string;
@@ -46,15 +46,5 @@ export class NgParticlesComponent implements AfterViewInit, OnDestroy {
     public ngOnDestroy(): void {
         this.container?.destroy();
         this.destroy$.next();
-    }
-}
-
-@Component({
-    selector: 'Particles',
-    template: '<div [id]="id"></div>',
-})
-export class ParticlesComponent extends NgParticlesComponent {
-    constructor(@Inject(PLATFORM_ID) protected override platformId: string) {
-        super(platformId);
     }
 }

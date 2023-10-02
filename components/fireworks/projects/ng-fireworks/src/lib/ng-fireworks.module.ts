@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
-import { NgFireworksComponent } from './ng-fireworks.component';
+import { NgxFireworksComponent } from './ng-fireworks.component';
 
 @NgModule({
-    declarations: [NgFireworksComponent],
+    declarations: [NgxFireworksComponent],
     imports: [],
-    exports: [NgFireworksComponent],
+    exports: [NgxFireworksComponent],
 })
-export class NgFireworksModule {}
+export class NgxFireworksModule {}
