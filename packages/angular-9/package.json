@@ -1,0 +1,28 @@
+{
+  "name": "@tsparticles/angular-9",
+  "version": "1.0.0",
+  "description": "Angular 9 compatibility package for tsParticles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tsParticles",
+    "Angular",
+    "Angular 9"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "^9.0.0",
+    "@angular/compiler": "^9.0.0",
+    "@angular/core": "^9.0.0",
+    "@angular/forms": "^9.0.0",
+    "@angular/platform-browser": "^9.0.0",
+    "@angular/platform-browser-dynamic": "^9.0.0",
+    "tsParticles": "^1.0.0"
+  },
+  "devDependencies": {
+    // Add any necessary development dependencies for Angular 9
+  }
+}
