@@ -1,0 +1,25 @@
+{
+  "name": "@tsparticles/angular-10",
+  "version": "1.0.0",
+  "description": "Angular 10 compatibility package for tsParticles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tsParticles",
+    "Angular",
+    "Angular 10"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "^10.0.0",
+    "@angular/compiler": "^10.0.0",
+    "@angular/core": "^10.0.0",
+    "@angular/forms": "^10.0.0",
+    "@angular/platform-browser": "^10.0.0",
+    "@angular/platform-browser-dynamic": "^10.0.0",
+    "tsParticles": "^1.0.0"
+  }
+}
