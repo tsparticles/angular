@@ -229,8 +229,8 @@ importers:
         specifier: ~16.2.0
         version: 16.2.0(@angular/compiler@16.2.0)(typescript@5.1.6)
       '@types/jasmine':
-        specifier: ~4.3.5
-        version: 4.3.5
+        specifier: ~5.1.0
+        version: 5.1.0
       '@types/node':
         specifier: ^20.4.7
         version: 20.4.7
@@ -494,8 +494,8 @@ importers:
         specifier: ^10.0.0
         version: 10.0.0
       '@types/jasmine':
-        specifier: ~4.3.5
-        version: 4.3.5
+        specifier: ~5.1.0
+        version: 5.1.0
       '@types/jasminewd2':
         specifier: ~2.0.10
         version: 2.0.10
@@ -609,8 +609,8 @@ importers:
         specifier: ^1.12.0
         version: 1.12.0
       '@types/jasmine':
-        specifier: ~4.3.5
-        version: 4.3.5
+        specifier: ~5.1.0
+        version: 5.1.0
       '@types/node':
         specifier: ^20.4.7
         version: 20.4.7
@@ -695,8 +695,8 @@ importers:
         specifier: ^1.12.0
         version: 1.12.0
       '@types/jasmine':
-        specifier: ~4.3.5
-        version: 4.3.5
+        specifier: ~5.1.0
+        version: 5.1.0
       '@types/node':
         specifier: ^20.4.7
         version: 20.4.7
@@ -781,8 +781,8 @@ importers:
         specifier: ^1.12.0
         version: 1.12.0
       '@types/jasmine':
-        specifier: ~4.3.5
-        version: 4.3.5
+        specifier: ~5.1.0
+        version: 5.1.0
       '@types/node':
         specifier: ^20.4.7
         version: 20.4.7
@@ -4406,14 +4406,14 @@ packages:
       '@types/node': 20.4.7
     dev: true
 
-  /@types/jasmine@4.3.5:
-    resolution: {integrity: sha512-9YHUdvuNDDRJYXZwHqSsO72Ok0vmqoJbNn73ttyITQp/VA60SarnZ+MPLD37rJAhVoKp+9BWOvJP5tHIRfZylQ==}
+  /@types/jasmine@5.1.0:
+    resolution: {integrity: sha512-XOV0KsqXNX2gUSqk05RWeolIMgaAQ7+l/ozOBoQ8NGwLg+E7J9vgagODtNgfim4jCzEUP0oJ3gnXeC+Zv+Xi1A==}
     dev: true
 
   /@types/jasminewd2@2.0.10:
     resolution: {integrity: sha512-J7mDz7ovjwjc+Y9rR9rY53hFWKATcIkrr9DwQWmOas4/pnIPJTXawnzjwpHm3RSxz/e3ZVUvQ7cRbd5UQLo10g==}
     dependencies:
-      '@types/jasmine': 4.3.5
+      '@types/jasmine': 5.1.0
     dev: true
 
   /@types/json-schema@7.0.12:
