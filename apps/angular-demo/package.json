@@ -23,7 +23,7 @@
     "@tsparticles/angular-fireworks": "^3.0.0-beta.0",
     "@tsparticles/angular": "^3.0.0-beta.0",
     "rxjs": "~7.8.1",
-    "tslib": "^2.6.1",
+    "tslib": "^2.6.2",
     "tsparticles": "^3.0.0-beta.4",
     "@tsparticles/basic": "^3.0.0-beta.4",
     "@tsparticles/confetti": "^3.0.0-beta.4",
