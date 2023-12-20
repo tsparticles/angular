@@ -154,7 +154,7 @@ export class AppComponent {
 _app.module.ts_
 
 ```typescript
-import { ParticlesModule } from "ng-particles";
+import { NgParticlesModule } from "ng-particles";
 import { NgModule } from "@angular/core";
 
 @NgModule({
@@ -162,7 +162,7 @@ import { NgModule } from "@angular/core";
     /* AppComponent */
   ],
   imports: [
-    /* other imports */ ParticlesModule /* ParticlesModule is required*/,
+    /* other imports */ NgParticlesModule /* NgParticlesModule is required*/,
   ],
   providers: [],
   bootstrap: [
