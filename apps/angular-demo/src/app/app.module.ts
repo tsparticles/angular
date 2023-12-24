@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgxParticlesModule } from '@tsparticles/angular';
-import { NgxConfettiModule } from '@tsparticles/angular-confetti';
-import { NgxFireworksModule } from '@tsparticles/angular-fireworks';
+import { NgxConfettiModule } from 'angular-confetti';
+import { NgxFireworksModule } from 'angular-fireworks';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
