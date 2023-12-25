@@ -1,6 +1,6 @@
 {
   "name": "angular-fireworks",
-  "version": "3.0.0-beta.0",
+  "version": "3.0.0",
   "description": "Official tsParticles Angular Confetti Component - Easily create highly customizable particle, confetti and fireworks animations and use them as animated backgrounds for your website. Ready to use components available also for Web Components, React, Vue.js (2.x and 3.x), Svelte, jQuery, Preact, Riot.js, Solid.js, Inferno.",
   "keywords": [
     "front-end",
@@ -83,9 +83,9 @@
     "@angular/platform-browser": "~17.0.8",
     "@angular/platform-browser-dynamic": "~17.0.8",
     "@angular/router": "~17.0.8",
+    "@tsparticles/fireworks": "^3.0.2",
     "rxjs": "~7.8.1",
     "tslib": "^2.6.2",
-    "@tsparticles/fireworks": "^3.0.2",
     "zone.js": "~0.14.2"
   },
   "devDependencies": {

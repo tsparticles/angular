@@ -1,6 +1,6 @@
 {
   "name": "@tsparticles/angular-demo",
-  "version": "3.0.0-beta.3",
+  "version": "3.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o",
@@ -20,11 +20,6 @@
     "@angular/platform-browser-dynamic": "~17.0.8",
     "@angular/router": "~17.0.8",
     "@tsparticles/angular": "workspace:^",
-    "angular-confetti": "workspace:^",
-    "angular-fireworks": "workspace:^",
-    "rxjs": "~7.8.1",
-    "tslib": "^2.6.2",
-    "tsparticles": "^3.0.2",
     "@tsparticles/basic": "^3.0.2",
     "@tsparticles/confetti": "^3.0.2",
     "@tsparticles/configs": "^3.0.2",
@@ -79,6 +74,11 @@
     "@tsparticles/updater-tilt": "^3.0.2",
     "@tsparticles/updater-twinkle": "^3.0.2",
     "@tsparticles/updater-wobble": "^3.0.2",
+    "angular-confetti": "workspace:^",
+    "angular-fireworks": "workspace:^",
+    "rxjs": "~7.8.1",
+    "tslib": "^2.6.2",
+    "tsparticles": "^3.0.2",
     "zone.js": "~0.14.2"
   },
   "devDependencies": {

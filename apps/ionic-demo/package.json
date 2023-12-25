@@ -1,6 +1,6 @@
 {
   "name": "@tsparticles/ionic-demo",
-  "version": "3.0.0-beta.0",
+  "version": "3.0.0",
   "author": "Matteo Bruni <matteo.bruni@me.com>",
   "homepage": "https://particles.js.org",
   "scripts": {
@@ -28,11 +28,7 @@
     "@ionic/angular": "^7.6.2",
     "@ionic/core": "^7.6.2",
     "@stencil/core": "^4.9.0",
-    "ionicons": "^7.2.2",
     "@tsparticles/angular": "workspace:^",
-    "rxjs": "~7.8.1",
-    "tslib": "^2.6.2",
-    "tsparticles": "^3.0.2",
     "@tsparticles/basic": "^3.0.2",
     "@tsparticles/configs": "^3.0.2",
     "@tsparticles/effect-trail": "^3.0.2",
@@ -85,6 +81,10 @@
     "@tsparticles/updater-tilt": "^3.0.2",
     "@tsparticles/updater-twinkle": "^3.0.2",
     "@tsparticles/updater-wobble": "^3.0.2",
+    "ionicons": "^7.2.2",
+    "rxjs": "~7.8.1",
+    "tslib": "^2.6.2",
+    "tsparticles": "^3.0.2",
     "zone.js": "~0.14.2"
   },
   "devDependencies": {
