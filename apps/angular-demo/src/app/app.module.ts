@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgParticlesModule } from 'ng-particles';
-import { NgConfettiModule } from 'ng-confetti';
-import { NgFireworksModule } from 'ng-fireworks';
+import { NgxParticlesModule } from '@tsparticles/angular';
+import { NgxConfettiModule } from 'angular-confetti';
+import { NgxFireworksModule } from 'angular-fireworks';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,9 +12,9 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgParticlesModule,
-    NgConfettiModule,
-    NgFireworksModule,
+    NgxParticlesModule,
+    NgxConfettiModule,
+    NgxFireworksModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

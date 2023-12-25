@@ -1,26 +1,48 @@
-import { AfterViewInit, Component, EventEmitter, Inject, Input, OnDestroy, Output, PLATFORM_ID } from '@angular/core';
+import {
+    AfterViewInit,
+    Component,
+    EventEmitter,
+    Inject,
+    Input,
+    OnDestroy,
+    OnInit,
+    Output,
+    PLATFORM_ID,
+} from '@angular/core';
 import { isPlatformServer } from '@angular/common';
-import { EMPTY, from, mergeMap, Subject, takeUntil } from 'rxjs';
-import { tsParticles } from 'tsparticles-engine';
-import type { Container, Engine } from 'tsparticles-engine';
+import { from, mergeMap, Subject, Subscription, takeUntil } from 'rxjs';
+import { tsParticles } from '@tsparticles/engine';
+import type { Container, Engine } from '@tsparticles/engine';
 import { IParticlesProps } from './ng-particles.module';
+import { NgParticlesService } from './ng-particles.service';
 
 @Component({
-    selector: 'ng-particles',
+    selector: 'ngx-particles',
     template: '<div [id]="id"></div>',
 })
-export class NgParticlesComponent implements AfterViewInit, OnDestroy {
+export class NgxParticlesComponent implements OnInit, AfterViewInit, OnDestroy {
     @Input() options?: IParticlesProps;
     @Input() url?: string;
     @Input() id: string;
     @Input() particlesInit?: (engine: Engine) => Promise<void>;
     @Output() particlesLoaded: EventEmitter<Container> = new EventEmitter<Container>();
 
+    private subscription?: Subscription;
     private destroy$ = new Subject<void>();
     private container?: Container;
 
-    constructor(@Inject(PLATFORM_ID) protected platformId: string) {
+    constructor(
+        @Inject(PLATFORM_ID) protected platformId: string,
+        private readonly particlesService: NgParticlesService,
+    ) {
         this.id = 'tsparticles';
+    }
+
+    public ngOnInit() {
+        this.subscription = this.particlesService.getInstallationStatus().subscribe(() => {
+            this.container?.destroy();
+            this.loadParticles();
+        });
     }
 
     public ngAfterViewInit(): void {
@@ -28,6 +50,16 @@ export class NgParticlesComponent implements AfterViewInit, OnDestroy {
             return;
         }
 
+        this.loadParticles();
+    }
+
+    public ngOnDestroy(): void {
+        this.container?.destroy();
+        this.subscription?.unsubscribe();
+        this.destroy$.next();
+    }
+
+    private loadParticles(): void {
         const cb = (container?: Container) => {
             this.container = container;
             this.particlesLoaded.emit(container);
@@ -36,32 +68,10 @@ export class NgParticlesComponent implements AfterViewInit, OnDestroy {
         from(this.particlesInit ? this.particlesInit(tsParticles) : Promise.resolve())
             .pipe(
                 mergeMap(() => {
-                    if (this.url) {
-                        return tsParticles.loadJSON(this.id, this.url);
-                    } else if (this.options) {
-                        return tsParticles.load(this.id, this.options);
-                    } else {
-                        console.error('You must specify options or url to load tsParticles');
-                        return EMPTY;
-                    }
+                    return tsParticles.load({ id: this.id, url: this.url, options: this.options });
                 }),
                 takeUntil(this.destroy$),
             )
             .subscribe(cb);
-    }
-
-    public ngOnDestroy(): void {
-        this.container?.destroy();
-        this.destroy$.next();
-    }
-}
-
-@Component({
-    selector: 'Particles',
-    template: '<div [id]="id"></div>',
-})
-export class ParticlesComponent extends NgParticlesComponent {
-    constructor(@Inject(PLATFORM_ID) protected override platformId: string) {
-        super(platformId);
     }
 }

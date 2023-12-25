@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
-import { NgConfettiComponent } from './ng-confetti.component';
+import { NgxConfettiComponent } from './ng-confetti.component';
 
 @NgModule({
-    declarations: [NgConfettiComponent],
+    declarations: [NgxConfettiComponent],
     imports: [],
-    exports: [NgConfettiComponent],
+    exports: [NgxConfettiComponent],
 })
-export class NgConfettiModule {}
+export class NgxConfettiModule {}

@@ -1,15 +1,16 @@
 import { Component } from "@angular/core";
-import type { Container, Engine, ISourceOptions } from "tsparticles-engine";
+import type { Container, Engine, ISourceOptions } from "@tsparticles/engine";
 import { loadFull } from "tsparticles";
-import configs from "tsparticles-demo-configs";
+import configs from "@tsparticles/configs";
+import { NgParticlesService } from "@tsparticles/angular";
 
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.css"]
+  styleUrls: [ "./app.component.css" ]
 })
 export class AppComponent {
-  title = "angular13";
+  title = "angular";
   id = "tsparticles";
   fire = 0;
   particlesVisible = true;
@@ -42,16 +43,15 @@ export class AppComponent {
     //this.confettiVisible = !this.confettiVisible;
   }
 
-  constructor() {
+  constructor(private ngParticlesService: NgParticlesService) {
   }
 
   ngOnInit(): void {
-  }
+    void this.ngParticlesService.init(async (engine: Engine) => {
+      console.log("init", engine);
 
-  async particlesInit(engine: Engine): Promise<void> {
-    console.log("init", engine);
-
-    await loadFull(engine);
+      await loadFull(engine);
+    });
   }
 
   public particlesLoaded(container: Container): void {

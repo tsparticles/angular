@@ -1,8 +1,8 @@
 [![banner](https://particles.js.org/images/banner3.png)](https://particles.js.org)
 
-# ng-particles
+# @tsparticles/angular
 
-[![npm](https://img.shields.io/npm/v/ng-particles)](https://www.npmjs.com/package/ng-particles) [![npm](https://img.shields.io/npm/dm/ng-particles)](https://www.npmjs.com/package/ng-particles) [![GitHub Sponsors](https://img.shields.io/github/sponsors/matteobruni)](https://github.com/sponsors/matteobruni)
+[![npm](https://img.shields.io/npm/v/@tsparticles/angular)](https://www.npmjs.com/package/ng-particles) [![npm](https://img.shields.io/npm/dm/@tsparticles/angular)](https://www.npmjs.com/package/@tsparticles/angular) [![GitHub Sponsors](https://img.shields.io/github/sponsors/matteobruni)](https://github.com/sponsors/matteobruni)
 
 Official [tsParticles](https://github.com/matteobruni/tsparticles) Angular component
 
@@ -15,13 +15,13 @@ Official [tsParticles](https://github.com/matteobruni/tsparticles) Angular compo
 ### Install
 
 ```shell
-$ npm install ng-particles tsparticles-engine
+$ npm install @tsparticles/angular @tsparticles/engine
 ```
 
 or
 
 ```shell
-$ yarn add ng-particles tsparticles-engine
+$ yarn add @tsparticles/angular @tsparticles/engine
 ```
 
 ### Usage
@@ -29,29 +29,20 @@ $ yarn add ng-particles tsparticles-engine
 _template.html_
 
 ```html
-<ng-particles
-    [id]="id"
-    [options]="particlesOptions"
-    [particlesInit]="particlesInit"
-    (particlesLoaded)="particlesLoaded($event)"
-></ng-particles>
+<ngx-particles [id]="id" [options]="particlesOptions" (particlesLoaded)="particlesLoaded($event)"></ngx-particles>
 
 <!-- or -->
 
-<ng-particles
-    [id]="id"
-    [url]="particlesUrl"
-    [particlesInit]="particlesInit"
-    (particlesLoaded)="particlesLoaded($event)"
-></ng-particles>
+<ngx-particles [id]="id" [url]="particlesUrl" (particlesLoaded)="particlesLoaded($event)"></ngx-particles>
 ```
 
 _app.ts_
 
 ```typescript
-import { MoveDirection, ClickMode, HoverMode, OutMode } from "tsparticles-engine";
+import { MoveDirection, ClickMode, HoverMode, OutMode } from "@tsparticles/engine";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+import { NgParticlesService } from "@tsparticles/angular";
 
 export class AppComponent {
     id = "tsparticles";
@@ -130,18 +121,22 @@ export class AppComponent {
         detectRetina: true,
     };
 
-    particlesLoaded(container: Container): void {
-        console.log(container);
+    constructor(private readonly ngParticlesService: NgParticlesService) {}
+
+    ngOnInit(): void {
+        this.ngParticlesService.init(async () => {
+            console.log(engine);
+
+            // Starting from 1.19.0 you can add custom presets or shape here, using the current tsParticles instance (main)
+            // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+            // starting from v2 you can add only the features you need reducing the bundle size
+            //await loadFull(engine);
+            await loadSlim(engine);
+        });
     }
 
-    async particlesInit(engine: Engine): Promise<void> {
-        console.log(engine);
-
-        // Starting from 1.19.0 you can add custom presets or shape here, using the current tsParticles instance (main)
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
-        //await loadFull(engine);
-        await loadSlim(engine);
+    particlesLoaded(container: Container): void {
+        console.log(container);
     }
 }
 ```
@@ -149,14 +144,14 @@ export class AppComponent {
 _app.module.ts_
 
 ```typescript
-import { NgParticlesModule } from "ng-particles";
+import { NgxParticlesModule } from "@tsparticles/angular";
 import { NgModule } from "@angular/core";
 
 @NgModule({
     declarations: [
         /* AppComponent */
     ],
-    imports: [/* other imports */ NgParticlesModule /* NgParticlesModule is required*/],
+    imports: [/* other imports */ NgxParticlesModule /* NgxParticlesModule is required*/],
     providers: [],
     bootstrap: [
         /* AppComponent */
