@@ -1,8 +1,8 @@
 [![banner](https://particles.js.org/images/banner3.png)](https://particles.js.org)
 
-# ng-particles
+# @tsparticles/angular
 
-[![npm](https://img.shields.io/npm/v/ng-particles)](https://www.npmjs.com/package/ng-particles) [![npm](https://img.shields.io/npm/dm/ng-particles)](https://www.npmjs.com/package/ng-particles) [![GitHub Sponsors](https://img.shields.io/github/sponsors/matteobruni)](https://github.com/sponsors/matteobruni)
+[![npm](https://img.shields.io/npm/v/@tsparticles/angular)](https://www.npmjs.com/package/ng-particles) [![npm](https://img.shields.io/npm/dm/@tsparticles/angular)](https://www.npmjs.com/package/@tsparticles/angular) [![GitHub Sponsors](https://img.shields.io/github/sponsors/matteobruni)](https://github.com/sponsors/matteobruni)
 
 Official [tsParticles](https://github.com/matteobruni/tsparticles) Angular component
 
@@ -15,13 +15,13 @@ Official [tsParticles](https://github.com/matteobruni/tsparticles) Angular compo
 ### Install
 
 ```shell
-$ npm install ng-particles @tsparticles/engine
+$ npm install @tsparticles/angular @tsparticles/engine
 ```
 
 or
 
 ```shell
-$ yarn add ng-particles @tsparticles/engine
+$ yarn add @tsparticles/angular @tsparticles/engine
 ```
 
 ### Usage
@@ -29,21 +29,11 @@ $ yarn add ng-particles @tsparticles/engine
 _template.html_
 
 ```html
-<ngx-particles
-    [id]="id"
-    [options]="particlesOptions"
-    [particlesInit]="particlesInit"
-    (particlesLoaded)="particlesLoaded($event)"
-></ngx-particles>
+<ngx-particles [id]="id" [options]="particlesOptions" (particlesLoaded)="particlesLoaded($event)"></ngx-particles>
 
 <!-- or -->
 
-<ngx-particles
-    [id]="id"
-    [url]="particlesUrl"
-    [particlesInit]="particlesInit"
-    (particlesLoaded)="particlesLoaded($event)"
-></ngx-particles>
+<ngx-particles [id]="id" [url]="particlesUrl" (particlesLoaded)="particlesLoaded($event)"></ngx-particles>
 ```
 
 _app.ts_
@@ -52,97 +42,102 @@ _app.ts_
 import { MoveDirection, ClickMode, HoverMode, OutMode } from "@tsparticles/engine";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+import { NgParticlesService } from "@tsparticles/angular";
 
 export class AppComponent {
-    id = "tsparticles";
+  id = "tsparticles";
 
-    /* Starting from 1.19.0 you can use a remote url (AJAX request) to a JSON with the configuration */
-    particlesUrl = "http://foo.bar/particles.json";
+  /* Starting from 1.19.0 you can use a remote url (AJAX request) to a JSON with the configuration */
+  particlesUrl = "http://foo.bar/particles.json";
 
-    /* or the classic JavaScript object */
-    particlesOptions = {
-        background: {
-            color: {
-                value: "#0d47a1",
-            },
+  /* or the classic JavaScript object */
+  particlesOptions = {
+    background: {
+      color: {
+        value: "#0d47a1",
+      },
+    },
+    fpsLimit: 120,
+    interactivity: {
+      events: {
+        onClick: {
+          enable: true,
+          mode: ClickMode.push,
         },
-        fpsLimit: 120,
-        interactivity: {
-            events: {
-                onClick: {
-                    enable: true,
-                    mode: ClickMode.push,
-                },
-                onHover: {
-                    enable: true,
-                    mode: HoverMode.repulse,
-                },
-                resize: true,
-            },
-            modes: {
-                push: {
-                    quantity: 4,
-                },
-                repulse: {
-                    distance: 200,
-                    duration: 0.4,
-                },
-            },
+        onHover: {
+          enable: true,
+          mode: HoverMode.repulse,
         },
-        particles: {
-            color: {
-                value: "#ffffff",
-            },
-            links: {
-                color: "#ffffff",
-                distance: 150,
-                enable: true,
-                opacity: 0.5,
-                width: 1,
-            },
-            move: {
-                direction: MoveDirection.none,
-                enable: true,
-                outModes: {
-                    default: OutMode.bounce,
-                },
-                random: false,
-                speed: 6,
-                straight: false,
-            },
-            number: {
-                density: {
-                    enable: true,
-                    area: 800,
-                },
-                value: 80,
-            },
-            opacity: {
-                value: 0.5,
-            },
-            shape: {
-                type: "circle",
-            },
-            size: {
-                value: { min: 1, max: 5 },
-            },
+        resize: true,
+      },
+      modes: {
+        push: {
+          quantity: 4,
         },
-        detectRetina: true,
-    };
+        repulse: {
+          distance: 200,
+          duration: 0.4,
+        },
+      },
+    },
+    particles: {
+      color: {
+        value: "#ffffff",
+      },
+      links: {
+        color: "#ffffff",
+        distance: 150,
+        enable: true,
+        opacity: 0.5,
+        width: 1,
+      },
+      move: {
+        direction: MoveDirection.none,
+        enable: true,
+        outModes: {
+          default: OutMode.bounce,
+        },
+        random: false,
+        speed: 6,
+        straight: false,
+      },
+      number: {
+        density: {
+          enable: true,
+          area: 800,
+        },
+        value: 80,
+      },
+      opacity: {
+        value: 0.5,
+      },
+      shape: {
+        type: "circle",
+      },
+      size: {
+        value: { min: 1, max: 5 },
+      },
+    },
+    detectRetina: true,
+  };
 
-    particlesLoaded(container: Container): void {
-        console.log(container);
-    }
+  constructor(private readonly ngParticlesService: NgParticlesService) {}
 
-    async particlesInit(engine: Engine): Promise<void> {
-        console.log(engine);
+  ngOnInit(): void {
+    this.ngParticlesService.init(async () => {
+      console.log(engine);
 
-        // Starting from 1.19.0 you can add custom presets or shape here, using the current tsParticles instance (main)
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
-        //await loadFull(engine);
-        await loadSlim(engine);
-    }
+      // Starting from 1.19.0 you can add custom presets or shape here, using the current tsParticles instance (main)
+      // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+      // starting from v2 you can add only the features you need reducing the bundle size
+      //await loadFull(engine);
+      await loadSlim(engine);
+    });
+  }
+
+  particlesLoaded(container: Container): void {
+    console.log(container);
+  }
 }
 ```
 
@@ -153,14 +148,14 @@ import { NgxParticlesModule } from "@tsparticles/angular";
 import { NgModule } from "@angular/core";
 
 @NgModule({
-    declarations: [
-        /* AppComponent */
-    ],
-    imports: [/* other imports */ NgxParticlesModule /* NgxParticlesModule is required*/],
-    providers: [],
-    bootstrap: [
-        /* AppComponent */
-    ],
+  declarations: [
+    /* AppComponent */
+  ],
+  imports: [/* other imports */ NgxParticlesModule /* NgxParticlesModule is required*/],
+  providers: [],
+  bootstrap: [
+    /* AppComponent */
+  ],
 })
 export class AppModule {}
 ```
