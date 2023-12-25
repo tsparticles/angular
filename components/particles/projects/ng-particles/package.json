@@ -81,6 +81,9 @@
       "url": "https://www.buymeacoffee.com/matteobruni"
     }
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
     "@angular/common": ">=2.0.0",
     "@angular/core": ">=2.0.0",
