@@ -21,7 +21,8 @@ import { NgParticlesService } from './ng-particles.service';
     template: '<div [id]="id"></div>',
 })
 export class NgxParticlesComponent implements OnInit, AfterViewInit, OnDestroy {
-    @Input() options?: IParticlesProps;
+    @Input() options?: string | IParticlesProps;
+    @Input() id?: string;
     @Input() url?: string;
     @Input() id: string;
     @Input() particlesInit?: (engine: Engine) => Promise<void>;
@@ -58,7 +59,6 @@ export class NgxParticlesComponent implements OnInit, AfterViewInit, OnDestroy {
         this.subscription?.unsubscribe();
         this.destroy$.next();
     }
-
     private loadParticles(): void {
         const cb = (container?: Container) => {
             this.container = container;
@@ -68,7 +68,7 @@ export class NgxParticlesComponent implements OnInit, AfterViewInit, OnDestroy {
         from(this.particlesInit ? this.particlesInit(tsParticles) : Promise.resolve())
             .pipe(
                 mergeMap(() => {
-                    return tsParticles.load({ id: this.id, url: this.url, options: this.options });
+                    return tsParticles.load({ id: this.id || 'tsparticles', url: this.url, options: typeof this.options === 'string' ? JSON.parse(this.options) : this.options });
                 }),
                 takeUntil(this.destroy$),
             )
