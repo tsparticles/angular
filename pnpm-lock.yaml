@@ -536,8 +536,8 @@ importers:
         specifier: ^5.6.0
         version: 5.7.2
       '@ionic/angular-toolkit':
-        specifier: ^10.0.0
-        version: 10.1.1
+        specifier: ^11.0.0
+        version: 11.0.1
       '@types/jasmine':
         specifier: ~5.1.4
         version: 5.1.4
@@ -1158,23 +1158,6 @@ packages:
       - chokidar
     dev: true
 
-  /@angular-devkit/core@16.2.12:
-    resolution: {integrity: sha512-o6ziQs+EcEonFezrsA46jbZqkQrs4ckS1bAQj93g5ZjGtieUz8l/U3lclvKpL/iEzWkGVViSYuP2KyW2oqTDiQ==}
-    engines: {node: ^16.14.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
-    peerDependencies:
-      chokidar: ^3.5.2
-    peerDependenciesMeta:
-      chokidar:
-        optional: true
-    dependencies:
-      ajv: 8.12.0
-      ajv-formats: 2.1.1(ajv@8.12.0)
-      jsonc-parser: 3.2.0
-      picomatch: 2.3.1
-      rxjs: 7.8.1
-      source-map: 0.7.4
-    dev: true
-
   /@angular-devkit/core@17.0.10(chokidar@3.5.3):
     resolution: {integrity: sha512-93N6oHnmtRt0hL3AXxvnk47sN1rHndfj+pqI5haEY41AGWzIWv9cSBsqlM0PWltNpo6VivcExZESvbLJ71wqbQ==}
     engines: {node: ^18.13.0 || >=20.9.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
@@ -1191,19 +1174,6 @@ packages:
       picomatch: 3.0.1
       rxjs: 7.8.1
       source-map: 0.7.4
-    dev: true
-
-  /@angular-devkit/schematics@16.2.12:
-    resolution: {integrity: sha512-lf/Nz2o875pllxGNUcI2by4rctfRsOZOxvaLq2UaH6XG6Re9tqeNfn40a8qXrr9/IYntXnlvEid/pd9e8gFBIw==}
-    engines: {node: ^16.14.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
-    dependencies:
-      '@angular-devkit/core': 16.2.12
-      jsonc-parser: 3.2.0
-      magic-string: 0.30.1
-      ora: 5.4.1
-      rxjs: 7.8.1
-    transitivePeerDependencies:
-      - chokidar
     dev: true
 
   /@angular-devkit/schematics@17.0.10:
@@ -3630,12 +3600,12 @@ packages:
     engines: {node: '>=6.9.0'}
     dev: false
 
-  /@ionic/angular-toolkit@10.1.1:
-    resolution: {integrity: sha512-idLaBUY14M7JQmvxAGeDZvk7WcamWEHo1OHGRuLRAn+7uWrKeGxfWbnbZJhvRCLQndr8j7q3WV3Z+0APkPuKaQ==}
+  /@ionic/angular-toolkit@11.0.1:
+    resolution: {integrity: sha512-dxx2RDbxDYM2nWRPIirKMJySHtqJ1u02T25PGbNb99W2Wlcmu1cza3+2/PQ8ga18yMz/dQqaGyEmPDf3ZSVO0w==}
     dependencies:
-      '@angular-devkit/core': 16.2.12
-      '@angular-devkit/schematics': 16.2.12
-      '@schematics/angular': 16.2.12
+      '@angular-devkit/core': 17.0.10(chokidar@3.5.3)
+      '@angular-devkit/schematics': 17.0.10
+      '@schematics/angular': 17.0.10
     transitivePeerDependencies:
       - chokidar
     dev: true
@@ -4618,17 +4588,6 @@ packages:
       '@types/estree': 1.0.5
     optionalDependencies:
       fsevents: 2.3.3
-    dev: true
-
-  /@schematics/angular@16.2.12:
-    resolution: {integrity: sha512-rc6Dxo7yLnNhECxZyvwv3qL40GvMHw/gMeme8DUGN7zgcUdBJ7LOCURp7EZqOBghMVeeJvLrohitEbs9NhRLBA==}
-    engines: {node: ^16.14.0 || >=18.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
-    dependencies:
-      '@angular-devkit/core': 16.2.12
-      '@angular-devkit/schematics': 16.2.12
-      jsonc-parser: 3.2.0
-    transitivePeerDependencies:
-      - chokidar
     dev: true
 
   /@schematics/angular@17.0.10:
@@ -10325,13 +10284,6 @@ packages:
   /lunr@2.3.9:
     resolution: {integrity: sha512-zTU3DaZaF3Rt9rhN3uBMGQD3dD2/vFQqnvZCDv4dl5iOzq2IZQqTxu90r4E5J+nP70J3ilqVCrbho2eWaeW8Ow==}
     dev: false
-
-  /magic-string@0.30.1:
-    resolution: {integrity: sha512-mbVKXPmS0z0G4XqFDCTllmDQ6coZzn94aMlb0o/A4HEHJCKcanlDZwYJgwnkmgD3jyWhUgj9VsPrfd972yPffA==}
-    engines: {node: '>=12'}
-    dependencies:
-      '@jridgewell/sourcemap-codec': 1.4.15
-    dev: true
 
   /magic-string@0.30.5:
     resolution: {integrity: sha512-7xlpfBaQaP/T6Vh8MO/EqXSW5En6INHEvEXQiuff7Gku0PWjU3uf6w/j9o7O+SpB5fOAkrI5HeoNgwjEO0pFsA==}
