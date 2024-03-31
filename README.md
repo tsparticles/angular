@@ -131,7 +131,7 @@ export class AppComponent {
   constructor(private readonly ngParticlesService: NgParticlesService) {}
 
   ngOnInit(): void {
-    this.ngParticlesService.init(async () => {
+    this.ngParticlesService.init(async (engine) => {
       console.log('init', engine);
 
       // Starting from 1.19.0 you can add custom presets or shape here, using the current tsParticles instance (main)
