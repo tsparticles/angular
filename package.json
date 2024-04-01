@@ -12,14 +12,14 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@commitlint/cli": "^18.4.2",
-    "@commitlint/config-conventional": "^18.4.2",
-    "husky": "^8.0.3",
+    "@commitlint/cli": "^19.0.0",
+    "@commitlint/config-conventional": "^19.0.0",
+    "husky": "^9.0.0",
     "lerna": "^8.0.0",
     "typedoc": "^0.25.3",
     "typedoc-plugin-clarity": "^1.5.0",
     "typedoc-plugin-carbon-ads": "^1.5.0",
-    "typedoc-plugin-coverage": "^2.2.0",
+    "typedoc-plugin-coverage": "^3.0.0",
     "typedoc-plugin-keywords": "^1.5.0",
     "typedoc-plugin-missing-exports": "^2.1.0"
   },
