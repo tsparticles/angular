@@ -15,7 +15,7 @@
     "@commitlint/cli": "^18.4.2",
     "@commitlint/config-conventional": "^18.4.2",
     "husky": "^8.0.3",
-    "lerna": "^7.4.2",
+    "lerna": "^8.0.0",
     "typedoc": "^0.25.3",
     "typedoc-plugin-clarity": "^1.5.0",
     "typedoc-plugin-carbon-ads": "^1.5.0",
