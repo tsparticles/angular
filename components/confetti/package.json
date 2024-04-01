@@ -104,7 +104,7 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "ng-packagr": "~17.0.3",
     "prettier": "^3.2.5",
-    "typescript": "~5.2.2"
+    "typescript": "~5.4.0"
   },
   "module": "dist/ng-confetti/fesm2015/ng-confetti.mjs",
   "es2020": "dist/ng-confetti/fesm2020/ng-confetti.mjs",
