@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NgParticlesService } from "@tsparticles/angular";
-import { loadFull } from "tsparticles";
 
 @Component({
   selector: 'app-root',
@@ -14,6 +13,8 @@ export class AppComponent {
   ngOnInit(): void {
     void this.ngParticlesService.init(async (engine) => {
       console.log("init", engine);
+
+      const { loadFull } = await import("tsparticles");
 
       await loadFull(engine);
     });
