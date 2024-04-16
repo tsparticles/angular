@@ -30,7 +30,7 @@ _template.html_
 
 ```html
 <ngx-particles
-  [id]="id"
+  id="tsparticles"
   [options]="particlesOptions"
   (particlesLoaded)="particlesLoaded($event)"
 ></ngx-particles>
@@ -38,7 +38,7 @@ _template.html_
 <!-- or -->
 
 <ngx-particles
-  [id]="id"
+  id="tsparticles"
   [url]="particlesUrl"
   (particlesLoaded)="particlesLoaded($event)"
 ></ngx-particles>
@@ -47,19 +47,12 @@ _template.html_
 _app.ts_
 
 ```typescript
-import {
-  MoveDirection,
-  ClickMode,
-  HoverMode,
-  OutMode,
-} from "@tsparticles/engine";
+import { MoveDirection, OutMode } from "@tsparticles/engine";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 import { NgParticlesService } from "@tsparticles/angular";
 
 export class AppComponent {
-  id = "tsparticles";
-
   /* Starting from 1.19.0 you can use a remote url (AJAX request) to a JSON with the configuration */
   particlesUrl = "http://foo.bar/particles.json";
 
@@ -75,11 +68,11 @@ export class AppComponent {
       events: {
         onClick: {
           enable: true,
-          mode: ClickMode.push,
+          mode: "push",
         },
         onHover: {
           enable: true,
-          mode: HoverMode.repulse,
+          mode: "repulse",
         },
         resize: true,
       },
@@ -117,7 +110,8 @@ export class AppComponent {
       number: {
         density: {
           enable: true,
-          area: 800,
+          width: 800,
+          height: 800,
         },
         value: 80,
       },
@@ -137,19 +131,23 @@ export class AppComponent {
   constructor(private readonly ngParticlesService: NgParticlesService) {}
 
   ngOnInit(): void {
-    this.ngParticlesService.init(async () => {
-      console.log(engine);
+    this.ngParticlesService.init(async (engine) => {
+      console.log('init', engine);
 
       // Starting from 1.19.0 you can add custom presets or shape here, using the current tsParticles instance (main)
       // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
       // starting from v2 you can add only the features you need reducing the bundle size
       //await loadFull(engine);
-      await loadSlim(engine);
+      await loadSlim(engine)
+        .then(() => {
+          console.log('loadSlim complete');
+        })
+        .catch((e) => console.error(e));
     });
   }
 
   particlesLoaded(container: Container): void {
-    console.log(container);
+    console.log('particlesLoaded', container);
   }
 }
 ```
