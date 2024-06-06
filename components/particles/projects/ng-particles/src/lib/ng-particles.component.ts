@@ -9,7 +9,7 @@ import {
     Output,
     PLATFORM_ID,
 } from '@angular/core';
-import { isPlatformServer } from '@angular/common';
+import { isPlatformServer, isPlatformBrowser } from '@angular/common';
 import { from, mergeMap, Subject, Subscription, takeUntil } from 'rxjs';
 import { tsParticles } from '@tsparticles/engine';
 import type { Container, Engine } from '@tsparticles/engine';
@@ -46,10 +46,10 @@ export class NgxParticlesComponent implements OnInit, AfterViewInit, OnDestroy {
     }
 
     public ngAfterViewInit(): void {
-        if (isPlatformServer(this.platformId)) {
+        if (!isPlatformBrowser(this.platformId)) {
             return;
         }
-
+    
         this.loadParticles();
     }
 
