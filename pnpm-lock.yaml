@@ -265,8 +265,8 @@ importers:
         specifier: ^20.12.2
         version: 20.12.2
       jasmine-core:
-        specifier: ~5.1.2
-        version: 5.1.2
+        specifier: ~5.13.0
+        version: 5.13.0
       karma:
         specifier: ~6.4.3
         version: 6.4.3
@@ -281,7 +281,7 @@ importers:
         version: 5.1.0(karma@6.4.3)
       karma-jasmine-html-reporter:
         specifier: ~2.1.0
-        version: 2.1.0(jasmine-core@5.1.2)(karma-jasmine@5.1.0)(karma@6.4.3)
+        version: 2.1.0(jasmine-core@5.13.0)(karma-jasmine@5.1.0)(karma@6.4.3)
       typescript:
         specifier: ~5.4.0
         version: 5.4.2
@@ -566,8 +566,8 @@ importers:
         specifier: ^1.2.3
         version: 1.2.3(eslint@8.57.0)
       jasmine-core:
-        specifier: ~5.1.2
-        version: 5.1.2
+        specifier: ~5.13.0
+        version: 5.13.0
       jasmine-spec-reporter:
         specifier: ~7.0.0
         version: 7.0.0
@@ -588,7 +588,7 @@ importers:
         version: 5.1.0(karma@6.4.3)
       karma-jasmine-html-reporter:
         specifier: ^2.1.0
-        version: 2.1.0(jasmine-core@5.1.2)(karma-jasmine@5.1.0)(karma@6.4.3)
+        version: 2.1.0(jasmine-core@5.13.0)(karma-jasmine@5.1.0)(karma@6.4.3)
       protractor:
         specifier: ~7.0.0
         version: 7.0.0
@@ -660,8 +660,8 @@ importers:
         specifier: ^20.10.5
         version: 20.11.25
       jasmine-core:
-        specifier: ~5.1.2
-        version: 5.1.2
+        specifier: ~5.13.0
+        version: 5.13.0
       karma:
         specifier: ~6.4.3
         version: 6.4.3
@@ -676,7 +676,7 @@ importers:
         version: 5.1.0(karma@6.4.3)
       karma-jasmine-html-reporter:
         specifier: ~2.1.0
-        version: 2.1.0(jasmine-core@5.1.2)(karma-jasmine@5.1.0)(karma@6.4.3)
+        version: 2.1.0(jasmine-core@5.13.0)(karma-jasmine@5.1.0)(karma@6.4.3)
       ng-packagr:
         specifier: ~17.3.0
         version: 17.3.0(@angular/compiler-cli@17.3.2)(tslib@2.6.2)(typescript@5.4.2)
@@ -746,8 +746,8 @@ importers:
         specifier: ^20.12.2
         version: 20.12.2
       jasmine-core:
-        specifier: ~5.1.2
-        version: 5.1.2
+        specifier: ~5.13.0
+        version: 5.13.0
       karma:
         specifier: ~6.4.3
         version: 6.4.3
@@ -762,7 +762,7 @@ importers:
         version: 5.1.0(karma@6.4.3)
       karma-jasmine-html-reporter:
         specifier: ~2.1.0
-        version: 2.1.0(jasmine-core@5.1.2)(karma-jasmine@5.1.0)(karma@6.4.3)
+        version: 2.1.0(jasmine-core@5.13.0)(karma-jasmine@5.1.0)(karma@6.4.3)
       ng-packagr:
         specifier: ~17.3.0
         version: 17.3.0(@angular/compiler-cli@17.3.2)(tslib@2.6.2)(typescript@5.4.2)
@@ -832,8 +832,8 @@ importers:
         specifier: ^20.12.2
         version: 20.12.2
       jasmine-core:
-        specifier: ~5.1.2
-        version: 5.1.2
+        specifier: ~5.13.0
+        version: 5.13.0
       karma:
         specifier: ~6.4.3
         version: 6.4.3
@@ -848,7 +848,7 @@ importers:
         version: 5.1.0(karma@6.4.3)
       karma-jasmine-html-reporter:
         specifier: ~2.1.0
-        version: 2.1.0(jasmine-core@5.1.2)(karma-jasmine@5.1.0)(karma@6.4.3)
+        version: 2.1.0(jasmine-core@5.13.0)(karma-jasmine@5.1.0)(karma@6.4.3)
       ng-packagr:
         specifier: ~17.3.0
         version: 17.3.0(@angular/compiler-cli@17.3.2)(tslib@2.6.2)(typescript@5.4.2)
@@ -9439,8 +9439,8 @@ packages:
     resolution: {integrity: sha512-O236+gd0ZXS8YAjFx8xKaJ94/erqUliEkJTDedyE7iHvv4ZVqi+q+8acJxu05/WJDKm512EUNn809In37nWlAQ==}
     dev: true
 
-  /jasmine-core@5.1.2:
-    resolution: {integrity: sha512-2oIUMGn00FdUiqz6epiiJr7xcFyNYj3rDcfmnzfkBnHyBQ3cBQUs4mmyGsOb7TTLb9kxk7dBcmEmqhDKkBoDyA==}
+  /jasmine-core@5.13.0:
+    resolution: {integrity: sha512-vsYjfh7lyqvZX5QgqKc4YH8phs7g96Z8bsdIFNEU3VqXhlHaq+vov/Fgn/sr6MiUczdZkyXRC3TX369Ll4Nzbw==}
     dev: true
 
   /jasmine-spec-reporter@7.0.0:
@@ -9647,14 +9647,14 @@ packages:
       - supports-color
     dev: true
 
-  /karma-jasmine-html-reporter@2.1.0(jasmine-core@5.1.2)(karma-jasmine@5.1.0)(karma@6.4.3):
+  /karma-jasmine-html-reporter@2.1.0(jasmine-core@5.13.0)(karma-jasmine@5.1.0)(karma@6.4.3):
     resolution: {integrity: sha512-sPQE1+nlsn6Hwb5t+HHwyy0A1FNCVKuL1192b+XNauMYWThz2kweiBVW1DqloRpVvZIJkIoHVB7XRpK78n1xbQ==}
     peerDependencies:
       jasmine-core: ^4.0.0 || ^5.0.0
       karma: ^6.0.0
       karma-jasmine: ^5.0.0
     dependencies:
-      jasmine-core: 5.1.2
+      jasmine-core: 5.13.0
       karma: 6.4.3
       karma-jasmine: 5.1.0(karma@6.4.3)
     dev: true
