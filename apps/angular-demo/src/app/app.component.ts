@@ -1,13 +1,12 @@
 import { Component } from "@angular/core";
 import type { Container, Engine, ISourceOptions } from "@tsparticles/engine";
-import { loadFull } from "tsparticles";
 import configs from "@tsparticles/configs";
 import { NgParticlesService } from "@tsparticles/angular";
 
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
-  styleUrls: [ "./app.component.css" ]
+  styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
   title = "angular";
@@ -49,6 +48,8 @@ export class AppComponent {
   ngOnInit(): void {
     void this.ngParticlesService.init(async (engine: Engine) => {
       console.log("init", engine);
+
+      const { loadFull } = await import("tsparticles");
 
       await loadFull(engine);
     });

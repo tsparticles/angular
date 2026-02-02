@@ -29,7 +29,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - uses: pnpm/action-setup@v2.4.0
+      - uses: pnpm/action-setup@v3.0.0
         name: Install pnpm
         id: pnpm-install
         with:
@@ -45,14 +45,14 @@ jobs:
         run: |
           echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
 
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         name: Setup pnpm cache
         with:
           path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
-      - run: pnpm install --no-frozen-lockfile
+      - run: pnpm install
       #- run: npx nx-cloud start-ci-run
       - run: pnpm run prettify:ci:readme
       - run: pnpm run build:ci #--concurrency 3
@@ -71,7 +71,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - uses: pnpm/action-setup@v2.4.0
+      - uses: pnpm/action-setup@v3.0.0
         name: Install pnpm
         id: pnpm-install
         with:
@@ -87,14 +87,14 @@ jobs:
         run: |
           echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
 
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         name: Setup pnpm cache
         with:
           path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
-      - run: pnpm install --no-frozen-lockfile
+      - run: pnpm install
       #- run: npx nx-cloud start-ci-run
       - run: pnpm run prettify:ci:readme
       - run: pnpm run build:ci #--concurrency 3
@@ -135,6 +135,6 @@ jobs:
 #          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
 #          restore-keys: |
 #            ${{ runner.os }}-pnpm-store-
-#      - run: pnpm install --no-frozen-lockfile
+#      - run: pnpm install
 #      - name: Start Nx Agent ${{ matrix.agent }}
 #        run: npx nx-cloud start-agent
