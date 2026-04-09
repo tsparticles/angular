@@ -1,68 +1,116 @@
 import {
-    AfterViewInit,
-    Component,
-    EventEmitter,
-    Inject,
-    Input,
-    OnDestroy,
-    OnInit,
-    Output,
-    PLATFORM_ID,
-} from '@angular/core';
-import { isPlatformServer } from '@angular/common';
-import { tsParticles } from '@tsparticles/engine';
-import type { Container } from '@tsparticles/engine';
-import { IParticlesProps } from './ng-particles.module';
-import { NgParticlesService } from './ng-particles.service';
+  AfterViewInit,
+  Component,
+  ElementRef,
+  EventEmitter,
+  Inject,
+  Input,
+  NgZone,
+  OnDestroy,
+  OnInit,
+  Optional,
+  Output,
+  PLATFORM_ID,
+  ViewChild,
+  signal,
+} from "@angular/core";
+import { isPlatformServer } from "@angular/common";
+import { tsParticles } from "@tsparticles/engine";
+import type { Container, Engine, ISourceOptions } from "@tsparticles/engine";
+
+import { NgParticlesService } from "./ng-particles.service";
+import { NgParticlesEngineService } from "./ng-particles-engine.service";
 
 @Component({
-    selector: 'ngx-particles',
-    template: '<div [id]="id"></div>',
+  standalone: true,
+  selector: "ngx-particles",
+  template: '<div #particlesContainer [id]="id()"></div>',
 })
 export class NgxParticlesComponent implements OnInit, AfterViewInit, OnDestroy {
-    @Input() options?: IParticlesProps;
-    @Input() url?: string;
-    @Input() id: string;
-    @Output() particlesLoaded: EventEmitter<Container> = new EventEmitter<Container>();
+  @ViewChild("particlesContainer", { static: false })
+  particlesContainer?: ElementRef<HTMLDivElement>;
 
-    private container?: Container;
+  @Input() options?: ISourceOptions;
+  @Input() url?: string;
+  @Input() id = signal("tsparticles");
+  @Input() particlesInit?: (engine: Engine) => Promise<void> | void;
+  @Input() useEngineService = true; // Enable centralized engine by default
 
-    constructor(
-        @Inject(PLATFORM_ID) protected platformId: string,
-        private readonly particlesService: NgParticlesService,
-    ) {
-        this.id = 'tsparticles';
+  @Output() particlesLoaded = new EventEmitter<Container | undefined>();
+
+  private container?: Container;
+  private initialized = false;
+
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: string,
+    private ngZone: NgZone,
+    @Optional() private particlesService?: NgParticlesService,
+    @Optional() private engineService?: NgParticlesEngineService,
+  ) {}
+
+  public ngOnInit(): void {
+    if (this.useEngineService && this.engineService?.isReady()) {
+      this.loadParticles();
+    } else if (this.particlesService) {
+      this.particlesService.getInstallationStatus().subscribe((status) => {
+        if (status && !this.initialized) {
+          this.initialized = true;
+          this.loadParticles();
+        }
+      });
+    }
+  }
+
+  public ngAfterViewInit(): void {
+    if (isPlatformServer(this.platformId)) {
+      return;
     }
 
-    public async ngOnInit() {
-        this.particlesService.getInstallationStatus().subscribe(status => {
-            if (status) {
-                this.loadParticles();
-            }
-
-            this.container?.destroy();
-        });
+    if (!this.particlesService && !this.initialized) {
+      this.initialized = true;
+      this.loadParticles();
     }
+  }
 
-    public ngAfterViewInit(): void {
-        if (isPlatformServer(this.platformId)) {
-            return;
+  public ngOnDestroy(): void {
+    this.container?.destroy();
+  }
+
+  private loadParticles(): void {
+    this.ngZone.runOutsideAngular(async () => {
+      try {
+        let engine: Engine;
+
+        if (this.useEngineService && this.engineService) {
+          engine = this.engineService.getEngine();
+        } else {
+          engine = tsParticles;
         }
 
-        this.loadParticles();
-    }
+        if (this.particlesInit) {
+          // Only call particlesInit if engine is not from service
+          if (!this.useEngineService) {
+            await this.particlesInit(tsParticles);
+          }
+        }
 
-    public ngOnDestroy(): void {
-        this.container?.destroy();
-    }
+        const container = await engine.load({
+          id: this.id(),
+          url: this.url,
+          options: this.options,
+        });
 
-    private loadParticles(): void {
-        tsParticles
-            .load({ id: this.id, url: this.url, options: this.options })
-            .then(container => {
-                this.container = container;
-                this.particlesLoaded.emit(container);
-            })
-            .catch(error => console.error(error));
-    }
+        this.container = container;
+
+        this.ngZone.run(() => {
+          this.particlesLoaded.emit(container);
+        });
+      } catch (error) {
+        console.error("Failed to load particles:", error);
+        this.ngZone.run(() => {
+          this.particlesLoaded.emit(undefined);
+        });
+      }
+    });
+  }
 }

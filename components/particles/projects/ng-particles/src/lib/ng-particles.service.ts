@@ -1,20 +1,25 @@
-import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
-import { Engine, tsParticles } from '@tsparticles/engine';
+import { Injectable } from "@angular/core";
+import { BehaviorSubject } from "rxjs";
+import type { Engine } from "@tsparticles/engine";
+import { tsParticles } from "@tsparticles/engine";
 
 @Injectable({
-    providedIn: 'root',
+  providedIn: "root",
 })
 export class NgParticlesService {
-    private initialized = new BehaviorSubject<boolean>(false);
+  private initialized = new BehaviorSubject<boolean>(false);
 
-    getInstallationStatus() {
-        return this.initialized.asObservable();
+  getInstallationStatus() {
+    return this.initialized.asObservable();
+  }
+
+  async init(particlesInit: (engine: Engine) => Promise<void> | void) {
+    if (this.initialized.value) {
+      return;
     }
 
-    async init(particlesInit: (engine: Engine) => Promise<void>) {
-        await particlesInit(tsParticles);
+    await particlesInit(tsParticles);
 
-        this.initialized.next(true);
-    }
+    this.initialized.next(true);
+  }
 }
