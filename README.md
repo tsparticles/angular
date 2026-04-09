@@ -32,6 +32,8 @@ _template.html_
 <ngx-particles
   [id]="id"
   [options]="particlesOptions"
+  [containerClass]="particlesClass"
+  [containerStyle]="particlesStyle"
   (particlesLoaded)="particlesLoaded($event)"
 ></ngx-particles>
 
@@ -40,6 +42,7 @@ _template.html_
 <ngx-particles
   [id]="id"
   [url]="particlesUrl"
+  [containerStyle]="{ position: 'fixed', inset: '0', zIndex: '-1' }"
   (particlesLoaded)="particlesLoaded($event)"
 ></ngx-particles>
 ```
@@ -62,6 +65,12 @@ export class AppComponent {
 
   /* Starting from 1.19.0 you can use a remote url (AJAX request) to a JSON with the configuration */
   particlesUrl = "http://foo.bar/particles.json";
+  particlesClass = "demo-particles";
+  particlesStyle = {
+    position: "fixed",
+    inset: "0",
+    zIndex: "-1",
+  };
 
   /* or the classic JavaScript object */
   particlesOptions = {
@@ -174,6 +183,15 @@ import { NgModule } from "@angular/core";
 })
 export class AppModule {}
 ```
+
+## Workspace Build Architecture
+
+This repository now supports both orchestrators:
+
+- `pnpm run build` for root build execution
+- `pnpm run build:ci` for CI pipeline builds
+- `pnpm run build:lerna` for explicit Lerna execution
+- `pnpm run build:nx` for explicit Nx execution
 
 ## Demos
 

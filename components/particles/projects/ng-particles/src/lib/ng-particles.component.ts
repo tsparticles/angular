@@ -14,7 +14,7 @@ import {
   ViewChild,
   signal,
 } from "@angular/core";
-import { isPlatformServer } from "@angular/common";
+import { NgClass, NgStyle, isPlatformServer } from "@angular/common";
 import { tsParticles } from "@tsparticles/engine";
 import type { Container, Engine, ISourceOptions } from "@tsparticles/engine";
 
@@ -24,7 +24,8 @@ import { NgParticlesEngineService } from "./ng-particles-engine.service";
 @Component({
   standalone: true,
   selector: "ngx-particles",
-  template: '<div #particlesContainer [id]="id()"></div>',
+  imports: [NgClass, NgStyle],
+  template: '<div #particlesContainer [id]="id()" [ngClass]="containerClass" [ngStyle]="containerStyle"></div>',
 })
 export class NgxParticlesComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild("particlesContainer", { static: false })
@@ -33,6 +34,8 @@ export class NgxParticlesComponent implements OnInit, AfterViewInit, OnDestroy {
   @Input() options?: ISourceOptions;
   @Input() url?: string;
   @Input() id = signal("tsparticles");
+  @Input() containerClass?: string | string[] | Set<string> | { [klass: string]: any };
+  @Input() containerStyle?: { [klass: string]: any };
   @Input() particlesInit?: (engine: Engine) => Promise<void> | void;
   @Input() useEngineService = true; // Enable centralized engine by default
 

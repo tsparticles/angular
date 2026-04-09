@@ -836,6 +836,8 @@
   <ngx-particles
     id="tsparticles"
     [options]="particlesOptions"
+    [containerClass]="particlesClass"
+    [containerStyle]="particlesStyle"
     (particlesLoaded)="particlesLoaded($event)"
     *ngIf="particlesVisible"
   ></ngx-particles>

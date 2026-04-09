@@ -16,6 +16,12 @@ export class AppComponent {
   fireworksVisible = false;
   confettiVisible = true;
   particlesOptions: ISourceOptions = configs.basic;
+  particlesClass = "demo-particles";
+  particlesStyle = {
+    position: "fixed",
+    inset: "0",
+    zIndex: "-1"
+  };
   confettiOptions = {
     particleCount: 100,
     spread: 70,

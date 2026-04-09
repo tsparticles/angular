@@ -29,11 +29,22 @@ $ yarn add @tsparticles/angular @tsparticles/engine
 _template.html_
 
 ```html
-<ngx-particles [id]="id" [options]="particlesOptions" (particlesLoaded)="particlesLoaded($event)"></ngx-particles>
+<ngx-particles
+  [id]="id"
+  [options]="particlesOptions"
+  [containerClass]="particlesClass"
+  [containerStyle]="particlesStyle"
+  (particlesLoaded)="particlesLoaded($event)"
+></ngx-particles>
 
 <!-- or -->
 
-<ngx-particles [id]="id" [url]="particlesUrl" (particlesLoaded)="particlesLoaded($event)"></ngx-particles>
+<ngx-particles
+  [id]="id"
+  [url]="particlesUrl"
+  [containerStyle]="{ position: 'fixed', inset: '0', zIndex: '-1' }"
+  (particlesLoaded)="particlesLoaded($event)"
+></ngx-particles>
 ```
 
 _app.ts_
