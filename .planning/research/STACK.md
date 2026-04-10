@@ -1,6 +1,6 @@
 # Stack Research
 
-**Domain:** Angular particle-effects component library + demo workspace  
+**Domain:** tsParticles Angular workspace modernization + v4 beta adoption  
 **Researched:** 2026-04-10  
 **Confidence:** HIGH
 
@@ -8,120 +8,110 @@
 
 ### Core Technologies
 
-| Technology                                                             | Version                    | Purpose                                       | Why Recommended                                                                                                        | Confidence |
-| ---------------------------------------------------------------------- | -------------------------- | --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------- | ------ | --- | --------------------------------------------------------- | ---- |
-| Angular framework (`@angular/core`, `@angular/common`, `@angular/cli`) | 21.2.x                     | Primary framework + CLI for library and demos | Angular 21 is the current supported line; official library tooling/docs are aligned with APF + partial-Ivy publishing. | HIGH       |
-| TypeScript                                                             | 5.9.x (pin `<6.0`)         | Type system and library build input           | Angular 21 compatibility requires TS `>=5.9 <6.0`; pinning avoids breakage from TS 6 major changes.                    | HIGH       |
-| Node.js                                                                | 22.12+ LTS (or 20.19+/24+) | Runtime for toolchain/CI                      | Angular 21 officially supports Node `^20.19                                                                            |            | ^22.12 |     | ^24`; Node 22 LTS is the safest default for 2025-2026 CI. | HIGH |
-| pnpm workspaces                                                        | 10.33.x                    | Package manager + monorepo dependency graph   | Fast installs, strict workspace linking (`workspace:` protocol), and already standard in this repo layout.             | HIGH       |
-| Nx                                                                     | 22.6.x                     | Task orchestration, caching, affected runs    | Best fit for multi-app/multi-lib Angular workspaces at scale; reduces CI cost and keeps boundaries enforceable.        | HIGH       |
-| ng-packagr (via Angular library builder)                               | 21.2.x                     | Build/publish Angular libraries in APF        | Official Angular library packaging path; emits APF-compatible artifacts and supports partial-Ivy publishing.           | HIGH       |
+| Technology                                                                           | Version                                         | Purpose                                      | Why Recommended                                                                                       |
+| ------------------------------------------------------------------------------------ | ----------------------------------------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Angular workspace (`@angular/core`, `@angular/cli`, `@angular-devkit/build-angular`) | `21.2.8 / 21.2.7`                               | Primary framework + app/library build chain  | Already aligned in repo and current stable; keeps demos modern while libraries still publish via APF. |
+| TypeScript                                                                           | `~6.0.2`                                        | Compiler for workspace code                  | Current Angular 21.2 supports `>=5.9 <6.1`; TS 6.0 is valid and already used here.                    |
+| ng-packagr                                                                           | `~21.2.2`                                       | Angular library packaging (APF)              | Official packaging path for published Angular libraries; required for stable npm distribution.        |
+| pnpm workspaces                                                                      | `10.33.0`                                       | Deterministic monorepo dependency management | Existing workspace standard; keeps dependency graph consistent across apps/components.                |
+| Nx + Lerna (hybrid)                                                                  | `nx 22.6.5`, `lerna 8.2.4` (or move to `9.0.7`) | Build orchestration + version/publish flow   | Keep Nx for execution/caching; keep Lerna only for versioning/publish until release flow is migrated. |
 
-### Supporting Libraries
+### Supporting Libraries (NEW capability focused)
 
-| Library                | Version | Purpose                                    | When to Use                                                                     | Confidence |
-| ---------------------- | ------- | ------------------------------------------ | ------------------------------------------------------------------------------- | ---------- | -------- | ---- |
-| `@tsparticles/engine`  | 3.9.1   | Core rendering engine                      | Always; wrapper should expose engine init path and plugin loading.              | HIGH       |
-| `@tsparticles/angular` | 3.0.0   | Angular wrapper package                    | For consumer integration and API compatibility tests in demos.                  | HIGH       |
-| `@tsparticles/slim`    | 3.9.1   | Smaller preset bundle                      | Default for demo apps and docs examples to keep payload lower than full bundle. | HIGH       |
-| `rxjs`                 | 7.8.x   | Angular reactive primitives                | Required by Angular peer compatibility; use stable 7.x line.                    | HIGH       |
-| `zone.js`              | 0.16.x  | Angular change detection runtime           | Keep within Angular-supported range (`~0.15                                     |            | ~0.16`). | HIGH |
-| `@ionic/angular`       | 8.8.x   | Ionic Angular demo compatibility           | Include in dedicated demo app only, to validate Ionic integration requirement.  | HIGH       |
-| `@playwright/test`     | 1.59.x  | E2E + visual/regression coverage for demos | Use for smoke + interaction tests across Chromium/WebKit/Firefox.               | HIGH       |
+| Library                                                                                                     | Version                                             | Purpose                                            | When to Use                                                                                                         |
+| ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `@tsparticles/*` family (`engine`, `slim`, `basic`, `confetti`, `fireworks`, plugins/updaters/interactions) | **`4.0.0-beta.11` pinned exactly**                  | v4 beta feature set and API surface                | Use exact same beta version for every `@tsparticles/*` package in workspace to avoid cross-beta incompatibility.    |
+| `@tsparticles/angular`                                                                                      | `workspace:^` (publishing target currently `3.0.0`) | Angular wrapper under modernization                | Keep workspace link in demos; publish output with widened Angular peers and strict tsParticles beta peer pins.      |
+| `rxjs`                                                                                                      | `~7.8.2`                                            | Angular runtime compatibility                      | Keep as Angular-compatible baseline in demos and peer deps.                                                         |
+| `zone.js`                                                                                                   | `~0.16.1`                                           | Angular runtime zone support                       | Current Angular-compatible runtime line; required for standard Angular apps and Ionic Angular demos.                |
+| `@ionic/angular` + `@capacitor/*` (demo scope only)                                                         | `8.8.3`, `8.x`                                      | Broad compatibility validation for Ionic consumers | Keep only inside `apps/ionic-demo` to validate integration; do not leak Ionic deps into published wrapper packages. |
 
 ### Development Tools
 
-| Tool               | Purpose                                   | Notes                                                                                                                         |
-| ------------------ | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Angular CLI (`ng`) | Generate/build/test Angular libs/apps     | Keep workspace generation/migrations on official CLI path.                                                                    |
-| Nx CLI (`nx`)      | Run affected/build/test/lint with caching | Use as primary task runner in CI (`nx run-many`, `nx affected`).                                                              |
-| Lerna              | Multi-package version/publish workflows   | Keep only for publish/version orchestration if already in release flow; do not use as primary task runner when Nx is present. |
-| Prettier           | Formatting consistency                    | Keep README/docs/code style deterministic in CI.                                                                              |
+| Tool                                 | Purpose                                   | Notes                                                                                              |
+| ------------------------------------ | ----------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| Angular CLI migrations (`ng update`) | Framework/tooling modernization           | Use for Angular/workspace updates; aligns config with official migration rules.                    |
+| Nx (`nx run-many`, affected)         | CI speed + monorepo task graph            | Preferred executor for build/test/lint in CI.                                                      |
+| Playwright (`@playwright/test`)      | Cross-browser integration smoke for demos | Add for modernization milestone to replace legacy E2E assumptions and cover Angular + Ionic demos. |
 
 ## Installation
 
 ```bash
-# Core workspace stack
-pnpm add -D @angular/cli@21.2.7 nx@22.6.4 ng-packagr@21.2.2 typescript@5.9.3
-
-# Runtime + Angular compatibility
-pnpm add rxjs@7.8.2 zone.js@0.16.1 tslib@2.8.1
-
-# Particle stack
-pnpm add @tsparticles/engine@3.9.1 @tsparticles/angular@3.0.0 @tsparticles/slim@3.9.1
-
-# Demo and testing
+# NEW: add modern E2E stack
 pnpm add -D @playwright/test@1.59.1
-pnpm add @ionic/angular@8.8.3
+
+# Keep tsParticles beta line unified (example)
+pnpm add @tsparticles/engine@4.0.0-beta.11 @tsparticles/slim@4.0.0-beta.11
+
+# Optional (if upgrading release tooling now)
+pnpm add -D lerna@9.0.7 nx@22.6.5
 ```
 
 ## Alternatives Considered
 
-| Recommended               | Alternative                          | When to Use Alternative                                                                                                                                      |
-| ------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Nx for task orchestration | Lerna-only task running              | Only in very small repos with trivial CI; for this workspace Nx is superior for caching/affected execution.                                                  |
-| ng-packagr + APF          | Custom Rollup/Vite library packaging | Only if you are not shipping an Angular library for npm consumers; APF is the ecosystem standard for Angular packages.                                       |
-| Playwright for E2E demos  | Cypress                              | Use Cypress only if team expertise/tooling is already deeply Cypress-centric; Playwright is currently stronger for cross-browser matrix and modern CI speed. |
+| Recommended                                                | Alternative                                     | When to Use Alternative                                                                                                    |
+| ---------------------------------------------------------- | ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Keep `@angular-devkit/build-angular` for current workspace | Immediate switch to `@angular/build` everywhere | Use only after validating all existing app configs/migrations; not required for library packaging modernization.           |
+| Exact pin `4.0.0-beta.11` across all `@tsparticles/*`      | Caret ranges on beta packages                   | Only if you want automatic beta drift; not recommended for reproducible CI in a wrapper repo.                              |
+| Playwright for E2E/smoke                                   | Protractor/Cypress                              | Protractor is deprecated; Cypress is fine if team-standard, but Playwright is better cross-browser fit for this milestone. |
 
 ## What NOT to Use
 
-| Avoid                                                             | Why                                                                                 | Use Instead                                                        |
-| ----------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| Publishing Angular libraries in **full-Ivy** format               | Angular docs explicitly warn it is not stable across versions for npm distribution. | Publish **partial-Ivy** APF packages (`compilationMode: partial`). |
-| Treating `@angular/*` as regular `dependencies` in published libs | Risks duplicate Angular copies and runtime breakage in consumers.                   | Put `@angular/*` in `peerDependencies` for published packages.     |
-| TypeScript 6.x with Angular 21                                    | Outside Angular 21 compatibility range.                                             | Pin TypeScript 5.9.x until Angular supports TS 6.                  |
-| Mixing npm/yarn/pnpm lockfiles in one monorepo                    | Non-deterministic installs and CI drift.                                            | Standardize on pnpm + single `pnpm-lock.yaml`.                     |
-| Protractor-based E2E strategy                                     | Legacy/deprecated ecosystem, poor fit for current Angular testing stacks.           | Playwright for E2E and browser-level smoke/regression.             |
+| Avoid                                                              | Why                                                               | Use Instead                                                              |
+| ------------------------------------------------------------------ | ----------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| Mixing tsParticles majors (`3.x` + `4.0.0-beta`) in same workspace | High risk of API/type mismatch and inconsistent demo behavior     | Pin all `@tsparticles/*` to `4.0.0-beta.11` during beta adoption.        |
+| New runtime deps in published wrappers (Ionic/Capacitor/etc.)      | Inflates consumer install surface and breaks framework neutrality | Keep wrappers Angular+tsParticles only; confine Ionic stack to demo app. |
+| Protractor-based E2E                                               | Officially deprecated/EOL                                         | Playwright smoke coverage for both demos.                                |
+| Moving Angular peer deps to hard app-style dependencies            | Can duplicate Angular runtimes in consumer apps                   | Keep `@angular/*` as peerDependencies in publishable packages.           |
 
 ## Stack Patterns by Variant
 
-**If shipping only Angular library + web demos:**
+**If validating broad Angular consumer compatibility:**
 
-- Use Angular CLI + ng-packagr + Nx + Playwright.
-- Because this is the shortest path to APF-compliant publishing and fast CI.
+- Publish wrappers with peer range covering maintained majors (recommended: `^17 || ^18 || ^19 || ^20 || ^21`).
+- Build/test workspace on Angular 21, but validate install on at least one lower supported major in CI.
 
-**If also validating Ionic Angular compatibility:**
+**If validating Ionic compatibility:**
 
-- Add a dedicated Ionic Angular demo app (`@ionic/angular` 8.x) in `apps/`.
-- Because it catches integration regressions early without polluting the core wrapper package.
+- Keep Ionic/Capacitor only in `apps/ionic-demo` and run smoke tests there.
+- Do not add Ionic dependencies to component package peers unless wrappers directly import Ionic APIs.
 
 ## Version Compatibility
 
-| Package A                    | Compatible With                                         | Notes                                         |
-| ---------------------------- | ------------------------------------------------------- | --------------------------------------------- | ------ | --- | ----------------------------------- | --- | ------- | -------------------------------------- |
-| `@angular/core@21.2.x`       | Node `^20.19                                            |                                               | ^22.12 |     | ^24`, TS `>=5.9 <6.0`, RxJS `^6.5.3 |     | ^7.4.0` | Official Angular compatibility matrix. |
-| `ng-packagr@21.2.2`          | TypeScript `>=5.9 <6.0`, Angular compiler-cli `^21.0.0` | Align ng-packagr major with Angular major.    |
-| `@ionic/angular@8.8.x`       | Angular `>=16`                                          | Works with Angular 21 demo app scenarios.     |
-| `@tsparticles/angular@3.0.0` | `@tsparticles/engine` `^3.0.2`                          | Keep engine and presets on the same 3.x line. |
+| Package A                      | Compatible With                           | Notes                                                                       |
+| ------------------------------ | ----------------------------------------- | --------------------------------------------------------------------------- | -------- | --- | ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
+| `@angular/core@21.2.8`         | Node `^20.19.0                            |                                                                             | ^22.12.0 |     | ^24`; TypeScript `>=5.9 <6.0`(docs baseline), while`@angular/compiler-cli@21.2.8`currently peers`>=5.9 <6.1` | Workspace uses TS 6.0.2 successfully; keep Angular minor + TS range aligned in lockstep. |
+| `ng-packagr@21.2.2`            | Angular compiler-cli `21.x`               | Match ng-packagr major with Angular major.                                  |
+| `@ionic/angular@8.8.3`         | Angular `>=16`                            | Compatible with Angular 21 demo validation.                                 |
+| `@tsparticles/*@4.0.0-beta.11` | Same beta across all tsParticles packages | Treat beta train as lockstep set; avoid mixing beta and latest stable tags. |
+
+## Integration Points (for roadmap implementation)
+
+1. **Workspace package policy:** enforce exact `4.0.0-beta.11` for every `@tsparticles/*` entry.
+2. **Published package peers:** modernize Angular peers (drop `>=2.0.0` legacy ranges), keep Angular as peers not dependencies.
+3. **Demo validation:** Angular demo + Ionic demo both run on Angular 21 with tsParticles beta lockstep.
+4. **CI modernization:** add Playwright smoke suite for both demos; keep Nx as primary task runner.
 
 ## Sources
 
-- Angular version compatibility: https://angular.dev/reference/versions (HIGH)
-- Angular library creation/publishing guidance: https://angular.dev/tools/libraries/creating-libraries (HIGH)
-- Angular Package Format (APF, partial compilation, exports): https://angular.dev/tools/libraries/angular-package-format (HIGH)
-- Angular CLI local setup/workspace model: https://angular.dev/tools/cli/setup-local (HIGH)
-- npm registry latest metadata:
-  - https://registry.npmjs.org/@angular/core/latest (HIGH)
-  - https://registry.npmjs.org/@angular/cli/latest (HIGH)
-  - https://registry.npmjs.org/ng-packagr/latest (HIGH)
-  - https://registry.npmjs.org/typescript/latest (HIGH)
-  - https://registry.npmjs.org/rxjs/latest (HIGH)
-  - https://registry.npmjs.org/zone.js/latest (HIGH)
-  - https://registry.npmjs.org/nx/latest (HIGH)
-  - https://registry.npmjs.org/lerna/latest (HIGH)
-  - https://registry.npmjs.org/pnpm/latest (HIGH)
-  - https://registry.npmjs.org/@playwright/test/latest (HIGH)
-  - https://registry.npmjs.org/@tsparticles/angular/latest (HIGH)
-  - https://registry.npmjs.org/@tsparticles/engine/latest (HIGH)
-  - https://registry.npmjs.org/@tsparticles/slim/latest (HIGH)
-  - https://registry.npmjs.org/@ionic/angular/latest (HIGH)
-- pnpm workspace protocol/docs: https://pnpm.io/workspaces (HIGH)
-- Nx overview (task orchestration/caching): https://nx.dev/getting-started/intro (MEDIUM-HIGH)
-- Lerna positioning (Nx-powered modern Lerna): https://lerna.js.org/ (MEDIUM)
-- Playwright docs/system requirements: https://playwright.dev/docs/intro (HIGH)
-- Ionic Angular overview and support: https://ionicframework.com/docs/angular/overview (HIGH)
+- Angular version compatibility matrix: https://angular.dev/reference/versions (HIGH)
+- Angular package format + partial compilation: https://angular.dev/tools/libraries/angular-package-format (HIGH)
+- Angular library guidance (peers, publishing): https://angular.dev/tools/libraries/creating-libraries (HIGH)
+- Angular build system migration guidance: https://angular.dev/tools/cli/build-system-migration (HIGH)
+- Ionic Angular support statement (`>=16`): https://ionicframework.com/docs/angular/overview (HIGH)
+- Playwright docs + system requirements: https://playwright.dev/docs/intro (HIGH)
+- npm registry metadata (verified via `npm view`, 2026-04-10):
+  - `@angular/core` `21.2.8` (HIGH)
+  - `@angular/cli` `21.2.7` (HIGH)
+  - `ng-packagr` `21.2.2` (HIGH)
+  - `typescript` `6.0.2` (HIGH)
+  - `nx` `22.6.5` (HIGH)
+  - `lerna` `9.0.7` (HIGH)
+  - `@ionic/angular` `8.8.3` (HIGH)
+  - `@capacitor/core` `8.3.0` (HIGH)
+  - `@tsparticles/engine` dist-tags incl. `beta: 4.0.0-beta.11` (HIGH)
 
 ---
 
-_Stack research for: Angular particle-effects component library and demos_  
+_Stack research for: tsParticles Angular v4 beta modernization milestone_  
 _Researched: 2026-04-10_

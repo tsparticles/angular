@@ -1,6 +1,6 @@
 # Architecture Research
 
-**Domain:** Angular particle-effects component library workspace (publishable libs + demo apps)
+**Domain:** tsParticles Angular v4 beta modernization inside existing monorepo (libraries + demos + release pipeline)
 **Researched:** 2026-04-10
 **Confidence:** HIGH
 
@@ -9,259 +9,264 @@
 ### System Overview
 
 ```text
-┌────────────────────────────────────────────────────────────────────────────┐
-│ Workspace Orchestration Layer                                              │
-│ pnpm workspace + Lerna release/build + Nx task runner/cache               │
-└───────────────────────────────┬────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                           Workspace Orchestration                            │
+│ Root scripts (pnpm) + Lerna package orchestration + Nx cache/task defaults  │
+└───────────────────────────────┬──────────────────────────────────────────────┘
                                 │
-        ┌───────────────────────┴───────────────────────┐
-        │                                               │
-┌───────▼───────────────────────────────┐   ┌──────────▼─────────────────────┐
-│ Library Packages (publishable)        │   │ Demo Apps (consumer validation)│
-│ components/particles                  │   │ apps/angular-demo              │
-│ components/confetti                   │   │ apps/ionic-demo                │
-│ components/fireworks                  │   │                                │
-└───────┬───────────────────────────────┘   └──────────┬─────────────────────┘
-        │                                              │
-        │ ng-packagr outputs (dist/*)                 │ imports workspace libs
-        ▼                                              ▼
-┌────────────────────────────────────────────────────────────────────────────┐
-│ npm Package Surface                                                        │
-│ public-api.ts exports only + APF-compliant package.json/exports           │
-└────────────────────────────────────────────────────────────────────────────┘
+            ┌───────────────────┴───────────────────┐
+            │                                       │
+┌───────────▼───────────────────────┐    ┌──────────▼────────────────────────┐
+│ Publishable Libraries             │    │ Integration Demos                  │
+│ components/particles              │    │ apps/angular-demo                  │
+│ components/confetti               │    │ apps/ionic-demo                    │
+│ components/fireworks              │    │                                    │
+└───────────┬───────────────────────┘    └──────────┬────────────────────────┘
+            │                                         │
+            │ ng-packagr (partial Ivy + APF outputs) │ imports workspace:^ libs
+            ▼                                         ▼
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Distribution + Validation Surface                                             │
+│ dist/ng-* packages, README sync, package metadata sync, CI build graph       │
+└──────────────────────────────────────────────────────────────────────────────┘
 
-Runtime inside consumer app:
+Runtime path in consumer apps:
 
-App bootstrap → NgParticlesService / NgParticlesEngineService init →
-<ngx-particles|ngx-confetti|ngx-fireworks> wrapper → tsParticles engine/effects
-→ Container instance/events back to app
+Bootstrap init (service) → shared tsParticles engine state → wrapper components
+(`<ngx-particles>`, `<ngx-confetti>`, `<ngx-fireworks>`) → callbacks/events back to app.
 ```
 
 ### Component Responsibilities
 
-| Component                                                                                                  | Responsibility                                                                                        | Communicates With                                               |
-| ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| **Workspace Root** (`package.json`, `pnpm-workspace.yaml`, `lerna.json`, `nx.json`)                        | Defines workspace boundaries, orchestrates build/release commands, task caching                       | All app/library package roots                                   |
-| **Particles Core Library** (`components/particles`)                                                        | Core Angular wrapper API (`NgxParticlesComponent/Module`), engine init services, typed options/events | `@tsparticles/engine`, consumer apps, root orchestration        |
-| **Effect Libraries** (`components/confetti`, `components/fireworks`)                                       | Effect-specific wrappers around confetti/fireworks APIs                                               | `@tsparticles/confetti`/`@tsparticles/fireworks`, consumer apps |
-| **Package Build Layer** (`components/*/angular.json`, `projects/*/ng-package.json`, `scripts/prebuild.js`) | Build APF artifacts and sync package metadata pre-publish                                             | ng-packagr, package `dist/*` outputs                            |
-| **Angular Demo App** (`apps/angular-demo`)                                                                 | Canonical consumer integration coverage for Angular usage patterns                                    | Workspace libraries via `workspace:^`                           |
-| **Ionic Demo App** (`apps/ionic-demo`)                                                                     | Platform compatibility coverage for Ionic + Angular integration                                       | Workspace libraries via `workspace:^`, Ionic runtime            |
-| **Consumer Runtime Layer** (external app projects)                                                         | Imports published package entrypoints and passes options/events                                       | npm packages exported from `dist/*`                             |
+| Component                                                                            | Responsibility                                           | Typical Implementation                                                                 |
+| ------------------------------------------------------------------------------------ | -------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Root orchestration (`/package.json`, `pnpm-workspace.yaml`, `lerna.json`, `nx.json`) | Build/release coordination across packages and demos     | `pnpm run build`, `lerna run build --stream --no-private`, Nx `targetDefaults` caching |
+| Core wrapper package (`components/particles`)                                        | Main Angular integration contract for tsParticles engine | `NgxParticlesComponent` + module + initialization services                             |
+| Effect wrapper packages (`components/confetti`, `components/fireworks`)              | Effect-specific Angular adapters                         | Thin wrappers over `@tsparticles/confetti` / `@tsparticles/fireworks` lifecycle calls  |
+| Prebuild sync layer (`components/*/scripts/prebuild.js`)                             | Keep nested publish metadata in sync with package root   | Version + peerDependency pinning + README copy before build                            |
+| Demo contracts (`apps/angular-demo`, `apps/ionic-demo`)                              | Catch runtime and API regression before publish          | `workspace:^` imports, real app modules/pages invoking wrappers                        |
+| CI pipeline (`.github/workflows/nodejs.yml`)                                         | Enforce reproducible workspace build for push/PR         | Install + prettify check + `pnpm run build:ci`                                         |
 
 ## Recommended Project Structure
 
 ```text
 /
 ├── apps/
-│   ├── angular-demo/                 # Reference Angular consumer app
-│   │   ├── src/app/                  # Usage examples + regression validation
-│   │   └── angular.json              # App build/test targets
-│   └── ionic-demo/                   # Reference Ionic consumer app
-│       ├── src/app/                  # Ionic pages consuming wrappers
-│       └── angular.json
+│   ├── angular-demo/                         # Canonical Angular integration contract
+│   │   └── src/app/                          # Component/module consumption examples
+│   └── ionic-demo/                           # Ionic-specific integration contract
+│       └── src/app/tab1/                     # Wrapper use inside Ionic page lifecycle
 ├── components/
-│   ├── particles/                    # Core package (@tsparticles/angular)
+│   ├── particles/                            # Core package: @tsparticles/angular
 │   │   ├── projects/ng-particles/src/lib/
 │   │   │   ├── ng-particles.component.ts
 │   │   │   ├── ng-particles.service.ts
 │   │   │   └── ng-particles-engine.service.ts
 │   │   ├── projects/ng-particles/src/public-api.ts
-│   │   ├── scripts/prebuild.js
-│   │   └── angular.json
-│   ├── confetti/                     # Effect package (angular-confetti)
-│   └── fireworks/                    # Effect package (angular-fireworks)
-├── package.json                      # Root build/release entry commands
-├── pnpm-workspace.yaml               # package discovery: apps/* + components/*
-├── nx.json                           # task cache + pipeline defaults
-└── lerna.json                        # package orchestration/versioning
+│   │   └── scripts/prebuild.js
+│   ├── confetti/                             # Effect package: angular-confetti
+│   │   ├── projects/ng-confetti/src/lib/
+│   │   └── scripts/prebuild.js
+│   └── fireworks/                            # Effect package: angular-fireworks
+│       ├── projects/ng-fireworks/src/lib/
+│       └── scripts/prebuild.js
+├── package.json                              # Root orchestration scripts
+├── pnpm-workspace.yaml                       # apps/* + components/* package boundaries
+├── nx.json                                   # shared task cache/pipeline defaults
+└── lerna.json                                # multi-package versioning conventions
 ```
 
 ### Structure Rationale
 
-- **Separate package roots under `components/*`**: keeps publish/release boundaries explicit and avoids accidental cross-package coupling.
-- **Separate validation apps under `apps/*`**: demos act as integration tests, not as part of publishable API surface.
-- **`public-api.ts` gate per library**: forces intentional API exposure and prevents deep-import drift.
-- **Local `angular.json` per package/app**: each package remains independently buildable, improving release reliability.
+- **Keep wrappers package-isolated (`components/*`)** so modernization can roll out package-by-package without coupling demos to internals.
+- **Treat demos as integration boundaries (`apps/*`)**, not feature code. They validate compatibility with Angular and Ionic runtime contexts.
+- **Maintain `public-api.ts` as the only export gate** to avoid deep-import breakage during v4 beta iteration.
+- **Retain package-local Angular build configs** (`angular.json`, `ng-package.json`) because current release flow depends on independent package builds.
 
 ## Architectural Patterns
 
-### Pattern 1: Core Wrapper + Effect Adapters
+### Pattern 1: Shared Engine Service as Default Runtime Contract
 
-**What:** Keep one core particles wrapper package and separate effect-specific wrappers (confetti/fireworks).
-**When to use:** Always for this domain; it preserves stable core API while allowing effect packages to evolve independently.
-**Trade-offs:** More packages to release, but much cleaner ownership and fewer breaking changes.
-
-**Example:**
-
-```typescript
-// Core API
-import { NgxParticlesModule } from "@tsparticles/angular";
-
-// Optional effect APIs
-import { NgxConfettiModule } from "angular-confetti";
-import { NgxFireworksModule } from "angular-fireworks";
-```
-
-### Pattern 2: Single Engine Initialization via DI Service
-
-**What:** Initialize tsParticles engine once (application-level), then let components reuse it.
-**When to use:** Default for performance and predictable runtime behavior.
-**Trade-offs:** Slightly more bootstrap setup, significantly less duplicated init work.
+**What:** Centralize engine initialization in `NgParticlesEngineService` (newer pattern), keep legacy `NgParticlesService` for compatibility.
+**When to use:** Default for all modernized examples and docs.
+**Trade-offs:** Slight bootstrap complexity, major runtime consistency/perf gain.
 
 **Example:**
 
 ```typescript
 await engineService.init(async (engine) => {
-  await loadFull(engine);
+  await loadSlim(engine); // or loadFull as needed
 });
 ```
 
-### Pattern 3: Public API Boundary (No Deep Imports)
+### Pattern 2: Wrapper Adapters with Stable Inputs/Outputs
 
-**What:** Export only supported symbols from `public-api.ts`; consumers import package root only.
-**When to use:** Always for maintainability and semver safety.
-**Trade-offs:** Requires discipline when adding internals; pays off during refactors.
+**What:** Keep Angular-facing API as simple Inputs/Outputs while internally adapting to tsParticles v4 beta APIs.
+**When to use:** Always at package boundaries to absorb beta API churn.
+**Trade-offs:** Extra adapter code, but minimizes consumer-facing breaking changes.
+
+**Example:**
+
+```typescript
+<ngx-particles [id]="id" [options]="particlesOptions" (particlesLoaded)="onLoaded($event)"></ngx-particles>
+```
+
+### Pattern 3: Prebuild Metadata Synchronization Before Packaging
+
+**What:** Use `scripts/prebuild.js` per package to sync nested package version/peer deps/README before ng-packagr build.
+**When to use:** Every release build.
+**Trade-offs:** Small script maintenance overhead, prevents metadata drift across package roots.
 
 ## Data Flow
 
-### Request/Runtime Flow
+### Runtime Flow (modernized)
 
 ```text
 [App bootstrap]
     ↓
-[NgParticlesService / NgParticlesEngineService.init]
+[NgParticlesEngineService.init(...) once]
     ↓
-[Wrapper component input binding]
+[engine ready state published]
     ↓
-[tsParticles engine/effect load]
+[wrapper component receives options/url inputs]
     ↓
-[Container instance created]
+[engine.load / confetti() / fireworks()]
     ↓
-[Output event emitted (particlesLoaded, etc.)]
+[container/instance returned]
     ↓
-[Consumer app reacts]
+[Angular output callback emits to consumer]
 ```
 
-### Build/Release Flow
+### Build + Release Flow (existing + modernization integration)
 
 ```text
-[Library source changes]
+[Source changes in components/* + apps/*]
     ↓
-[prebuild.js syncs nested package metadata]
+[package prebuild sync script]
     ↓
-[ng-packagr build via package-local angular.json]
+[package-local ng-packagr build]
     ↓
-[dist/<package> artifacts (APF)]
+[root build orchestration via lerna/nx]
     ↓
-[root orchestrator (Lerna/Nx) runs cross-package builds in CI]
+[demo apps rebuilt against workspace:^ packages]
     ↓
-[publishable package outputs]
+[CI build:ci green]
+    ↓
+[release versioning/publish flow]
 ```
 
 ### Key Data Flows
 
-1. **Configuration flow:** consumer options/url → Angular input binding → wrapper component → engine `load()`.
-2. **Engine lifecycle flow:** app init callback → plugin/preset registration → shared engine ready state → component render.
-3. **Release metadata flow:** package root `package.json` → prebuild sync → nested `projects/*/package.json` used in dist.
+1. **Engine init flow:** app startup init callback → plugin/preset registration → shared readiness observable → components render safely.
+2. **Wrapper config flow:** template input bindings (`options`, `url`, `id`) → wrapper adapter → tsParticles runtime instance creation.
+3. **Release metadata flow:** package root `package.json` → `prebuild.js` updates nested `projects/*/package.json` → dist metadata stays aligned.
 
-## Build Order (Roadmap Dependency Guidance)
+## Integration Points (Requested Focus)
 
-Recommended implementation order for maintainability and release reliability:
+### Existing Architecture Connections
 
-1. **Workspace foundation**
-   - Settle `pnpm` workspace boundaries, root scripts, lint/test/build conventions.
-   - Add Nx task pipeline defaults (`dependsOn: ["^build"]`) to guarantee dependency build ordering in CI.
+| Integration Point                                       | New vs Modified       | How modernization/v4 beta should connect                                                                           |
+| ------------------------------------------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| `components/particles` runtime service layer            | **Modified**          | Promote `NgParticlesEngineService` as primary path; retain `NgParticlesService` as fallback compatibility bridge   |
+| `components/particles` public API                       | **Modified**          | Export engine service from `public-api.ts` so modern bootstrap pattern is first-class for consumers                |
+| `components/confetti` + `components/fireworks` wrappers | **Modified**          | Align lifecycle/typing/style with modern Angular + v4 beta deps while keeping thin adapter model                   |
+| Demo consumption (`apps/angular-demo`)                  | **Modified**          | Replace placeholder-heavy demo with focused wrapper usage scenarios proving centralized init + effects coexistence |
+| Demo consumption (`apps/ionic-demo`)                    | **Modified**          | Add explicit init path compatible with Ionic page/module lifecycle; keep SSR-safe/runtime-safe behavior            |
+| Root task orchestration (`nx.json`)                     | **Modified**          | Add `dependsOn: ["^build"]` for build targets to enforce dependency-ordered package builds                         |
+| CI build (`nodejs.yml`)                                 | **Modified**          | Keep `build:ci` as single gate, but rely on ordered task pipeline to prevent race/missing dist issues              |
+| Package prebuild scripts                                | **Existing retained** | Continue metadata sync, add checks to keep all `@tsparticles/*` pins at `4.0.0-beta.*` consistently                |
 
-2. **Core particles package (`@tsparticles/angular`)**
-   - Implement public API + wrapper component + centralized engine service.
-   - This is the dependency base for docs/examples and most user adoption.
+### Suggested New Components/Artifacts
 
-3. **Demo apps as integration contracts**
-   - Wire Angular demo first, then Ionic demo.
-   - Keep both consuming workspace packages (`workspace:^`) to catch breakage before publish.
+| Artifact                                                        | Type    | Why needed                                                                                               |
+| --------------------------------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------- |
+| `provideTsParticlesEngine(...)` helper (core package)           | **New** | Gives modern Angular bootstrap API (provider-style) without forcing manual service plumbing in every app |
+| `MIGRATION.md` per package or workspace-level migration section | **New** | Makes upgrade path explicit for old `NgParticlesService` init users and module-only consumers            |
+| Demo scenario matrix (Angular + Ionic)                          | **New** | Formalizes integration contracts (core-only, core+confetti, core+fireworks, lazy route/module usage)     |
 
-4. **Effect packages (confetti, fireworks)**
-   - Build as independent wrappers with the same API discipline and packaging pipeline.
-   - Reuse shared conventions from core package.
+> Note: `provideTsParticlesEngine` is an architectural recommendation; implementation is straightforward with current service model, but not yet present in repo.
 
-5. **Release hardening**
-   - Ensure APF compliance, peerDependencies correctness, changelog/version orchestration, CI reproducibility.
+## Build Order (dependency-aware, milestone-focused)
 
-Dependency chain:
+1. **Orchestration hardening first (root)**
+   - Update Nx target pipeline ordering (`dependsOn: ["^build"]`) and verify root scripts remain stable.
+   - Reason: prevents false greens when package build order matters.
+
+2. **Core package modernization (`components/particles`)**
+   - Finalize centralized engine contract + exports + typings for v4 beta.
+   - Reason: demos/effect packages depend on this baseline behavior.
+
+3. **Angular demo contract update (`apps/angular-demo`)**
+   - Consume modern init pattern and verify existing wrapper functionality on current stack.
+   - Reason: fastest feedback loop for mainstream consumer path.
+
+4. **Ionic demo contract update (`apps/ionic-demo`)**
+   - Validate identical contract under Ionic module/page lifecycle.
+   - Reason: required compatibility target from project constraints.
+
+5. **Effect package modernization (`components/confetti`, `components/fireworks`)**
+   - Align API/lifecycle/typing and validate in both demos.
+   - Reason: lower architectural risk once core init path is stable.
+
+6. **Release-flow alignment pass**
+   - Validate prebuild sync, dist outputs, CI pass, and documentation/migration updates end-to-end.
+   - Reason: this milestone success criterion includes upgrade capability, not only runtime code.
+
+Dependency summary:
 
 ```text
-Workspace orchestration
-  → Core particles library
-  → Demo apps (Angular, Ionic)
-  → Effect libraries
-  → Release pipeline hardening
+Root orchestration
+  → Core particles package
+  → Angular demo
+  → Ionic demo
+  → Confetti/Fireworks packages
+  → Release + migration documentation hardening
 ```
-
-## Scaling Considerations
-
-| Scale         | Architecture Adjustments                                                                                                |
-| ------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| 1-3 packages  | Current structure is sufficient; keep one public API per package and dual demos for regression checks                   |
-| 4-10 packages | Add shared internal tooling package (lint configs, tsconfig presets, release scripts) to remove duplication             |
-| 10+ packages  | Move to explicit Nx project graph + enforced dependency constraints/tags; add change-detection based publish automation |
-
-### Scaling Priorities
-
-1. **First bottleneck:** release consistency across multiple packages (fix with standardized prebuild + CI task pipelines).
-2. **Second bottleneck:** API drift between packages (fix with strict public API reviews and demo app compatibility checks).
 
 ## Anti-Patterns
 
-### Anti-Pattern 1: Per-component engine initialization
+### Anti-Pattern 1: Parallel initialization paths without explicit precedence
 
-**What people do:** Call heavy engine/preset init in every wrapper instance.
-**Why it's wrong:** Duplicates work, causes inconsistent behavior, increases runtime cost.
-**Do this instead:** Initialize once via root DI service and reuse shared engine state.
+**What people do:** Keep both old/new init services active in demos/docs with no recommended default.
+**Why it's wrong:** Consumers get inconsistent guidance and can double-init engine/plugins.
+**Do this instead:** Document one default path (engine service/provider) and mark legacy path as compatibility-only.
 
-### Anti-Pattern 2: Demo app code leaking into package API
+### Anti-Pattern 2: Treating demos as optional marketing assets
 
-**What people do:** Export symbols or behaviors needed only by demos.
-**Why it's wrong:** Bloats public surface and creates long-term semver obligations.
-**Do this instead:** Keep demos as consumers only; expose only stable library abstractions through `public-api.ts`.
+**What people do:** Update package code but skip robust demo modernization.
+**Why it's wrong:** Breakages in real Angular/Ionic integration surface only after release.
+**Do this instead:** Treat demos as required integration tests in build order and CI acceptance.
 
-### Anti-Pattern 3: Source deep-imports across package boundaries
+### Anti-Pattern 3: Version drift across tsParticles v4 beta dependencies
 
-**What people do:** Import from `projects/*/src/lib/*` directly.
-**Why it's wrong:** Breaks APF boundaries and causes fragile builds.
-**Do this instead:** Import only from package entrypoints.
+**What people do:** Update only some `@tsparticles/*` packages.
+**Why it's wrong:** subtle runtime/type mismatches, especially with beta APIs.
+**Do this instead:** enforce synchronized beta version pins during prebuild/release checks.
 
-## Integration Points
+## Scaling Considerations
 
-### External Services/Libraries
-
-| Service                    | Integration Pattern                                                  | Notes                                                    |
-| -------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------- |
-| Angular CLI + ng-packagr   | Library build target `@angular-devkit/build-angular:ng-packagr`      | Official Angular-recommended library packaging path      |
-| tsParticles engine/effects | Wrapper components call engine/effect APIs in lifecycle hooks        | Guard SSR paths with `isPlatformServer`                  |
-| Nx task runner             | Optional but recommended for parallelism, caching, pipeline ordering | Use `targetDefaults` to enforce dependency order         |
-| Lerna                      | Multi-package orchestration/versioning                               | Keep conventional commits + deterministic build commands |
-
-### Internal Boundaries
-
-| Boundary                               | Communication                                       | Notes                                                |
-| -------------------------------------- | --------------------------------------------------- | ---------------------------------------------------- |
-| App ↔ Library                          | Angular module/component imports + Inputs/Outputs   | Consumer-facing contract; must remain stable         |
-| Library Public API ↔ Library Internals | `public-api.ts` re-exports only                     | Prevent deep imports and accidental breaking changes |
-| Root Orchestrator ↔ Package Build      | `pnpm` scripts invoking package-local build targets | Keep builds reproducible and package-isolated        |
+| Scale                                 | Architecture Adjustments                                                                   |
+| ------------------------------------- | ------------------------------------------------------------------------------------------ |
+| Current (3 libs + 2 demos)            | Existing structure is appropriate; focus on stronger contracts and task ordering           |
+| +More wrappers (5-10 libs)            | Add shared internal tooling/preset package for repeated ng-packagr + lint + release config |
+| Ecosystem-wide multi-repo integration | Add automated compatibility matrix CI jobs consuming published canary packages             |
 
 ## Sources
 
-- Angular docs — Creating Libraries: https://angular.dev/tools/libraries/creating-libraries (official, current v21 docs) **[HIGH]**
-- Angular docs — Angular Package Format: https://angular.dev/tools/libraries/angular-package-format (official APF guidance) **[HIGH]**
-- Nx docs — Run Tasks / task pipelines: https://nx.dev/docs/features/run-tasks (official task ordering/caching guidance) **[HIGH]**
-- Repository evidence:
+- Angular docs — Creating libraries: https://angular.dev/tools/libraries/creating-libraries **[HIGH]**
+- Angular docs — Angular Package Format: https://angular.dev/tools/libraries/angular-package-format **[HIGH]**
+- Nx docs — Run tasks / task pipeline ordering: https://nx.dev/docs/features/run-tasks **[HIGH]**
+- Repository evidence **[HIGH]**:
   - `/package.json`, `/pnpm-workspace.yaml`, `/nx.json`, `/lerna.json`
-  - `components/*/angular.json`, `components/*/projects/*/src/public-api.ts`
-  - `components/particles/projects/ng-particles/src/lib/*`
-  - `apps/angular-demo/*`, `apps/ionic-demo/*`
+  - `/components/*/package.json`, `/components/*/projects/*/package.json`
+  - `/components/particles/projects/ng-particles/src/lib/*`
+  - `/components/confetti/projects/ng-confetti/src/lib/*`
+  - `/components/fireworks/projects/ng-fireworks/src/lib/*`
+  - `/components/*/scripts/prebuild.js`
+  - `/apps/angular-demo/*`, `/apps/ionic-demo/*`
+  - `/.github/workflows/nodejs.yml`
 
 ---
 
-_Architecture research for: Angular particle-effects component library ecosystem_
+_Architecture research for: tsParticles Angular v4 beta modernization_
 _Researched: 2026-04-10_

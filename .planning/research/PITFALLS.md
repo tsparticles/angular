@@ -1,136 +1,158 @@
 # Pitfalls Research
 
-**Domain:** Angular particle/animation wrapper libraries (tsParticles-style integration)
+**Domain:** Angular multi-package workspace modernization + tsParticles v4 beta migration
 **Researched:** 2026-04-10
-**Confidence:** MEDIUM
+**Confidence:** HIGH
 
 ## Critical Pitfalls
 
-### Pitfall 1: Engine initialization race + duplicate registration
+### Pitfall 1: SemVer prerelease ranges that look right but resolve wrong
 
 **What goes wrong:**
-Multiple components initialize or register plugins independently, causing duplicate plugin registration, inconsistent behavior between instances, and hard-to-reproduce runtime errors.
+You think all packages are on `4.0.0-beta`, but installs resolve different combinations (or fail), because prerelease matching behaves differently than normal stable ranges.
 
 **Why it happens:**
-Wrapper authors treat each `<ngx-particles>` as self-contained instead of sharing a single engine lifecycle. In this repo, there are two initialization paths (`NgParticlesService` and `NgParticlesEngineService`), which increases accidental split-brain usage risk.
+SemVer excludes prereleases from broad ranges unless prerelease is explicitly opted in for that tuple. Mixed specs like exact (`4.0.0-beta.11`), caret prerelease (`^4.0.0-beta.11`), and broad stable ranges create non-obvious resolution behavior.
 
 **How to avoid:**
 
-- Define one canonical bootstrap path (engine service first, legacy service as compatibility only).
-- Make init idempotent and awaitable across all callers.
-- Add runtime guard: throw/warn if both service paths are used in same app.
-- Add integration tests with 2+ particle components mounted simultaneously.
+- Pick one workspace-wide prerelease policy for tsParticles beta dependencies (recommended: exact beta pins during migration).
+- Enforce it with a workspace lint/check script that rejects mixed range styles for `@tsparticles/*`.
+- Publish only after lockfile + packed tarball verification proves one resolved beta line.
 
 **Warning signs:**
 
-- "Works in one component, breaks with two"
-- Random missing shapes/interactions after route changes
-- Duplicate initialization logs / repeated `loadSlim` traces
+- `pnpm install` succeeds locally but consumers report peer conflicts.
+- Different packages in workspace reference different beta range styles.
+- Frequent "works with beta.N but not beta.N+1" issues.
 
 **Phase to address:**
-Phase 1 — Core engine lifecycle and API contract
+Phase 0 — Dependency contract and semver policy
 
 ---
 
-### Pitfall 2: SSR/hydration breakage from browser-only assumptions
+### Pitfall 2: Inconsistent peerDependencies across sibling packages
 
 **What goes wrong:**
-Libraries crash or hydrate incorrectly in Angular SSR/hybrid apps when touching DOM/browser APIs too early (`window`, `document`, canvas calls during server render).
+One package advertises modern Angular support while another sibling package still declares ultra-broad legacy peers, causing contradictory install signals in the same ecosystem.
 
 **Why it happens:**
-Canvas wrappers are usually authored in CSR-first style; maintainers forget Angular now strongly supports SSR/hybrid rendering and hydration.
+Maintainers update one package first and forget sibling metadata. In this repo today, Angular peer ranges differ across package folders (e.g., strict `^17 || ^18 || ^19` vs `>=2.0.0` patterns), and tsParticles peer declarations are not aligned across wrappers.
 
 **How to avoid:**
 
-- Keep strict platform guards (`isPlatformServer` / platform-specific providers).
-- Move browser-only startup to post-render hooks (`afterNextRender`) or guarded `AfterViewInit` paths.
-- Test demo apps in CSR + SSR build modes before releases.
-- Never branch template output with `isPlatformBrowser` checks that cause hydration mismatch.
+- Define a single source-of-truth peer matrix (`Angular`, `RxJS`, `@tsparticles/*`) and generate package peer blocks from it.
+- Fail CI if sibling package peers drift.
+- Keep peer ranges broad only where tested; never broader than CI matrix coverage.
 
 **Warning signs:**
 
-- Hydration mismatch warnings in Angular logs
-- Server build passes but first request crashes
-- DOM access errors in Node runtime
+- Same repo packages show different Angular support claims.
+- npm/pnpm peer warnings differ depending on which wrapper is installed.
+- Docs claim "broad compatibility" but package metadata disagrees.
 
 **Phase to address:**
-Phase 2 — Rendering-mode compatibility (CSR/SSR/hydration)
+Phase 0 — Workspace metadata normalization
 
 ---
 
-### Pitfall 3: Zone pollution causing app-wide change-detection storms
+### Pitfall 3: Upgrading Angular/tooling without aligned Node+TypeScript baseline
 
 **What goes wrong:**
-Animation loops/events trigger Angular change detection continuously, degrading performance of unrelated parts of the app.
+Workspace upgrades compile in one package but fail in another, or CI fails only on certain jobs, due to Angular major compatibility requirements not being enforced monorepo-wide.
 
 **Why it happens:**
-Third-party animation engines schedule timers, RAF callbacks, and event listeners. If initialized inside Angular zone, every tick can trigger checks.
+Angular has strict version compatibility with Node and TypeScript. In multi-package workspaces, drift appears when app and library projects inherit different TS configs or tool versions over time.
 
 **How to avoid:**
 
-- Initialize and run animation loops in `ngZone.runOutsideAngular`.
-- Re-enter zone only for explicit outputs (`particlesLoaded`, user events).
-- Add perf budget checks with Angular DevTools profiling in demos.
+- Freeze a target baseline (Angular major + Node + TypeScript + RxJS) from the official compatibility table before code changes.
+- Upgrade toolchain first, then libs/apps in dependency order.
+- Add a preflight CI job that fails fast on incompatible Node/TS versions.
 
 **Warning signs:**
 
-- Angular DevTools shows dense consecutive checks sourced from timers/events
-- CPU spikes while idle route is open
-- Typing/scroll stutter in unrelated components
+- "TypeScript version not supported" or builder/compiler mismatch errors.
+- One app builds while another fails with the same commit.
+- Frequent lockfile churn around TS/compiler packages.
 
 **Phase to address:**
-Phase 1 — Runtime performance baseline
+Phase 1 — Toolchain baseline upgrade
 
 ---
 
-### Pitfall 4: Version drift between Angular, wrapper, and engine packages
+### Pitfall 4: Shipping modernization changes without `ng update` migration path
 
 **What goes wrong:**
-Consumers hit install conflicts or runtime incompatibilities because peer dependencies and published versions lag framework/ecosystem releases.
+Breaking API/config modernization lands, but consumers have no automated migration path, turning upgrade into manual break/fix and high support burden.
 
 **Why it happens:**
-Wrapper packages are often thin, so maintainers delay releases. But Angular library compatibility and tsParticles engine/plugin versions move independently.
+Teams treat modernization as internal refactor. Angular library guidance explicitly supports update schematics for breaking changes, but they are often skipped in wrapper libraries.
 
 **How to avoid:**
 
-- Maintain explicit compatibility matrix (Angular major × `@tsparticles/angular` × engine/plugins).
-- Gate CI with matrix tests on supported Angular majors.
-- Align peerDependencies with tested ranges and publish promptly after compatibility validation.
+- Define consumer-facing breaking changes early.
+- Add/update schematics for key migration steps (`ng add`/`ng update` path where applicable).
+- Ship migration docs and runnable before/after examples in demo apps.
 
 **Warning signs:**
 
-- Open issues like "works on Angular X but not X+1"
-- npm install peer warning spikes
-- Consumers pinning old versions in workarounds
+- Release notes contain long "manual steps" sections.
+- Repeated issues asking how to move from old init/config patterns.
+- Consumers pin old major due to migration effort.
 
 **Phase to address:**
-Phase 0 — Packaging/release policy before feature expansion
+Phase 3 — Migration tooling and docs
 
 ---
 
-### Pitfall 5: Unbounded memory/CPU over long sessions
+### Pitfall 5: APF/package entrypoint regressions during packaging modernization
 
 **What goes wrong:**
-Particle containers continue running after route changes, subscriptions accumulate, and tab performance degrades over time.
+Packages build locally but fail in consumer apps due to broken exports, deep-import reliance, or non-APF compliant output expectations.
 
 **Why it happens:**
-Wrappers clean up container state partially but miss RxJS subscription cleanup, re-init churn, or visibility pause strategies.
+Library modernization touches package metadata (`exports`, entrypoints, side effects, TS target). In monorepos, local path linking can hide issues that only appear after publish.
 
 **How to avoid:**
 
-- Ensure full teardown on destroy (container + subscriptions + listeners).
-- Use one-shot subscriptions (`take(1)`/equivalent) for init readiness signals.
-- Document and default `pauseOnBlur`/`pauseOnOutsideViewport` behavior for background effects.
-- Add endurance test: route in/out 100x, confirm no retained containers/subscriptions.
+- Keep APF-compliant packaging (`partial` compilation already present) and validate packed tarballs in a clean external consumer test.
+- Disallow deep imports in docs and tests.
+- Verify each package’s primary and secondary entrypoints post-pack.
 
 **Warning signs:**
 
-- Memory profile climbs after repeated navigation
-- FPS steadily drops after several minutes
-- Duplicate callback emissions from a single component instance
+- Consumers import internal file paths to make things work.
+- Published package works in workspace demos but not in fresh external app.
+- Build errors around unresolved entrypoints or missing type exports.
 
 **Phase to address:**
-Phase 3 — Stability hardening and lifecycle audits
+Phase 2 — Packaging/APF hardening
+
+---
+
+### Pitfall 6: Monorepo release atomics broken (partial version bumps)
+
+**What goes wrong:**
+Only some packages are released/retagged for the beta migration, producing incompatible cross-package combinations in npm.
+
+**Why it happens:**
+Nx/Lerna/pnpm workspaces make partial publish easy if release orchestration isn’t strict. Broad-version modernization amplifies this because consumers mix wrappers (`angular`, `confetti`, `fireworks`) together.
+
+**How to avoid:**
+
+- Treat related wrappers as a release set for beta line changes.
+- Add CI checks that verify all sibling package versions/peer policies before publish.
+- Run a smoke-install matrix from npm tarballs (not workspace links) before release.
+
+**Warning signs:**
+
+- npm shows new version for one wrapper but not siblings.
+- Consumer installs require manual override/resolution hacks.
+- Release rollback/hotfixes immediately after publish.
+
+**Phase to address:**
+Phase 4 — Release orchestration and verification
 
 ---
 
@@ -138,102 +160,94 @@ Phase 3 — Stability hardening and lifecycle audits
 
 Shortcuts that seem reasonable but create long-term problems.
 
-| Shortcut                                            | Immediate Benefit      | Long-term Cost                                            | When Acceptable                          |
-| --------------------------------------------------- | ---------------------- | --------------------------------------------------------- | ---------------------------------------- |
-| "Just call `loadFull` everywhere"                   | Fast demo success      | Significant bundle bloat and poor mobile performance      | MVP demos only; not production defaults  |
-| Keep both old/new init APIs indefinitely            | Backward compatibility | Confusing docs, split usage patterns, support burden      | Temporary only with deprecation timeline |
-| Skip SSR tests for wrapper package                  | Faster CI              | Breakage for Angular SSR adopters discovered post-release | Never for official integration package   |
-| Rely on runtime docs only (no compatibility matrix) | Less maintenance docs  | High support load during Angular major updates            | Never                                    |
+| Shortcut                                               | Immediate Benefit            | Long-term Cost                                                  | When Acceptable                                                  |
+| ------------------------------------------------------ | ---------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------- |
+| Keep legacy peer ranges like `>=2` to avoid complaints | Fewer short-term peer errors | False compatibility claims, runtime breakage on untested majors | Never for published compatibility promises                       |
+| Mix exact and caret beta specs in sibling packages     | Faster local unblock         | Unpredictable prerelease resolution across consumers            | Never                                                            |
+| Validate only workspace-linked installs                | Fast CI                      | Publish-time breakage undetected                                | Only in early dev; must be followed by packed-tarball smoke test |
 
 ## Integration Gotchas
 
-Common mistakes when connecting to external services.
+Common mistakes when connecting modernization into the workspace toolchain.
 
-| Integration                      | Common Mistake                                                 | Correct Approach                                                              |
-| -------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| Remote JSON config (`url`)       | Loading unversioned or cross-origin configs without validation | Version configs, enforce CORS expectations, validate schema before load       |
-| Ionic + Angular shells           | Assuming standard viewport/layer behavior                      | Provide Ionic-specific layout examples (`ion-content`, z-index/pointer rules) |
-| Angular SSR                      | Executing engine setup during server render                    | Browser-only init path + SSR smoke tests in CI                                |
-| Nx/Lerna/pnpm monorepo consumers | Building against source path hacks                             | Consume built package entrypoints, keep APF-compatible distribution           |
+| Integration                   | Common Mistake                                                | Correct Approach                                                                                  |
+| ----------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| pnpm workspace linking        | Assuming workspace link behavior equals real consumer install | Test with packed artifacts in clean external app in addition to workspace builds                  |
+| Angular library publishing    | Putting Angular core deps in `dependencies` instead of peers  | Keep `@angular/*` in `peerDependencies` per Angular guidance                                      |
+| Angular modernization rollout | Refactor APIs without update schematics/migrations            | Provide `ng update` migration support for breaking releases                                       |
+| Lerna/Nx release flow         | Publishing subset of related wrappers                         | Enforce release-set atomicity for `@tsparticles/angular`, `angular-confetti`, `angular-fireworks` |
 
 ## Performance Traps
 
-Patterns that work at small scale but fail as usage grows.
+Modernization/pipeline traps that break at scale in CI/release.
 
-| Trap                                               | Symptoms                             | Prevention                                              | When It Breaks                   |
-| -------------------------------------------------- | ------------------------------------ | ------------------------------------------------------- | -------------------------------- |
-| High particle count + high `fpsLimit` defaults     | Battery drain, thermal throttling    | Conservative defaults + presets by device class         | Mid-range mobile devices quickly |
-| Fullscreen canvas with frequent style/layout churn | Jank during resize/route transitions | Keep canvas container stable; avoid repeated DOM writes | Multi-widget landing pages       |
-| Running animations in hidden tabs/routes           | Background CPU usage                 | Default pause on blur/out-of-viewport                   | Long-lived enterprise dashboards |
+| Trap                                            | Symptoms                               | Prevention                                                                 | When It Breaks                        |
+| ----------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------- | ------------------------------------- |
+| Rebuilding all packages for every small change  | Slow PR cycles, flaky CI timeouts      | Use affected/build graph strategy + phased upgrade sequencing              | As package count and matrix size grow |
+| Running full matrix too late (only pre-release) | Last-minute blocker discoveries        | Run minimal compatibility matrix on every PR, full matrix on merge/release | During beta cadence                   |
+| Skipping deterministic lockfile checks          | "Works on my machine" dependency drift | Enforce lockfile consistency and clean-install CI jobs                     | Cross-platform contributor teams      |
 
 ## Security Mistakes
 
-Domain-specific security issues beyond general web security.
+Supply-chain and release integrity mistakes specific to beta modernization.
 
-| Mistake                                        | Risk                                                            | Prevention                                                                 |
-| ---------------------------------------------- | --------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| Trusting arbitrary remote options JSON         | Malicious/unexpected config behavior, degraded UX/DoS-like load | Restrict allowed config hosts, validate option shape, set size/time limits |
-| Overexposing plugin extensibility without docs | Consumers load unsafe/unreviewed code paths                     | Provide curated plugin loading guidance and security notes                 |
-| Silent fallback on malformed config            | Hidden unsafe defaults and debugging blind spots                | Fail fast with explicit errors and typed validation feedback               |
+| Mistake                                              | Risk                                                    | Prevention                                                |
+| ---------------------------------------------------- | ------------------------------------------------------- | --------------------------------------------------------- |
+| Pulling beta dependencies with broad floating ranges | Accidental intake of unvalidated prerelease builds      | Pin beta versions during migration and bump intentionally |
+| Publishing without artifact verification             | Broken/maliciously altered package contents reach users | Verify packed tarball contents and checks before publish  |
+| Treating peer warnings as non-actionable noise       | Hidden incompatible dependency trees                    | Fail CI on new peer warning classes for release branches  |
 
 ## UX Pitfalls
 
-Common user experience mistakes in this domain.
+Developer-experience pitfalls for consumers upgrading.
 
-| Pitfall                            | User Impact                                             | Better Approach                                                                 |
-| ---------------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| Particle layer intercepts clicks   | Broken navigation/forms                                 | Default `pointer-events: none` for decorative backgrounds                       |
-| Ignoring reduced-motion preference | Motion-sensitive users harmed; accessibility complaints | Provide reduced/disabled animation mode and document it                         |
-| One-size-fits-all presets          | Overly noisy visuals or low contrast                    | Ship curated presets by use-case (hero background, subtle ambient, celebration) |
+| Pitfall                                             | User Impact                                 | Better Approach                                                            |
+| --------------------------------------------------- | ------------------------------------------- | -------------------------------------------------------------------------- |
+| Inconsistent support messaging across packages/docs | Users cannot pick safe versions             | Publish one compatibility matrix and reference it from all package READMEs |
+| "Modern API" docs without legacy-to-modern mapping  | Upgrade friction and support tickets        | Include old→new mapping table and migration examples                       |
+| Hidden beta caveats                                 | Production incidents from unstable features | Mark beta behavior explicitly and define support expectations              |
 
 ## "Looks Done But Isn't" Checklist
 
-Things that appear complete but are missing critical pieces.
-
-- [ ] **Engine init:** Works with multiple components/routes, not just single demo page
-- [ ] **SSR compatibility:** No server-side DOM access, hydration warnings resolved
-- [ ] **Lifecycle cleanup:** No retained containers/subscriptions after component destroy
-- [ ] **Performance defaults:** Mobile-safe particle count/fps and pause behavior validated
-- [ ] **Release compatibility:** Angular + engine version matrix published and tested
-- [ ] **Accessibility:** Reduced-motion and interaction-layer behavior documented
+- [ ] **Semver policy:** one documented beta range policy across all `@tsparticles/*` deps
+- [ ] **Peer alignment:** sibling wrappers expose the same tested Angular/RxJS compatibility rules
+- [ ] **Toolchain baseline:** Node/TypeScript versions validated against Angular compatibility table
+- [ ] **Migration support:** breaking modernizations covered by update guidance/schematics
+- [ ] **Packaging verification:** packed artifacts tested in clean external Angular + Ionic apps
+- [ ] **Atomic release:** all related wrappers released and validated together
 
 ## Recovery Strategies
 
-When pitfalls occur despite prevention, how to recover.
-
-| Pitfall                            | Recovery Cost | Recovery Steps                                                                            |
-| ---------------------------------- | ------------- | ----------------------------------------------------------------------------------------- |
-| Init race / duplicate engine setup | MEDIUM        | Introduce single engine authority service, deprecate alternate path, ship migration guide |
-| SSR/hydration breakage             | HIGH          | Patch with guarded initialization, add SSR E2E gate, release hotfix quickly               |
-| Zone pollution regressions         | MEDIUM        | Move callbacks outside zone, profile before/after, add perf regression checks             |
-| Version drift release failures     | HIGH          | Freeze support matrix, patch peer ranges, backport compatibility notes                    |
-| Memory leak after navigation       | MEDIUM        | Add teardown audit, fix subscription/container cleanup, publish patch with test           |
+| Pitfall                               | Recovery Cost | Recovery Steps                                                                                       |
+| ------------------------------------- | ------------- | ---------------------------------------------------------------------------------------------------- |
+| Prerelease semver mismatch            | MEDIUM        | Normalize all beta ranges, republish patched metadata, communicate exact compatible set              |
+| Peer dependency drift across wrappers | HIGH          | Patch peer ranges in all siblings, backfill compatibility matrix, publish synchronized patch release |
+| Toolchain baseline mismatch           | MEDIUM        | Freeze supported baseline, align lockfile + CI images, rerun full matrix                             |
+| Missing migration path                | HIGH          | Publish migration guide + codemods/schematics in follow-up release, keep backward shim temporarily   |
+| Non-atomic release set                | HIGH          | Issue coordinated hotfix release across all wrappers and deprecate broken versions                   |
 
 ## Pitfall-to-Phase Mapping
 
-How roadmap phases should address these pitfalls.
-
-| Pitfall                                             | Prevention Phase                    | Verification                                                       |
-| --------------------------------------------------- | ----------------------------------- | ------------------------------------------------------------------ |
-| Engine initialization race + duplicate registration | Phase 1 (Core engine lifecycle)     | Multi-instance integration test passes without duplicate init/logs |
-| SSR/hydration browser-only assumptions              | Phase 2 (Rendering compatibility)   | SSR build + hydrate run with zero DOM-access/mismatch errors       |
-| Zone pollution from animation tasks                 | Phase 1 (Performance baseline)      | Angular DevTools shows no timer-driven global detection storm      |
-| Version drift across Angular/engine/wrapper         | Phase 0 (Release policy)            | Compatibility matrix in docs + CI matrix green                     |
-| Memory/CPU leaks across navigation                  | Phase 3 (Stability hardening)       | Endurance navigation test shows stable memory and container count  |
-| Remote JSON config trust/validation gaps            | Phase 2 (Configuration safety)      | Invalid/oversized/blocked-host config cases fail predictably       |
-| UX layering + reduced-motion misses                 | Phase 2 (UX/accessibility defaults) | Click-through and reduced-motion acceptance tests pass             |
+| Pitfall                              | Prevention Phase                 | Verification                                                            |
+| ------------------------------------ | -------------------------------- | ----------------------------------------------------------------------- |
+| SemVer prerelease range mismatch     | Phase 0 (Dependency contract)    | CI rule passes: no mixed beta range styles for `@tsparticles/*`         |
+| Sibling peerDependencies drift       | Phase 0 (Metadata normalization) | Generated peer blocks identical where intended; drift check green       |
+| Angular/Node/TS baseline mismatch    | Phase 1 (Toolchain baseline)     | Preflight job validates versions against Angular compatibility          |
+| APF/entrypoint regressions           | Phase 2 (Packaging hardening)    | Fresh external app install from tarball builds successfully             |
+| Missing `ng update` migration path   | Phase 3 (Migration tooling/docs) | Upgrade test from prior stable version succeeds with documented steps   |
+| Partial/non-atomic workspace release | Phase 4 (Release orchestration)  | Release checklist proves all wrappers published + smoke-tested together |
 
 ## Sources
 
-- Angular SSR and server-compatible authoring guidance (official): https://angular.dev/guide/ssr _(HIGH)_
-- Angular component lifecycle and destroy guidance (official): https://angular.dev/guide/components/lifecycle _(HIGH)_
-- Angular NgZone API + zone pollution best practices (official): https://angular.dev/api/core/NgZone and https://angular.dev/best-practices/zone-pollution _(HIGH)_
-- Angular library packaging and peer dependency guidance (official): https://angular.dev/tools/libraries/creating-libraries _(HIGH)_
-- tsParticles options interface (pause/retina/fps/fullscreen etc.): https://particles.js.org/docs/interfaces/tsParticles_Engine.Options_Interfaces_IOptions.IOptions.html _(MEDIUM — docs site version labeling is inconsistent)_
-- Repository implementation context (`NgxParticlesComponent`, services, package metadata): local code in this workspace and README _(HIGH for observed code paths)_
-- npm package publish status for `@tsparticles/angular` (version recency): https://www.npmjs.com/package/@tsparticles/angular _(MEDIUM)_
+- Angular version compatibility (Node/TypeScript/RxJS): https://angular.dev/reference/versions _(HIGH)_
+- Angular migrations overview + update workflow: https://angular.dev/reference/migrations and https://angular.dev/update-guide _(HIGH)_
+- Angular library guidance (peer dependencies, schematics, packaging, compatibility): https://angular.dev/tools/libraries/creating-libraries _(HIGH)_
+- Angular Package Format (APF, partial compilation, entrypoints): https://angular.dev/tools/libraries/angular-package-format _(HIGH)_
+- pnpm workspace protocol and workspace linking behavior: https://pnpm.io/workspaces _(HIGH)_
+- npm/node-semver prerelease range behavior: https://github.com/npm/node-semver#prerelease-tags _(MEDIUM — authoritative implementation docs, but GitHub-rendered source doc)_
+- Local workspace evidence for current drift risk: `package.json`, `pnpm-workspace.yaml`, `lerna.json`, and component package manifests under `components/*/projects/*/package.json` _(HIGH for repo-observed facts)_
 
 ---
 
-_Pitfalls research for: Angular particle-effects component library domain_
+_Pitfalls research for: tsParticles Angular v4 beta modernization milestone_
 _Researched: 2026-04-10_
