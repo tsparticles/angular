@@ -1,12 +1,62 @@
+# Project State
+
+## Project Reference
+
+See: .planning/PROJECT.md (updated 2026-04-10)
+
+**Core value:** Angular developers can add reliable, customizable tsParticles effects quickly using first-class Angular packages.
+**Current focus:** Phase 1 - Dependency & Toolchain Alignment
+
 ## Current Position
 
-Phase: Not started (defining requirements)
-Plan: -
-Status: Defining requirements
-Last activity: 2026-04-10 - Milestone v2.0 started
+Phase: 1 of 3 (Dependency & Toolchain Alignment)
+Plan: 0 of TBD in current phase
+Status: Ready to plan
+Last activity: 2026-04-10 — v2.0 roadmap created and requirements mapped to phases
+
+Progress: [░░░░░░░░░░] 0%
+
+## Performance Metrics
+
+**Velocity:**
+
+- Total plans completed: 0
+- Average duration: -
+- Total execution time: 0.0 hours
+
+**By Phase:**
+
+| Phase                                | Plans | Total | Avg/Plan |
+| ------------------------------------ | ----- | ----- | -------- |
+| 1. Dependency & Toolchain Alignment  | 0     | -     | -        |
+| 2. Initialization & Reactive Runtime | 0     | -     | -        |
+| 3. Demo Validation & Migration Docs  | 0     | -     | -        |
+
+**Recent Trend:**
+
+- Last 5 plans: -
+- Trend: Stable
 
 ## Accumulated Context
 
-- Milestone focus: modernize Angular workspace and packaging while integrating tsParticles 4.0.0-beta.
-- Maintain broad compatibility during the migration.
-- Completion signal includes green builds/tests, verified Angular and Ionic demos, and a migration checklist.
+### Decisions
+
+Decisions are logged in PROJECT.md Key Decisions table.
+Recent decisions affecting current work:
+
+- [v2.0] Phases derived from requirement groupings with coarse granularity compression.
+- [v2.0] Runtime initialization and component reactivity grouped into one delivery boundary.
+
+### Pending Todos
+
+None yet.
+
+### Blockers/Concerns
+
+- Missing `.planning/MILESTONES.md`; milestone continuity inferred from current repository planning files.
+
+## Session Continuity
+
+Last session: 2026-04-10 00:00
+Stopped at: Roadmap drafted and written (ROADMAP.md/STATE.md/REQUIREMENTS traceability)
+Resume file: None

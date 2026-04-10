@@ -55,30 +55,30 @@ Deferred to future releases.
 
 Which phases cover which requirements. Updated during roadmap creation.
 
-| Requirement | Phase     | Status  |
-| ----------- | --------- | ------- |
-| DEPS-01     | Phase TBD | Pending |
-| DEPS-02     | Phase TBD | Pending |
-| DEPS-03     | Phase TBD | Pending |
-| TOOL-01     | Phase TBD | Pending |
-| TOOL-02     | Phase TBD | Pending |
-| TOOL-03     | Phase TBD | Pending |
-| INIT-01     | Phase TBD | Pending |
-| INIT-02     | Phase TBD | Pending |
-| INIT-03     | Phase TBD | Pending |
-| REACT-01    | Phase TBD | Pending |
-| REACT-02    | Phase TBD | Pending |
-| DEMO-01     | Phase TBD | Pending |
-| DEMO-02     | Phase TBD | Pending |
-| DOCS-01     | Phase TBD | Pending |
+| Requirement | Phase   | Status  |
+| ----------- | ------- | ------- |
+| DEPS-01     | Phase 1 | Pending |
+| DEPS-02     | Phase 1 | Pending |
+| DEPS-03     | Phase 1 | Pending |
+| TOOL-01     | Phase 1 | Pending |
+| TOOL-02     | Phase 1 | Pending |
+| TOOL-03     | Phase 1 | Pending |
+| INIT-01     | Phase 2 | Pending |
+| INIT-02     | Phase 2 | Pending |
+| INIT-03     | Phase 2 | Pending |
+| REACT-01    | Phase 2 | Pending |
+| REACT-02    | Phase 2 | Pending |
+| DEMO-01     | Phase 3 | Pending |
+| DEMO-02     | Phase 3 | Pending |
+| DOCS-01     | Phase 3 | Pending |
 
 **Coverage:**
 
 - v1 requirements: 14 total
-- Mapped to phases: 0
-- Unmapped: 14 ⚠
+- Mapped to phases: 14
+- Unmapped: 0 ✓
 
 ---
 
 _Requirements defined: 2026-04-10_
-_Last updated: 2026-04-10 after milestone v2.0 requirement definition_
+_Last updated: 2026-04-10 after roadmap creation for milestone v2.0_
