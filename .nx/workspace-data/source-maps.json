@@ -1,0 +1,2568 @@
+{
+  "apps/angular-demo": {
+    "root": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "name": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "tags": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.1": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.2": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.3": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.4": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.5": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.description": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageExports": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.executor": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.options": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.metadata": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.options.script": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.metadata.scriptContent": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.metadata.runCommand": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.executor": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.options": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.options.script": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata.scriptContent": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata.runCommand": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.executor": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options.script": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.scriptContent": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.runCommand": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.executor": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.options": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.metadata": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.options.script": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.metadata.scriptContent": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.metadata.runCommand": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch.executor": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch.options": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch.metadata": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch.options.script": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch.metadata.scriptContent": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch.metadata.runCommand": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.executor": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options.script": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.scriptContent": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.runCommand": [
+      "apps/angular-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build:ci.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build:ci.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "apps/ionic-demo": {
+    "root": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "name": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "tags": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.1": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.2": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.3": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.4": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.5": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.6": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.description": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageExports": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.executor": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.options": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.metadata": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.options.script": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.metadata.scriptContent": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.metadata.runCommand": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.executor": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.options": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.options.script": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata.scriptContent": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata.runCommand": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.executor": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options.script": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.scriptContent": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.runCommand": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.executor": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.options": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.metadata": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.options.script": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.metadata.scriptContent": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.metadata.runCommand": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.executor": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options.script": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.scriptContent": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.runCommand": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.executor": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options.script": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.scriptContent": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.runCommand": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.e2e": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.e2e.executor": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.e2e.options": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.e2e.metadata": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.e2e.options.script": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.e2e.metadata.scriptContent": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.e2e.metadata.runCommand": [
+      "apps/ionic-demo/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build:ci.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build:ci.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "components/confetti": {
+    "root": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "name": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:front-end": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:frontend": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:tsparticles": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles.js": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particlesjs": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particle": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:canvas": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:jsparticles": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:xparticles": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles-js": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles-bg": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles-bg-vue": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles-ts": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles.ts": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:react-particles-js": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:react-particles.js": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:react-particles": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:react": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:reactjs": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:vue-particles": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:ngx-particles": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:angular-particles": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particleground": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:vue": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:vuejs": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:preact": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:preactjs": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:jquery": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:angularjs": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:angular": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:typescript": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:javascript": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:animation": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:web": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:html5": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:web-design": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:webdesign": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:css": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:html": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:css3": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:animated": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:background": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:confetti": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:fireworks": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:fireworks-js": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:confetti-js": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:confettijs": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:fireworksjs": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:canvas-confetti": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.1": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.2": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.3": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.4": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.5": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.6": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.7": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.8": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.9": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.10": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.11": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.description": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageExports": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.executor": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.options": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.metadata": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.options.script": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.metadata.scriptContent": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.metadata.runCommand": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:all": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:all.executor": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:all.options": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:all.metadata": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:all.options.script": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:all.metadata.scriptContent": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:all.metadata.runCommand": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.executor": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options.script": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.scriptContent": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.runCommand": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.executor": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.options": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.metadata": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.options.script": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.metadata.scriptContent": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.metadata.runCommand": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.version": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.version.executor": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.version.options": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.version.metadata": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.version.options.script": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.version.metadata.scriptContent": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.version.metadata.runCommand": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:src": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:src.executor": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:src.options": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:src.metadata": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:src.options.script": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:src.metadata.scriptContent": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:src.metadata.runCommand": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:readme": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:readme.executor": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:readme.options": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:readme.metadata": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:readme.options.script": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:readme.metadata.scriptContent": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:readme.metadata.runCommand": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:src": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:src.executor": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:src.options": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:src.metadata": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:src.options.script": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:src.metadata.scriptContent": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:src.metadata.runCommand": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:readme": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:readme.executor": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:readme.options": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:readme.metadata": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:readme.options.script": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:readme.metadata.scriptContent": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:readme.metadata.runCommand": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch.executor": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch.options": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch.metadata": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch.options.script": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch.metadata.scriptContent": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch.metadata.runCommand": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.executor": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options.script": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.scriptContent": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.runCommand": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack.executor": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack.options": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack.metadata": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack.options.script": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack.metadata.scriptContent": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack.metadata.runCommand": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "components/confetti/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build:ci.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build:ci.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "components/fireworks": {
+    "root": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "name": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:front-end": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:frontend": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:tsparticles": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles.js": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particlesjs": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particle": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:canvas": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:jsparticles": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:xparticles": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles-js": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles-bg": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles-bg-vue": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles-ts": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles.ts": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:react-particles-js": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:react-particles.js": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:react-particles": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:react": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:reactjs": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:vue-particles": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:ngx-particles": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:angular-particles": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particleground": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:vue": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:vuejs": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:preact": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:preactjs": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:jquery": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:angularjs": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:angular": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:typescript": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:javascript": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:animation": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:web": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:html5": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:web-design": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:webdesign": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:css": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:html": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:css3": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:animated": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:background": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:confetti": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:fireworks": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:fireworks-js": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:confetti-js": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:confettijs": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:fireworksjs": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:canvas-confetti": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.1": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.2": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.3": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.4": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.5": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.6": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.7": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.8": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.9": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.10": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.11": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.description": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageExports": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.executor": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.options": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.metadata": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.options.script": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.metadata.scriptContent": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.metadata.runCommand": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:all": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:all.executor": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:all.options": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:all.metadata": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:all.options.script": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:all.metadata.scriptContent": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:all.metadata.runCommand": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.executor": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options.script": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.scriptContent": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.runCommand": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.executor": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.options": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.metadata": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.options.script": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.metadata.scriptContent": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.metadata.runCommand": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.version": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.version.executor": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.version.options": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.version.metadata": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.version.options.script": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.version.metadata.scriptContent": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.version.metadata.runCommand": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:src": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:src.executor": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:src.options": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:src.metadata": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:src.options.script": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:src.metadata.scriptContent": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:src.metadata.runCommand": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:readme": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:readme.executor": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:readme.options": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:readme.metadata": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:readme.options.script": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:readme.metadata.scriptContent": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:readme.metadata.runCommand": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:src": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:src.executor": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:src.options": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:src.metadata": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:src.options.script": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:src.metadata.scriptContent": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:src.metadata.runCommand": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:readme": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:readme.executor": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:readme.options": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:readme.metadata": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:readme.options.script": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:readme.metadata.scriptContent": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:readme.metadata.runCommand": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch.executor": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch.options": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch.metadata": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch.options.script": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch.metadata.scriptContent": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch.metadata.runCommand": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.executor": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options.script": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.scriptContent": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.runCommand": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack.executor": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack.options": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack.metadata": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack.options.script": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack.metadata.scriptContent": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack.metadata.runCommand": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "components/fireworks/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build:ci.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build:ci.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "components/particles": {
+    "root": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "name": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:front-end": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:frontend": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:tsparticles": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles.js": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particlesjs": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particle": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:canvas": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:jsparticles": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:xparticles": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles-js": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles-bg": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles-bg-vue": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles-ts": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles.ts": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:react-particles-js": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:react-particles.js": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:react-particles": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:react": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:reactjs": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:vue-particles": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:ngx-particles": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:angular-particles": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particleground": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:vue": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:vuejs": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:preact": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:preactjs": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:jquery": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:angularjs": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:angular": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:typescript": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:javascript": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:animation": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:web": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:html5": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:web-design": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:webdesign": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:css": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:html": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:css3": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:animated": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:background": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:confetti": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:fireworks": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:fireworks-js": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:confetti-js": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:confettijs": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:fireworksjs": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:canvas-confetti": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.1": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.2": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.3": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.4": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.5": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.6": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.7": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.8": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.9": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.10": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.11": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.description": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageExports": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.executor": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.options": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.metadata": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.options.script": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.metadata.scriptContent": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ng.metadata.runCommand": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:all": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:all.executor": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:all.options": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:all.metadata": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:all.options.script": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:all.metadata.scriptContent": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:all.metadata.runCommand": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.executor": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options.script": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.scriptContent": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.runCommand": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.executor": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.options": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.metadata": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.options.script": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.metadata.scriptContent": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ci.metadata.runCommand": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.version": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.version.executor": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.version.options": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.version.metadata": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.version.options.script": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.version.metadata.scriptContent": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.version.metadata.runCommand": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:src": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:src.executor": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:src.options": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:src.metadata": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:src.options.script": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:src.metadata.scriptContent": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:src.metadata.runCommand": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:readme": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:readme.executor": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:readme.options": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:readme.metadata": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:readme.options.script": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:readme.metadata.scriptContent": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:ci:readme.metadata.runCommand": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:src": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:src.executor": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:src.options": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:src.metadata": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:src.options.script": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:src.metadata.scriptContent": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:src.metadata.runCommand": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:readme": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:readme.executor": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:readme.options": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:readme.metadata": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:readme.options.script": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:readme.metadata.scriptContent": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prettify:readme.metadata.runCommand": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch.executor": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch.options": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch.metadata": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch.options.script": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch.metadata.scriptContent": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.watch.metadata.runCommand": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.executor": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options.script": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.scriptContent": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.runCommand": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack.executor": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack.options": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack.metadata": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack.options.script": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack.metadata.scriptContent": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack.metadata.runCommand": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "components/particles/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build:ci.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build:ci.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  }
+}

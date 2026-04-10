@@ -1,0 +1,43 @@
+{
+  "run": {
+    "command": "cli run build:ci --stream --no-private",
+    "startTime": "2026-04-09T19:48:02.189Z",
+    "endTime": "2026-04-09T19:48:14.384Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "angular-fireworks:build:ci",
+      "target": "build:ci",
+      "projectName": "angular-fireworks",
+      "hash": "2525594981396766025",
+      "startTime": "2026-04-09T19:48:02.212Z",
+      "endTime": "2026-04-09T19:48:14.293Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    },
+    {
+      "taskId": "angular-confetti:build:ci",
+      "target": "build:ci",
+      "projectName": "angular-confetti",
+      "hash": "16981067358633531486",
+      "startTime": "2026-04-09T19:48:02.212Z",
+      "endTime": "2026-04-09T19:48:14.312Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    },
+    {
+      "taskId": "@tsparticles/angular:build:ci",
+      "target": "build:ci",
+      "projectName": "@tsparticles/angular",
+      "hash": "2661904735808152812",
+      "startTime": "2026-04-09T19:48:02.212Z",
+      "endTime": "2026-04-09T19:48:14.382Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

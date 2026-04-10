@@ -1,0 +1,15 @@
+
+> angular-confetti@3.0.0 build:ci C:\Projects\GitHub\angular\components\confetti
+> node scripts/prebuild.js && pnpm run prettify:ci:src && pnpm run prettify:ci:readme && ng build ng-confetti --configuration production
+
+lib package.json updated successfully to version 3.0.0
+README.md updated successfully
+
+> angular-confetti@3.0.0 prettify:ci:src C:\Projects\GitHub\angular\components\confetti
+> prettier --check ./projects/ng-confetti/src/*
+
+Checking formatting...
+[[33mwarn[39m] projects/ng-confetti/src/public-api.ts
+[[33mwarn[39m] Code style issues found in the above file. Run Prettier with --write to fix.
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m

@@ -1,0 +1,47 @@
+
+> angular-confetti@3.0.0 build:ci C:\Projects\GitHub\angular\components\confetti
+> node scripts/prebuild.js && pnpm run prettify:src && pnpm run prettify:ci:readme && ng build ng-confetti --configuration production
+
+lib package.json updated successfully to version 3.0.0
+README.md updated successfully
+
+> angular-confetti@3.0.0 prettify:src C:\Projects\GitHub\angular\components\confetti
+> prettier --write ./projects/ng-confetti/src/*
+
+[90mprojects/ng-confetti/src/public-api.ts[39m 30ms (unchanged)
+
+> angular-confetti@3.0.0 prettify:ci:readme C:\Projects\GitHub\angular\components\confetti
+> prettier --check ./README.md
+
+Checking formatting...
+All matched files use Prettier code style!
+[34mBuilding Angular Package[39m
+[37m[39m
+[37m------------------------------------------------------------------------------[39m
+[37mBuilding entry point 'angular-confetti'[39m
+[37m------------------------------------------------------------------------------[39m
+- Compiling with Angular sources in partial compilation mode.
+[31m✖[39m Compiling with Angular sources in partial compilation mode.
+[1m[31m[91merror[0m[90m TS5101: [0mOption 'baseUrl' is deprecated and will stop functioning in TypeScript 7.0. Specify compilerOption '"ignoreDeprecations": "6.0"' to silence this error.
+  Visit https://aka.ms/ts6 for migration information.
+[91merror[0m[90m TS5101: [0mOption 'downlevelIteration' is deprecated and will stop functioning in TypeScript 7.0. Specify compilerOption '"ignoreDeprecations": "6.0"' to silence this error.
+[91merror[0m[90m TS5107: [0mOption 'moduleResolution=node10' is deprecated and will stop functioning in TypeScript 7.0. Specify compilerOption '"ignoreDeprecations": "6.0"' to silence this error.
+  Visit https://aka.ms/ts6 for migration information.
+[96m../../node_modules/.pnpm/@angular+core@21.2.8_@angul_c4d0643eba543faed7bdf19179da0602/node_modules/@angular/core/types/_discovery-chunk.d.ts[0m:[93m12[0m:[93m86[0m - [91merror[0m[90m TS2307: [0mCannot find module '@angular/core/primitives/di' or its corresponding type declarations.
+
+[7m12[0m import { Injector as Injector$1, InjectionToken as InjectionToken$1, NotFound } from '@angular/core/primitives/di';
+[7m  [0m [91m                                                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96m../../node_modules/.pnpm/@angular+core@21.2.8_@angul_c4d0643eba543faed7bdf19179da0602/node_modules/@angular/core/types/core.d.ts[0m:[93m20[0m:[93m8[0m - [91merror[0m[90m TS2882: [0mCannot find module or type declarations for side-effect import of '@angular/core/primitives/di'.
+
+[7m20[0m import '@angular/core/primitives/di';
+[7m  [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96mprojects/ng-confetti/src/lib/ng-confetti.module.ts[0m:[93m5[0m:[93m20[0m - [91merror[0m[90m NG6008: [0mComponent NgxConfettiComponent is standalone, and cannot be declared in an NgModule. Did you mean to import it instead?
+
+[7m5[0m     declarations: [NgxConfettiComponent],
+[7m [0m [91m                   ~~~~~~~~~~~~~~~~~~~~[0m
+[96mprojects/ng-confetti/src/lib/ng-confetti.module.ts[0m:[93m7[0m:[93m15[0m - [91merror[0m[90m NG6004: [0mCan't be exported from this NgModule, as it must be imported first
+
+[7m7[0m     exports: [NgxConfettiComponent],
+[7m [0m [91m              ~~~~~~~~~~~~~~~~~~~~[0m
+[39m[22m
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m
