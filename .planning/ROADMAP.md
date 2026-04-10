@@ -23,7 +23,13 @@ This roadmap delivers milestone v2.0 by first stabilizing dependency/toolchain c
 2. CI detects and blocks mixed tsParticles major versions, peer-range drift, or wrapper version misalignment before release.
 3. Maintainer can build and test the workspace successfully on the latest supported Angular version.
 4. Maintainer can follow a documented, repeatable upgrade flow that preserves validated compatibility policy for supported previous Angular versions.
-   **Plans**: TBD
+   **Plans**: 3 plans
+
+Plans:
+
+- [ ] 01-01-PLAN.md — Normalize dependency and peer policy manifests across apps and publishable wrappers.
+- [ ] 01-02-PLAN.md — Add repository-local dependency policy checker and fail-fast CI enforcement.
+- [ ] 01-03-PLAN.md — Document repeatable upgrade workflow with explicit validation evidence.
 
 ### Phase 2: Initialization & Reactive Runtime
 
