@@ -9,15 +9,15 @@ Requirements for the current milestone (v2.0). Each maps to roadmap phases.
 
 ### Dependency Policy
 
-- [ ] **DEPS-01**: Maintainer can use tsParticles `4.0.0-beta` packages consistently across all Angular workspace packages.
-- [ ] **DEPS-02**: Maintainer can enforce one dependency policy that prevents mixed tsParticles major versions in the workspace.
-- [ ] **DEPS-03**: Maintainer can verify in CI that package versions and peer ranges stay aligned across publishable wrappers.
+- [x] **DEPS-01**: Maintainer can use tsParticles `4.0.0-beta` packages consistently across all Angular workspace packages.
+- [x] **DEPS-02**: Maintainer can enforce one dependency policy that prevents mixed tsParticles major versions in the workspace.
+- [x] **DEPS-03**: Maintainer can verify in CI that package versions and peer ranges stay aligned across publishable wrappers.
 
 ### Toolchain and Upgrade Flow
 
-- [ ] **TOOL-01**: Maintainer can build and test the workspace on the latest supported Angular version.
-- [ ] **TOOL-02**: Maintainer can keep compatibility with multiple previous Angular versions through documented and validated peer/version policy.
-- [ ] **TOOL-03**: Maintainer can run a repeatable upgrade workflow that makes future dependency updates simpler and lower-risk.
+- [x] **TOOL-01**: Maintainer can build and test the workspace on the latest supported Angular version.
+- [x] **TOOL-02**: Maintainer can keep compatibility with multiple previous Angular versions through documented and validated peer/version policy.
+- [x] **TOOL-03**: Maintainer can run a repeatable upgrade workflow that makes future dependency updates simpler and lower-risk.
 
 ### Initialization and Runtime Behavior
 
@@ -57,12 +57,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase   | Status  |
 | ----------- | ------- | ------- |
-| DEPS-01     | Phase 1 | Pending |
-| DEPS-02     | Phase 1 | Pending |
-| DEPS-03     | Phase 1 | Pending |
-| TOOL-01     | Phase 1 | Pending |
-| TOOL-02     | Phase 1 | Pending |
-| TOOL-03     | Phase 1 | Pending |
+| DEPS-01     | Phase 1 | Complete |
+| DEPS-02     | Phase 1 | Complete |
+| DEPS-03     | Phase 1 | Complete |
+| TOOL-01     | Phase 1 | Complete |
+| TOOL-02     | Phase 1 | Complete |
+| TOOL-03     | Phase 1 | Complete |
 | INIT-01     | Phase 2 | Pending |
 | INIT-02     | Phase 2 | Pending |
 | INIT-03     | Phase 2 | Pending |

@@ -10,12 +10,11 @@ on:
       - dev
 
 #env:
-  #NX_CLOUD_DISTRIBUTED_EXECUTION: true
-  #NX_CLOUD_ACCESS_TOKEN: '${{ secrets.NX_CLOUD_ACCESS_TOKEN }}'
-  #NX_BRANCH: '${{github.event.pull_request.number || github.ref_name}}'
+#NX_CLOUD_DISTRIBUTED_EXECUTION: true
+#NX_CLOUD_ACCESS_TOKEN: '${{ secrets.NX_CLOUD_ACCESS_TOKEN }}'
+#NX_BRANCH: '${{github.event.pull_request.number || github.ref_name}}'
 
 jobs:
-
   main:
     runs-on: ubuntu-latest
     if: ${{ github.event_name != 'pull_request' }}
@@ -28,12 +27,12 @@ jobs:
       #  uses: nrwl/nx-set-shas@v3
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
       - uses: pnpm/action-setup@v3.0.0
         name: Install pnpm
         id: pnpm-install
         with:
-          version: 8
+          version: 10.33.0
           run_install: false
       - name: Get pnpm version
         id: pnpm-version
@@ -55,6 +54,7 @@ jobs:
       - run: pnpm install
       #- run: npx nx-cloud start-ci-run
       - run: pnpm run prettify:ci:readme
+      - run: pnpm run deps:policy:check
       - run: pnpm run build:ci #--concurrency 3
       #- run: npx nx-cloud stop-all-agents
   pr:
@@ -70,12 +70,12 @@ jobs:
       #  uses: nrwl/nx-set-shas@v3
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
       - uses: pnpm/action-setup@v3.0.0
         name: Install pnpm
         id: pnpm-install
         with:
-          version: 7
+          version: 10.33.0
           run_install: false
       - name: Get pnpm version
         id: pnpm-version
@@ -97,6 +97,7 @@ jobs:
       - run: pnpm install
       #- run: npx nx-cloud start-ci-run
       - run: pnpm run prettify:ci:readme
+      - run: pnpm run deps:policy:check
       - run: pnpm run build:ci #--concurrency 3
       #- run: npx nx-cloud stop-all-agents
 

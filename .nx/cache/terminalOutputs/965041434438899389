@@ -1,0 +1,28 @@
+
+> @tsparticles/angular@3.0.0 build:ci /Users/matteo/Projects/GitHub/tsparticles/angular/components/particles
+> node scripts/prebuild.js && pnpm run prettify:src && pnpm run prettify:ci:readme && ng build ng-particles --configuration production
+
+lib package.json updated successfully to version 3.0.0
+README.md updated successfully
+
+> @tsparticles/angular@3.0.0 prettify:src /Users/matteo/Projects/GitHub/tsparticles/angular/components/particles
+> prettier --write ./projects/ng-particles/src/*
+
+(node:82411) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+projects/ng-particles/src/lib/ng-particles-engine.service.ts 34ms
+projects/ng-particles/src/lib/ng-particles.component.ts 17ms
+projects/ng-particles/src/lib/ng-particles.module.ts 3ms
+projects/ng-particles/src/lib/ng-particles.service.ts 2ms
+projects/ng-particles/src/public-api.ts 1ms
+
+> @tsparticles/angular@3.0.0 prettify:ci:readme /Users/matteo/Projects/GitHub/tsparticles/angular/components/particles
+> prettier --check ./README.md
+
+Checking formatting...
+(node:82524) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[[33mwarn[39m] README.md
+[[33mwarn[39m] Code style issues found in the above file. Run Prettier to fix.
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m

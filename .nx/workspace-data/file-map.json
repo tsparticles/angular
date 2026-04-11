@@ -6,317 +6,203 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "renovate.json",
-        "hash": "11058537946745493258"
+        "file": "README.md",
+        "hash": "3473970031774323959"
       },
       {
-        "file": ".github/workflows/nodejs.yml",
-        "hash": "7091656418447944939"
+        "file": ".planning/phases/01-dependency-toolchain-alignment/01-DISCUSSION-LOG.md",
+        "hash": "7920502302241055755"
       },
       {
         "file": ".github/ISSUE_TEMPLATE/sweep-template.yml",
         "hash": "2077111558128331987"
       },
       {
-        "file": ".gitignore",
-        "hash": "11714227857552427438"
+        "file": ".planning/phases/01-dependency-toolchain-alignment/01-03-SUMMARY.md",
+        "hash": "7365679019382244447"
       },
       {
-        "file": "CHANGELOG.md",
-        "hash": "5591356845140405804"
+        "file": ".planning/phases/01-dependency-toolchain-alignment/01-01-PLAN.md",
+        "hash": "17574757082924962579"
       },
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "6508762471785207617"
+        "file": ".planning/phases/01-dependency-toolchain-alignment/01-CONTEXT.md",
+        "hash": "8599706415666876951"
       },
       {
-        "file": "typedoc.json",
-        "hash": "4689356592306839446"
-      },
-      {
-        "file": "README.md",
-        "hash": "3473970031774323959"
-      },
-      {
-        "file": ".commitlintrc.json",
-        "hash": "1796968487329949434"
-      },
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "13552531202608223697"
-      },
-      {
-        "file": "package.json",
-        "hash": "2972807213864208596"
-      },
-      {
-        "file": "lerna.json",
-        "hash": "17695093582203539465"
-      },
-      {
-        "file": "sweep.yaml",
-        "hash": "355027494403476798"
-      },
-      {
-        "file": ".husky/commit-msg",
-        "hash": "16875289102099280554"
-      },
-      {
-        "file": ".husky/.gitignore",
-        "hash": "10106645302852536800"
-      },
-      {
-        "file": ".gitattributes",
-        "hash": "11849325337616641890"
-      },
-      {
-        "file": "LICENSE",
-        "hash": "1648481045346253054"
-      },
-      {
-        "file": ".github/ISSUE_TEMPLATE/sweep-slow-template.yml",
-        "hash": "3752313250146707243"
+        "file": ".planning/research/SUMMARY.md",
+        "hash": "569440952662381041"
       },
       {
         "file": ".github/ISSUE_TEMPLATE/sweep-fast-template.yml",
         "hash": "15457341086185612751"
       },
       {
-        "file": "nx.json",
-        "hash": "93868292560654171"
+        "file": "typedoc.json",
+        "hash": "4689356592306839446"
+      },
+      {
+        "file": ".planning/STATE.md",
+        "hash": "18282204404503752090"
+      },
+      {
+        "file": ".planning/codebase/ARCHITECTURE.md",
+        "hash": "379640379798969302"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "11714227857552427438"
+      },
+      {
+        "file": ".planning/PROJECT.md",
+        "hash": "13325048485701893735"
+      },
+      {
+        "file": ".planning/codebase/STACK.md",
+        "hash": "3536135255652689576"
+      },
+      {
+        "file": "renovate.json",
+        "hash": "11058537946745493258"
+      },
+      {
+        "file": ".planning/research/STACK.md",
+        "hash": "5580194095064454485"
+      },
+      {
+        "file": ".planning/research/PITFALLS.md",
+        "hash": "9298498695913049874"
+      },
+      {
+        "file": ".planning/phases/01-dependency-toolchain-alignment/01-RESEARCH.md",
+        "hash": "12234775519518913734"
+      },
+      {
+        "file": ".planning/config.json",
+        "hash": "15046829053774939974"
+      },
+      {
+        "file": ".gitattributes",
+        "hash": "11849325337616641890"
+      },
+      {
+        "file": ".planning/phases/01-dependency-toolchain-alignment/01-02-PLAN.md",
+        "hash": "7763290158458160454"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/sweep-slow-template.yml",
+        "hash": "3752313250146707243"
+      },
+      {
+        "file": "CHANGELOG.md",
+        "hash": "5591356845140405804"
+      },
+      {
+        "file": ".planning/codebase/INTEGRATIONS.md",
+        "hash": "15042338428265997437"
+      },
+      {
+        "file": ".planning/research/FEATURES.md",
+        "hash": "8519667772519566093"
+      },
+      {
+        "file": ".husky/.gitignore",
+        "hash": "10106645302852536800"
+      },
+      {
+        "file": ".commitlintrc.json",
+        "hash": "1796968487329949434"
+      },
+      {
+        "file": ".planning/phases/01-dependency-toolchain-alignment/01-02-SUMMARY.md",
+        "hash": "11423098849397968355"
+      },
+      {
+        "file": ".planning/codebase/CONCERNS.md",
+        "hash": "4745021245424366653"
+      },
+      {
+        "file": ".planning/codebase/STRUCTURE.md",
+        "hash": "1947246160461769526"
+      },
+      {
+        "file": ".planning/research/ARCHITECTURE.md",
+        "hash": "2812804831289824244"
+      },
+      {
+        "file": "scripts/check-dependency-policy.mjs",
+        "hash": "6982645085588078887"
+      },
+      {
+        "file": "docs/maintainers/dependency-upgrade-workflow.md",
+        "hash": "3426216541164162052"
+      },
+      {
+        "file": "sweep.yaml",
+        "hash": "355027494403476798"
+      },
+      {
+        "file": "package.json",
+        "hash": "10902366396605705467"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "1648481045346253054"
+      },
+      {
+        "file": ".planning/REQUIREMENTS.md",
+        "hash": "1852770684816060461"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "17695093582203539465"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "455753136140360802"
       },
       {
         "file": ".github/FUNDING.yml",
         "hash": "17943916750439034972"
+      },
+      {
+        "file": "nx.json",
+        "hash": "6048882427614961020"
+      },
+      {
+        "file": ".planning/codebase/TESTING.md",
+        "hash": "10830224556237257461"
+      },
+      {
+        "file": ".planning/phases/01-dependency-toolchain-alignment/01-03-PLAN.md",
+        "hash": "16430926725029508047"
+      },
+      {
+        "file": ".github/workflows/nodejs.yml",
+        "hash": "5437202276438395808"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "13552531202608223697"
+      },
+      {
+        "file": ".planning/ROADMAP.md",
+        "hash": "2486435337066991715"
+      },
+      {
+        "file": ".planning/phases/01-dependency-toolchain-alignment/01-01-SUMMARY.md",
+        "hash": "1586926612046023406"
+      },
+      {
+        "file": ".planning/codebase/CONVENTIONS.md",
+        "hash": "802318379264479515"
+      },
+      {
+        "file": ".husky/commit-msg",
+        "hash": "16875289102099280554"
       }
     ],
     "projectFileMap": {
-      "@tsparticles/angular": [
-        {
-          "file": "components/particles/.editorconfig",
-          "hash": "6686520031028425313"
-        },
-        {
-          "file": "components/particles/.gitignore",
-          "hash": "16624930394208555237"
-        },
-        {
-          "file": "components/particles/CENTRALIZED_ENGINE_PATTERN.md",
-          "hash": "5745214730434580618"
-        },
-        {
-          "file": "components/particles/CHANGELOG.md",
-          "hash": "17952059042885375514"
-        },
-        {
-          "file": "components/particles/LICENSE",
-          "hash": "1648481045346253054"
-        },
-        {
-          "file": "components/particles/README.md",
-          "hash": "5334671520184723136"
-        },
-        {
-          "file": "components/particles/angular.json",
-          "hash": "16931096723507500956"
-        },
-        {
-          "file": "components/particles/package.json",
-          "hash": "6889968496748785179",
-          "deps": [
-            "npm:@angular-devkit/build-angular",
-            "npm:@angular/cli",
-            "npm:@angular/compiler-cli",
-            "npm:@tsparticles/prettier-config",
-            "npm:@types/jasmine",
-            "npm:@types/node",
-            "npm:jasmine-core@6.1.0",
-            "npm:karma",
-            "npm:karma-chrome-launcher",
-            "npm:karma-coverage",
-            "npm:karma-jasmine",
-            "npm:karma-jasmine-html-reporter",
-            "npm:ng-packagr",
-            "npm:prettier",
-            "npm:typescript@6.0.2",
-            "npm:@angular/animations",
-            "npm:@angular/common",
-            "npm:@angular/compiler",
-            "npm:@angular/core",
-            "npm:@angular/forms",
-            "npm:@angular/platform-browser",
-            "npm:@angular/platform-browser-dynamic",
-            "npm:@angular/router",
-            "npm:@tsparticles/engine@4.0.0-beta.11",
-            "npm:rxjs",
-            "npm:tslib@2.8.1",
-            "npm:zone.js"
-          ]
-        },
-        {
-          "file": "components/particles/projects/ng-particles/.browserslistrc",
-          "hash": "17600754102500844387"
-        },
-        {
-          "file": "components/particles/projects/ng-particles/README.md",
-          "hash": "5334671520184723136"
-        },
-        {
-          "file": "components/particles/projects/ng-particles/karma.conf.js",
-          "hash": "17463020627135647016"
-        },
-        {
-          "file": "components/particles/projects/ng-particles/ng-package.json",
-          "hash": "10711970876865439690"
-        },
-        {
-          "file": "components/particles/projects/ng-particles/package.json",
-          "hash": "749828506292423935"
-        },
-        {
-          "file": "components/particles/projects/ng-particles/src/lib/ng-particles-engine.service.ts",
-          "hash": "12392103627895735393"
-        },
-        {
-          "file": "components/particles/projects/ng-particles/src/lib/ng-particles.component.ts",
-          "hash": "10226888831114258147"
-        },
-        {
-          "file": "components/particles/projects/ng-particles/src/lib/ng-particles.module.ts",
-          "hash": "15035617535157054279"
-        },
-        {
-          "file": "components/particles/projects/ng-particles/src/lib/ng-particles.service.ts",
-          "hash": "9423664243825242439"
-        },
-        {
-          "file": "components/particles/projects/ng-particles/src/public-api.ts",
-          "hash": "6676244827825519186"
-        },
-        {
-          "file": "components/particles/projects/ng-particles/tsconfig.lib.json",
-          "hash": "7516229681468173375"
-        },
-        {
-          "file": "components/particles/projects/ng-particles/tsconfig.lib.prod.json",
-          "hash": "1939170332703490951"
-        },
-        {
-          "file": "components/particles/projects/ng-particles/tsconfig.spec.json",
-          "hash": "17465711473244694148"
-        },
-        {
-          "file": "components/particles/scripts/prebuild.js",
-          "hash": "12607314319745274830"
-        },
-        {
-          "file": "components/particles/tsconfig.json",
-          "hash": "1638307350701751378"
-        },
-        {
-          "file": "components/particles/typedoc.json",
-          "hash": "10236040944264868755"
-        }
-      ],
-      "angular-fireworks": [
-        {
-          "file": "components/fireworks/.editorconfig",
-          "hash": "6686520031028425313"
-        },
-        {
-          "file": "components/fireworks/.gitignore",
-          "hash": "13044518069027839699"
-        },
-        {
-          "file": "components/fireworks/CHANGELOG.md",
-          "hash": "817255146291755077"
-        },
-        {
-          "file": "components/fireworks/README.md",
-          "hash": "17072765783456470214"
-        },
-        {
-          "file": "components/fireworks/angular.json",
-          "hash": "6064307782237498984"
-        },
-        {
-          "file": "components/fireworks/package.json",
-          "hash": "12385540339492740196",
-          "deps": [
-            "npm:@angular-devkit/build-angular",
-            "npm:@angular/cli",
-            "npm:@angular/compiler-cli",
-            "npm:@tsparticles/prettier-config",
-            "npm:@types/jasmine",
-            "npm:@types/node",
-            "npm:jasmine-core@6.1.0",
-            "npm:karma",
-            "npm:karma-chrome-launcher",
-            "npm:karma-coverage",
-            "npm:karma-jasmine",
-            "npm:karma-jasmine-html-reporter",
-            "npm:ng-packagr",
-            "npm:prettier",
-            "npm:typescript@6.0.2",
-            "npm:@angular/animations",
-            "npm:@angular/common",
-            "npm:@angular/compiler",
-            "npm:@angular/core",
-            "npm:@angular/forms",
-            "npm:@angular/platform-browser",
-            "npm:@angular/platform-browser-dynamic",
-            "npm:@angular/router",
-            "npm:@tsparticles/fireworks",
-            "npm:rxjs",
-            "npm:tslib@2.8.1",
-            "npm:zone.js"
-          ]
-        },
-        {
-          "file": "components/fireworks/projects/ng-fireworks/README.md",
-          "hash": "17072765783456470214"
-        },
-        {
-          "file": "components/fireworks/projects/ng-fireworks/ng-package.json",
-          "hash": "6629216496534876582"
-        },
-        {
-          "file": "components/fireworks/projects/ng-fireworks/package.json",
-          "hash": "559174965886319310"
-        },
-        {
-          "file": "components/fireworks/projects/ng-fireworks/src/lib/ng-fireworks.component.ts",
-          "hash": "16303960301618503171"
-        },
-        {
-          "file": "components/fireworks/projects/ng-fireworks/src/lib/ng-fireworks.module.ts",
-          "hash": "17924470435643097604"
-        },
-        {
-          "file": "components/fireworks/projects/ng-fireworks/src/public-api.ts",
-          "hash": "14743237258638647322"
-        },
-        {
-          "file": "components/fireworks/projects/ng-fireworks/tsconfig.lib.json",
-          "hash": "12369024473565967613"
-        },
-        {
-          "file": "components/fireworks/projects/ng-fireworks/tsconfig.lib.prod.json",
-          "hash": "1939170332703490951"
-        },
-        {
-          "file": "components/fireworks/projects/ng-fireworks/tsconfig.spec.json",
-          "hash": "11730399207539946696"
-        },
-        {
-          "file": "components/fireworks/scripts/prebuild.js",
-          "hash": "9356585769513765683"
-        },
-        {
-          "file": "components/fireworks/tsconfig.json",
-          "hash": "8249644020305242555"
-        }
-      ],
       "@tsparticles/angular-demo": [
         {
           "file": "apps/angular-demo/.browserslistrc",
@@ -348,7 +234,7 @@
         },
         {
           "file": "apps/angular-demo/package.json",
-          "hash": "9644731035984124386",
+          "hash": "14684987994202995129",
           "deps": [
             "npm:@angular-devkit/build-angular",
             "npm:@angular/cli",
@@ -371,65 +257,63 @@
             "npm:@angular/platform-browser-dynamic",
             "npm:@angular/router",
             "@tsparticles/angular",
-            "npm:@tsparticles/basic@4.0.0-beta.11",
+            "npm:@tsparticles/basic",
             "npm:@tsparticles/confetti",
             "npm:@tsparticles/configs",
             "npm:@tsparticles/effect-trail",
-            "npm:@tsparticles/engine@4.0.0-beta.11",
+            "npm:@tsparticles/engine",
             "npm:@tsparticles/fireworks",
-            "npm:@tsparticles/interaction-external-attract@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-external-bounce@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-external-bubble@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-external-connect@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-external-grab@4.0.0-beta.11",
+            "npm:@tsparticles/interaction-external-attract",
+            "npm:@tsparticles/interaction-external-bounce",
+            "npm:@tsparticles/interaction-external-bubble",
+            "npm:@tsparticles/interaction-external-connect",
+            "npm:@tsparticles/interaction-external-grab",
             "npm:@tsparticles/interaction-external-parallax",
-            "npm:@tsparticles/interaction-external-pause@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-external-push@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-external-remove@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-external-repulse@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-external-slow@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-external-trail@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-particles-attract@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-particles-collisions@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-particles-links@4.0.0-beta.11",
+            "npm:@tsparticles/interaction-external-pause",
+            "npm:@tsparticles/interaction-external-push",
+            "npm:@tsparticles/interaction-external-remove",
+            "npm:@tsparticles/interaction-external-repulse",
+            "npm:@tsparticles/interaction-external-slow",
+            "npm:@tsparticles/interaction-external-trail",
+            "npm:@tsparticles/interaction-particles-attract",
+            "npm:@tsparticles/interaction-particles-collisions",
+            "npm:@tsparticles/interaction-particles-links",
             "npm:@tsparticles/pjs",
-            "npm:@tsparticles/plugin-absorbers@4.0.0-beta.11",
-            "npm:@tsparticles/plugin-easing-quad@4.0.0-beta.11",
-            "npm:@tsparticles/plugin-emitters@4.0.0-beta.11",
-            "npm:@tsparticles/plugin-emitters-shape-circle@4.0.0-beta.11",
-            "npm:@tsparticles/plugin-emitters-shape-square@4.0.0-beta.11",
+            "npm:@tsparticles/plugin-absorbers",
+            "npm:@tsparticles/plugin-easing-quad",
+            "npm:@tsparticles/plugin-emitters",
+            "npm:@tsparticles/plugin-emitters-shape-circle",
+            "npm:@tsparticles/plugin-emitters-shape-square",
             "npm:@tsparticles/plugin-motion",
             "npm:@tsparticles/plugin-move",
             "npm:@tsparticles/plugin-polygon-mask",
             "npm:@tsparticles/plugin-sounds",
             "npm:@tsparticles/shape-cards",
-            "npm:@tsparticles/shape-circle@4.0.0-beta.11",
-            "npm:@tsparticles/shape-emoji@4.0.0-beta.11",
+            "npm:@tsparticles/shape-circle",
+            "npm:@tsparticles/shape-emoji",
             "npm:@tsparticles/shape-heart",
-            "npm:@tsparticles/shape-image@4.0.0-beta.11",
-            "npm:@tsparticles/shape-line@4.0.0-beta.11",
-            "npm:@tsparticles/shape-polygon@4.0.0-beta.11",
-            "npm:@tsparticles/shape-square@4.0.0-beta.11",
-            "npm:@tsparticles/shape-star@4.0.0-beta.11",
-            "npm:@tsparticles/shape-text@4.0.0-beta.11",
-            "npm:@tsparticles/slim@4.0.0-beta.11",
-            "npm:@tsparticles/updater-color",
-            "npm:@tsparticles/updater-destroy@4.0.0-beta.11",
-            "npm:@tsparticles/updater-life@4.0.0-beta.11",
-            "npm:@tsparticles/updater-opacity@4.0.0-beta.11",
-            "npm:@tsparticles/updater-out-modes@4.0.0-beta.11",
-            "npm:@tsparticles/updater-roll@4.0.0-beta.11",
-            "npm:@tsparticles/updater-rotate@4.0.0-beta.11",
-            "npm:@tsparticles/updater-size@4.0.0-beta.11",
-            "npm:@tsparticles/updater-stroke-color",
-            "npm:@tsparticles/updater-tilt@4.0.0-beta.11",
-            "npm:@tsparticles/updater-twinkle@4.0.0-beta.11",
-            "npm:@tsparticles/updater-wobble@4.0.0-beta.11",
+            "npm:@tsparticles/shape-image",
+            "npm:@tsparticles/shape-line",
+            "npm:@tsparticles/shape-polygon",
+            "npm:@tsparticles/shape-square",
+            "npm:@tsparticles/shape-star",
+            "npm:@tsparticles/shape-text",
+            "npm:@tsparticles/slim",
+            "npm:@tsparticles/updater-destroy",
+            "npm:@tsparticles/updater-life",
+            "npm:@tsparticles/updater-opacity",
+            "npm:@tsparticles/updater-out-modes",
+            "npm:@tsparticles/updater-roll",
+            "npm:@tsparticles/updater-rotate",
+            "npm:@tsparticles/updater-size",
+            "npm:@tsparticles/updater-tilt",
+            "npm:@tsparticles/updater-twinkle",
+            "npm:@tsparticles/updater-wobble",
             "angular-confetti",
             "angular-fireworks",
             "npm:rxjs",
             "npm:tslib@2.8.1",
-            "npm:tsparticles@3.9.1",
+            "npm:tsparticles",
             "npm:zone.js"
           ]
         },
@@ -506,6 +390,332 @@
           "hash": "17198424518534092990"
         }
       ],
+      "angular-confetti": [
+        {
+          "file": "components/confetti/.editorconfig",
+          "hash": "6686520031028425313"
+        },
+        {
+          "file": "components/confetti/.gitignore",
+          "hash": "13044518069027839699"
+        },
+        {
+          "file": "components/confetti/CHANGELOG.md",
+          "hash": "13881181490887288986"
+        },
+        {
+          "file": "components/confetti/README.md",
+          "hash": "4491585899860680377"
+        },
+        {
+          "file": "components/confetti/angular.json",
+          "hash": "2895693770242074229"
+        },
+        {
+          "file": "components/confetti/package.json",
+          "hash": "17452419157841022088",
+          "deps": [
+            "npm:@angular-devkit/build-angular",
+            "npm:@angular/cli",
+            "npm:@angular/compiler-cli",
+            "npm:@tsparticles/prettier-config",
+            "npm:@types/jasmine",
+            "npm:@types/node",
+            "npm:jasmine-core@6.1.0",
+            "npm:karma",
+            "npm:karma-chrome-launcher",
+            "npm:karma-coverage",
+            "npm:karma-jasmine",
+            "npm:karma-jasmine-html-reporter",
+            "npm:ng-packagr",
+            "npm:prettier",
+            "npm:typescript@6.0.2",
+            "npm:@angular/animations",
+            "npm:@angular/common",
+            "npm:@angular/compiler",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/platform-browser",
+            "npm:@angular/platform-browser-dynamic",
+            "npm:@angular/router",
+            "npm:@tsparticles/confetti",
+            "npm:@tsparticles/engine",
+            "npm:rxjs",
+            "npm:tslib@2.8.1",
+            "npm:zone.js"
+          ]
+        },
+        {
+          "file": "components/confetti/projects/ng-confetti/README.md",
+          "hash": "4491585899860680377"
+        },
+        {
+          "file": "components/confetti/projects/ng-confetti/ng-package.json",
+          "hash": "6027457416308427075"
+        },
+        {
+          "file": "components/confetti/projects/ng-confetti/package.json",
+          "hash": "16577002621585740367"
+        },
+        {
+          "file": "components/confetti/projects/ng-confetti/src/lib/ng-confetti.component.ts",
+          "hash": "8051516856293732864"
+        },
+        {
+          "file": "components/confetti/projects/ng-confetti/src/lib/ng-confetti.module.ts",
+          "hash": "4924100033082917785"
+        },
+        {
+          "file": "components/confetti/projects/ng-confetti/src/public-api.ts",
+          "hash": "6273123941838479450"
+        },
+        {
+          "file": "components/confetti/projects/ng-confetti/tsconfig.lib.json",
+          "hash": "12369024473565967613"
+        },
+        {
+          "file": "components/confetti/projects/ng-confetti/tsconfig.lib.prod.json",
+          "hash": "1939170332703490951"
+        },
+        {
+          "file": "components/confetti/projects/ng-confetti/tsconfig.spec.json",
+          "hash": "11730399207539946696"
+        },
+        {
+          "file": "components/confetti/scripts/prebuild.js",
+          "hash": "1024559677188530630"
+        },
+        {
+          "file": "components/confetti/tsconfig.json",
+          "hash": "773092200524357135"
+        }
+      ],
+      "@tsparticles/angular": [
+        {
+          "file": "components/particles/.editorconfig",
+          "hash": "6686520031028425313"
+        },
+        {
+          "file": "components/particles/.gitignore",
+          "hash": "16624930394208555237"
+        },
+        {
+          "file": "components/particles/CENTRALIZED_ENGINE_PATTERN.md",
+          "hash": "8573596981366663130"
+        },
+        {
+          "file": "components/particles/CHANGELOG.md",
+          "hash": "17952059042885375514"
+        },
+        {
+          "file": "components/particles/LICENSE",
+          "hash": "1648481045346253054"
+        },
+        {
+          "file": "components/particles/README.md",
+          "hash": "5334671520184723136"
+        },
+        {
+          "file": "components/particles/angular.json",
+          "hash": "16931096723507500956"
+        },
+        {
+          "file": "components/particles/package.json",
+          "hash": "1255931763497279274",
+          "deps": [
+            "npm:@angular-devkit/build-angular",
+            "npm:@angular/cli",
+            "npm:@angular/compiler-cli",
+            "npm:@tsparticles/prettier-config",
+            "npm:@types/jasmine",
+            "npm:@types/node",
+            "npm:jasmine-core@6.1.0",
+            "npm:karma",
+            "npm:karma-chrome-launcher",
+            "npm:karma-coverage",
+            "npm:karma-jasmine",
+            "npm:karma-jasmine-html-reporter",
+            "npm:ng-packagr",
+            "npm:prettier",
+            "npm:typescript@6.0.2",
+            "npm:@angular/animations",
+            "npm:@angular/common",
+            "npm:@angular/compiler",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/platform-browser",
+            "npm:@angular/platform-browser-dynamic",
+            "npm:@angular/router",
+            "npm:@tsparticles/engine",
+            "npm:rxjs",
+            "npm:tslib@2.8.1",
+            "npm:zone.js"
+          ]
+        },
+        {
+          "file": "components/particles/projects/ng-particles/.browserslistrc",
+          "hash": "17600754102500844387"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/README.md",
+          "hash": "1999850379157394661"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/karma.conf.js",
+          "hash": "17463020627135647016"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/ng-package.json",
+          "hash": "10711970876865439690"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/package.json",
+          "hash": "1258347566899441424"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/src/lib/ng-particles-engine.service.ts",
+          "hash": "2651192174004836145"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/src/lib/ng-particles.component.ts",
+          "hash": "8738870537428910159"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/src/lib/ng-particles.module.ts",
+          "hash": "15035617535157054279"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/src/lib/ng-particles.service.ts",
+          "hash": "9423664243825242439"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/src/public-api.ts",
+          "hash": "6676244827825519186"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/tsconfig.lib.json",
+          "hash": "7516229681468173375"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/tsconfig.lib.prod.json",
+          "hash": "1939170332703490951"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/tsconfig.spec.json",
+          "hash": "17465711473244694148"
+        },
+        {
+          "file": "components/particles/scripts/prebuild.js",
+          "hash": "12607314319745274830"
+        },
+        {
+          "file": "components/particles/tsconfig.json",
+          "hash": "1638307350701751378"
+        },
+        {
+          "file": "components/particles/typedoc.json",
+          "hash": "10236040944264868755"
+        }
+      ],
+      "angular-fireworks": [
+        {
+          "file": "components/fireworks/.editorconfig",
+          "hash": "6686520031028425313"
+        },
+        {
+          "file": "components/fireworks/.gitignore",
+          "hash": "13044518069027839699"
+        },
+        {
+          "file": "components/fireworks/CHANGELOG.md",
+          "hash": "817255146291755077"
+        },
+        {
+          "file": "components/fireworks/README.md",
+          "hash": "17072765783456470214"
+        },
+        {
+          "file": "components/fireworks/angular.json",
+          "hash": "6064307782237498984"
+        },
+        {
+          "file": "components/fireworks/package.json",
+          "hash": "17566967685349720312",
+          "deps": [
+            "npm:@angular-devkit/build-angular",
+            "npm:@angular/cli",
+            "npm:@angular/compiler-cli",
+            "npm:@tsparticles/prettier-config",
+            "npm:@types/jasmine",
+            "npm:@types/node",
+            "npm:jasmine-core@6.1.0",
+            "npm:karma",
+            "npm:karma-chrome-launcher",
+            "npm:karma-coverage",
+            "npm:karma-jasmine",
+            "npm:karma-jasmine-html-reporter",
+            "npm:ng-packagr",
+            "npm:prettier",
+            "npm:typescript@6.0.2",
+            "npm:@angular/animations",
+            "npm:@angular/common",
+            "npm:@angular/compiler",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/platform-browser",
+            "npm:@angular/platform-browser-dynamic",
+            "npm:@angular/router",
+            "npm:@tsparticles/fireworks",
+            "npm:rxjs",
+            "npm:tslib@2.8.1",
+            "npm:zone.js"
+          ]
+        },
+        {
+          "file": "components/fireworks/projects/ng-fireworks/README.md",
+          "hash": "17072765783456470214"
+        },
+        {
+          "file": "components/fireworks/projects/ng-fireworks/ng-package.json",
+          "hash": "6629216496534876582"
+        },
+        {
+          "file": "components/fireworks/projects/ng-fireworks/package.json",
+          "hash": "17315896785578497544"
+        },
+        {
+          "file": "components/fireworks/projects/ng-fireworks/src/lib/ng-fireworks.component.ts",
+          "hash": "4692952190843842020"
+        },
+        {
+          "file": "components/fireworks/projects/ng-fireworks/src/lib/ng-fireworks.module.ts",
+          "hash": "6452877072746480149"
+        },
+        {
+          "file": "components/fireworks/projects/ng-fireworks/src/public-api.ts",
+          "hash": "14743237258638647322"
+        },
+        {
+          "file": "components/fireworks/projects/ng-fireworks/tsconfig.lib.json",
+          "hash": "12369024473565967613"
+        },
+        {
+          "file": "components/fireworks/projects/ng-fireworks/tsconfig.lib.prod.json",
+          "hash": "1939170332703490951"
+        },
+        {
+          "file": "components/fireworks/projects/ng-fireworks/tsconfig.spec.json",
+          "hash": "11730399207539946696"
+        },
+        {
+          "file": "components/fireworks/scripts/prebuild.js",
+          "hash": "9356585769513765683"
+        },
+        {
+          "file": "components/fireworks/tsconfig.json",
+          "hash": "8249644020305242555"
+        }
+      ],
       "@tsparticles/ionic-demo": [
         {
           "file": "apps/ionic-demo/.browserslistrc",
@@ -561,7 +771,7 @@
         },
         {
           "file": "apps/ionic-demo/package.json",
-          "hash": "10317218864595877960",
+          "hash": "15554110622374582300",
           "deps": [
             "npm:@angular-devkit/build-angular",
             "npm:@angular-eslint/builder",
@@ -607,63 +817,62 @@
             "npm:@capacitor/status-bar",
             "npm:@ionic/angular",
             "npm:@ionic/core",
-            "npm:@stencil/core@4.43.3",
             "@tsparticles/angular",
-            "npm:@tsparticles/basic@4.0.0-beta.11",
+            "npm:@tsparticles/basic",
             "npm:@tsparticles/configs",
             "npm:@tsparticles/effect-trail",
-            "npm:@tsparticles/engine@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-external-attract@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-external-bounce@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-external-bubble@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-external-connect@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-external-grab@4.0.0-beta.11",
+            "npm:@tsparticles/engine",
+            "npm:@tsparticles/interaction-external-attract",
+            "npm:@tsparticles/interaction-external-bounce",
+            "npm:@tsparticles/interaction-external-bubble",
+            "npm:@tsparticles/interaction-external-connect",
+            "npm:@tsparticles/interaction-external-grab",
             "npm:@tsparticles/interaction-external-parallax",
-            "npm:@tsparticles/interaction-external-pause@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-external-push@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-external-remove@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-external-repulse@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-external-slow@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-external-trail@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-particles-attract@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-particles-collisions@4.0.0-beta.11",
-            "npm:@tsparticles/interaction-particles-links@4.0.0-beta.11",
+            "npm:@tsparticles/interaction-external-pause",
+            "npm:@tsparticles/interaction-external-push",
+            "npm:@tsparticles/interaction-external-remove",
+            "npm:@tsparticles/interaction-external-repulse",
+            "npm:@tsparticles/interaction-external-slow",
+            "npm:@tsparticles/interaction-external-trail",
+            "npm:@tsparticles/interaction-particles-attract",
+            "npm:@tsparticles/interaction-particles-collisions",
+            "npm:@tsparticles/interaction-particles-links",
             "npm:@tsparticles/pjs",
-            "npm:@tsparticles/plugin-absorbers@4.0.0-beta.11",
-            "npm:@tsparticles/plugin-easing-quad@4.0.0-beta.11",
-            "npm:@tsparticles/plugin-emitters@4.0.0-beta.11",
-            "npm:@tsparticles/plugin-emitters-shape-circle@4.0.0-beta.11",
-            "npm:@tsparticles/plugin-emitters-shape-square@4.0.0-beta.11",
+            "npm:@tsparticles/plugin-absorbers",
+            "npm:@tsparticles/plugin-easing-quad",
+            "npm:@tsparticles/plugin-emitters",
+            "npm:@tsparticles/plugin-emitters-shape-circle",
+            "npm:@tsparticles/plugin-emitters-shape-square",
             "npm:@tsparticles/plugin-motion",
             "npm:@tsparticles/plugin-move",
             "npm:@tsparticles/plugin-polygon-mask",
             "npm:@tsparticles/plugin-sounds",
             "npm:@tsparticles/shape-cards",
-            "npm:@tsparticles/shape-circle@4.0.0-beta.11",
-            "npm:@tsparticles/shape-emoji@4.0.0-beta.11",
+            "npm:@tsparticles/shape-circle",
+            "npm:@tsparticles/shape-emoji",
             "npm:@tsparticles/shape-heart",
-            "npm:@tsparticles/shape-image@4.0.0-beta.11",
-            "npm:@tsparticles/shape-line@4.0.0-beta.11",
-            "npm:@tsparticles/shape-polygon@4.0.0-beta.11",
-            "npm:@tsparticles/shape-square@4.0.0-beta.11",
-            "npm:@tsparticles/shape-star@4.0.0-beta.11",
-            "npm:@tsparticles/shape-text@4.0.0-beta.11",
-            "npm:@tsparticles/slim@4.0.0-beta.11",
-            "npm:@tsparticles/updater-destroy@4.0.0-beta.11",
-            "npm:@tsparticles/updater-life@4.0.0-beta.11",
-            "npm:@tsparticles/updater-opacity@4.0.0-beta.11",
-            "npm:@tsparticles/updater-out-modes@4.0.0-beta.11",
+            "npm:@tsparticles/shape-image",
+            "npm:@tsparticles/shape-line",
+            "npm:@tsparticles/shape-polygon",
+            "npm:@tsparticles/shape-square",
+            "npm:@tsparticles/shape-star",
+            "npm:@tsparticles/shape-text",
+            "npm:@tsparticles/slim",
+            "npm:@tsparticles/updater-destroy",
+            "npm:@tsparticles/updater-life",
+            "npm:@tsparticles/updater-opacity",
+            "npm:@tsparticles/updater-out-modes",
             "npm:@tsparticles/updater-paint",
-            "npm:@tsparticles/updater-roll@4.0.0-beta.11",
-            "npm:@tsparticles/updater-rotate@4.0.0-beta.11",
-            "npm:@tsparticles/updater-size@4.0.0-beta.11",
-            "npm:@tsparticles/updater-tilt@4.0.0-beta.11",
-            "npm:@tsparticles/updater-twinkle@4.0.0-beta.11",
-            "npm:@tsparticles/updater-wobble@4.0.0-beta.11",
+            "npm:@tsparticles/updater-roll",
+            "npm:@tsparticles/updater-rotate",
+            "npm:@tsparticles/updater-size",
+            "npm:@tsparticles/updater-tilt",
+            "npm:@tsparticles/updater-twinkle",
+            "npm:@tsparticles/updater-wobble",
             "npm:ionicons",
             "npm:rxjs",
             "npm:tslib@2.8.1",
-            "npm:tsparticles@4.0.0-beta.11",
+            "npm:tsparticles",
             "npm:zone.js"
           ]
         },
@@ -862,106 +1071,6 @@
         {
           "file": "apps/ionic-demo/tsconfig.spec.json",
           "hash": "17198424518534092990"
-        }
-      ],
-      "angular-confetti": [
-        {
-          "file": "components/confetti/.editorconfig",
-          "hash": "6686520031028425313"
-        },
-        {
-          "file": "components/confetti/.gitignore",
-          "hash": "13044518069027839699"
-        },
-        {
-          "file": "components/confetti/CHANGELOG.md",
-          "hash": "13881181490887288986"
-        },
-        {
-          "file": "components/confetti/README.md",
-          "hash": "4491585899860680377"
-        },
-        {
-          "file": "components/confetti/angular.json",
-          "hash": "2895693770242074229"
-        },
-        {
-          "file": "components/confetti/package.json",
-          "hash": "1951288073297257832",
-          "deps": [
-            "npm:@angular-devkit/build-angular",
-            "npm:@angular/cli",
-            "npm:@angular/compiler-cli",
-            "npm:@tsparticles/prettier-config",
-            "npm:@types/jasmine",
-            "npm:@types/node",
-            "npm:jasmine-core@6.1.0",
-            "npm:karma",
-            "npm:karma-chrome-launcher",
-            "npm:karma-coverage",
-            "npm:karma-jasmine",
-            "npm:karma-jasmine-html-reporter",
-            "npm:ng-packagr",
-            "npm:prettier",
-            "npm:typescript@6.0.2",
-            "npm:@angular/animations",
-            "npm:@angular/common",
-            "npm:@angular/compiler",
-            "npm:@angular/core",
-            "npm:@angular/forms",
-            "npm:@angular/platform-browser",
-            "npm:@angular/platform-browser-dynamic",
-            "npm:@angular/router",
-            "npm:@tsparticles/confetti",
-            "npm:@tsparticles/engine@4.0.0-beta.11",
-            "npm:rxjs",
-            "npm:tslib@2.8.1",
-            "npm:zone.js"
-          ]
-        },
-        {
-          "file": "components/confetti/projects/ng-confetti/README.md",
-          "hash": "4491585899860680377"
-        },
-        {
-          "file": "components/confetti/projects/ng-confetti/ng-package.json",
-          "hash": "6027457416308427075"
-        },
-        {
-          "file": "components/confetti/projects/ng-confetti/package.json",
-          "hash": "10351633364565954138"
-        },
-        {
-          "file": "components/confetti/projects/ng-confetti/src/lib/ng-confetti.component.ts",
-          "hash": "6467844003519126882"
-        },
-        {
-          "file": "components/confetti/projects/ng-confetti/src/lib/ng-confetti.module.ts",
-          "hash": "18120009528400310115"
-        },
-        {
-          "file": "components/confetti/projects/ng-confetti/src/public-api.ts",
-          "hash": "6273123941838479450"
-        },
-        {
-          "file": "components/confetti/projects/ng-confetti/tsconfig.lib.json",
-          "hash": "12369024473565967613"
-        },
-        {
-          "file": "components/confetti/projects/ng-confetti/tsconfig.lib.prod.json",
-          "hash": "1939170332703490951"
-        },
-        {
-          "file": "components/confetti/projects/ng-confetti/tsconfig.spec.json",
-          "hash": "11730399207539946696"
-        },
-        {
-          "file": "components/confetti/scripts/prebuild.js",
-          "hash": "1024559677188530630"
-        },
-        {
-          "file": "components/confetti/tsconfig.json",
-          "hash": "773092200524357135"
         }
       ]
     }

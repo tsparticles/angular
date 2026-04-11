@@ -55,7 +55,7 @@ export class NgxParticlesComponent implements OnInit, AfterViewInit, OnDestroy {
     if (this.useEngineService && this.engineService?.isReady()) {
       this.loadParticles();
     } else if (this.particlesService) {
-      this.particlesService.getInstallationStatus().subscribe((status) => {
+      this.particlesService.getInstallationStatus().subscribe(status => {
         if (status && !this.initialized) {
           this.initialized = true;
           this.loadParticles();

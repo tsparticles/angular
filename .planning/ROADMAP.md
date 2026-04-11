@@ -27,9 +27,9 @@ This roadmap delivers milestone v2.0 by first stabilizing dependency/toolchain c
 
 Plans:
 
-- [ ] 01-01-PLAN.md — Normalize dependency and peer policy manifests across apps and publishable wrappers.
-- [ ] 01-02-PLAN.md — Add repository-local dependency policy checker and fail-fast CI enforcement.
-- [ ] 01-03-PLAN.md — Document repeatable upgrade workflow with explicit validation evidence.
+- [x] 01-01-PLAN.md — Normalize dependency and peer policy manifests across apps and publishable wrappers.
+- [x] 01-02-PLAN.md — Add fail-fast dependency policy enforcement in scripts and CI.
+- [x] 01-03-PLAN.md — Document repeatable upgrade workflow with explicit validation evidence.
 
 ### Phase 2: Initialization & Reactive Runtime
 

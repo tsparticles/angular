@@ -1,0 +1,46 @@
+
+> angular-fireworks@3.0.0 build:ci /Users/matteo/Projects/GitHub/tsparticles/angular/components/fireworks
+> node scripts/prebuild.js && pnpm run prettify:src && pnpm run prettify:ci:readme && ng build ng-fireworks --configuration production
+
+lib package.json updated successfully to version 3.0.0
+README.md updated successfully
+
+> angular-fireworks@3.0.0 prettify:src /Users/matteo/Projects/GitHub/tsparticles/angular/components/fireworks
+> prettier --write ./projects/ng-fireworks/src/*
+
+(node:82430) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[90mprojects/ng-fireworks/src/lib/ng-fireworks.component.ts[39m 39ms (unchanged)
+[90mprojects/ng-fireworks/src/lib/ng-fireworks.module.ts[39m 3ms (unchanged)
+projects/ng-fireworks/src/public-api.ts 2ms
+
+> angular-fireworks@3.0.0 prettify:ci:readme /Users/matteo/Projects/GitHub/tsparticles/angular/components/fireworks
+> prettier --check ./README.md
+
+Checking formatting...
+(node:82494) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+All matched files use Prettier code style!
+[34mBuilding Angular Package[39m
+[37m[39m
+[37m------------------------------------------------------------------------------[39m
+[37mBuilding entry point 'angular-fireworks'[39m
+[37m------------------------------------------------------------------------------[39m
+- Compiling with Angular sources in Ivy partial compilation mode.
+[32m✔[39m Compiling with Angular sources in Ivy partial compilation mode.
+- Writing FESM bundles
+[32m✔[39m Writing FESM bundles
+- Copying assets
+[32m✔[39m Copying assets
+- Writing package manifest
+[32m✔[39m Writing package manifest
+[32m✔[39m Built angular-fireworks
+[32m[39m
+[32m------------------------------------------------------------------------------[39m
+[32mBuilt Angular Package[39m
+[32m - from: /Users/matteo/Projects/GitHub/tsparticles/angular/components/fireworks/projects/ng-fireworks[39m
+[32m - to:   /Users/matteo/Projects/GitHub/tsparticles/angular/components/fireworks/dist/ng-fireworks[39m
+[32m------------------------------------------------------------------------------[39m
+[37m[37m[39m[37m[39m
+[37m[37mBuild at: [1m2026-04-10T18:51:16.201Z[22m - Time: [1m1102[22mms[39m[37m[39m
+[37m[37m[39m[37m[39m

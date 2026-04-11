@@ -85,9 +85,9 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@angular/common": ">=2.0.0",
-    "@angular/core": "^17 || ^18 || ^19",
-    "rxjs": ">=7.0.0",
+    "@angular/common": "^20 || ^21",
+    "@angular/core": "^20 || ^21",
+    "rxjs": "^7.8.0",
     "@tsparticles/engine": "4.0.0-beta.11"
   },
   "dependencies": {

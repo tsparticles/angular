@@ -30,9 +30,7 @@ export class NgParticlesEngineService {
    * Initialize the engine once per application.
    * Subsequent calls will return the same promise (cached).
    */
-  async init(
-    particlesInit: (engine: Engine) => Promise<void> | void,
-  ): Promise<Engine> {
+  async init(particlesInit: (engine: Engine) => Promise<void> | void): Promise<Engine> {
     // Already initialized, return cached engine
     if (this.engine) {
       return this.engine;
@@ -66,9 +64,7 @@ export class NgParticlesEngineService {
     await this.initPromise;
 
     if (!this.engine) {
-      throw new Error(
-        "Engine initialization failed but no error was captured",
-      );
+      throw new Error("Engine initialization failed but no error was captured");
     }
 
     return this.engine;

@@ -1,0 +1,45 @@
+
+> angular-confetti@3.0.0 build /Users/matteo/Projects/GitHub/tsparticles/angular/components/confetti
+> node scripts/prebuild.js && pnpm run prettify:src && pnpm run prettify:readme && ng build ng-confetti --configuration production
+
+lib package.json updated successfully to version 3.0.0
+README.md updated successfully
+
+> angular-confetti@3.0.0 prettify:src /Users/matteo/Projects/GitHub/tsparticles/angular/components/confetti
+> prettier --write ./projects/ng-confetti/src/*
+
+(node:82749) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[90mprojects/ng-confetti/src/lib/ng-confetti.component.ts[39m 31ms (unchanged)
+[90mprojects/ng-confetti/src/lib/ng-confetti.module.ts[39m 3ms (unchanged)
+[90mprojects/ng-confetti/src/public-api.ts[39m 2ms (unchanged)
+
+> angular-confetti@3.0.0 prettify:readme /Users/matteo/Projects/GitHub/tsparticles/angular/components/confetti
+> prettier --write ./README.md
+
+(node:82807) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[90mREADME.md[39m 18ms (unchanged)
+[34mBuilding Angular Package[39m
+[37m[39m
+[37m------------------------------------------------------------------------------[39m
+[37mBuilding entry point 'angular-confetti'[39m
+[37m------------------------------------------------------------------------------[39m
+- Compiling with Angular sources in Ivy partial compilation mode.
+[32m✔[39m Compiling with Angular sources in Ivy partial compilation mode.
+- Writing FESM bundles
+[32m✔[39m Writing FESM bundles
+- Copying assets
+[32m✔[39m Copying assets
+- Writing package manifest
+[32m✔[39m Writing package manifest
+[32m✔[39m Built angular-confetti
+[32m[39m
+[32m------------------------------------------------------------------------------[39m
+[32mBuilt Angular Package[39m
+[32m - from: /Users/matteo/Projects/GitHub/tsparticles/angular/components/confetti/projects/ng-confetti[39m
+[32m - to:   /Users/matteo/Projects/GitHub/tsparticles/angular/components/confetti/dist/ng-confetti[39m
+[32m------------------------------------------------------------------------------[39m
+[37m[37m[39m[37m[39m
+[37m[37mBuild at: [1m2026-04-10T18:51:21.653Z[22m - Time: [1m1150[22mms[39m[37m[39m
+[37m[37m[39m[37m[39m

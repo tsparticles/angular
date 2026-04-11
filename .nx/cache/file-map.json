@@ -1,0 +1,845 @@
+{
+  "version": "6.0",
+  "nxVersion": "18.0.7",
+  "deps": {
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
+    "husky": "^9.1.7",
+    "lerna": "^8.2.4",
+    "nx": "^22.6.4",
+    "prettier": "^3.6.2",
+    "prettier-plugin-multiline-arrays": "^4.1.5",
+    "typedoc": "^0.28.18",
+    "typedoc-plugin-carbon-ads": "^1.6.0",
+    "typedoc-plugin-clarity": "^1.6.0",
+    "typedoc-plugin-coverage": "^4.0.2",
+    "typedoc-plugin-keywords": "^1.6.0",
+    "typedoc-plugin-missing-exports": "^4.1.3"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".github/workflows/nodejs.yml",
+        "hash": "5437202276438395808"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/sweep-template.yml",
+        "hash": "2077111558128331987"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "13552531202608223697"
+      },
+      {
+        "file": ".planning/phases/01-dependency-toolchain-alignment/01-03-PLAN.md",
+        "hash": "16430926725029508047"
+      },
+      {
+        "file": ".planning/PROJECT.md",
+        "hash": "13325048485701893735"
+      },
+      {
+        "file": ".planning/research/PITFALLS.md",
+        "hash": "9298498695913049874"
+      },
+      {
+        "file": ".planning/ROADMAP.md",
+        "hash": "8802584751447079641"
+      },
+      {
+        "file": ".planning/codebase/INTEGRATIONS.md",
+        "hash": "15042338428265997437"
+      },
+      {
+        "file": "sweep.yaml",
+        "hash": "355027494403476798"
+      },
+      {
+        "file": ".planning/codebase/TESTING.md",
+        "hash": "10830224556237257461"
+      },
+      {
+        "file": ".planning/codebase/ARCHITECTURE.md",
+        "hash": "379640379798969302"
+      },
+      {
+        "file": ".planning/codebase/CONVENTIONS.md",
+        "hash": "802318379264479515"
+      },
+      {
+        "file": ".nx/workspace-data/lockfile.hash",
+        "hash": "2402110730271518685"
+      },
+      {
+        "file": ".planning/phases/01-dependency-toolchain-alignment/01-DISCUSSION-LOG.md",
+        "hash": "7920502302241055755"
+      },
+      {
+        "file": ".nx/workspace-data/source-maps.json",
+        "hash": "759559105015782470"
+      },
+      {
+        "file": ".husky/.gitignore",
+        "hash": "10106645302852536800"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json",
+        "hash": "8024788283260941598"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "1648481045346253054"
+      },
+      {
+        "file": "typedoc.json",
+        "hash": "4689356592306839446"
+      },
+      {
+        "file": ".gitattributes",
+        "hash": "11849325337616641890"
+      },
+      {
+        "file": ".husky/commit-msg",
+        "hash": "16875289102099280554"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/sweep-slow-template.yml",
+        "hash": "3752313250146707243"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json",
+        "hash": "2712208328347673694"
+      },
+      {
+        "file": "CHANGELOG.md",
+        "hash": "5591356845140405804"
+      },
+      {
+        "file": "README.md",
+        "hash": "3473970031774323959"
+      },
+      {
+        "file": ".planning/research/STACK.md",
+        "hash": "5580194095064454485"
+      },
+      {
+        "file": ".planning/config.json",
+        "hash": "15046829053774939974"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "17695093582203539465"
+      },
+      {
+        "file": ".planning/research/SUMMARY.md",
+        "hash": "569440952662381041"
+      },
+      {
+        "file": "nx.json",
+        "hash": "6048882427614961020"
+      },
+      {
+        "file": ".planning/phases/01-dependency-toolchain-alignment/01-RESEARCH.md",
+        "hash": "12234775519518913734"
+      },
+      {
+        "file": ".planning/codebase/STRUCTURE.md",
+        "hash": "1947246160461769526"
+      },
+      {
+        "file": "package.json",
+        "hash": "10902366396605705467"
+      },
+      {
+        "file": ".planning/phases/01-dependency-toolchain-alignment/01-CONTEXT.md",
+        "hash": "8599706415666876951"
+      },
+      {
+        "file": ".nx/workspace-data/4725beed-28cf-4b58-b648-83aa965f24f2.db",
+        "hash": "6698428020896954990"
+      },
+      {
+        "file": ".planning/codebase/STACK.md",
+        "hash": "3536135255652689576"
+      },
+      {
+        "file": ".nx/workspace-data/parsed-lock-file.json",
+        "hash": "7281217396334254538"
+      },
+      {
+        "file": ".planning/phases/01-dependency-toolchain-alignment/01-02-PLAN.md",
+        "hash": "7763290158458160454"
+      },
+      {
+        "file": ".planning/research/ARCHITECTURE.md",
+        "hash": "2812804831289824244"
+      },
+      {
+        "file": ".github/FUNDING.yml",
+        "hash": "17943916750439034972"
+      },
+      {
+        "file": ".nx/workspace-data/nx_files.nxt",
+        "hash": "10863722016578184329"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "11714227857552427438"
+      },
+      {
+        "file": ".planning/codebase/CONCERNS.md",
+        "hash": "4745021245424366653"
+      },
+      {
+        "file": ".planning/REQUIREMENTS.md",
+        "hash": "10658473655089683477"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "6508762471785207617"
+      },
+      {
+        "file": ".planning/STATE.md",
+        "hash": "14782938462228613433"
+      },
+      {
+        "file": "renovate.json",
+        "hash": "11058537946745493258"
+      },
+      {
+        "file": "scripts/check-dependency-policy.mjs",
+        "hash": "6982645085588078887"
+      },
+      {
+        "file": ".commitlintrc.json",
+        "hash": "1796968487329949434"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/sweep-fast-template.yml",
+        "hash": "15457341086185612751"
+      },
+      {
+        "file": ".planning/research/FEATURES.md",
+        "hash": "8519667772519566093"
+      },
+      {
+        "file": "docs/maintainers/dependency-upgrade-workflow.md",
+        "hash": "3426216541164162052"
+      },
+      {
+        "file": ".planning/phases/01-dependency-toolchain-alignment/01-01-PLAN.md",
+        "hash": "17574757082924962579"
+      }
+    ],
+    "projectFileMap": {
+      "@tsparticles/angular": [
+        {
+          "file": "components/particles/.editorconfig",
+          "hash": "6686520031028425313"
+        },
+        {
+          "file": "components/particles/.gitignore",
+          "hash": "16624930394208555237"
+        },
+        {
+          "file": "components/particles/CENTRALIZED_ENGINE_PATTERN.md",
+          "hash": "8573596981366663130"
+        },
+        {
+          "file": "components/particles/CHANGELOG.md",
+          "hash": "17952059042885375514"
+        },
+        {
+          "file": "components/particles/LICENSE",
+          "hash": "1648481045346253054"
+        },
+        {
+          "file": "components/particles/README.md",
+          "hash": "1999850379157394661"
+        },
+        {
+          "file": "components/particles/angular.json",
+          "hash": "16931096723507500956"
+        },
+        {
+          "file": "components/particles/package.json",
+          "hash": "1255931763497279274"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/.browserslistrc",
+          "hash": "17600754102500844387"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/README.md",
+          "hash": "5334671520184723136"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/karma.conf.js",
+          "hash": "17463020627135647016"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/ng-package.json",
+          "hash": "10711970876865439690"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/package.json",
+          "hash": "1258347566899441424"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/src/lib/ng-particles-engine.service.ts",
+          "hash": "15214290016503563794"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/src/lib/ng-particles.component.ts",
+          "hash": "13605386694044079668"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/src/lib/ng-particles.module.ts",
+          "hash": "5739966548201827281"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/src/lib/ng-particles.service.ts",
+          "hash": "5401432140806041990"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/src/public-api.ts",
+          "hash": "16302345704629473044"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/tsconfig.lib.json",
+          "hash": "7516229681468173375"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/tsconfig.lib.prod.json",
+          "hash": "1939170332703490951"
+        },
+        {
+          "file": "components/particles/projects/ng-particles/tsconfig.spec.json",
+          "hash": "17465711473244694148"
+        },
+        {
+          "file": "components/particles/scripts/prebuild.js",
+          "hash": "12607314319745274830"
+        },
+        {
+          "file": "components/particles/tsconfig.json",
+          "hash": "1638307350701751378"
+        },
+        {
+          "file": "components/particles/typedoc.json",
+          "hash": "10236040944264868755"
+        }
+      ],
+      "@tsparticles/angular-demo": [
+        {
+          "file": "apps/angular-demo/.browserslistrc",
+          "hash": "17600754102500844387"
+        },
+        {
+          "file": "apps/angular-demo/.editorconfig",
+          "hash": "6686520031028425313"
+        },
+        {
+          "file": "apps/angular-demo/.gitignore",
+          "hash": "2055115279867443042"
+        },
+        {
+          "file": "apps/angular-demo/CHANGELOG.md",
+          "hash": "1654889361544893626"
+        },
+        {
+          "file": "apps/angular-demo/README.md",
+          "hash": "3506217967728516002"
+        },
+        {
+          "file": "apps/angular-demo/angular.json",
+          "hash": "3021179697228768762"
+        },
+        {
+          "file": "apps/angular-demo/karma.conf.js",
+          "hash": "1055924383162217733"
+        },
+        {
+          "file": "apps/angular-demo/package.json",
+          "hash": "14684987994202995129",
+          "deps": [
+            "@tsparticles/angular",
+            "angular-confetti",
+            "angular-fireworks"
+          ]
+        },
+        {
+          "file": "apps/angular-demo/src/app/app-routing.module.ts",
+          "hash": "6250625392482207240"
+        },
+        {
+          "file": "apps/angular-demo/src/app/app.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/angular-demo/src/app/app.component.html",
+          "hash": "8665029128739414867"
+        },
+        {
+          "file": "apps/angular-demo/src/app/app.component.spec.ts",
+          "hash": "1932141079228167040"
+        },
+        {
+          "file": "apps/angular-demo/src/app/app.component.ts",
+          "hash": "17388681011060992634"
+        },
+        {
+          "file": "apps/angular-demo/src/app/app.module.ts",
+          "hash": "1857265882248081725"
+        },
+        {
+          "file": "apps/angular-demo/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/angular-demo/src/environments/environment.prod.ts",
+          "hash": "5406836414239361753"
+        },
+        {
+          "file": "apps/angular-demo/src/environments/environment.ts",
+          "hash": "17458466784506237106"
+        },
+        {
+          "file": "apps/angular-demo/src/favicon.ico",
+          "hash": "3464744996580215640"
+        },
+        {
+          "file": "apps/angular-demo/src/index.html",
+          "hash": "4512197070288351441"
+        },
+        {
+          "file": "apps/angular-demo/src/main.ts",
+          "hash": "10677612470474905821"
+        },
+        {
+          "file": "apps/angular-demo/src/polyfills.ts",
+          "hash": "2035846685621806592"
+        },
+        {
+          "file": "apps/angular-demo/src/styles.css",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "apps/angular-demo/src/test.ts",
+          "hash": "1590235246187698726"
+        },
+        {
+          "file": "apps/angular-demo/tsconfig.app.json",
+          "hash": "9041030522571917449"
+        },
+        {
+          "file": "apps/angular-demo/tsconfig.json",
+          "hash": "2788617174107701691"
+        },
+        {
+          "file": "apps/angular-demo/tsconfig.spec.json",
+          "hash": "17198424518534092990"
+        }
+      ],
+      "angular-confetti": [
+        {
+          "file": "components/confetti/.editorconfig",
+          "hash": "6686520031028425313"
+        },
+        {
+          "file": "components/confetti/.gitignore",
+          "hash": "13044518069027839699"
+        },
+        {
+          "file": "components/confetti/CHANGELOG.md",
+          "hash": "13881181490887288986"
+        },
+        {
+          "file": "components/confetti/README.md",
+          "hash": "4491585899860680377"
+        },
+        {
+          "file": "components/confetti/angular.json",
+          "hash": "2895693770242074229"
+        },
+        {
+          "file": "components/confetti/package.json",
+          "hash": "17452419157841022088"
+        },
+        {
+          "file": "components/confetti/projects/ng-confetti/README.md",
+          "hash": "4491585899860680377"
+        },
+        {
+          "file": "components/confetti/projects/ng-confetti/ng-package.json",
+          "hash": "6027457416308427075"
+        },
+        {
+          "file": "components/confetti/projects/ng-confetti/package.json",
+          "hash": "16577002621585740367"
+        },
+        {
+          "file": "components/confetti/projects/ng-confetti/src/lib/ng-confetti.component.ts",
+          "hash": "6467844003519126882"
+        },
+        {
+          "file": "components/confetti/projects/ng-confetti/src/lib/ng-confetti.module.ts",
+          "hash": "18120009528400310115"
+        },
+        {
+          "file": "components/confetti/projects/ng-confetti/src/public-api.ts",
+          "hash": "6447389132043379921"
+        },
+        {
+          "file": "components/confetti/projects/ng-confetti/tsconfig.lib.json",
+          "hash": "12369024473565967613"
+        },
+        {
+          "file": "components/confetti/projects/ng-confetti/tsconfig.lib.prod.json",
+          "hash": "1939170332703490951"
+        },
+        {
+          "file": "components/confetti/projects/ng-confetti/tsconfig.spec.json",
+          "hash": "11730399207539946696"
+        },
+        {
+          "file": "components/confetti/scripts/prebuild.js",
+          "hash": "1024559677188530630"
+        },
+        {
+          "file": "components/confetti/tsconfig.json",
+          "hash": "773092200524357135"
+        }
+      ],
+      "@tsparticles/ionic-demo": [
+        {
+          "file": "apps/ionic-demo/.browserslistrc",
+          "hash": "2519363244570020624"
+        },
+        {
+          "file": "apps/ionic-demo/.editorconfig",
+          "hash": "6686520031028425313"
+        },
+        {
+          "file": "apps/ionic-demo/.eslintrc.json",
+          "hash": "6186073240262572736"
+        },
+        {
+          "file": "apps/ionic-demo/.gitignore",
+          "hash": "11120286712182918375"
+        },
+        {
+          "file": "apps/ionic-demo/CHANGELOG.md",
+          "hash": "8397295502031408548"
+        },
+        {
+          "file": "apps/ionic-demo/angular.json",
+          "hash": "3305746269625944507"
+        },
+        {
+          "file": "apps/ionic-demo/capacitor.config.ts",
+          "hash": "15129544716859277205"
+        },
+        {
+          "file": "apps/ionic-demo/e2e/protractor.conf.js",
+          "hash": "11649289969580335481"
+        },
+        {
+          "file": "apps/ionic-demo/e2e/src/app.e2e-spec.ts",
+          "hash": "4306933736634991869"
+        },
+        {
+          "file": "apps/ionic-demo/e2e/src/app.po.ts",
+          "hash": "14789022671851079783"
+        },
+        {
+          "file": "apps/ionic-demo/e2e/tsconfig.json",
+          "hash": "10816543939472299545"
+        },
+        {
+          "file": "apps/ionic-demo/ionic.config.json",
+          "hash": "7160665504844875653"
+        },
+        {
+          "file": "apps/ionic-demo/karma.conf.js",
+          "hash": "14441247332817365111"
+        },
+        {
+          "file": "apps/ionic-demo/package.json",
+          "hash": "15554110622374582300",
+          "deps": [
+            "@tsparticles/angular"
+          ]
+        },
+        {
+          "file": "apps/ionic-demo/src/app/app-routing.module.ts",
+          "hash": "11801418085704297101"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/app.component.html",
+          "hash": "12139992690072916112"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/app.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/app.component.spec.ts",
+          "hash": "11479624631332400537"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/app.component.ts",
+          "hash": "4651584938446894483"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/app.module.ts",
+          "hash": "17102278355039212029"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/explore-container/explore-container.component.html",
+          "hash": "10574455846506954855"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/explore-container/explore-container.component.scss",
+          "hash": "14250411118003398491"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/explore-container/explore-container.component.spec.ts",
+          "hash": "10723168401409195371"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/explore-container/explore-container.component.ts",
+          "hash": "7512930279630794552"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/explore-container/explore-container.module.ts",
+          "hash": "7418061059857182964"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/tab1/tab1-routing.module.ts",
+          "hash": "11381973081829977082"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/tab1/tab1.module.ts",
+          "hash": "16344877017378730941"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/tab1/tab1.page.html",
+          "hash": "10783892175673641678"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/tab1/tab1.page.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/tab1/tab1.page.spec.ts",
+          "hash": "15202586232937218475"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/tab1/tab1.page.ts",
+          "hash": "5055130946099123943"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/tab2/tab2-routing.module.ts",
+          "hash": "7350080520046749647"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/tab2/tab2.module.ts",
+          "hash": "16986372858988899955"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/tab2/tab2.page.html",
+          "hash": "13340392613393970086"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/tab2/tab2.page.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/tab2/tab2.page.spec.ts",
+          "hash": "18014665638698070468"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/tab2/tab2.page.ts",
+          "hash": "1649071404575094014"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/tab3/tab3-routing.module.ts",
+          "hash": "9012527419557272185"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/tab3/tab3.module.ts",
+          "hash": "2307292932894263441"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/tab3/tab3.page.html",
+          "hash": "1640442279298071434"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/tab3/tab3.page.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/tab3/tab3.page.spec.ts",
+          "hash": "15265017476970653921"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/tab3/tab3.page.ts",
+          "hash": "9950996585213729156"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/tabs/tabs-routing.module.ts",
+          "hash": "7044889794849427242"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/tabs/tabs.module.ts",
+          "hash": "2863071217556748594"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/tabs/tabs.page.html",
+          "hash": "18264123606030675483"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/tabs/tabs.page.scss",
+          "hash": "4055606894390288348"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/tabs/tabs.page.spec.ts",
+          "hash": "9208961410081142433"
+        },
+        {
+          "file": "apps/ionic-demo/src/app/tabs/tabs.page.ts",
+          "hash": "15132660516945422335"
+        },
+        {
+          "file": "apps/ionic-demo/src/assets/icon/favicon.png",
+          "hash": "17482944836898362639"
+        },
+        {
+          "file": "apps/ionic-demo/src/assets/shapes.svg",
+          "hash": "4708889011185296100"
+        },
+        {
+          "file": "apps/ionic-demo/src/environments/environment.prod.ts",
+          "hash": "5406836414239361753"
+        },
+        {
+          "file": "apps/ionic-demo/src/environments/environment.ts",
+          "hash": "5207092130812246610"
+        },
+        {
+          "file": "apps/ionic-demo/src/global.scss",
+          "hash": "3871764962445315233"
+        },
+        {
+          "file": "apps/ionic-demo/src/index.html",
+          "hash": "5962093970713772175"
+        },
+        {
+          "file": "apps/ionic-demo/src/main.ts",
+          "hash": "3447864527603543144"
+        },
+        {
+          "file": "apps/ionic-demo/src/polyfills.ts",
+          "hash": "18273945037452903646"
+        },
+        {
+          "file": "apps/ionic-demo/src/test.ts",
+          "hash": "1608999765687549417"
+        },
+        {
+          "file": "apps/ionic-demo/src/theme/variables.scss",
+          "hash": "4180681664411398942"
+        },
+        {
+          "file": "apps/ionic-demo/src/zone-flags.ts",
+          "hash": "3323586086306676158"
+        },
+        {
+          "file": "apps/ionic-demo/tsconfig.app.json",
+          "hash": "9041030522571917449"
+        },
+        {
+          "file": "apps/ionic-demo/tsconfig.json",
+          "hash": "3500392922571175693"
+        },
+        {
+          "file": "apps/ionic-demo/tsconfig.spec.json",
+          "hash": "17198424518534092990"
+        }
+      ],
+      "angular-fireworks": [
+        {
+          "file": "components/fireworks/.editorconfig",
+          "hash": "6686520031028425313"
+        },
+        {
+          "file": "components/fireworks/.gitignore",
+          "hash": "13044518069027839699"
+        },
+        {
+          "file": "components/fireworks/CHANGELOG.md",
+          "hash": "817255146291755077"
+        },
+        {
+          "file": "components/fireworks/README.md",
+          "hash": "17072765783456470214"
+        },
+        {
+          "file": "components/fireworks/angular.json",
+          "hash": "6064307782237498984"
+        },
+        {
+          "file": "components/fireworks/package.json",
+          "hash": "17566967685349720312"
+        },
+        {
+          "file": "components/fireworks/projects/ng-fireworks/README.md",
+          "hash": "17072765783456470214"
+        },
+        {
+          "file": "components/fireworks/projects/ng-fireworks/ng-package.json",
+          "hash": "6629216496534876582"
+        },
+        {
+          "file": "components/fireworks/projects/ng-fireworks/package.json",
+          "hash": "17315896785578497544"
+        },
+        {
+          "file": "components/fireworks/projects/ng-fireworks/src/lib/ng-fireworks.component.ts",
+          "hash": "16303960301618503171"
+        },
+        {
+          "file": "components/fireworks/projects/ng-fireworks/src/lib/ng-fireworks.module.ts",
+          "hash": "17924470435643097604"
+        },
+        {
+          "file": "components/fireworks/projects/ng-fireworks/src/public-api.ts",
+          "hash": "9127212005315367699"
+        },
+        {
+          "file": "components/fireworks/projects/ng-fireworks/tsconfig.lib.json",
+          "hash": "12369024473565967613"
+        },
+        {
+          "file": "components/fireworks/projects/ng-fireworks/tsconfig.lib.prod.json",
+          "hash": "1939170332703490951"
+        },
+        {
+          "file": "components/fireworks/projects/ng-fireworks/tsconfig.spec.json",
+          "hash": "11730399207539946696"
+        },
+        {
+          "file": "components/fireworks/scripts/prebuild.js",
+          "hash": "9356585769513765683"
+        },
+        {
+          "file": "components/fireworks/tsconfig.json",
+          "hash": "8249644020305242555"
+        }
+      ]
+    }
+  }
+}

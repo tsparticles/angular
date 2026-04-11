@@ -7,6 +7,7 @@
     "build:ci": "pnpm run prettify:ci:readme && (lerna run build:ci --stream --no-private || pnpm run build:lerna)",
     "build:lerna": "lerna run build --stream --no-private",
     "build:nx": "nx run-many -t build --all",
+    "deps:policy:check": "node scripts/check-dependency-policy.mjs",
     "prettify:ci:readme": "prettier --check ./README.md",
     "prettify:readme": "prettier --write ./README.md",
     "build:docs:json": "rimraf docs.json && typedoc --json docs.json",
